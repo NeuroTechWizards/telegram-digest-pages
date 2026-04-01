@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OpenClaw Digest</title>
+    <link>https://neurotechwizards.github.io/telegram-digest-pages/</link>
+    <description>AI/Tech дайджест из Telegram-каналов</description>
+    <language>ru</language>
+    <lastBuildDate>2026-04-01 14:35 UTC</lastBuildDate>
+    <atom:link href="https://neurotechwizards.github.io/telegram-digest-pages/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Weekly AI Digest</title>
+      <link>https://neurotechwizards.github.io/telegram-digest-pages/digests/2026/week-14/</link>
+      <guid isPermaLink="true">https://neurotechwizards.github.io/telegram-digest-pages/digests/2026/week-14/</guid>
+      <pubDate>2026-04-01T14:35:23.795317+00:00</pubDate>
+      <description>Собрано 50 материалов из 2 источников. Основные темы: через, claude, если, агент, скилл</description>
+    </item>
+  </channel>
+</rss>

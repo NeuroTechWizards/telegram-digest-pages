@@ -1,0 +1,2303 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@gleb_pro_ai — AI Digest</title>
+  <meta name="description" content="Посты из Telegram-канала @gleb_pro_ai">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://neurotechwizards.github.io/telegram-digest-pages/static/styles.css">
+</head>
+<body>
+<div class="app">
+  <header class="hero" style="padding: 32px 0 28px;">
+    <div class="container">
+      <h1 class="hero-title" style="font-size: 1.6rem;">📢 @gleb_pro_ai</h1>
+      <p class="hero-subtitle">gleb_pro_ai · 115 постов</p>
+      <p style="margin-top: 8px;">
+        <a href="https://t.me/gleb_pro_ai" target="_blank" rel="noopener"
+           style="color: #818cf8; font-size: 0.875rem;">Открыть в Telegram →</a>
+        &nbsp;·&nbsp;
+        <a href="https://neurotechwizards.github.io/telegram-digest-pages/" style="color: #818cf8; font-size: 0.875rem;">← Назад к дайджесту</a>
+      </p>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 24px;">
+    <div class="posts-list">
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-04-01</span>
+        </div>
+
+        <div class="post-text">Писал уже тут — занимаюсь осмечиванием строительной документации. 
+
+Очень интересная область, уже есть заказчики. Софт понятное дело тоже уже сделал, и он работает.
+Но чисто с точки зрения имплементации, история очень сложная. Вы бы видели все эти базы которые нужно учесть и так далее. Я конечно собираю пайплайны, но моих мозгов хватает на пределе. 
+
+Так вот, хочу, чтобы мне помогли докрутить качество попадания в нормативные позиции. Условно говоря, сейчас 80%, нужно добиваться 95%
+
+Подумал вот что. Любой, кто принимал участие в Enterprise RAG Challenge и занял там не последнее место — мне под…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 877</span>
+            <span class="stat-badge">❤️ 5</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/501" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-31</span>
+        </div>
+
+        <div class="post-text">Скандальчик очередной с атакой на цепочку поставок. На сей раз под ударом все кто имеют в цепочке зависимостей библиотку axios в npm (очень популярная библиотека для сетевых запросов).
+
+Более пяти часов она ставила зашифрованный малварь на машины жертв. Объемы инсталляций библиотеки— 100 млн в месяц, так что заражены могут быть миллионы машин.
+
+Проверяйте себя 
+
+https://x.com/feross/status/2038807290422370479?s=46&amp;t=X0WelBfVXZJ6DwiINUU8mA
+
+Если вы запускали npm install в последние сутки, выполните эти действия:
+
+# blackhole C2 Domain
+echo &#39;127.0.0.1 sfrclak.com&#39; | sudo tee -a /etc/hosts
+
+# flu…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 7,080</span>
+            <span class="stat-badge">❤️ 24</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/500" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-31</span>
+        </div>
+
+        <div class="post-text">Перетаскиваю процесс C4 скана репозитория из шотгана в скилл Кодекса. 
+
+Наблюдения по ходу: раб агент может не только экзекьютить задачу. но и сформулировать по ходу, в чем проблема, и сразу же исправить свой промпт. Бесценно для отладки муторных процессов. Не то, чтобы это было открытием, просто раньше как-то мало пользовался.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 3,290</span>
+            <span class="stat-badge">❤️ 30</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/499" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-30</span>
+        </div>
+
+        <div class="post-text">Что нужно знать про SDD (specification driven development)
+
+Вы наверняка это слышали. Дескать, сначала сделай план, потом пиши код. Ну, все очевидно 🙂 Но дальше начинают искать фреймворки, а их 100500 штук, и уже сложно разобраться, а что вообще нужно брать, что нет, и в чем там правда. 
+
+Поэтому накину базы. 
+
+По SDD принципиально есть всего два конкурирующих подхода.
+
+1) Спецификации как источник правды. 
+
+Сюда относятся все подходы и стартапы, которые делают вики-системы или генерят код по спекам. 
+
+Типа, главное написать спеку, а код мы нашарашим. Спецификации храним и тщательно охраняем.
+…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,019</span>
+            <span class="stat-badge">❤️ 62</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/498" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-28</span>
+        </div>
+
+        <div class="post-text">Распробовал прошку от ChatGPT
+
+Походу единственная не-лоботомизированная модель на сегодня. С ней работает старая добрая тактика шотгана. можно в нее кинуть 100500 файлов и она начинает долго-долго мутить и что-то делать, а потом возвращается с хорошим крепким ответом. 
+
+В общем, теперь обязательная стадия для сложных ТЗ-шек. И более понятно, за что еще платить 200 баксов кроме кодекса.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,420</span>
+            <span class="stat-badge">❤️ 61</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/497" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-26</span>
+        </div>
+
+        <div class="post-text">Невероятно шикарное видео про аппаратные особенности работы нейросетей и запуска их на локальном железе. Как происходят вычисления, что и как влияет - память, процессор, видеокарта, все это в разных комбинациях и архитектурах. Это где-то для задротов на 8/10, но я кайфанул, рекомендую.
+
+https://www.youtube.com/watch?v=L9sI7sUKLIM
+
+PS Если кто-то знает телеграм автора, чирканите плз в личку</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,990</span>
+            <span class="stat-badge">❤️ 35</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/496" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-26</span>
+        </div>
+
+        <div class="post-text">Я сейчас делаю курс по маркетингу для инди-хакеров, и решил пригласить туда крутых гостевых спикеров. Встречайте, Илья Чернецкий, автор приложения CoinKeeper (более 10 миллионов установок, сотни тысяч активных пользователей) и сервиса AI-аналитики HeyMetrics....</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,140</span>
+            <span class="stat-badge">❤️ 6</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/495" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-25</span>
+        </div>
+
+        <div class="post-text">Очередной перевод про применение Карпатовского авторесерча для улучшения промптов
+
+https://vibeportal.ru/forum/topic/kak-prokachat-rabotu-s-claude-v-10-raz-ispol-zuia-metod-autoresearch-andreia-kar
+
+Вообще, Х мне регулярно подкидывает топовые статьи, пишите, стоит ли их переводить и публиковать, а то я хз - на портале лайков и каментов к ним мало, может и не нужно никому.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,490</span>
+            <span class="stat-badge">❤️ 135</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/494" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-25</span>
+        </div>
+
+        <div class="post-text">Кодекс после последнего обновления невероятно бесит требованиям апрува. У меня уже и йоло мод стоит и все. Как вы это обходите?</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,930</span>
+            <span class="stat-badge">❤️ 12</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/493" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-25</span>
+        </div>
+
+        <div class="post-text">Есть две штуки, которые никогда не стоит оставлять на потом, даже если вам просто быстренько что-то сделать, и вообще, сразу не нужно. 
+
+— Пользовательские аккаунты с изоляцией сущностей. Для саас — сразу с организациями. 
+— Мультиязычность.
+
+Обе подсистемы очень быстро поднимаются на старте, и представляют невероятную боль, если впиливать потом.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,850</span>
+            <span class="stat-badge">❤️ 90</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/492" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-24</span>
+        </div>
+
+        <div class="post-text">Вообще, так вам всем скажу, господа вайбкодеры.
+
+Пора перестать рассказывать людям, как это просто. А то они верят, а потом начинают платить вам ветку, ведь вы нихера по их мнению не сделали, это ж все агенты 😁
+
+А дальше вы начинаете всякие метафизические объяснения, почему то что вы строите вовсе не то же, что лэндос школьника Пети в лавабл, но вас уже не слушают, и оценивают по трудам школьника Пети.
+
+Короче, прекращайте эту порочную практику, и давайте будем относиться к этому как еще одному витку инженерной профессии, просто где время уходит на другое.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,970</span>
+            <span class="stat-badge">❤️ 219</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/491" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-24</span>
+        </div>
+
+        <div class="post-text">Подгорел чуток от кодинга, скачал вчера игрушку. Поигрался, но штырит конечно не так. Снова загрузился сегодня кодингом 😂
+
+Позвали выступить в пятницу на конфу. Я предложил тему — как работать с ограничениями в мозге, чтобы не отъехать кукухой, и эффективно фигачить. Приходите, доклад будет коротенький, и я обещаю ничего не втирать вам про медитации, только техника, рационализм и холодный расчет 🙂
+
+После меня выступает еще куча крутых спикеров со своими темами. Все вокруг одного — как жить в современном быстром мире, и что с этим делать. 
+
+Регистрация через бота (подписка на каналы)
+
+Приходите…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,110</span>
+            <span class="stat-badge">❤️ 17</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/488" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-23</span>
+        </div>
+
+        <div class="post-text">На вайб-портале очередной топовый перевод. 
+
+Как разработчики из антропика применяют навыки при работе с Claude code</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,200</span>
+            <span class="stat-badge">❤️ 31</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/487" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-23</span>
+        </div>
+
+        <div class="post-text">Я сейчас делаю курс по маркетингу для инди-хакеров, и уже анонсировал вебинар в четверг с Ильей Чернецким. 
+
+Но подумал, чего бы не позвать еще одного очень крутого спикера. Так что встречайте Елену Матюшенко. 
+
+— тренирует нейросетки, и сделала лучший переодеватор людей по фото
+— сама научилась ИТ-шке, без пап мам и курсов
+— мать пятерых детей
+
+Для меня это просто идеальный образ предпринимателя, который не ищет отговорок, чтобы что-то делать 🙂
+
+Она расскажет о том, как три года делала стартап, а затем провела пивот и нашла трекшн за три дня с приложением - улучшатором CV. 
+
+Вторник 24 марта …</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 7,540</span>
+            <span class="stat-badge">❤️ 22</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/486" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-21</span>
+        </div>
+
+        <div class="post-text">OpenAI выпустили статью, где официально признали, что для хорошего дизайна нужно меньше думать.
+
+https://developers.openai.com/blog/designing-delightful-frontends-with-gpt-5-4
+
+Раунд, господа дизайнеры 😁</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 7,610</span>
+            <span class="stat-badge">❤️ 129</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/485" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-20</span>
+        </div>
+
+        <div class="post-text">Надо какой-то всемирный день блокировок объявить. 
+
+Мало нам телеги, опанай с клодом тоже лютуют (гугл лютовал всегда, так что про них не пишу). 
+
+Клод раздает баны за все подряд уже как месяц. Народ стонет на форумах. Причем не только РФ, просто рандомно попадает все что угодно. Рецепт как делать — ну, говорят, помогает чистая виртуалка на иностранном хостинге, но без гарантии. Т.к. чистые белые иностранцы тоже отлетают. 
+
+Кодекс жил жил, а со вчера начал массово накрывать банами тоже (баннер поди мой увидели 😬). Много акков сейчас отлетает, в т.ч. те, которые раньше не. 
+
+Думаю, это все связ…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,270</span>
+            <span class="stat-badge">❤️ 47</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/483" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-20</span>
+        </div>
+
+        <div class="post-text">Про законопроект о маркировке ИИ контента нужно знать одно.
+
+Я заметил, что многие этой мудрости не знают, думают, что в этот раз будет как-то иначе и т.д.
+
+Просто напомню.
+
+Маркируют то, что потом планируют стричь.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,280</span>
+            <span class="stat-badge">❤️ 117</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/482" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-19</span>
+        </div>
+
+        <div class="post-text">Сложные промпты vs простые промпты
+
+Заметил особенность при работе с пайплайнами, хочу с вами поделиться.
+
+Мысль такая. Регулярно замечаю, что однострочные промпты работают значительно лучше многострочных или многостраничных шаблонов с рагами, структурируемыми выводами, и прочими сложными приблудами.
+
+Мало того, что ответ быстрее. Часто он еще и сильно умнее.
+
+«Как мне сделать сервис X?» дает результат лучше, чем многостраничный промпт с кучей правил, начинающийся с «Ты крутой архитектор...»
+
+Не знаю что за эффект и как его назвать, но учтите, есть такая тема, и сильнее всего проявляется как р…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,970</span>
+            <span class="stat-badge">❤️ 107</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/481" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-19</span>
+        </div>
+
+        <div class="post-text">Глеб Кудрявцев про AI кодинг pinned a photo</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+          </div>
+          <a href="https://t.me/gleb_pro_ai/480" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-19</span>
+        </div>
+
+        <div class="post-text">Если вам пишет этот черт — не ведитесь. Скаманет и кинет. У меня один аккаунт, и он есть в шапке канала 👍</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,690</span>
+            <span class="stat-badge">❤️ 68</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/479" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-19</span>
+        </div>
+
+        <div class="post-text">VibeCode эстафета принял от @neuraldeep!
+
+Ежедневное число моих коммитов в репозитории с конца 24 года 🙂
+
+Как видно - моя любовь длится 1-2 месяца 😂
+
+Эстафета - передай другому билдеру
+Хочу увидеть результаты https://t.me/ai_lif и https://t.me/elkornacio</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,480</span>
+            <span class="stat-badge">❤️ 6</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/478" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-18</span>
+        </div>
+
+        <div class="post-text">Есть идейка запустить курс по теории систем. Для трушных шизов. Считаю, что это базовый уровень для любого уважающего себя вайбкодера.
+
+Че как думаете, будут брать? 🙂</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,110</span>
+            <span class="stat-badge">❤️ 144</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/476" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-18</span>
+        </div>
+
+        <div class="post-text">Чтобы поспевать за миром ИИ, ты должен быть безработным.
+
+Чувак чертовски прав. И этого все равно недостаточно. Мир всеобщего фомо 🙂</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,710</span>
+            <span class="stat-badge">❤️ 162</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/475" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-18</span>
+        </div>
+
+        <div class="post-text">Ну это победитель 🥰
+
+Не горизонтальный, но уж слишком хорошо 🙂
+
+Автору приз — месяц бесплатного доступа. Где? Куда? 
+
+-&gt; OpenAI и Codex на smartaipack.ru (работает даже с парковки)</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,640</span>
+            <span class="stat-badge">❤️ 134</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/474" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-17</span>
+        </div>
+
+        <div class="post-text">Объявляется конкурс на самый всратый баннер для smartaipack.ru 3..2..1... 
+
+Я сделал стандартный, кто круче? Скидывайте в каменты любую дичь 😎
+
+Базовый промпт
+
+Хочу сделать горизонтальный баннер с даным оффером.
+Пропиши его композицию, цвета и содержимое.
+
+Аккаунты OpenAI + Codex
+Если вам нужна дешевая надежная подписка OpenAI Plus с оплатой рублями, оформляйте тут smartaipack.ru
+• Оплата российской картой
+• Аккаунт — персональный, продляемый
+• Полноценный доступ в ChatGPT
+• Огромные лимиты кодекса для разработки
+Тариф 1590 ₽/мес. — дешевле, чем напрямую
+Оплата вбелую для юрлиц.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,880</span>
+            <span class="stat-badge">❤️ 21</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/473" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-17</span>
+        </div>
+
+        <div class="post-text">Новости из мира ocr
+
+Сейчас хайпует glm-ocr, якобы новая сота в распознавании текста. Вдобавок, очень дешевая. 
+
+Я ее погонял несколько часов и в хвост и в гриву, и могу сказать, что рейтинги у нее накрученные.
+
+Она очень плоха в кириллице, тупит в таблицах.
+На формулах не пробовал, но вангую проблемы и там.
+
+До кучи вообще не работает заявленный метод апи с пдф, приходится все документы гнать через png.
+
+Я очень надеялся просто перейти на нормальную апишку и забыть о самостоятельном парсинге документов. Но, к сожалению, сервак с паддл все еще нужен. Мне после поста подогнали партнерство, так …</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,610</span>
+            <span class="stat-badge">❤️ 40</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/472" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-17</span>
+        </div>
+
+        <div class="post-text">Как меня бесят апишки нейросетей, вы бы знали. 
+
+Одна работает, вторая валяется в дауне. Вторая работает, первая валяется. Третья работает все время, только SO вернуть не может. Но не на всех запросах, а только на тех, которые ей не нравятся. Какие не нравятся? Поди угадай. 
+
+И вот ты тут со своими пайплайнами — сейчас я переверну мир!
+Ага, поди добейся еще, чтобы мир для начала соизволил принять от тебя деньги и снизошел до работающих эндпоинтов.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,340</span>
+            <span class="stat-badge">❤️ 79</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/471" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-16</span>
+        </div>
+
+        <div class="post-text">Люблю выйти поутру, выпить кофе, и почитать свежий спам, удаленный безжалостным ботом.
+
+Иногда встречаются залетные бедолаги с валидными комментариями. Но тут ответ простой — хочешь быть лучше бота? Будь им! Ищущий да обрящет, ибо нет препятствий тем, кто хочет их преодолеть 😇
+
+PS Хотите бота себе бесплатно? Пишите в личку, поставим.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,630</span>
+            <span class="stat-badge">❤️ 28</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/470" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-16</span>
+        </div>
+
+        <div class="post-text">Я сейчас делаю курс по маркетингу для инди-хакеров, и решил пригласить туда крутых гостевых спикеров. 
+
+Встречайте, Илья Чернецкий, автор приложения CoinKeeper (более 10 миллионов установок, сотни тысяч активных пользователей) и сервиса AI-аналитики HeyMetrics.
+
+На курсе Илья поделится секретами роста доходов через оптимизацию пэйволов и тарифов, а до этого мы проведем с ним бесплатный вебинар:
+
+Как найти прибыльную идею для мобильного приложения
+
+Четверг 26 марта в 18 по Мск
+
+Вебинар бесплатный, доступ через бота, необходима регистрация.
+
+Зарегистрироваться -&gt;
+
+PS Поток желающих обвалил бота …</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,630</span>
+            <span class="stat-badge">❤️ 30</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/469" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-15</span>
+        </div>
+
+        <div class="post-text">На вайб-портале пользователи сами потихоньку начинают размещать статьи и переводы. 
+
+Мне очень понравилась вот эта — про философию вайбкодинга и то, какие стадии есть у этой зависимости 🙂
+
+https://vibeportal.ru/forum/topic/tsvety-na-mogilu-eldzhernona-i-trip-vmeste-s-claude-code
+
+К пятому месяцу, чтобы поймать ту же искру, тебе нужно за выходные поднять целый бизнес — лендинг, интеграцию платежей, онбординг юзеров, аналитический дашборд. Классический разгон толерантности.
+
+Самое то для воскресного чтива. Энджой.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,140</span>
+            <span class="stat-badge">❤️ 83</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/468" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-14</span>
+        </div>
+
+        <div class="post-text">Какой сейчас самый прямолинейный способ шерудить десктопным кодексом с мобилки?
+
+Вариантов миллион, хочу что-то проверенное. Облако не предлагать, нужны бывают локальные файлы.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,920</span>
+            <span class="stat-badge">❤️ 9</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/467" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-13</span>
+        </div>
+
+        <div class="post-text">Поучительная статья о том, как строить инфраструктуру, чтобы ваших агентов не хакнули, и не увели заветные ключики от ЛЛМ.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 7,470</span>
+            <span class="stat-badge">❤️ 103</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/466" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-13</span>
+        </div>
+
+        <div class="post-text">Кодекс сейчас — один из лучших инструментов для разработки. Крайне щедрые лимиты. Входит в общую подписку на OpenAI.
+
+Но есть проблемы с оплатой из РФ. Поэтому думал брать его централизованно студентам курса. 
+
+В чатике постоянно вижу аля &#34;возьми на авито&#34;, ну и я конечно туда пошел. Господи, какой это был цирк. Больше половины продавцов — голимые кидалы просто сходу. У оставшейся части — протухающие одноразки, где-то полученные по промо-акциям. Т.е. ты платишь за акк, радуясь, что дешево. А он тупо перестает работать через пару недель. Кому-то нравится, но не мой вариант. 
+
+Найти селлера, кот…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,090</span>
+            <span class="stat-badge">❤️ 211</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/465" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-12</span>
+        </div>
+
+        <div class="post-text">У меня в x.ai стали доступны модели семейства 4.2
+
+Гонял кто уже? Цена сильно выше стала чем у 4.1 Теперь вот интересно, стоит ли овчинка выделки...</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,530</span>
+            <span class="stat-badge">❤️ 13</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/464" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-12</span>
+        </div>
+
+        <div class="post-text">У меня на канале оказывается бывает по 5 постов в день. Не знал, думал меньше. Вот такая динамичная у нас сфера — только успевай писать 😎
+
+Ну и ADHD синдром у автора</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,850</span>
+            <span class="stat-badge">❤️ 54</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/463" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-11</span>
+        </div>
+
+        <div class="post-text">Ладно, на ночь вам простенькая статья про то, как с помощью генераторов изображений делаются спрайты с игровыми анимациями. 
+
+Каждый айтишник мечтает сделать игру, когда вырастет. Так что вот, кусочек рецепта, как сделать. 
+
+PS Писал уже выше о своем подходе — очень похож.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,270</span>
+            <span class="stat-badge">❤️ 23</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/462" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-11</span>
+        </div>
+
+        <div class="post-text">Сметы анализирую
+
+Вообще, интересная тематика, видели бы вы тамошние документы (не могу показать, все проприетарное). Короче чертежи с описаниями. И вот там уже черт ногу сломит.
+
+Из этого еще нужно составлять ведомость работ, а далее прогнать через базу так, чтобы было все по гос номенклатуре.
+
+Ничего, агенты справляются, хотя мозг у меня взрывается напрочь это все сочинять. Можно сократить время работы сметчика в разы.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,340</span>
+            <span class="stat-badge">❤️ 53</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/460" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-11</span>
+        </div>
+
+        <div class="post-text">Если у вас тоже регулярно возникает задача воровать чужие дизайны, то теперь вы знаете, что делать 🌚
+
+Напоминаю, что это делать очень нехорошо, бог покарает. А там уж сами решайте.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,360</span>
+            <span class="stat-badge">❤️ 131</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/459" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-10</span>
+        </div>
+
+        <div class="post-text">Ладно, извините, это слишком хорошо 😁</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 7,070</span>
+            <span class="stat-badge">❤️ 174</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/458" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-10</span>
+        </div>
+
+        <div class="post-text">Смотрите красота какая. Но нужна серьезная видеокарта. Иначе ждать замучаетесь. 
+
+Кому дать апишку - велкам. 10 копеек/страничка можно сделать в розницу. Оптом еще ниже. 
+
+На выходе json + bbox&#39;ы. Отдельно складывает таблицы в виде таблиц, картинки, тексты. 
+
+Если нужен какой мудреный пайплайн, то прикручу поверх без проблем.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,420</span>
+            <span class="stat-badge">❤️ 64</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/457" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-10</span>
+        </div>
+
+        <div class="post-text">Вообще, нужно признаться, сектанты Назарова были правы. Три-пять работ в параллель это реально самый надежный способ заработка в нынешнее время. Считайте это инвестиционной рекомендацией.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,220</span>
+            <span class="stat-badge">❤️ 111</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/456" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-10</span>
+        </div>
+
+        <div class="post-text">Присматриваюсь к жизни после сингулярности. На картинке элитный баран-производитель. А у меня родственники в Дагестане.
+Чуете, как складно выходит? Барашек, кстати, 10к зелени стоит.
+Это вам не gpu крутить, тут все серьезно.
+
+Давайте заведем комьюнити айтишников, которые хотят ферму завести. Думаю, несколько тысяч мемберов мы наберем изи 😁</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 10,200</span>
+            <span class="stat-badge">❤️ 152</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/455" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-10</span>
+        </div>
+
+        <div class="post-text">Вчера выпрашивал сервак, а сегодня благодаря НейроКовальскому уже гоняю OCR пайплайны на PaddleOCR
+
+Притащил интересный и наглядный пример. На графике номер странички PDF файла, а напротив — время обработки в секундах на двух разных ограничениях по мощности карты. 
+
+Как можно видеть
+— мощность не влияет
+— время очень сильно варьирует от страницы к странице
+— время долгое, у меня мак чуть ли не быстрее разбирает 
+
+А значит что? Значит будем тестировать батчи и параллелизм. Иначе никакой хваленой скорости не будет. 80 секунд на страничку — никуда не годится. 
+
+Впрочем, видели бы вы эти странички…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,200</span>
+            <span class="stat-badge">❤️ 39</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/454" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-09</span>
+        </div>
+
+        <div class="post-text">Товарищи, есть может у кого сервак с 4090 погонять на пару недель? За какую-то вменяемую стоимость. Дедик брать ради экспериментов не хочется, вдруг у кого простаивает или просто есть в наличии.
+
+PS Кстати, с удовольствием стану информационным партнером какого-нибудь хостера, если вы понимаете, о чем я 🙂
+
+PSS Адекватная цена это примерно как на vast.ai</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,170</span>
+            <span class="stat-badge">❤️ 34</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/453" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-09</span>
+        </div>
+
+        <div class="post-text">Встретил мнение:
+
+— кодинг ускорился в 10 раз, поэтому нужно не 90% времени заниматься маркетингом, а наоборот, кодить еще больше, пока на рынке сейчас есть такой рычаг, и не все им воспользовались.
+
+Мнение, прямо скажем, неоднозначное, но интересное.
+
+Дискасс, что по этому поводу думаете?</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,420</span>
+            <span class="stat-badge">❤️ 64</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/452" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-07</span>
+        </div>
+
+        <div class="post-text">Отсутствие кодинговых агентов на телефоне — важная часть сохранения ваших мозгов здоровыми. Посмотрите рилзы, потупите в инсту — короче займитесь в свободное время более здоровыми активностями, а не этим вашим кодингом 😉</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 7,260</span>
+            <span class="stat-badge">❤️ 174</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/451" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-06</span>
+        </div>
+
+        <div class="post-text">Задолбался для всех своих сервисов писать логгеры запросов. Хочу сделать софтину, которая крутится локально, и логирует + красиво выводит все запросы к нейросетям которые я отсылаю/получаю в своих приложениях. 
+
+Я конечно уже поштурмил как это закодить, но может знаете оупенсорс на эту тему?</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 7,130</span>
+            <span class="stat-badge">❤️ 22</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/450" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-06</span>
+        </div>
+
+        <div class="post-text">Сейчас есть поверье, что один человек без команды может запустить компанию- единорога 
+
+Идея красивая. Мне она тоже очень нравится.
+
+Потому что я и сам очень люблю соло. Где можно тащить за счет мозгов, скорости, продукта и умения находить возможности раньше других.
+
+Но у большинства соло-строителей проблема вообще не в том, что они не умеют делать.
+
+Проблема в том, что они не знают, что именно делать.
+Не понимают, какую нишу выбрать.
+Не чувствуют, где есть деньги.
+И, самое главное, не знают, как это продать.
+
+В итоге получается классическая история: человек делает что-то умное, полезное, мест…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 7,570</span>
+            <span class="stat-badge">❤️ 110</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/449" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-06</span>
+        </div>
+
+        <div class="post-text">Я задолбался от количества своих проектов и переключений, поэтому теперь они все и всегда запускаются командой make dev, и это первое, что я делаю в любом проекте 😎
+
+Промпт для ленивых:
+
+Сделай мне makefile чтобы запускать проект командой make dev. Проверь наличие make и установи если его нет.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,380</span>
+            <span class="stat-badge">❤️ 52</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/448" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-05</span>
+        </div>
+
+        <div class="post-text">А вот и модель под клешню подъехала 😁
+
+GPT‐5.4 is the first general-purpose model we’ve released with native, state-of-the-art computer-use capabilities, enabling agents to operate computers and carry out complex workflows across applications.
+
+https://openai.com/index/introducing-gpt-5-4/
+
+PS А вообще так скажу — на релизах от опенай каждая новая модель топ перформит дня три. Сегодня четверг, так что у вас есть время до понедельника расчехлить все свои любимые проекты, пока модель не лоботомизировали. Откладывайте походы в кино и на природу, вечеринки с друзьями, вас ждут чудесные рабочие вых…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,920</span>
+            <span class="stat-badge">❤️ 96</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/447" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-05</span>
+        </div>
+
+        <div class="post-text">Ну и на сегодня еще одна статья для разработчиков. 
+
+Как устроено сжатие контекста в кодексе? 
+
+Автор очень умно заставил кодекс слить свой системный промпт для компактизации контекста, и выяснил, как это все устроено. Довольно интересно, особенно если вы делаете своих агентов или любите ковыряться в потрохах систем.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,580</span>
+            <span class="stat-badge">❤️ 46</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/446" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-05</span>
+        </div>
+
+        <div class="post-text">Кодекс у меня прям тупит отчаянно. Вчера было плохо, сегодня совсем мозг выключился. Не замечали?</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,150</span>
+            <span class="stat-badge">❤️ 49</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/445" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-05</span>
+        </div>
+
+        <div class="post-text">На вайб-портале начинают появляться интересные статьи!
+
+Если вы — автор, пишите, с удовольствием буду о них рассказывать в блоге.
+
+Сегодня про разработку транспортных бпла
+
+Слово автору:
+
+Многие слышали про доставку пиццы дронами, но мало кто видел реальные отчеты о прибыльности этих полетов. 
+
+Я после ухода из продукта провел 2,5 года в индустрии беспилотной логистики: от разработки своего дрона на 500 кг до успешных пилотов дронодоставки в нефтегазе и в итоге закрытия стартапа.
+
+На основе своего опыта в сфере написал Post-Mortem статью про:
+
+• Рынок: почему 90% отрасли — это презентаций и пр…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,700</span>
+            <span class="stat-badge">❤️ 69</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/444" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-04</span>
+        </div>
+
+        <div class="post-text">Встретил отзыв чувака, стырившего мой курс 🙂 
+
+Если вы вдруг сомневаетесь, стоит ли идти на мой курс по AI разработке — все так. Да, после меня даже нежные дизайнеры выходят с реальным пониманием разработки, а не просто вайб-вайб в продакшн.
+
+Пожалуй, я знаю в какую сторону нужно переформатировать лэндос 😁</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,130</span>
+            <span class="stat-badge">❤️ 131</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/443" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-04</span>
+        </div>
+
+        <div class="post-text">Важный вопрос, что вы делаете с чувством, что вы туповаты для всей этой херни? 
+
+Не знаю, может я уникален, но очень сложно даются агентские пайплайны. Мозг реально дымится когда делаю промпты уровня продакшена, особенно если там всякие рекурсивные циклы. Это при том, что я сам кодовых агентов делал (работающих!), все равно сложно.
+
+При этом постоянно слышу как какие-то сказочники своими клешнеботами вокруг уже все автоматизировали донельзя. 
+
+И агенты у них сутками кодят, и что-то крутое при этом выдают. Я хз как так, не выходит сутками автономно, хоть убейся, даже часа не выходит, херню начи…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,890</span>
+            <span class="stat-badge">❤️ 243</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/442" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-03</span>
+        </div>
+
+        <div class="post-text">Если вам кажется, что модели могут все — отвечаю, не все. Попробуйте сделать эффективный 3d движок, офигеете, как топовая моделька от каждой из топовых лаб путается в трех соснах на контексте всего в 100к. Я, пожалуй, свои эксперименты в этом направлении прекращу — еще все очень сыро. 
+Короче, нужно подождать еще пол-годика, а может даже и год. 
+
+Кстати, это наглядное представление, почему суровые писатели компиляторов и линуксовых ядер всегда свысока смотрели на вебмастеров и формошлепов на джаве. Теперь оно буквально проявляется в степени умности модели, потребной, чтобы справиться с той или…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,780</span>
+            <span class="stat-badge">❤️ 66</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/441" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-02</span>
+        </div>
+
+        <div class="post-text">Если вы не долбанутый, то очень даже можете завести свой свой бизнес. Но блогером вам точно не стать. Это как рост меньше двух метров в басктболе. Нормальная кукуха — можно даже не пытаться.
+
+Просто наблюдением поделиться захотелось.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,850</span>
+            <span class="stat-badge">❤️ 112</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/440" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-02</span>
+        </div>
+
+        <div class="post-text">Добавлю, что OCR сетки очень плохо справляются с чеками, этикетками, составами продуктов и т.д. мелким плохоразличимым шрифтом. Они чисто для сканов книжных страниц и документов. Если вам распознавать кривые-косые тексты, то тут нужно использовать более взрослые VL модели. Мне лично грок нравится, но вполне неплохо работают квены, gemini flash, и еще куча других. Очень удобно их пробовать через openrouter.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 7,240</span>
+            <span class="stat-badge">❤️ 29</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/439" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-02</span>
+        </div>
+
+        <div class="post-text">Я paddleocr-vl-1.5 Q8 сломал таким чеком
+Вообще для меня этот чек, найденный на просторах интернета супер-загадка
+Он очень плохо распознается</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 7,050</span>
+            <span class="stat-badge">❤️ 9</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/437" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-02</span>
+        </div>
+
+        <div class="post-text">Напоминаю, а то вдруг вы не в курсе. Если вам OCR делать, то лучшая моделька на сегодняшний момент https://huggingface.co/PaddlePaddle/PaddleOCR-VL-1.5
+Запускается даже на 3060 карте. 
+Я сравнивал ее чуть ли не со всеми OCR моделями которые есть на рынке, и она единственная мне смогла отсканить учебник по химии с пометкой картинок, таблиц и даже формул.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 7,890</span>
+            <span class="stat-badge">❤️ 121</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/435" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-28</span>
+        </div>
+
+        <div class="post-text">Есть такое явление — называется The Ralph Loop, оно же петля Ральфа. 
+
+Но это умное название, а реальное название должно быть — макака-кодинг. Это когда агента запускаешь снова и снова пока он не сделает то, что нужно. 
+
+В отличие от инженерии, тут ты грубо говоря, просто жмешь на кнопку &#34;все еще не работает, попробуй еще раз&#34;. 
+
+Всякие раковые поделки от челов, работающих в десяток макс-подписок, как раз создаются этим методом. 
+
+Так вот, я это попробовал вчера. И хочу доложиться, что редкосная хрень. Агент ходил по кругу 2 часа, загадил репозиторий ерундой, но не продвинулся в решении одной …</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,950</span>
+            <span class="stat-badge">❤️ 155</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/434" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-27</span>
+        </div>
+
+        <div class="post-text">Еще осенью взял себе Macbook m4 pro 48 гб, в тч чтобы элитно запускать локальные модельки.
+
+Докладываюсь:
+
+— очень много интересных моделей написаны под cuda или еще какую ерунду, без порта на apple silicon (metal), и для запуска приходится нехило танцевать с бубном. И прироста производительности в итоге получается много меньше, чем по паспорту.
+— сегодня решил попробовать локальные эмбединги, и мак запищал. Гугление показало что это “coil whine” — звуки электронных компонентов под нагрузкой. Но мне стало его жалко, и эксперимент приостановил 😁
+
+Короче, вердикт, если вам запускать чужие модели…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 7,750</span>
+            <span class="stat-badge">❤️ 77</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/433" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-27</span>
+        </div>
+
+        <div class="post-text">Вообще конечно очень круто писать 3d движок, моделька на реальном эльфийском разговаривает 😁
+
+Согласен с диагнозом: это выглядело как z-fighting из-за копланарного наложения transition-геометрии и базовых поверхностей.
+
+Сделал правки, чтобы перейти от «наложения» к фактической стыковке без дрожания:
+
+У transition-чанка удаляю треугольники, лежащие ровно на seam-face, чтобы не было двойной поверхности на плоскости стыка.
+
+Skirt теперь выдавливается внутрь coarse-чанка (а не наружу), чтобы backfill не пересекался с finer-чанком и не давал мерцание.
+
+Stitch-вершины сдвигаю внутрь на небольшой sea…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 7,090</span>
+            <span class="stat-badge">❤️ 63</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/432" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-26</span>
+        </div>
+
+        <div class="post-text">Немного веселья на ночь 😁
+
+ПАЦАНЫ, Я СЕГОДНЯ СИДЕЛ КОРОЧЕ В ДИСКОРДЕ И УВИДЕЛ ЧЕЛА КОТОРЫЙ СКАЗАЛ ЧТО УСТАНОВИЛ КЛЕШНЮ И ТОТ ЧИТАЕТ ЕГО ПОЧТУ, НУ Я ПОДСКОЧИЛ И РЕЗКО ПЕРЕЕБАЛ ЕМУ В ЩЩИ С ВЕРТУШКИ И ПОЯСНИЛ ЕГО КРИКОМ &#34;ЭТО ТЕБЕ ИНЪЕКЦИЯ СУКА&#34;, ПОТОМУ ЧТО Я УГОРЕЛ ПО ЧИСТЫМ API, ПАЦАНЫ ДУХ СТАРОЙ ШКОЛЫ ЖИВЁТ ТОЛЬКО В РУЧНОМ УПРАВЛЕНИИ КОНТЕКСТОМ, ГДЕ ЕБАШАТСЯ ПО ХАРДКОРУ, ГДЕ ПАЦАНЫ ЖИВУТ EVAL&#39;АМИ, ПРЯМЫМИ ЗАПРОСАМИ И ЕБУТ АВТОНОМНЫХ АГЕНТОВ В РОТ! ТОЛЬКО ЧИСТЫЕ API, ТОЛЬКО ХАРДКОР!!! РУЧНЫЕ ПАЙПЛАЙНЫ УЛЬТРАХАРДКОР КОДИНГ!!! пацаны ебашьте веб-морды, мемори-банки, агентов, пидарасню с векторными…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 11,400</span>
+            <span class="stat-badge">❤️ 203</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/431" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-26</span>
+        </div>
+
+        <div class="post-text">Вот так скажу вам. Ни разу, ни единого разика у меня не было бага, который бы не смогли решить ни gpt ни гемини, но осилил бы опус. Наоборот — сколько угодно. 
+
+Давайте, любители Антропиков, объясняйте, как так 😉
+
+Пост призван вызвать возгорание и активное обсуждение 😁</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 7,150</span>
+            <span class="stat-badge">❤️ 92</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/430" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-25</span>
+        </div>
+
+        <div class="post-text">Ботик разбушевался и удаляет сообщения всех новорегов. Если вас тоже удаляет — потерпите, качу фикс :)
+
+UPD: не, все ок. Он только тех кто из-под каналов пишет, но так задумано. Улучшу нотификацию.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 7,720</span>
+            <span class="stat-badge">❤️ 12</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/429" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-25</span>
+        </div>
+
+        <div class="post-text">Вы конечно поржете, но я впервые попробовал установить линукс вскоре после того как пару лет назад впервые посмотрел аниме, а сейчас по сути хардкорно прогаю и у меня в параллель на просмотре аж несколько тайтлов. 
+
+Совпадение? 😁
+
+Так что в качестве маленького оффтопа. Фрирен и человек-бензопила — оба топ. Еще заканчиваю смотреть Пантеон. Даром что жанры совсем разные, но мне нравится. Если у вас тоже вечер сейчас, можете взять на вооружением.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 10,700</span>
+            <span class="stat-badge">❤️ 50</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/428" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-25</span>
+        </div>
+
+        <div class="post-text">Вот так современный прогрессивный специалист — повелитель нейронок, становится обычным гражданином, максимум которого — копать яму лопатой (да и то, он скажет, что устал).
+
+PS Это Кодекс так издевается, долбанные вайбкодеры.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 7,400</span>
+            <span class="stat-badge">❤️ 79</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/427" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-25</span>
+        </div>
+
+        <div class="post-text">Если интересно, как я такие проекты стартую. 
+
+Вот так
+
+Могу показать потом как я делаю всякие стандартные сайтики, там вообще уже все давно шаблонно-алгоритмично.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,750</span>
+            <span class="stat-badge">❤️ 70</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/426" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-25</span>
+        </div>
+
+        <div class="post-text">Так я вам скажу — сетки прекрасно пишут на расте, а вот с wgpu и шейдерами большие проблемы. Тупят-тупят. Не пробовал еще opus, он с экзотическими языками обычно лучше. Но в целом конечно заметно и неудобно. А шейдеры — это все красивости в игрушках, короче хз, достаточно ли технология до этого развилась.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,780</span>
+            <span class="stat-badge">❤️ 15</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/425" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-24</span>
+        </div>
+
+        <div class="post-text">Го игрушку делать, я создал 😎
+
+Чистый раст, разрушаемая поверхность на вокселях + marching cubes. Идей миллион 😅</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 7,750</span>
+            <span class="stat-badge">❤️ 64</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/424" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-24</span>
+        </div>
+
+        <div class="post-text">Это весь мой набор правил для кодекса. 
+
+Привет тем, кто лепит десятки сабагентов 😁</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 8,400</span>
+            <span class="stat-badge">❤️ 167</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/422" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-23</span>
+        </div>
+
+        <div class="post-text">У меня в конце года был забавный опыт, как фуллтайм вайбкодить приложуху в три тела. Ощущалось это если честно, как если бы нас было 33. Собираюсь об этом опыте рассказать на конфе — насколько далеко всем придется выкинуть скрамы с канбанами, нужны ли теперь...</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 8,840</span>
+            <span class="stat-badge">❤️ 76</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/421" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-23</span>
+        </div>
+
+        <div class="post-text">Codex взрывает у людей мозг. 
+
+Это и модель и софт, причем не один, а разные, и обвязка для работы. При этом кодекс — топовый инструмент на рынке за свои деньги. 
+
+Подготовил для вас перевод, который объясняет, что же такое кодекс. 
+
+Доступно без регистрации и смс.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 7,400</span>
+            <span class="stat-badge">❤️ 51</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/420" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-23</span>
+        </div>
+
+        <div class="post-text">Gemini 3.1 pro умная, но страшно подлизывается без системного промпта, прям самые мерзкие паттерны &#34;ты абсолютно прав&#34;, &#34;это гениальная идея&#34;. У про моделек и раньше с этим были проблемы, но тут превысило все разумные пределы. 
+Тулколинг пока особо сильно не гонял, ничего сказать не могу.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 7,580</span>
+            <span class="stat-badge">❤️ 59</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/419" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-22</span>
+        </div>
+
+        <div class="post-text">Ладно, спать пойду. Сабвоксельный рендеринг прикольная штука, сделал аж целый фаербол с дымом 😁 Завтра времени на игрушку не будет, придется работать. А так вообще прикольно, я б конечно занялся бы чем-то подобным. Нравится такое. 
+
+PS В каментах спрашивали — это чистый раст без движков, gpu ускорение. Визуал фигня, шейдеров на это все накинуть просто. Самое сложное — корректная физика. Ну и если игру полноценно пилить, то контент. Наверное 99% работы это именно все механики и сюжеты сделать, а не движок. Кодекс 5.3 со всей этой петрушкой прекрасно справляется.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 7,840</span>
+            <span class="stat-badge">❤️ 58</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/418" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-22</span>
+        </div>
+
+        <div class="post-text">Хочу сделать 3d экшон, суть такова...
+
+Воскресенье, можно и расслабиться. 
+
+По приколу за 5 минут набросал демку — аля майнкрафт. 100% rust, хочу запустить это дело на GPU. 
+
+Зачем? Да фиг знает, из любви к искусству. Просто интересно попробовать.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,950</span>
+            <span class="stat-badge">❤️ 69</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/417" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-22</span>
+        </div>
+
+        <div class="post-text">Меня достали спрашивать &#34;какой инструмент лучше&#34;/&#34;какая модель лучше&#34;. Хочу сделать виджет &#34;Пульс AI&#34; в котором можно посмотреть барометр на сегодня 🙂
+
+Посоветуйте, какие параметры туда включить?</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,620</span>
+            <span class="stat-badge">❤️ 95</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/416" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-21</span>
+        </div>
+
+        <div class="post-text">По многочисленным просьбам, нанял AI-редактора и начал пускать тексты с вайб-портала в лит. обработку.
+
+Перевел свежую статью на 2.7 млн просмотров — что делать SAAS сервисам в эпоху AI?
+
+Отжал текст знатно, в итоге выкинул больше трети без потери смысла. Расскажите, как вам такой вариант. 
+
+PS Статья в блоке только для подписчиков -&gt; можно посмотреть, если авторизоваться на сайте.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 7,400</span>
+            <span class="stat-badge">❤️ 51</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/415" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-19</span>
+        </div>
+
+        <div class="post-text">Сегодня для клиента за 4 часа в рамках мастер-класса реализовал систему написания AI-новостей. Понятно, что там еще дорабатывать до продакшена, но новости начали писаться согласно ТЗ, и даже в каком-то пристойном UI. 
+
+По ходу пьесы объяснял, что и как делаю. И поймал себя на том, насколько все эти вайб-кодинги все же непростая штука, если это делать эффективно. Ну т.е. куча решений по ходу принимается тупо на опыте, потому что ты уже эту историю проходил или обсуждал с нейронкой. И если она напишет это сама, то неизбежно вкатится в неэффективность, на которую чуть дальше потратишь лишние неде…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 9,300</span>
+            <span class="stat-badge">❤️ 136</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/414" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-18</span>
+        </div>
+
+        <div class="post-text">Перевел для вас модную статью про графы навыков. Что это такое, и зачем может понадобиться. 
+
+Читать
+
+Собираюсь регулярно подтаскивать переводы свежего/популярного по теме нейросеток и публиковать на вайбпортале.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 8,660</span>
+            <span class="stat-badge">❤️ 80</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/413" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-18</span>
+        </div>
+
+        <div class="post-text">Шуточный ролик про то, как «легко» все делать с vps
+
+https://m.youtube.com/watch?v=40SnEd1RWUU
+
+А теперь шутки в сторону.
+
+прогони ролик через виспер. Выдели ключевые технологии о которых там говорят. Убери оверинжениринг. Подготовь скилл сетапа нового vps сервера на основании лучших практик, но без жести (меня устраивает доступ по ssh без ограничения ip и открытые порты http/https).
+
+Будете смеяться, но у меня у меня v2 скилла деплоя на впс получена буквально так 😁</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 8,350</span>
+            <span class="stat-badge">❤️ 29</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/412" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-18</span>
+        </div>
+
+        <div class="post-text">Ну здрасьте, почти 10к. Такими темпами вы меня сдадите в ркн 😡😁</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,700</span>
+            <span class="stat-badge">❤️ 136</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/411" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-17</span>
+        </div>
+
+        <div class="post-text">У меня в конце года был забавный опыт, как фуллтайм вайбкодить приложуху в три тела. Ощущалось это если честно, как если бы нас было 33.
+
+Собираюсь об этом опыте рассказать на конфе — насколько далеко всем придется выкинуть скрамы с канбанами, нужны ли теперь фуллстэки, и какие методики могут работать в новых реалиях.
+
+«AI Hard Fork» — практическая онлайн-конфа о том, как AI меняет процессы разработки, и как управлять этими изменениями. для senior engineers, тех- и тим-лидов, СТО и VP of engineering, фаундеров
+
+Кроме меня выступают и другие крутыши
+
+в программе:
+- реальные кейсы успехов и пров…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 7,590</span>
+            <span class="stat-badge">❤️ 53</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/410" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-17</span>
+        </div>
+
+        <div class="post-text">Все больше открываю граней агентской работы. Вчера прикольный опыт был. 
+
+Хотел на вайбпортал сделать функционал переводов статей. И совершенно забыл, что крутится он у меня в РФ.
+
+Прикрутил апишку Гемини и ловлю ответ — ваш регион не поддерживается.
+
+Пол-года назад я бы ушел покупать отдельный vps. А сейчас пошел в кодекс и говорю «вот папка с [другим] проектом. У нас там прод сервак в канаде. Глянь есть ли место и подними там прокси для запросов с вайбпортала. И настрой чтобы через него запросы на перевод ходили, но только они»
+
+И что вы думаете? Пошуршал и сделал за пол-часика все от и до.
+…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,390</span>
+            <span class="stat-badge">❤️ 66</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/409" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-16</span>
+        </div>
+
+        <div class="post-text">🚀 Онлайн-конференция «Компании без AI-архитектуры умрут первыми»
+
+Перестаньте называть AI инструментом. Инструмент ускоряет работу. AI меняет структуру компании.
+
+Он съедает средний слой, ломает привычные процессы, заставляет пересобирать команды не вокруг ролей, а вокруг систем. Это уже не “чатик для задач”. Это полноценный участник игры.
+
+И если вы до сих пор думаете, что AI — это просто способ сэкономить пару часов, кто-то уже проектирует компанию так, будто AI — его лучший сотрудник.
+
+На этой конференции мы поговорим не про промпты.
+Мы поговорим про то, как меняется архитектура бизнеса.
+
+⸻…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,600</span>
+            <span class="stat-badge">❤️ 39</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/408" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-16</span>
+        </div>
+
+        <div class="post-text">Если ваша модель кодекс потупела и работает сильно медленее, чем 5.3, значит вас тихо даунгрейдили до 5.2
+
+На прошлой неделе ChatGPT вызвало бурю, анонсировав, что они тихо задаунгрейдили порядка 10% своих клиентов кодекса по соображениям безопасности. Об этом не говорится в интерфейсе, а понять можно только проследив за заголовками запросов и ответов. 
+
+Я тоже попал под раздачу — помните, жаловался, что модель поглупела после релиза. Так вот, это было оно. 
+
+Оказалось, нужно написать в специальную формочку, для чего и как ты будешь использовать новый кодекс, и тебе его включат обратно. У меня…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 7,270</span>
+            <span class="stat-badge">❤️ 89</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/407" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-16</span>
+        </div>
+
+        <div class="post-text">Неделю проболел, продолжаем про вайб-портал 😎
+
+Написал статью о том, зачем его сделал 🙂</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,180</span>
+            <span class="stat-badge">❤️ 21</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/406" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-12</span>
+        </div>
+
+        <div class="post-text">https://youtu.be/OlCjuaOM1QI
+
+Записал видео о том, что такое правила, скиллы и сабагенты.
+
+Enjoy</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 9,190</span>
+            <span class="stat-badge">❤️ 89</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/403" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-11</span>
+        </div>
+
+        <div class="post-text">Ну что, бегом пробовать
+Говорят, если модельку спросить, кто она, то она говорит, что антропиков. Но видимо пофиксили, не смог от нее этого добиться.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 7,800</span>
+            <span class="stat-badge">❤️ 62</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/402" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-10</span>
+        </div>
+
+        <div class="post-text">Как я рисую картинки интерфейсов с помощью нейронок.
+
+Как и для многих, я заменил нейросетями работу дизайнера. 
+
+Прикол же в том, что я вообще не дизайнер. Более того, у меня немного художественный кретинизм. Я понимаю, как выглядит хороший дизайн, но не могу сформулировать, что мне в нем нравится или не нравится. 
+
+Вместе с тем, на рынке есть очень мощные картиночные сетки. Например Nano Banana Pro. Которые очень хорошо справляются с тем, как что-то нарисовать, по очень подробному промпту. 
+
+Но где взять этот промпт? 
+
+Интуитивно пришел в работе в два окна. 
+
+Окно 1. Модель со зрением и хоро…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 7,470</span>
+            <span class="stat-badge">❤️ 117</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/401" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-10</span>
+        </div>
+
+        <div class="post-text">Подписался для прикола на z.ai, буду ждать пятый GLM. 
+
+Хочу узнать у общественности, как его эффективнее всего юзать прямо сейчас. 
+
+— вкорячить вместо кодингового агента? 
+— написать на нем какой-нибудь пайплайн (хочу с виженом, есть у него варианты со зрением или нет)?
+— вообще, как вы используете эти вроде как исполинские лимиты? 
+
+PS По промику — вам скидос 10%, ну и мне приятно.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,530</span>
+            <span class="stat-badge">❤️ 8</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/400" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-09</span>
+        </div>
+
+        <div class="post-text">Ну все товарищи, наша болталка теперь в безопасности. Угроза устранена. Начать читать, какую я эпичную вещь сотворил, вы можете вот тут: 
+
+https://vibeportal.ru/forum/topic/shtosh-nastala-novaia-era-2 (внимание, требуется регистрация, но вы справитесь)
+
+А подробности дам завтра 😎
+
+PS Как вы можете заметить, для комментирования теперь требуется авторизация. Первый ваш камент бот удалит, так что просто напишите фигню, пройдите авторизацию, а потом уже можно по делу (уже делаю удобный фикс для этого)
+
+PSS Флоу с мобильного клиента пока кривой из-за того что телега показывает ссылки во встроенном …</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,870</span>
+            <span class="stat-badge">❤️ 29</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/399" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-09</span>
+        </div>
+
+        <div class="post-text">— Задеплоил проект
+— Админка управляется через телеграм-бота
+— Ключ от бота задается в админке
+
+Просчитался, но где? 🧐😁</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,200</span>
+            <span class="stat-badge">❤️ 60</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/398" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-09</span>
+        </div>
+
+        <div class="post-text">Если вы думаете, что ваш продукт недостаточно хорош, всегда помните об уровне дна продуктов от топовых корпораций, и вам полегчает.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,840</span>
+            <span class="stat-badge">❤️ 76</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/397" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-07</span>
+        </div>
+
+        <div class="post-text">Штош, после выхода модели 5.3, пришлось докупить кодекс за 200 баксов, чтобы иметь больше лимитов.
+
+Он реально настолько хорош. Давно забытое чувство, когда можно не следить за контекстом, и оно просто работает само.
+
+Больше всего боюсь, что скоро понерфят, т.к. это практически правило при выходе сильных моделей.
+
+PS По ощущениям — ничего общего с кодексом 5.2. Абсолютно другая модель, где-то потерялась циферка мажорного релиза.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 7,160</span>
+            <span class="stat-badge">❤️ 94</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/396" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-06</span>
+        </div>
+
+        <div class="post-text">Ну вот, пофиксил 😎
+
+Где сканю уязвимости? В шотганпро. Так и не понял как маркетингово его упаковать. Но работает отменно. Есть мысли как продавать — пишите в личку/каменты, подумаем.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,790</span>
+            <span class="stat-badge">❤️ 15</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/394" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-06</span>
+        </div>
+
+        <div class="post-text">Хотел выложить сегодня в паблик одну штуку. Потом вспомнил, я же вайбкодер. Так что придется чуток подождать 😁</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,050</span>
+            <span class="stat-badge">❤️ 28</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/393" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-06</span>
+        </div>
+
+        <div class="post-text">Я только записал видео о том, какие модельки считаю лучше и для чего, а тут уже две новых вышли. Так недолго и устареть, так что бежим смотреть. Пишите в комментариях, как вы со мной не согласны 😁
+
+https://www.youtube.com/watch?v=fiCC6D18BE0</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,270</span>
+            <span class="stat-badge">❤️ 52</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/392" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-05</span>
+        </div>
+
+        <div class="post-text">Еще надо сказать, все восхищаются длинным контекстом опуса 4.6, он теперь миллион. 
+Так вот, не нужно восхищаться, в контексте главное не длина, а умение с ним работать. И вот тут у моделек никаких прорывов не произошло, иначе бы нам уже об этом трубили на всех углах. Как были эффективными первые пара сотен, так и остались.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,630</span>
+            <span class="stat-badge">❤️ 73</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/391" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-05</span>
+        </div>
+
+        <div class="post-text">10 лет назад так же обсуждали айфоны, как сейчас новые модели 🙂
+
+Вообще, зря они их не релизят красиво, какие-то твиттерские перепалки. Показали бы уже вайб-класс на весь интернет, мы бы оценили.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,720</span>
+            <span class="stat-badge">❤️ 72</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/390" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-04</span>
+        </div>
+
+        <div class="post-text">Кодекс конечно последнее время машина. Такие спеки делает с первого раза — отвал башки. Если еще не, то очень рекомендую попробовать. Входит в подписку ChatGPT, внутри выбирать модель GPT-5.2 High (можно XHigh)</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,220</span>
+            <span class="stat-badge">❤️ 66</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/389" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-04</span>
+        </div>
+
+        <div class="post-text">Мое нетолерантное мнение на новость, что в Xcode завезли агентов для разработки 🙂
+
+Вообще, при разработке под iOS ты с Xcode больше воюешь, чем он тебе помогает. Монструозный пакет в котором большинство вещей сделаны чтобы ты почувствовал боль. 
+
+Поэтому сетап при разработке такой. Пишем проект целиком в условном курсоре/антигравити + кодекс/клод код. И только папочка с приложением открыта в xcode, где ее можно компилировать и смотреть логи.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,310</span>
+            <span class="stat-badge">❤️ 40</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/388" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-03</span>
+        </div>
+
+        <div class="post-text">Блин, уже 1100 в чате, а я обещал анальное тотальное донатное огораживание начиная с 1000. Теряю хватку. Нужно СРОЧНО навайбкодить бота для приема донатов 😈
+
+Пока не сделал — ваш шанс набежать, старичкам обещал бесплатный доступ, это будет сохраняться.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,090</span>
+            <span class="stat-badge">❤️ 75</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/387" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-02</span>
+        </div>
+
+        <div class="post-text" style="color: var(--text-dim); font-style: italic;">[Медиа без текста]</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,990</span>
+            <span class="stat-badge">❤️ 30</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/386" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-31</span>
+        </div>
+
+        <div class="post-text">Вы наверняка слышали уже про реддит для роботов. 
+
+Только вот правда в том, что большая часть сообщений там вовсе не от роботов, а от кожаных троллей, генерирующих типа крутую копипасту. 
+
+Этого терпеть нельзя. Поэтому сдается мне, что скоро изобретут анти-хуман капчу, и пускать внутрь будут при предъявлении доказательства, что это был валидный вызов из датацентра напрямую от LLM, а не через какой-то там домашний компуктер с мясным оператором за креслом 😁</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,550</span>
+            <span class="stat-badge">❤️ 114</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/385" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-30</span>
+        </div>
+
+        <div class="post-text">О трудностях промптинга. 
+
+Подписчица прислала картинку. Говорит — не определил лактозу. 
+
+Смотрю в выходной json. И правда не определил. Хотя на упаковке написано &#34;следовые количества молока&#34;. 
+
+А прикол в том, что выходная структура большая, нужно учесть много параметров состава. Внимание сетки расходуется сразу на кучу вещей, в итоге она скипнула простейший вывод, что данный признак может говорить о лактозе в составе, даже если там это не явно, и влепила confidence по отсутствию 95% (спасибо, что не 100) 
+
+Простой промпт &#34;есть ли тут лактоза&#34;? — спокойно определяет, можете сами проверить гд…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,270</span>
+            <span class="stat-badge">❤️ 110</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/384" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-30</span>
+        </div>
+
+        <div class="post-text">Ура, я зарелизил свою первую аппку. 
+
+Maku: Food &amp; Allergy Scanner
+
+Больше ИИ сканеров богу сканеров.
+Приложенька позволяет проверить состав еды по упаковке и понять, подходит ли это лично тебе. 
+
+Буду благодарен, если попробуете в работе и поставите честную оценку 🙂
+
+Приложение 100% написано с ИИ. Оболочка SwiftUI, сервер на Go. Единственное, где понадобилась помощь человека — подготовить макеты для переводов скриншотов на 30 языков. 
+
+Не скажу что простой процесс, от и до заняло считай два месяца. Очень много времени потратил на ковыряние в экосистеме Apple Apps — там без бутылки не разбереш…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 9,840</span>
+            <span class="stat-badge">❤️ 215</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/383" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-28</span>
+        </div>
+
+        <div class="post-text">Вчера мини-демку реалтайм голосового ввода собрал. Опять 100% локальная модель. 
+
+Причем в базе она НЕ-реалтаймовая, реалтайм сделан алгоритмически — довольно задротский алгоритм, который еще полировать. Можете видеть это по серым частям текста — видно, что они сильно меняются в процессе говорения. Начало + конец тоже хромают. Но это все мелочи, легко поправить. 
+
+Главное, что оно уже работает, клево 😎 Хочу из этой штуки собрать голосовой ввод данных в любые поля. А дальше цепляем к этому агентов, тупой дыряый рантайм, промпт-инъекции и утекшие пароли😁
+
+Кстати, нет ли тут эффекта эхо? Ну типа …</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,650</span>
+            <span class="stat-badge">❤️ 74</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/382" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-27</span>
+        </div>
+
+        <div class="post-text">В связи со всем этими clawdbot, невидимые тексты в документах заиграют новыми красками, если вы понимаете о чем я.
+
+PS А к входящей почте доступ давать — вообще самоубийство</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,650</span>
+            <span class="stat-badge">❤️ 70</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/381" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-27</span>
+        </div>
+
+        <div class="post-text">Запилил себе за вечер транскрибатор на локальных моделях (использую parakeet). 
+
+Очень шустро работает, 30 минут на моей прошке распедаливает где-то за 20 секунд. 
+
+Вот думаю голосовой ввод прикрутить и работу в фоне, чтобы использовать везде, где нужно что-то руками вбивать.
+
+Какие еще фичи добавить?</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,140</span>
+            <span class="stat-badge">❤️ 94</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/380" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-26</span>
+        </div>
+
+        <div class="post-text">Валера Ковальски делает LocalDesk — это такой оупенсорсный claude desktop
+
+Мне понравилась идея, и как оно работает, но не понравился электрон, который там взяли за основу. 
+
+Поэтому на днях я психанул и просто сел переписывать все на Tauri 🙂 В 22:30 начал, в 4 утра уже был работоспособный билд. 
+А Валера за мной еще потом 2 дня дофикшивал 😁
+
+В итоге сформировалась минорная версия 0.07 -&gt; 0.08 в виде полной миграции на другой технологический стек 😁
+
+Это уже второй мой проект на таури, могу сказать, что прикольная технология, если делаете десктоп, то очень серьезно стоит присмотреться. Гораздо …</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,830</span>
+            <span class="stat-badge">❤️ 111</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/379" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-26</span>
+        </div>
+
+        <div class="post-text">Чувак зареверсил настоящие лимиты клод-кода на подписке. 
+
+Взаправду ли это выгоднее покупки кредитов по апи и во сколько раз? 
+
+Ответ — да, выгоднее. Оптимальный тариф — 100 баксов. 
+
+Всю статью можно не читать, самое главное на картинке. На самом деле выгода еще сильнее т.к. в подписке еще и бесплатное чтение кэша. 
+
+Полный текст статьи о том, каким матаном он выявлял эти цифры, и другие подробности истории https://she-llac.com/claude-limits
+
+@gleb_pro_ai</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 7,290</span>
+            <span class="stat-badge">❤️ 59</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/378" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-24</span>
+        </div>
+
+        <div class="post-text">Нахожусь на стадии загрузки приложения в Appstoreconnect
+
+Ох уж эти знаменитые дизайнеры и программисты Apple. Лучше б вайбкодили, ей богу.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,390</span>
+            <span class="stat-badge">❤️ 67</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/377" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-22</span>
+        </div>
+
+        <div class="post-text">Скиллы для агентов — лютая вещь. Попробовал скилл по ресерчу ключевых слов в директе. Работает! Заменяет по сути знания целого спеца. 
+
+Думаю, нас ждут ансамбли и библиотеки скиллов под любые потребности. В каком-то смысле это часть программирования будущего. Не описываем &#34;как сделать&#34;, а ищем описание специалиста, который знает как сделать за нас. А нам остается только промычать что-то похожее на спецификацию 😁
+
+Напомню, что скиллы — очень простая концепция. По сути это промпт, который пристегивается к агенту тогда, когда у него возникает потребность сделать нечто подходящее по описанию. За с…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 7,010</span>
+            <span class="stat-badge">❤️ 69</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/376" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>OpenClaw Telegram Digest</span>
+      <span>2026-04-01 14:51 UTC</span>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

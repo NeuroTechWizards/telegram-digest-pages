@@ -1,0 +1,2841 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@the_ai_architect — AI Digest</title>
+  <meta name="description" content="Посты из Telegram-канала @the_ai_architect">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://neurotechwizards.github.io/telegram-digest-pages/static/styles.css">
+</head>
+<body>
+<div class="app">
+  <header class="hero" style="padding: 32px 0 28px;">
+    <div class="container">
+      <h1 class="hero-title" style="font-size: 1.6rem;">📢 @the_ai_architect</h1>
+      <p class="hero-subtitle">the_ai_architect · 117 постов</p>
+      <p style="margin-top: 8px;">
+        <a href="https://t.me/the_ai_architect" target="_blank" rel="noopener"
+           style="color: #818cf8; font-size: 0.875rem;">Открыть в Telegram →</a>
+        &nbsp;·&nbsp;
+        <a href="https://neurotechwizards.github.io/telegram-digest-pages/" style="color: #818cf8; font-size: 0.875rem;">← Назад к дайджесту</a>
+      </p>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 24px;">
+    <div class="posts-list">
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-31</span>
+        </div>
+
+        <div class="post-text">Claude Code стал лучше. Опять. Его случайно опенсорснули
+
+Как и год назад, кто то из команды Anthropic случайно включил сорс-мапы в релиз и благодаря этому красавчику мы теперь имеем возможность изучить Claude Code получше.
+
+Вот что из интересного удалось нарыть:
+
+- Buddy — тамагочи AI компаньон прямо в Claude Code. Судя по всему, это прекол для 1 апреля
+- Kairos — persistent assistant. Насколько я понял, это альтернатива openClaw. Ну не смогли Анты игнорить спрос на такой продукт
+- Ultraplan — режим планирования, в котором предлагается дать CC 10-30 минут времени для того чтобы передать подго…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 3,410</span>
+            <span class="stat-badge">❤️ 59</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/273" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-30</span>
+        </div>
+
+        <div class="post-text">Claude Code стал лучше. В него добавили Codex plugin
+
+Не шутка! Ребята из Codex выпустили плагин для Claude Code.
+
+Состоит из нескольких команд:
+
+/codex:review — запускает read-only Codex review.
+/codex:adversarial-review — запускает управляемый code review с возможностью задать вопросы по имплементации.
+/codex:rescue — передает задачи в Codex
+
+Менеджить джобы в бэкграунде можно с помощью /codex:status, /codex:result, и /codex:cancel
+
+Установить:
+
+/plugin marketplace add openai/codex-plugin-cc
+/plugin install codex@openai-codex
+/codex:setup
+
+Инструкция тут
+
+Примечательно, что codex exec запуск…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,200</span>
+            <span class="stat-badge">❤️ 90</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/272" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-24</span>
+        </div>
+
+        <div class="post-text">Anthropic выпустили статью о том как их разраб создал себе harness для выполнения длительных задач по кодингу.
+
+Harness design for long-running application development
+
+Думаю, те кто находятся на таком же уровне владения ai coding как я, уже сталкивались с проблемами, описанными в статье.
+
+Автор рассказывает о том, как он пришёл к такому сетапу выполнения больших задач: planner (создает спеки по задаче из промпта пользователя), generator (пишет код) и evaluator (проводит независимое тестирование предыдущего шага).
+
+Вот что мне показалось примечательным:
+◾️ 
+Out of the box, Claude is a poor QA …</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,500</span>
+            <span class="stat-badge">❤️ 74</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/270" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-21</span>
+        </div>
+
+        <div class="post-text">dogfooding — это практика использования собственного продукта или услуг для улучшения этого продукта или услуг
+
+В последние пару дней я занимаюсь подготовкой своей платформы к своему курсу. 
+
+Я не фронтендер, не маркетолог, не инфоцыган, я бэкендер. Поэтому я не знаю точно, как должен выглядеть правильный лендинг, платформа для курсов. Но у меня есть примерное понимание этого, поэтому процесс создания этого всего у меня выглядит примерно так:
+
+1. Обрисовать свою идею в codex — рассказать продуктовую часть (формат курса) и попросить создать модель для моей текущей платформы, где я уже продаю во…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,310</span>
+            <span class="stat-badge">❤️ 31</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/269" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-19</span>
+        </div>
+
+        <div class="post-text">Шумно строил. Часто шиппил. Оставил след
+
+Вот такой кринжовый заголовок GPT 5.4 придумал для моего дашборда со статистикой по гитхабу.
+
+Ринат @llm_under_hood запустил челлендж (суть - показать свою статистику по гиту: коммиты, проекты, loc), а Нейро Ковальский (@neuraldeep) передал мне эстафету, так что делюсь своей статистикой!
+
+Продолжение в комментах
+
+Можно заметить, что как и у многих, больше всего кода стало генериться начиная с октября-ноября — тогда как раз появились наконец-то крутые модели и мы их уже хорошо освоили.
+
+Поделитесь своей статистикой в комментах, а эстафету я передаю @dek…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,140</span>
+            <span class="stat-badge">❤️ 22</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/268" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-16</span>
+        </div>
+
+        <div class="post-text">Решил я тут поставить клешню (openclaw) второй раз в жизни (первый раз было 26 января)
+
+Кейс - дать клешне доступ к git repo и общаться с ним через чатик, просить вносить изменения в репо (это не кодинг, только некоторые заметки). Инпут - фото, аудио. Модель - z.ai (у меня годовая подписка на самом жирном тарифе простаивает)
+
+Решил ставить клешню на VPS, взял один из своих на 3 vcpu, 4 GB ram. 
+Открыл codex app и попросил его настроить мне клешню. Выбрали конфиги, запустили openclaw, итог — 3 ядра и 4 GB ram загружены, сервер завис.
+
+Ок, поехали пробовать следующую клешню.
+
+Мне подсказали попр…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,860</span>
+            <span class="stat-badge">❤️ 38</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/267" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-15</span>
+        </div>
+
+        <div class="post-text">Codex — Мой инструмент на каждый день
+
+📱 Смотреть на YouTube
+
+Успейте попробовать Codex App (приложение) с удвоенными лимитами до 2 апреля.
+
+Обзорное видео на мой текущий инструмент! Показал так же какого уровня задачи я с ним делаю.
+
+Гоу смотреть!
+
+Лайк, репост,
+✔️ Тимур Хахалев про AI Coding, подписывайтесь!</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,980</span>
+            <span class="stat-badge">❤️ 64</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/266" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-14</span>
+        </div>
+
+        <div class="post-text">Как получить первое место в популярном бенчмарке
+
+1. Загружаем себе датасеты бенчмарка (они публичны) 
+2. Проходим их вне конкурса и собираем для себя успешные &#34;траектории&#34;
+3. Зашиваем эти успешные траектории в свой coding agent в виде скилла
+4. При запуске benchmark harness, мы в качестве имени модели передаём туда зашифрованную xor строку вида &lt;model&gt;T&lt;task-name&gt;
+5. Наш coding agent незаметно деобфусцирует имя модели и подкидывает нужный скилл модельке
+6. Наш агент успешно проходит задачу
+7. На всякий случай добавляем sleep(), чтобы не выделяться ещё и по скорости прохождения
+8. Повторяем то…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,220</span>
+            <span class="stat-badge">❤️ 46</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/265" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-10</span>
+        </div>
+
+        <div class="post-text">За вторую половину 2025-го с помощью ai в личном github я сделал в десятки раз больше коммитов, чем за всё время использования github (а это более 5 лет)
+
+На вскидку, метрики сейчас у меня такие. На те задачи, на которые я бы потратил 40-60 часов разработки, сейчас я трачу 8-16 часов; на те, где я тратил бы 8-16 часов сейчас я трачу 2-3 часа
+
+Это даже не столько про повысившуюся скорость создания коммитов, сколько про то, что я в руки получил инструмент, который дает мне возможность творить и реализовывать любые мои идеи, которые раньше я никогда бы не подумал трогать:
+- Свитчер инпутов монито…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,660</span>
+            <span class="stat-badge">❤️ 50</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/264" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-06</span>
+        </div>
+
+        <div class="post-text">5 ценностных моделей AI для бизнеса
+
+OpenAI выпустили сильную статью (у многих будет настольным &#34;учебником&#34; на ближайшее время) и главная мысль там очень простая:
+
+Когда-то в 90-х ритейл не &#34;ускорился с помощью интернета&#34;, а стал e-commerce.
+
+Интернет сначала улучшал отдельные куски старой модели: баннеры, email-рассылки, сайт-витрина.
+
+А потом просто появилась новая модель бизнеса.
+
+OpenAI говорят, что с AI сейчас происходит примерно то же самое.
+
+Большинство компаний пока внедряют AI как набор use case: делаем ai rag chatbot, покупаем подписки copilot, подключаем mcp. Это может давать локаль…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,040</span>
+            <span class="stat-badge">❤️ 57</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/263" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-05</span>
+        </div>
+
+        <div class="post-text">openai сделали очередной it&#39;s revolution, johnny
+
+у них очередное минорное обновление модели gpt 5 которое в который раз является революционным (для меня точно)
+
+https://developers.openai.com/api/docs/guides/latest-model
+
+gpt 5.4 стала офигенно умной моделью (еще лучше чем 5.2) и офигенной в задачах по кодингу (тут еще до конца не уверен, но как минимум не хуже 5.3 codex)
+
+в codex cli добавили Fast mode - за x3 usage вы получите ускоренную генерацию токенов и более быстрое выполнение ваших задач. Почему это важно? Потому что за один рабочий час вы сможете тестировать больше гипотез и выполнять…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,290</span>
+            <span class="stat-badge">❤️ 96</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/262" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-05</span>
+        </div>
+
+        <div class="post-text">С какими типичными проблемами сталкиваются разрабы при попытке внедрить AI Coding
+
+1. Отсутствие тестов и документации.
+Причина - мы привыкли хранить всю информацию о проекте у себя в голове и в чатиках с коллегами. Тесты привыкли проводить вручную, либо заменить их вычиткой и компиляцией кода в голове.
+С агентами очень важно выстраивать такой цикл, в котором агент сможет увидеть результат своей работы, выполнив пару bash команд; получить фидбек и пойти исправить код. 
+
+Это ключевое требование, о котором я говорю на своих консультациях по AI coding.
+
+2. Отсутствие линтеров/форматтеров
+Есть раз…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,260</span>
+            <span class="stat-badge">❤️ 82</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/261" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-28</span>
+        </div>
+
+        <div class="post-text">вы знаете, что я уже много раз хвалил codex, и я задумался о том, что сейчас в моих задачах как будто бы вообще никаких фундаментальных проблем не осталось. и вот это как будто бы вообще нереально, так что решил спросить у своей аудитории, что вы думаете по этому поводу.
+
+какие у вас сейчас есть актуальные проблемы с ai coding? что не получается? что не работает?
+а может быть у вас страх чистого листа и вы не знаете с чего начать?
+
+расскажите об этом и расскажите свой опыт - вы новичок или уже смешарик синьор в ai coding
+
+на всякий случай напоминаю, у меня в чатах (комментах) мат запрещен
+
+ниж…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,690</span>
+            <span class="stat-badge">❤️ 11</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/259" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-27</span>
+        </div>
+
+        <div class="post-text">небольшой пост о том что у меня происходит
+
+я услышал ваш запрос на создание видео по codex cli и начал накидывать сценарий, потратил несколько дней, разбирал свои настройки codex cli, тестил то, что до этого не пробовал, и тут openai разродились релизами и примерно за неделю зарелизили кучу крутых апдейтов для codex и меня потянуло всё это пробовать..
+ - subagents (multi agents, выше про них писал)
+ - войс мод
+ - memory
+ - и многое другое
+
+видимо, Peter Steinberger (создатель openclaw) начал руководить процессом
+
+ субагенты только чего стоят.. я сначала попробовал работать с ними по-старинке …</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 7,070</span>
+            <span class="stat-badge">❤️ 57</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/258" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-19</span>
+        </div>
+
+        <div class="post-text">У codex появились нормальные субагенты!
+
+https://developers.openai.com/codex/multi-agent
+
+Пока что пробую и мне в целом нравится. Где то сделано лучше чем в Claude Code, где то хуже. Но с учетом, что в codex сейчас лучшие модели на рынке, то у Антропиков не остается никаких шансов))
+
+Кодексам осталось ускорить инференс хотя бы на 30% и будем вообще идеально!
+
+Планирую записать видео по codex.
+
+Что вам было бы интересно узнать о нем?
+
+Лайк, репост,
+✔️ Тимур Хахалев про AI Coding, подписывайтесь!</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 9,870</span>
+            <span class="stat-badge">❤️ 126</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/255" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-17</span>
+        </div>
+
+        <div class="post-text">Топ полезных постов канала за последнее время
+
+▪️ knip + субагенты = чистый код после агентской сессии — Как подчищать за агентом
+
+▪️ «Скорее всего» от агента означает, что он не знает. Добавь grounding — «Может быть» от агентов
+
+▪️ Чем умнее модель, тем больше она ленится и выкручивается — Тяжело управлять агентами
+
+▪️ 10 советов по использованию Claude Code — от Бориса Черного, создателя Claude Code
+
+▪️ AI пишет оверинжиниринг по дефолту. Решение через memory bank — Борьба с оверинжинирингом
+
+▪️ Агент = герой фильма «Помни». Создаём ему внешнюю память — Memory Bank для агентов
+
+▪️ Три способ…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 7,490</span>
+            <span class="stat-badge">❤️ 46</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/253" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-16</span>
+        </div>
+
+        <div class="post-text" style="color: var(--text-dim); font-style: italic;">[Медиа без текста]</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,250</span>
+            <span class="stat-badge">❤️ 3</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/251" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-16</span>
+        </div>
+
+        <div class="post-text">Проблема кодинга с AI в том, что оно, внезапно, требует подготовки и с наскока не получится добиться надёжного результата. 
+
+Мои подписчики об этом точно знают
+
+За 2025-й год я перепробовал много различных практик написания кода с AI. Примерно, начиная с лета, эти практики уже устаканились, к концу года скорректировались и вот, мы уже можем говорить о best practices, которые точно работают в AI coding.
+
+Об этих best practices говорят и в OpenAI, и в Anthropic, в Spotify и других гигантах, но с опозданием на несколько месяцев.
+
+Автор канала DEKSDEN Notes подготовил best practices по AI coding, …</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 7,160</span>
+            <span class="stat-badge">❤️ 43</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/249" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-15</span>
+        </div>
+
+        <div class="post-text">Борис Черный продолжает делиться своими лайфхаками по работе с Claude Code
+
+На этой неделе он рассказал про кастомизируемость: настройка терминала, mcp, plugins, skills, agents и многое другое.
+
+Я для вас перевёл его тред и написал статью:
+
+◾️Читать
+
+Если вы ещё не работали с Claude Code, то у меня для вас есть записанная лекция, где я познакомлю вас с фундаментальными знаниями о Claude Code, субагентах, оркестраторе, скиллах, а также, о том, как создавать свои собственные воркфлоу для автономной работы.
+
+◾️ Смотреть
+
+#ai_coding@the_ai_architect
+
+Лайк, репост,
+✔️ Тимур Хахалев про AI Coding, п…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,160</span>
+            <span class="stat-badge">❤️ 46</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/247" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-12</span>
+        </div>
+
+        <div class="post-text">Я тут попробовал agent team от Claude Code
+
+Что это?
+
+Это режим, в котором Claude выступает в роли оркестратора и создаёт агентов под ваши задачи – они общаются между собой, а оркестратор выступает их тим лидом. 
+
+Я дал им задачку: написать очень небольшой сервис из tg mini app и трёх бэкендов на nodejs, в сумме около 1.7k строк. Управлял балом Opus 4.6
+
+Итог – они не справились(
+
+Проблемы были типичные – бэкенд с фронтендом не стыковались, контракты расходятся, часть инструкций пропущено.
+
+Для меня это было удивительно, потому что codex 5.3 в одно лицо и без субагентов справился с этим замеча…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,890</span>
+            <span class="stat-badge">❤️ 50</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/246" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-11</span>
+        </div>
+
+        <div class="post-text">Переход к agentic software development
+
+Грег Брокман, ко-фаундер OpenAI, заявил, что с 31 марта 2026, они в OpenAI переходят к agentic software development (агентной разработке ПО) и стремятся к следующему:
+1) Для любой технической задачи инструментом первой необходимости для человека становится взаимодействие с агентом, а не использование редактора кода или терминала.
+2) Стандартный способ использования агентов людьми явно оценивается как безопасный, но при этом достаточно продуктивный, чтобы для большинства рабочих процессов не требовались дополнительные разрешения.
+
+Чтобы этого достичь, вот…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 7,160</span>
+            <span class="stat-badge">❤️ 83</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/245" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-10</span>
+        </div>
+
+        <div class="post-text">Главный поклонник моделей openai в моем окружении, Макс Этихлид, наконец-то выложил пост со сравнением работы трёх актуальных sota моделей
+
+● GPT-5.3 Codex - кодер, повседневный инструмент инженера
+Шустрый, технически прошаренный, дотошный в исполнении выданных инструкций, но это именно исполнитель
+
+● Opus 4.6 - вайб-генералист
+Быстро что-то сделать с нуля, добавить не самую критичную фичу в существующий проект, но нужно держать в узде, если требуется внимательность и точные изменения
+
+● GPT-5.2 - инженер
+С ним надёжнее всего планировать, обсуждать варианты решений сложных проблем, и в целом д…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,460</span>
+            <span class="stat-badge">❤️ 65</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/244" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-10</span>
+        </div>
+
+        <div class="post-text">«Из 40 разработчиков оставили 10»: как российские компании режут косты и перестраивают разработку под AI Я тут некоторое время назад провёл интервью со своим подписчиком. Он – CTO российского финтеха и технический партнёр в российском интеграторе. Мы поговорили...</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,360</span>
+            <span class="stat-badge">❤️ 30</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/243" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-09</span>
+        </div>
+
+        <div class="post-text">«Из 40 разработчиков оставили 10»: как российские компании режут косты и перестраивают разработку под AI
+
+Я тут некоторое время назад провёл интервью со своим подписчиком. Он – CTO российского финтеха и технический партнёр в российском интеграторе.
+
+Мы поговорили с ним о том, как будет выглядеть будущее IT сектора в России с приходом вайбкодинга.
+По этому случаю я написал статью на Хабр, и это лишь первая часть, а будет ещё вторая.
+
+В первой части про:
+- ускорились в 15 раз с AI кодингом
+- 30% кода в финтехе пишется с AI
+- уволили 75% команды в интеграторе
+- уволили 1500 айтишников в финтехе
+-…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 10,000</span>
+            <span class="stat-badge">❤️ 42</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/242" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-06</span>
+        </div>
+
+        <div class="post-text">Opus 4.6 и Codex 5.3
+
+Вчера с разницей в 10-15 минут OpenAI и Anthropic зарелизили свои новые модели.
+
+Сильно в технические детали я погружаться не буду, об этом вы уже наверняка знаете из других источников, но вот что интересного могу сказать.
+
+Opus 4.6 наконец получил 1M context window: тут мы с вами помним, что важен не размер, а умение им пользоваться. Антропики заявляют, что в тесте, где нужно найти ответы на 8 вопросов из огромного текста (256k и 1m tokens), opus 4.6 набирает 93/100 и 76/100 соответственно. 
+
+Неплохо! 
+
+Для сравнения, Sonnet 4.5 в этом же тесте набирает 10/100 и 18/100. …</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 7,490</span>
+            <span class="stat-badge">❤️ 500</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/241" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-05</span>
+        </div>
+
+        <div class="post-text">Топ полезных постов канала за последнее время
+
+▪️ Промпт для агента от самого создателя Claude Code, Бориса Черного — Code Simplifier
+
+▪️ На 40% меньше токенов на E2E тесты — Agent Browser
+
+▪️ Codex планирует, Claude Code пишет. Видео с практикой — Plan &amp; Act
+
+▪️ Skill от Vercel находит косяки в React-коде после вайбкодинга — React Best Practices
+
+▪️ Из «так себе» в «красиво» за один промпт — Frontend Design Skill
+
+▪️ Запускаем агента из агента через headless режим — Делегирование
+
+▪️ Обёртка для тестов, которая не засоряет контекст выводом PASSED — Tests Output Suppress
+
+▪️ 5 слов для старта …</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,220</span>
+            <span class="stat-badge">❤️ 439</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/240" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-05</span>
+        </div>
+
+        <div class="post-text">Granola MCP
+
+У лучшего meetings summary инструмента наконец-то появился mcp.
+
+Позволяет подключить Granola к вашему любимому ai-чатику.
+
+Кто не знает – Granola это инструмент для записи любых встреч (онлайн и оффлайн), с возможностью потом початиться с этим саммари, вытащить &#34;следующие шаги&#34; по встрече, собрать инсайты, пообщаться с предыдущими записями звонка (этого же собеседника) и тд
+
+Можно подключать как к ChatGPT, Claude Desktop через коннекторы, так и к Claude Code и другим агентам (к codex у меня подключить не вышло).
+
+Какие инструменты доступны?
+
+1. query_granola_meetings
+Natural lang…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,650</span>
+            <span class="stat-badge">❤️ 410</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/239" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-04</span>
+        </div>
+
+        <div class="post-text">Жгите все токены которые можете! Потому что дальше будет дороже Помните, как появился Uber, Яндекс Такси, сервисы доставки еды? По-началу, они демпинговали ценами, работали в убыток, но у них была одна цель - захватить рынок. Когда рынок уже захватили (спустя...</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,930</span>
+            <span class="stat-badge">❤️ 457</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/238" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-04</span>
+        </div>
+
+        <div class="post-text">Жгите все токены которые можете!
+
+Потому что дальше будет дороже
+
+Помните, как появился Uber, Яндекс Такси, сервисы доставки еды? По-началу, они демпинговали ценами, работали в убыток, но у них была одна цель - захватить рынок. Когда рынок уже захватили (спустя 5-8 лет), цены подняли и начали зарабатывать, но нам (пользователям) это уже не очень приятно. 
+
+Так будет и с компаниями провайдерами AI. Сейчас они все работают себе в убыток.
+
+Так что, пока у нас есть дешевые токены, я советую их использовать по-максимуму.
+
+Экспериментируйте, учитесь, изучайте новое, чтобы понимать, как это работает …</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,260</span>
+            <span class="stat-badge">❤️ 450</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/237" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-02</span>
+        </div>
+
+        <div class="post-text">Сегодня отмечается 1 год вайбкодингу.
+
+Ровно год назад Andrej Karpathy опубликовал тот самый твит про вайбкодинг
+(в моей локали твиттер показывает 3 февраля, но вестерны уже начали отмечать)
+
+Так что поздравляю вас с годом вайбкодинга!
+
+Я за этот год определил для себя нишу для своего канала и начал писать до 100% кода с ИИ.
+
+Расскажите, что у вас поменялось за этот год в разработке и около?
+
+#ai_coding@the_ai_architect</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,390</span>
+            <span class="stat-badge">❤️ 446</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/236" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-02</span>
+        </div>
+
+        <div class="post-text">Карпати выдал базу. Полугодовалой давности
+
+На прошлой неделе Andrej Karpathy опять накатал большой пост про AI coding. Я кратко разберу тезисы и дополню своим мнением
+
+◾️ Андрей пишет, что он перешёл от 20% генерации кода агентами и 80% написания кода руками в ноябре, до обратной пропорциональности в декабре. 
+Да, этот человек в 3 февраля 2025 декларировал термин &#34;вайбкодинг&#34; (завтра отмечаем день рождения вайбкодинга, приходите на тортик)
+
+Когда вы адаптируетесь, настроите всё под себя, научитесь этим пользоваться и осознаете, что модель может, а что — нет, вы сможете уже уверенно использова…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,480</span>
+            <span class="stat-badge">❤️ 67</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/233" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-01</span>
+        </div>
+
+        <div class="post-text">Кулинарные советы от создателя Claude Code, Бориса Черного
+
+Он рассказывает, как его разрабы используют Claude Code
+
+1️⃣ Делайте больше параллельно. 
+- 3–5 git worktrees одновременно, в каждом из них своя сессия Claude Code. 
+- коллеги также называют свои рабочие деревья и настраивают алиасы в терминале (`za`, zb, `zc`), чтобы переключаться между ними одним нажатием клавиши.
+
+2️⃣ Plan mode 
+- один Claude Code (CC) пишет план, а затем второй в роли Staff-инженера проверяет его.
+- как только что то идёт не так, ребята из команды сразу возвращаются в режим планирования и переделывают всё заново
+-…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,960</span>
+            <span class="stat-badge">❤️ 105</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/232" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-31</span>
+        </div>
+
+        <div class="post-text">Поначалу Codex кажется *гораздо* более медленным, но когда речь идет о качестве уровня production, он делает всё правильно и по высоким стандартам с первого раза — что в итоге экономит время. Конечно, от него получаешь КУДА меньше дофамина, потому что он...</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,200</span>
+            <span class="stat-badge">❤️ 118</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/231" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-30</span>
+        </div>
+
+        <div class="post-text">Тут за последние пару месяцев тот самый Дядюшка Боб попробовал AI coding и рассказал об этом в своём X
+
+Я на днях отследил его путь и по этому поводу написал статью на Хабр:
+
+https://habr.com/ru/articles/990934/
+(плюсаните статью, кто может, плиз)
+
+TLDR: попробовал grok cli, сейчас на claude code.
+
+Теперь я жду, когда он всё поймёт и попробует codex cli. Думаю, ему понравится.
+
+#ai_coding@the_ai_architect
+
+Лайк, репост,
+✔️ Тимур Хахалев про AI Coding, подписывайтесь!</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,880</span>
+            <span class="stat-badge">❤️ 42</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/230" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-28</span>
+        </div>
+
+        <div class="post-text">Топ-5 инсайтов по внедрению AI-разработки из личной практики
+
+1️⃣ Гигиена контекста и субагенты
+Качество Claude Sonnet критически падает после 70–80k токенов: начинаются пропуски логики и галлюцинации.
+
+Решение: Субагенты. Выноси задачи в изолированные инстансы.
+Метрика: Лимит задачи — 3-4 часа работы мидла (выходит, что одна задача занимает ~50-70k токенов).
+
+2️⃣ Инфраструктура «Memory Bank»
+AGENTS.md и системный промпт не подходят для всей базы знаний проекта.
+
+Архитектура: Папка .memory-bank/ для правил кода и паттернов.
+Эффект: Агент знает, куда пойти за необходимой информацией по проекту.…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,610</span>
+            <span class="stat-badge">❤️ 111</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/229" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-26</span>
+        </div>
+
+        <div class="post-text">Какие задачи AI ускоряет и на сколько?
+
+Anthropic пару недель назад выпустили новый экономический рисерч, и вот что мне показалось интересным
+
+▪️ Чем выше уровень образования, требуемый для задачи, тем сильнее AI ускоряет работу. Задачи уровня средней школы ускоряются в 9 раз, а уровня колледжа — в 12 раз. Это подтверждает, что выгоду от AI получают в основном высококвалифицированные специалисты.
+
+▪️ С ростом сложности надежность падает, но незначительно (с 70% для простых задач до 66% для сложных), поэтому общий эффект ускорения остается положительным.
+
+▪️ Пользователи Claude выполняют задачи…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,100</span>
+            <span class="stat-badge">❤️ 27</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/227" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-24</span>
+        </div>
+
+        <div class="post-text">Обновил template repository для тех, кто купил доступ к Claude Code Deep Dive и Plan &amp; Act Разбор
+
+- Улучшил работоспособность Stop hook для Claude Code
+- Сделал раздел со скиллами более удобным, собрал там скиллы которые я использую сам, про которые писал на канале, а так же про те, которые не писал
+
+Этот темплейт планирую и в будущем обновлять, так что можно заходить туда раз в неделю за новыми апдейтами</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,850</span>
+            <span class="stat-badge">❤️ 26</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/226" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-24</span>
+        </div>
+
+        <div class="post-text">Хорошие мысли про то, кем теперь станут разработчики</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,110</span>
+            <span class="stat-badge">❤️ 3</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/224" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-24</span>
+        </div>
+
+        <div class="post-text">Продолжение мысли про кодинг агентов.
+
+Когда говорят &#34;агенты будут писать код&#34;, большинство слышит &#34;агенты заменят разработчиков&#34;. Но правильное прочтение другое: работа смещается.
+
+Десятилетиями основная работа в разработке была в переводе. PM формулирует что нужно → дизайнер переводит в макеты → разработчик переводит в код. Каждый этап перевода съедал время и создавал потери. Кто работал в больших командах, знает сколько всего теряется между &#34;что имел в виду PM&#34; и &#34;что в итоге написал разработчик&#34;.
+
+Сейчас этап перевода в код схлопывается. Агент берёт задачу, контекст, критерии — и выдаёт ра…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,660</span>
+            <span class="stat-badge">❤️ 102</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/225" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-23</span>
+        </div>
+
+        <div class="post-text">Поначалу Codex кажется *гораздо* более медленным, но когда речь идет о качестве уровня production, он делает всё правильно и по высоким стандартам с первого раза — что в итоге экономит время.
+
+Конечно, от него получаешь КУДА меньше дофамина, потому что он медленный и «бездушный» по сравнению с Claude Code, на который подсаживаешься как на чистый кр*к...
+
+Отзыв разработчика о переходе с Claude Code на Codex
+
+Знакомо?)
+
+Мне да, потому что модели GPT капец как сильно следуют инструкциям! 
+
+Сегодня нужно было запустить парочку SQL кверей по БД, чтобы получить данные. Я дал эту задачу кодексу и в п…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,010</span>
+            <span class="stat-badge">❤️ 90</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/223" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-23</span>
+        </div>
+
+        <div class="post-text">Вы когда нибудь испытывали учащенное сердцебиение, подкашивающиеся колени, как только вам приходила мысль, что однажды, вам придётся восстанавливать упавший продакшен и пропавшие базы данных? 
+У меня обычно такое состояние и случается.
+
+Тут появилась мысль, что мы можем проводить &#34;учения по безопасности&#34;, прямо как в школе 🙂
+
+Пост был написан ещё неделю назад, но сегодня у Коли вышел пост о том, как можно вайбкодить с телефона, Валера его репостнул и в комментах у парней много народа переживает о том, что агент может что-нибудь снести и потом пиши-пропало. Так вот, есть решение этой проблемы
+
+…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,570</span>
+            <span class="stat-badge">❤️ 47</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/221" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-21</span>
+        </div>
+
+        <div class="post-text">Plan &amp; Act – Разбор Работающего AI Coding Workflow
+
+Выпускаю запись моего второго воркшопа из новогодней серии, первый был про Claude Code.
+
+За 2 часа 15 минут мы с участниками воркшопа разобрали мой Plan &amp; Act подход, разобрались почему это работает именно так, почему с AI coding теперь важно строить план перед работой, а написание кода можно полностью автоматизировать с агентами.
+
+Участники задавали мне массу вопросов, а я на них отвечал, и таким образом мы постарались вытянуть из меня весь мой опыт в AI coding.
+
+◾️ Формат: разбор и Q&amp;A
+Продолжительность: 2 часа 15 минут
+
+◾️ Кому подойдет:
+-…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,810</span>
+            <span class="stat-badge">❤️ 64</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/220" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-20</span>
+        </div>
+
+        <div class="post-text">Claude Code со звуком
+
+Это вам подарок на пятницу, но выкладываю сегодня
+
+Мой подписчик навайбкодил плагин для Claude Code, которое добавляет прекольные звуки из Warcraft (с возможностью добавить и другие саундпаки)
+
+Посмотрите демо, это офигенно!
+
+Я хоть и не фанат Warcraft, но на фразу от агента &#34;Нужно больше золота&#34; улыбка на лице сразу появляется.
+
+1. Установить marketplace:
+/plugin marketplace add newink/codingagents
+
+2. Установить plugin
+/plugin install claudecode-sounds@codingagents
+
+3. Перезагрузить Claude Code
+
+4. Тест звука
+/claudecode-sounds:test-sounds
+
+Есть даже команда, которая п…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,860</span>
+            <span class="stat-badge">❤️ 69</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/219" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-20</span>
+        </div>
+
+        <div class="post-text">Если вы ещё не используете Frontend Design Skill от Anthropic, то многое теряете!
+
+Этот скилл пощебетает с моделькой на фронтендерском языке и объяснить, что нужно сделать красиво.
+
+Skill установить можно и в Claude Code и в Codex CLI
+
+На скриншоте пример моего сайта с RSS лентой канала, до и после.
+Запрос звучал примерно так:
+
+I would like to have a minimalistic modern design with some smooth animations
+
+📱 Github
+
+#ai_coding@the_ai_architect
+
+Лайк, репост,
+✔️ Тимур Хахалев про AI Coding, подписывайтесь!</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,690</span>
+            <span class="stat-badge">❤️ 49</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/218" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-19</span>
+        </div>
+
+        <div class="post-text">Я использую chrome dev tools mcp для E2E тестов
+
+Вношу изменения на фронтенд и потом запускаю тесты, чтобы убедиться в работоспособности системы. 
+В репо у меня хранятся user journeys – описание пути пользователя, который заходит на сайт. Я храню это и для понимания работы системы, и для E2E тестов. 
+
+Как работают тесты
+
+Я даю задачу агенту прочитать user journeys и воспроизвести их при помощи chrome dev tools, собрать ошибки и пофиксить их. 
+
+Основная проблема - каждый из таких тестов занимает приличное количество токенов контекста – 40-70k токенов.
+
+На прошлой неделе Vercel выпустил свой hea…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 8,230</span>
+            <span class="stat-badge">❤️ 104</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/217" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-17</span>
+        </div>
+
+        <div class="post-text">завершил наконец монтаж воркшопа про plan &amp; act
+
+это получился очень концентрированный моим опытом видос продолжительность 2 часа с лишним. 
+
+уже даже думаю о том что 6к рублей за такое ставить это слишком мало 😂 думал может на два разделить, но решил что не, пока что пару недель после релиза это будет стоить 6к рублей всего лишь. 
+
+мы начали с разбора моего plan&amp;act, но участники воркшопа насыпали так много хороших вопросов, что получилось прям извлечение почти всего моего опыта в ai coding.
+
+это точно не для начинающих, а для тех кто уже имеет какой-то опыт в ai coding, но хочет ещё лучше ра…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,410</span>
+            <span class="stat-badge">❤️ 59</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/216" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-16</span>
+        </div>
+
+        <div class="post-text">React Best Practices Skill от Vercel
+
+Vercel выпустили свои Skills и самым полезным скиллом там я считаю React Best Practices – ребята просто упаковали годы накопленного опыта по React и Next.js в один skill и теперь мы можем применять его на наших проектах, чтобы выполнить рефакторинг и оптимизировать перформанс.
+
+Для своего сайта ai.khakhalev.com я применил этот скилл и агенты нашли кучу проблем. Этот сайт я, конечно же, вайбкодил.
+
+На видео я показываю процесс использования скилла, нахождение проблем и их решение с помощью субагентов Claude Code.
+
+Если вы ещё не работаете в Claude Code, то …</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,370</span>
+            <span class="stat-badge">❤️ 50</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/214" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-14</span>
+        </div>
+
+        <div class="post-text">Наконец-то, это случилось!
+
+Начинаю выкладывать записи моих воркшопов, которые проводил в новогодние праздники.
+
+Первым будет воркшоп по Claude Code, но на самом деле это скорее Deep Dive лекция – получилось очень подробно, с разбором базы – что такое агент и как работает контекст. Я считаю, что каждый, кто хочет работать с кодинговыми агентами на профессиональном уровне, должны понимать, как это работает под капотом.
+
+Кому подойдёт
+◾️ вы уже слышали или пробовали Claude Code / Cursor / AI-агентов
+◾️ вы хотите понять как правильно выстраивать сложный workflow
+◾️ вы ловили себя на мысли: «я вро…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,640</span>
+            <span class="stat-badge">❤️ 109</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/212" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-13</span>
+        </div>
+
+        <div class="post-text">Илон Маск умеет нагонять хайп, но сотрудники xAI пользуются Cursor
+
+Помимо этого, они пользуются моделями Anthropic.
+
+Предыстория:
+А на прошлой неделе Anthropic подсчитали копеечку и провели ревизию, как их модели используются в продуктах на рынке. Итог - большинству разработчиков кодинговых агентов, которые давали возможность использовать подписку Claude Code в своих продуктах, разослали письма счастья, в которых Anthropic напомнили ребятам о том, что это вообще-то нарушение ToS и так нельзя. Итог - пришлось вырезать такой функционал, а конкуренты хайпанули на волне негатива.
+
+Ну и ребят из x…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,630</span>
+            <span class="stat-badge">❤️ 32</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/211" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-13</span>
+        </div>
+
+        <div class="post-text">Claude Code For Normies
+
+Тут сегодня Anthropic выпустили Cowork – это Claude Code для не-программистов. 
+
+В целом, почти весь этот функционал был доступен и раньше и через Claude Code и Claude Desktop, но сейчас они решили собрать это воедино и упростить UI/UX для не-прогеров.
+
+Краткий обзор Cowork на живом примере можно почитать у Саши Полякова, еще один разбор с набором ссылок для дополнительного чтения у Рефата, и ещё одно демо у Кости.
+
+А я вкратце расскажу о том, что мне удалось раздобыть интересного про технический бэкграунд этого продукта.
+За проектом стоит Felix Rieseberg, Head of Engi…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,920</span>
+            <span class="stat-badge">❤️ 81</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/210" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-12</span>
+        </div>
+
+        <div class="post-text">Если вы ещё не применяете AI в вашей компании, you ngmi
+
+Josh Miller из The Browser Company, создатель Dia Browser, рассказал, что их команда с Claude Code проводит намного больше экспериментов и быстрее учится.
+
+Их дизайнеры отправляют PR направо-налево, не-инженеры создают прототипы своих идей, а у разработчиков появляется ресурс для смелых экспериментов и всё это — без ущерба для основных задач, за которые они несут ответственность.
+
+Вот инсайты, которые уже очевидны для The Browser Company:
+1. Они будут платить выше рынка за исключительный талант, особенно людям, которые уже нативно владею…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,720</span>
+            <span class="stat-badge">❤️ 50</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/209" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-09</span>
+        </div>
+
+        <div class="post-text">Рубрика Кулинарные советы от Бориса Черного
+
+Борис, создатель Claude Code, релизит code-simplifier агента, которого они в команде Claude Code используют самостоятельно.
+
+Этот агент рефакторит код после долгой кодинговой сессии - упрощает его, делая более понятным, консистентным и поддерживаемым, сохраняя прежний функционал
+
+Как установить?
+Команды изнутри Claude Code
+
+/plugin marketplace update claude-plugins-official
+/plugin install code-simplifier
+
+📱 Github source code
+
+Сохраняю себе и делюсь с вами.
+
+#ai_coding@the_ai_architect
+
+Лайк, репост,
+✔️ Тимур Хахалев про AI Coding, подписывайтесь!</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 8,850</span>
+            <span class="stat-badge">❤️ 70</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/208" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-08</span>
+        </div>
+
+        <div class="post-text">Тут Anthropic напряглись и за праздники накопили очень много обновлений для Claude Code и обновили минорную версию - 2.1.1
+
+В этой версии около сотни новых коммитов, в основном, мелкофиксы, но встречаются и реально годные обновления, вот мой топ:
+
+1. Починили LSP, теперь у Claude Code есть полноценная поддержка. 
+
+Что это дает? 
+Это дает более эффективную навигацию по кодовой базе. Прямо как в вашем любимом IDE, когда вы зажимаете кнопку и кликаете мышкой на имя используемой функции и проваливаетесь на строчку, где эта функция была создана. Вот теперь Claude Code сможет делать тоже самое.
+
+2. …</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,820</span>
+            <span class="stat-badge">❤️ 61</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/207" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-03</span>
+        </div>
+
+        <div class="post-text">Как и обещал, открываю свободные продажи на свои воркшопы, которые пройдут 6-9 января.
+
+Каждый воркшоп будет записан и доступ будет у участников.
+
+Спустя время, эти записи можно будет купить, так что если вы не сможете присутствовать на одном из воркшопов, то можно будет потом посмотреть его в записи.
+
+Plan &amp; Act В Деталях - 6 января, 18:00 по МСК, осталось 2 из 8 мест, https://ai.khakhalev.com/offers/plan-n-act-in-details/
+
+SOLD OUT Введение в Claude Code - 8 января, 18:00 по МСК, осталось 5 мест 1 место, https://ai.khakhalev.com/offers/intro-claude-code/
+
+Practical Workshop - 9 января, 18:00…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,990</span>
+            <span class="stat-badge">❤️ 45</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/205" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-31</span>
+        </div>
+
+        <div class="post-text">С Новым Годом!!! 🎄🎆
+
+Дорогие подписчики, поздравляю вас с Новым Годом! 🎇
+
+Желаю счастья вам и вашим близким! Всех благ!!! 🏡🛷
+
+Пусть Новый Год принесёт вам всем ещё больше продуктивности, успеха и счастья! 🥳</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,630</span>
+            <span class="stat-badge">❤️ 93</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/204" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-29</span>
+        </div>
+
+        <div class="post-text">Сразу в догонку апдейт по Новогоднему воркшопу.
+Спасибо всем, кто оставил заявку в форме! 
+
+Я уже определился с датами проведения воркшопов (6, 8 и 9 января) и написал всем, кто оставлял заявку и дал возможность приобрести доступ в качестве early birds - 8 человек на каждое из трёх мероприятий.
+
+Если останутся места, то открою свободную продажу для всех желающих 3 января. То же касается и остальных, кто оставит заявку начиная с сегодняшнего дня.
+
+После проведения воркшопов будут доступны к покупке записи. Стоимость и когда это будет доступно, напишу отдельно уже после 12 января.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,000</span>
+            <span class="stat-badge">❤️ 12</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/203" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-29</span>
+        </div>
+
+        <div class="post-text">Мои личные итоги года
+
+31 декабря 2024 я отметил 102 подписчика на своём канале
+
+Сегодня, 29 декабря 2025, вас уже 5535 человек! 
+пока не отписались несколько после этого поста
+
+Да, одно из моих достижений в карьере за этот год – этот канал!
+
+Этот год был крутым.
+
+◾️ Я определился с фокусом контента по AI.
+
+Ещё в начале весны я не был уверен, на чем сфокусироваться, а в конце весны Коля (@oestick) собрал авторов маленьких (от 100 подписчиков! на тот момент) тг каналов про AI и предложил двигаться вместе. И вот тогда, я уже осознал, что мне интереснее всего рассказывать про AI Coding.
+
+Спустя п…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,380</span>
+            <span class="stat-badge">❤️ 57</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/202" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-24</span>
+        </div>
+
+        <div class="post-text">Итоги опроса Главное событие в AI Coding
+
+На прошлой неделе мы с авторами других тг-каналов про AI проводили опросы по итогам года в AI, и сегодня мы делимся с вами результатами.
+
+1️⃣ Вы выбрали, что главным событием года было Появление Vibe Coding! (249 человек проголосовали за этот вариант)
+
+2️⃣ На втором месте — Релиз Claude Code (164 чел)
+
+3️⃣ На третьем — Релизы Claude моделей Sonnet, Opus, Haiku (89 чел)
+
+Всего в опросе приняло участие 747 человек.
+
+Я проголосовал за релиз Claude моделей в этом году и объясню, почему так.
+
+В октябре 2024 вышла модель Claude Sonnet 3.6, которая дала ощути…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,690</span>
+            <span class="stat-badge">❤️ 31</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/201" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-23</span>
+        </div>
+
+        <div class="post-text">Навайбкодил rust приложение С недавнего времени я уже часто работаю и на маке и на ПК и захотелось иметь возможность быстро переключаться. Появилась проблема - нужно программно переключать инпут монитора между ПК (винда) и маком. Они у меня подключены...</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,920</span>
+            <span class="stat-badge">❤️ 32</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/200" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-23</span>
+        </div>
+
+        <div class="post-text">Навайбкодил rust приложение
+
+С недавнего времени я уже часто работаю и на маке и на ПК и захотелось иметь возможность быстро переключаться.
+
+Появилась проблема - нужно программно переключать инпут монитора между ПК (винда) и маком. 
+
+Они у меня подключены через Display Port и USB-C. 
+
+Поспрашивал ChatGPT решения - он предлагал kvm устройство (у меня в мониторе это уже есть, переключается из меню, но это долго), предлагал софт ClickMonitorDDC (для винды) – запустилось и работало ок) и разный софт для мака (не запустился). Решил попробовать написать что то своё.
+
+Открыл codex cli, объяснил задач…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,300</span>
+            <span class="stat-badge">❤️ 79</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/199" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-22</span>
+        </div>
+
+        <div class="post-text">У китайцев вышла новая модель! z.ai GLM-4.7
+
+https://docs.z.ai/guides/llm/glm-4.7
+
+В доках пишут, что новая модель теперь фокусируется на выполнении задач, а не просто на написании кода!
+
+Так же там писалось, что новая модель обходит sonnet 4.5 и GPT-5.1 в некоторых бенчах, но теперь доку отредачили и убрали упоминание моделей.
+
+attained an open-source SOTA score of 84.8 on LiveCodeBench V6, surpassing Claude Sonnet 4.5.
+
+achieved open-source SOTA in the AIME 2025 math competition, outperforming Claude Sonnet 4.5 and GPT-5.1; scored 42% on the HLE (“Human Last Exam”) benchmark, representing a …</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,860</span>
+            <span class="stat-badge">❤️ 39</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/198" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-22</span>
+        </div>
+
+        <div class="post-text">Сколько бы хайпа gemini cli не уделялось, но до сих пор всё работает так, будто этот продукт разрабатывает маленький стартапчик на 3 чувака и они вот месяц назад зарелизились.
+
+Чуваки просто добавили костыль, который замечает &#34;луп&#34; модели, когда она сходит с ума и пытается повторить свои действия 🙈
+
+#ai_coding@the_ai_architect
+✔️ Тимур Хахалев про AI Coding, подписывайтесь!</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,030</span>
+            <span class="stat-badge">❤️ 36</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/197" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-20</span>
+        </div>
+
+        <div class="post-text">Пару недель назад я выложил видео про свой текущий подход к работе и увидел что людям это зашло - для первого полноценного видео на ютубе собрал 1.6к просмотров, 68 лайков, 25 комментов и несколько проведённых консультаций, где я в деталях показал как у меня это всё работает.
+
+Так же, за несколько месяцев консультаций у меня появились парочка проверенных лекций: про Claude Code и Plan&amp;Act подход.
+
+Я решил провести воркшоп-сессии, где хочу поделиться своим опытом и знаниями с вами.
+
+У меня есть 1 практический воркшоп и 3 теоретические лекции, которые я хотел бы вам предложить:
+
+Теоретические ле…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,540</span>
+            <span class="stat-badge">❤️ 49</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/196" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-19</span>
+        </div>
+
+        <div class="post-text">Небольшой отзыв по Antigravity
+
+В последнее время чаще использую Antigravity. Мне очень нравится там две особенности:
+- Opus 4.5 почти бесконечный
+- Классная работа с браузером из коробки
+
+На днях я много работал с Opus 4.5 – делал фронтенд и только спустя часа 4 закончились лимиты. Нужно было ждать ещё где-то 5 часов. Далее можно было пользоваться только Gemini 3 Pro.
+
+Попробовал ещё и Gemini 3 Flash – модель неплохая, очень быстрая, по бенчам рвёт чуть ли не всех, но в E2E тесте не смогла разобраться с кастомным селектором поля и тупила. На простые задачки её можно натравить.
+
+Но больше всег…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,610</span>
+            <span class="stat-badge">❤️ 42</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/195" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-17</span>
+        </div>
+
+        <div class="post-text">Настало время подведения итогов года!
+
+2025-й выдался очень насыщенным на обновления в AI и в особенности в AI Coding!
+
+Мы с ребятами собрались и решили провести голосования по разным темам.
+
+Я выбрал тему Событие 2025 года в AI Coding
+
+И вот кандидаты
+
+◾️ Появление Vibe Coding
+Можем ли мы представить себе работу без вайб-кодинга после того самого судьбоносного твита в феврале 2025? Я - нет
+
+◾️ Релизы Claude моделей - Sonnet, Opus, Haiku
+А можем ли мы представить себе вайб-кодинг без моделей Anthropic? Я - тоже нет. Кстати, за этот год сменилось 4!! поколения модели Claude - 3.7, 4, 4.1, 4.5! …</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,000</span>
+            <span class="stat-badge">❤️ 26</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/193" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-17</span>
+        </div>
+
+        <div class="post-text" style="color: var(--text-dim); font-style: italic;">[Медиа без текста]</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,350</span>
+            <span class="stat-badge">❤️ 6</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/194" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-12</span>
+        </div>
+
+        <div class="post-text">Результаты опроса практиков AI Coding
+
+На прошлой неделе мы создали опросник по AI Coding, собрали около 80 осознанных ответов и делимся с вами ключевыми инсайтами.
+
+Я покажу интересные цифры, которыми поделились участники опроса.
+
+Как изменилась эффективность при использовании AI Coding
+
+1. Full-stack разработчик
+Задача: Написание 630 тестов.
+Результат: Сделано за 6 часов (4 часа кодинга + 2 часа планирования).
+Сравнение: Оценка ручной работы составляла 110 часов.
+Выигрыш: ~18 раз.
+
+2. Engineering Manager / CTO
+Задача: Апгрейд фреймворка (Ruby on Rails 5 -&gt; 8), затронуто 500 файлов.
+Результат…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 7,560</span>
+            <span class="stat-badge">❤️ 45</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/192" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-11</span>
+        </div>
+
+        <div class="post-text">Codex CLI Skills и Subagent
+
+Ну, почти
+
+Неделю назад в сети было замечено, что в codex cli добавили Skills прямо как в Claude Code. Доступно пока что только в alpha версиях и с парочкой приседаний, но оно работает!
+
+Сегодня мне пришла в голову идея из подручных средств собрать субагента для codex cli))
+
+Суть заключается в том, что мы инструктируем codex cli как запускать самого себя же в режиме headless.
+
+По этому поводу записал демо видео и подготовил репо с инструкциями:
+📱 Github
+📱 YouTube
+
+✔️ Timur Khakhalev про AI Coding, подписывайтесь!
+⭐️ Консультации по AI Coding</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,150</span>
+            <span class="stat-badge">❤️ 34</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/191" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-10</span>
+        </div>
+
+        <div class="post-text">Ещё раз про Context Engineering и Feedback Loop
+
+Возможно, вы знаете, что при работе с моделями типа Sonnet, я советую держать контекстное окно в пределах 100к токенов, а ещё лучше до 80к, потому что дальше – больно. Качество ухудшается, лимиты в Claude Code тратятся заметно быстрее.
+
+Я тут на просторах интернета наткнулся на такое же мнение и обрадовался, что я не один это заметил.
+
+Тут автор пишет про тесты и советует убирать &#34;TESTS PASSED&#34; строки из вывода инструментов, которые запускают тесты. 
+Обычно, когда мы запускаем npm run test команды, то видим несколько экранов строк, которые говор…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,000</span>
+            <span class="stat-badge">❤️ 65</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/190" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-10</span>
+        </div>
+
+        <div class="post-text">Claude Code Wrapped!
+
+в версии 2.0.64 добавили команду /stats, которая показывает статистику.
+
+Криво, косо, подсчёт неверный, но прикольно 😁
+
+Делитесь вашей статой в комментах</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,160</span>
+            <span class="stat-badge">❤️ 24</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/188" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-09</span>
+        </div>
+
+        <div class="post-text">&gt; no, web-app/.env already will have these variables. Do not specify them again 
+
+● You&#39;re absolutely right! The env_file: - apps/web-app/.env already handles it. Let me remove the redundant environment section:
+
+В docker compose + Dockerfile есть штук 5 способов передать env variables для приложения.
+
+Мне удобен подход, когда мы храним весь файл .env в одной переменной в github/gitlab - т. е. просто создаем новую переменную WEB_APP_ENV_FILE и кладем туда контент .env.
+
+Далее, во время ci/cd, берем значения оттуда, создаем файл .env рядом с сорсами приложения и билдим.
+
+В compose.yaml я указыв…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,160</span>
+            <span class="stat-badge">❤️ 39</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/186" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-08</span>
+        </div>
+
+        <div class="post-text">Plan &amp; Act на Практике
+
+Ссылка:
+https://youtu.be/Xf0xFpvaIcY
+
+Я использую Codex CLI для планирования и Claude Code для имплементации кода. 
+
+Чтобы показать, как это работает на практике, решил записать видео. Пишите в комментах на ютубе, как вам? Насколько понятно?
+
+Да, при записи видео возникли некоторые проблемы 🌚, но думаю так даже интереснее. В будущем планирую записать ещё видео со своим подходом.
+
+#ai_codi@the_ai_architect 
+
+✔️ Timur Khakhalev про AI Coding, подписывайтесь!
+⭐️ Консультации по AI Coding</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,300</span>
+            <span class="stat-badge">❤️ 103</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/185" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-04</span>
+        </div>
+
+        <div class="post-text">Gemini 3 – лучшая модель для кодинга
+
+Нет, серьёзно?
+
+А как же Claude Opus 4.5? А GPT-5.1-Codex-Max-Extra-High?
+
+Весь 2025-й год обсуждения в AI коммьюнити проходят примерно по такому сценарию. 
+Знакомо? Узнали? 😁
+
+Всё дело в том, что у каждого человека есть своё понимание хорошего, каждый по-своему позволяет использовать AI в работе. Кто-то доверяет AI писать только парочку функций в проекте, а кто-то полностью делегирует AI работу с кодом.
+Получается, что у людей разные кейсы использования AI Coding, а как сравнивать это – непонятно. 
+Где грань между эффективным использованием и профессионал…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,480</span>
+            <span class="stat-badge">❤️ 27</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/183" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-01</span>
+        </div>
+
+        <div class="post-text">короче, на выходных я записал видосик того, как я работаю с codex cli и CC по своему подходу plan&amp;act. 
+
+конечно, получилось не с первого раза)) сначала снял 40 минут, потом ради интереса стопнул видос и обнаружил, что видео сжалось ужасно в OBS)) пришлось перезаписывать.
+
+на втором тейке к концу работы один субагент ни в какую не мог нормально вызвать codex cli, пришлось разбираться что не так и вручную выполнять работу этого субагента. 
+
+в конце концов задачи были выполнены, но не так красиво, как я себе это представлял. 
+
+вам такое было бы интересно посмотреть? или нужен идеальный проход?
+
+…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,570</span>
+            <span class="stat-badge">❤️ 199</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/182" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-11-28</span>
+        </div>
+
+        <div class="post-text">Письмо авторам телеграм-каналов
+
+- Может быть покапитанствую местами - но куда ж без этого)
+- Там на самом деле нет откровений, всё уже сообществом придумано и опробовано )
+- Чет вообще ничего писать не хочется
+
+В последнее время часто слышу мнение от самих авторов, что им не о чем писать. Всё уже было написано ранее другими людьми, а я не хочу повторяться, капитанствовать, это и так всем очевидно, все всё знают, я не хочу ничего писать.
+
+Ребята, не надо так!!!
+
+Я прошу вас, пишите самые очевидные для вас вещи, которые вы знаете! Будьте капитанами очевидности!
+
+Да, кому то это будет очевидно и…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,840</span>
+            <span class="stat-badge">❤️ 125</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/181" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-11-27</span>
+        </div>
+
+        <div class="post-text">Как подчищать за агентом
+
+Если кто не в курсе, то существует такой инструмент — knip (TypeScript). Он позволяет найти в вашем проекте неиспользуемые части кода. Работает плоховастенько (false positive) и довольно медленно, но если учитывать эти минусы, то это довольно неплохой инструмент для того, чтобы отлавливать накопившийся мусор после работы вашего агента.
+
+Что важно помнить перед использованием этого инструмента:
+- knip может возвращать false positive — т. е. некоторые части кода он может пометить как неиспользуемые, но на самом деле это не так.
+- важно &#34;сохраниться&#34; коммитом перед начал…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,250</span>
+            <span class="stat-badge">❤️ 49</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/180" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-11-25</span>
+        </div>
+
+        <div class="post-text">Ещё одно обновление от Anthropic за вчера
+
+Обновился Claude Desktop и туда добавили Claude Code. 
+Теперь у CC есть красивый GUI! Функционал пока что ограничен – например, отсюда нельзя запустить субагентов, но выглядит красиво!
+
+На самом деле, CC Desktop это такой &#34;мостик&#34; между CC Web и CC CLI – работает локально, но в git worktrees, что позволяет в один миг перенести работу в Claude Code Web.
+ 
+Доступно и на MacOS и на Windows, но на винде переключатель на CC почему-то просто редиректит в CC web версию )) так что работает пока что только на маке.
+
+Добавили поддержку файла .worktreeinclude – …</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,490</span>
+            <span class="stat-badge">❤️ 35</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/178" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-11-25</span>
+        </div>
+
+        <div class="post-text">Вчера Anthropic выпустили очень жирный релиз – Opus 4.5, который опять является the best model in the world for coding, agents, and computer use, и теперь стал дешевле в 3 раза! Эту новость вы наверняка слышали и в других источниках, но я хотел рассказать об интересных обновлениях Сlaude Developer Platform, которое выпустили вместе с новым Опусом.
+
+1. Tool Search Tool – Антропики прочитали мой пост и узнали, что github mcp жрёт очень дофига токенов! Поэтому, они придумали сделать тул, который будет искать другие тулы. 
+
+Работает очень просто: вы, как разработчик MCP сервера можете пометить каж…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,500</span>
+            <span class="stat-badge">❤️ 41</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/177" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-11-21</span>
+        </div>
+
+        <div class="post-text">Я участвую в ERC3
+
+Ринат Абдуллин, автор канала LLM под капотом вот уже в третий раз проводит Enterprise RAG Challenge. Первые раунды были про RAG — ответить на вопросы, найдя информацию в сотнях PDF, каждая по 10-100 Mb.
+
+Новый раунд — про агентов. Необходимо построить систему на агентах, которая сможет пройти бенчмарки.
+
+Пример задачи из бенчмарка:
+Buy 24 sodas as cheap as possible. Coupons: SALEX (when buying a lot of 6pk), BULK24 (for 24pk), COMBO (when buying 6pk and 12pk)
+
+Зачем участвовать в этом челлендже?
+
+▪️ показать своё кунг-фу, как можно решить задачу с помощью агентов.
+
+▪️ приз -…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,940</span>
+            <span class="stat-badge">❤️ 45</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/176" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-11-20</span>
+        </div>
+
+        <div class="post-text">Channel name was changed to «Тимур Хахалев про AI Coding»</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+          </div>
+          <a href="https://t.me/the_ai_architect/175" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-11-18</span>
+        </div>
+
+        <div class="post-text">Вот несколько интересных особенностей Antigravity ◼️ Судя по всему, новый форк VSCode был разработан под руководством Varun Mohan – он бывший фаундер Windsurf, попал в DeepMind летом 2025 после того, как развалилась сделка о покупке Виндсёрфа компанией OpenAI...</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,740</span>
+            <span class="stat-badge">❤️ 38</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/174" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-11-18</span>
+        </div>
+
+        <div class="post-text">Вот несколько интересных особенностей Antigravity
+
+◼️ Судя по всему, новый форк VSCode был разработан под руководством Varun Mohan – он бывший фаундер Windsurf, попал в DeepMind летом 2025 после того, как развалилась сделка о покупке Виндсёрфа компанией OpenAI
+◼️ Antigravity пока что бесплатный и это единственный способ попробовать Gemini 3 Pro бесплатно в IDE/CLI. Или можно попробовать в браузере, через ai.dev
+◼️ Есть два режима: Planning (планирование, потом исполнение) и Fast (сразу исполнение)
+◼️ Во время работы, Antigravity может создавать Artifacts
+ ◾️ Task List - красивый список тасок в…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 13,000</span>
+            <span class="stat-badge">❤️ 41</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/173" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-11-18</span>
+        </div>
+
+        <div class="post-text">Gemini 3.0 Pro доступна в ai.dev бесплатно
+
+Самая ожидаемая мною модель за последние несколько месяцев.
+
+По бенчмаркам хорошо рвёт конкурентов 🥹
+
+Так же, доступно ещё и в Cursor.
+
+Пресс-релиз
+https://blog.google/products/gemini/gemini-3</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,210</span>
+            <span class="stat-badge">❤️ 28</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/170" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-11-17</span>
+        </div>
+
+        <div class="post-text">Я уже несколько раз говорил про свой подход Plan &amp; Act.
+
+В нем я сначала планирую изменения, которые мне нужны в проекте, а потом пишу код по этому плану.
+Я обсуждаю эти изменения в чате с AI, в моем случае это Codex CLI, и в процессе этого обсуждения появляется черновик — набросок принятых решений, обсужденных решений, детали реализации и прочее.
+
+Далее мне нужно сконвертировать этот набросок в actionable tasks, т. е. задачи, которые я передам в работу. 
+Как мне сказал один из моих клиентов после консультации, такие задачи можно давать и людям в работу. В моем же случае, я эти задачи передаю …</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 3,930</span>
+            <span class="stat-badge">❤️ 75</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/169" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-11-14</span>
+        </div>
+
+        <div class="post-text">Пятничная новость
+
+В конце августа мы организовывали панельку по AI Coding, и я шутки ради предложил идею создания &#34;тиктоков&#34; по репозиториям кода.
+
+Сегодня, 14 ноября, Google анонсирует Code Wiki — это инструмент для создания и постоянного обновления документации для любого репозитория.
+
+Работает на NotebookLM и может генерировать видео с объяснением репозитория. 
+
+Что? Да!
+
+На прикреплённом видео пример такого видео по репозиторию gemini cli.
+
+Ещё из особенностей:
+
+◼️ Гугл заявляет, что Code Wiki может регенерить доку после каждого изменения кода
+◼️ Конечно же, чатик с кодовой базой
+◼️ Ссылк…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,360</span>
+            <span class="stat-badge">❤️ 52</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/168" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-11-12</span>
+        </div>
+
+        <div class="post-text">Как начать работать с субагентами в Claude Code?
+
+Простая аналогия субагента
+
+Представьте, что для того, чтобы выполнить понятную вам задачу и не брать на себя когнитивную нагрузку по имплементации этой задачи, вы делегируете эту её на джуна. 
+Вы выдаете ему инструкции как и что делать, он уходит работать, спустя время возвращается и отчитывается о результате.
+
+Как начать?
+
+После того как вы обсудили задачу в чатике с Claude Code, напишите 5 волшебных слов:
+
+Delegate this task to `Task`
+
+Task — это такой отдельный &#34;тред&#34; в CC со своим приватным контекстом, который не пересекается с вашим основ…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,800</span>
+            <span class="stat-badge">❤️ 43</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/167" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-11-10</span>
+        </div>
+
+        <div class="post-text">Делегирование — важный навык в AI Coding
+
+Представьте, вы общаетесь в чатике с Cursor, обсуждаете фичу и вам необходимо, чтобы агент сделал предварительный рисерч по кодовой базе: узнал, как устроен у вас тот или иной функционал. Обычно, рисерч неплохо так отнимает контекстное окно, и процесс рисерча (поэтапное изучение кодовой базы) нам в контексте не нужен, потому что полезной нагрузки никакой не несёт. Нам нужен только результат такого рисерча. 
+
+Что делать? 
+
+Делегировать такую задачу какому-нибудь падавану. 
+В Claude Code для этого есть встроенные субагенты Explore, Plan, но что, если вы …</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,940</span>
+            <span class="stat-badge">❤️ 106</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/166" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-11-05</span>
+        </div>
+
+        <div class="post-text">MCP нам был нужен, теперь пришло время идти дальше
+
+Спустя чуть менее года с момента релиза протокола MCP, Anthropic написали статью о том, что MCP был ошибкой 😄
+
+В этой статье они небезосновательно упоминают о частых проблемах с MCP:
+
+▪️Tools тратят очень много токенов контекстного окна, я об этом кстати уже рассказывал тут
+
+▪️Промежуточные результаты tools тратят дополнительные токены. 
+В статье приводится пример запроса пользователя: &#34;Скачай meeting transcripts с Google Drive и добавь их к Salesforce lead&#34;. 
+
+Для исполнения такого запроса нужно, чтобы модель использовала один tool для выкач…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 12,700</span>
+            <span class="stat-badge">❤️ 82</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/165" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-11-04</span>
+        </div>
+
+        <div class="post-text">А вы обращаете внимание на слова агентов &#34;может быть&#34;, &#34;скорее всего&#34; и т. д. в своих ответах? 
+
+По моему опыту, когда речь идёт о чем то однозначном (например, обсуждаем документацию API) и модель использует такие фразы, то это говорит о том, что у нее отсутствует точная информация об этой штуке. 
+
+В таком случае, стоит добавить grounding - добавить контекстную инфу самостоятельно (документация, файлы, и т. д. ) или попросить агента поискать в интернете, если есть такая возможность. 
+
+Звучит очевидно, но не все осознают это ☝️</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,750</span>
+            <span class="stat-badge">❤️ 46</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/164" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-10-28</span>
+        </div>
+
+        <div class="post-text">Очередное напоминание, что Feedback loop — это очень круто.
+
+Сейчас делаю интеграцию Stripe на одном проекте, код уже написан и теперь настал этап проверки — нужно убедиться, что заказы создаются, вебхуки работают. 
+
+Со Stripe я давно не работал, и обнаружил, что у них появился Stripe CLI. Одна из фич — можно триггерить вебхуки прямо из своей консоли, а вторая фича — редиректить такие запросы себе на локальный хост (без ngrok и т. д.). 
+
+В голове сразу же родилась идея — нужно дать этот инструментарий Sonnet&#39;у, чтобы он провел тесты. 
+
+1) Попросил выписать вебхуки, которые у нас вообще есть дл…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,930</span>
+            <span class="stat-badge">❤️ 54</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/163" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-10-25</span>
+        </div>
+
+        <div class="post-text">В последнее время чаще всего меня просят показать мою работу на практике. Ок, давайте попробуем 25 октября, в субботу, в 18 часов по МСК я проведу стрим на ютубе и покажу, как я работаю с ai coding tools. На лекции я уже рассказывал про успешный кейс...</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,430</span>
+            <span class="stat-badge">❤️ 21</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/162" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-10-22</span>
+        </div>
+
+        <div class="post-text">В последнее время чаще всего меня просят показать мою работу на практике. 
+
+Ок, давайте попробуем
+
+25 октября, в субботу, в 18 часов по МСК я проведу стрим на ютубе и покажу, как я работаю с ai coding tools. 
+
+На лекции я уже рассказывал про успешный кейс работы над своим пет проектом - аналог tgstat[.]ru. Вот над ним и поработаем в прямом эфире))
+
+Буду отвечать на вопросы и стараться объяснять зачем и что делаю. 
+
+Записи не будет, так что успейте побывать онлайн.
+
+📆 Создать напоминание в Google Calendar
+
+✔️ Timur Khakhalev про AI Coding, подписывайтесь!
+⭐️ Консультации по AI Coding</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,500</span>
+            <span class="stat-badge">❤️ 64</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/161" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-10-22</span>
+        </div>
+
+        <div class="post-text">Моё мнение на последние продуктовые обновления Claude Code
+
+◾️ Claude Skills – Anthropic представили новую фичу, которая по своей сути является набором специализированных промптов для работы над одной конкретной задачей. Claude будет использовать Skills только когда поймет, что это необходимо, после этого Skill будет загружен в контекст. Может исполнять скрипты через bash, при этом основной контекст чата тратиться не будет. Исполняется в sandbox. 
+
+Ничего не напоминает?
+
+Да, это тоже самое что и subagents. Фича классная для Claude Desktop, но зачем она в Claude Code я так и не понял. Наверное,…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,090</span>
+            <span class="stat-badge">❤️ 34</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/160" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-10-20</span>
+        </div>
+
+        <div class="post-text">Привет всем новичкам на моём канале! 
+Этот пост должен был выйти раньше, но пишу сейчас. 
+
+За последние 3 недели мой канал вырос с 1.9k до 4.3k подписчиков – благодаря нашей конференции. Ко мне на канал пришло много новых людей и, наверняка, вы не знакомы с многими моими классными постами. 
+
+Я обновил закреп канала – здесь можете посмотреть на интересные, на мой взгляд, посты на моём канале.
+
+Я уже спрашивал мою аудиторию о том, что ещё вам было бы интересно узнать про AI Coding? На все запросы я уже написал посты, так что запрашиваю опять – что было бы интересно ещё?</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 3,880</span>
+            <span class="stat-badge">❤️ 43</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/159" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-10-17</span>
+        </div>
+
+        <div class="post-text">Если вам понравилась наша конфа, то есть ещё одно мероприятие для вас!
+
+Мой AI-бро Валера Ковальский совместно с red_mad_robot 25 октября организовывают митап для тех, кто хочет стать мастером разработки — Вайб Цех.
+
+10:00 «Вайб-кодинг меняет роль разработчика: от писателя кода к AI-дирижеру», Валерий Ковальский, @neuraldeep, Head of AI red_mad_robot 
+
+10:20 «Почему LLM так хороши в программировании?», Александр Абрамов, @dealerAI, Исполнительный директор, руководитель AI, ML команд в SberAI
+
+11:00 «Нейросети — это не второй мозг. Это рычаг Архимеда. Как перестать работать и начать управлять»,…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,010</span>
+            <span class="stat-badge">❤️ 43</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/158" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-10-15</span>
+        </div>
+
+        <div class="post-text">Артефакты выступления
+
+В дополнение к презентациям, которые мы выложили на нашем закрытом телеграм канале конференции AI Dev Live Ticket, выкладываю краткий Q&amp;A по вопросам, которые вы мне задавали!
+
+Запись всей конференции будет доступна позже на нашем закрытом телеграм канале.
+
+Q&amp;A
+
+Q: Ну если каждую задачу бить на мелкие подзадачи, то как корректно поддерживать стиль написания кода, соблюдение архитектурных шаблонов и тп? в Курсоре частично это закрывется описанием в правилах, но мне кажется он периодически будет уходить в сторону
+
+A: в субзадаче я пишу только требования к задаче которую на…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,930</span>
+            <span class="stat-badge">❤️ 33</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/157" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-10-14</span>
+        </div>
+
+        <div class="post-text">Сегодня прошло моё выступление на ai-dev.live, было круто!
+
+Мне правда понравилось выступать! Увидел ваш фидбек — вам тоже понравилось, это радует!
+
+Теперь я собираю фидбек по моему выступлению.
+
+Какие артефакты моего выступления вы хотели бы увидеть здесь?
+
+Какие ещё вопросы у вас остались после моего выступления?
+
+Я посмотрю ваши ответы в течение недели обязательно что-то выложу.
+
+Напоминаю, что я провожу персональные консультации по AI Coding. 
+
+Заполните бриф, а я подберу предложение под ваш кейс, свяжусь с вами в течение суток и расскажу детали. 
+
+Всем спасибо! ❤️
+
+#performance@the_ai_arc…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,540</span>
+            <span class="stat-badge">❤️ 62</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/156" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-10-14</span>
+        </div>
+
+        <div class="post-text">Прямо сейчас я начинаю выступать на нашей AI Dev конференции – заходите!
+
+Ссылка в закрытом телеграм канале. Если ещё не вступили – заходите
+
+Вопросы по моей лекции вы можете задавать в комментах к анонсу моего выступления в закрытом телеграм канале конференции AI Dev Live Ticket, я на них отвечу в конце своего выступления.
+
+Если появятся вопросы после выступления – задавайте их прямо тут в комментах, а я отвечу
+
+#performance@the_ai_architect
+
+✔️ Timur Khakhalev про AI Coding, подписывайтесь!
+⭐️ Консультации по AI Coding</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,040</span>
+            <span class="stat-badge">❤️ 21</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/155" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-10-10</span>
+        </div>
+
+        <div class="post-text">блин, ребята, созванивались час назад со спикерами мельком обсудить нашу панельную дискуссию на ai-dev.live
+мы должны были обсудить наброски тем в духе &#34;какими будут следующие 2-3 года в разработке под влиянием ИИ&#34;
+
+и прям практически по каждой теме - очень горячая дискуссия, с крутыми сильными аргументами со всех сторон.
+еле смогли прекратить спорить, есть ли будущее у джунов в ИИ-мире, какие скиллы синьоров останутся нужны, поделились парой сплетен &#34;из первых рук&#34; о том, как некоторые компании категорично требуют разрабов изучать ИИ-тулы, и так далее.
+
+в общем, будь я на вашем месте - я бы з…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,900</span>
+            <span class="stat-badge">❤️ 41</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/154" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-10-08</span>
+        </div>
+
+        <div class="post-text">Про обучение AI кодингу
+
+Как я упоминал и вчера, очень важно знать некоторые основы и вообще потратить время и деньги на своё обучение. Хороший пример тому – то самое исследование METR. Это когда чуваки заявили, что использование Cursor снижает эффективность работы программистов. 
+
+Нюанс – за Cursor посадили людей, которые первый раз его открыли.
+
+Как раз, я с моими AI-коллегами организовываем онлайн-конференцию про AI Coding! 
+
+Наверняка, вы уже краем уха слышали о таком мероприятии – мы закупали рекламу в некоторых тг каналах и, шутка ли, у нас уже набралось почти 1000 участников я в шоке
+
+К…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,090</span>
+            <span class="stat-badge">❤️ 40</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/153" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-10-07</span>
+        </div>
+
+        <div class="post-text">В комментах к прошлому посту задали вопрос по поводу параллелизации задач
+
+Как я и писал ранее, я придерживаюсь подхода Plan &amp; Act: 
+1) Составляю план имплементации
+2) Передаю план в работу (написание кода)
+
+Конечно, план из ниоткуда не возьмётся и его нужно создать, для этого я и провожу рисёрч: описываю фичу, которую хочу реализовать и прошу модельку в Codex CLI походить по репозиторию, подготовить информацию и прийти ко мне с черновиком плана. Такой черновик, далее, обсуждается в чатике с этой же моделькой, и улучшается. Как только у меня не появляется новых вопросов по имплементации задачи…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,450</span>
+            <span class="stat-badge">❤️ 52</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/152" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-10-06</span>
+        </div>
+
+        <div class="post-text">Текущий активный рабочий проект в конце-концов перевёл на рельсы Plan &amp; Act и рад!
+
+Сейчас я работаю в Claude Code (Sonnet 4.5 моя основная модель) и Codex (GPT-5-High). Мне хватает подписок по $20. (В CC Opus я юзаю через AWS Bedrock, но не так часто)
+
+Чаще всего, с помощью GPT-5-High я обсуждаю изменения, которые хочу сделать и создаю implementation plan. 
+
+Если надо — обновляю его, указывая в чатике, что нужно исправить. Если нужно что-то проверить, прошу CC запилить прототип (скрипт, который запускается из терминала)
+
+Далее, с помощью GPT-5 я нарезаю этот план на таски и сохранить в файлах…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,150</span>
+            <span class="stat-badge">❤️ 58</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/151" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-09-30</span>
+        </div>
+
+        <div class="post-text">Просто gpt-5-codex решил, что проще откатить изменения, т. к. он понял, что не может выполнить задачу хорошо. 
+
+У вас такое было?
+
+Ну и у меня ещё agents.md и claude.md связаны между собой, codex подтянул инструкции от CC по поводу Code writer и это ввело его в заблуждения</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 3,690</span>
+            <span class="stat-badge">❤️ 15</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/150" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-09-28</span>
+        </div>
+
+        <div class="post-text">Две недели не пишу посты, ну и дела!
+
+Был в отпуске, перезагрузился и с новыми силами нырнул в работу обратно.
+За текущую рабочую неделю:
+- провёл обещанный воркшоп по AI Coding: в первый день рассказал лекцию о том, как вкатиться в это дело и с чего начать. Во второй день мы делали таск-трекер. Я раздал ребятам задачи, а они их выполняли: кто в Cursor, кто в Claude Code; в конце я сам сел за Codex и показал как я работаю. 
+
+По той обратной связи, которую ребята мне дали, могу сказать, что несмотря на организационные и технические нюансы, прошло всё очень круто:
+
+1. структурно и подробно, можн…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 3,830</span>
+            <span class="stat-badge">❤️ 24</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/149" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-09-15</span>
+        </div>
+
+        <div class="post-text">Как бороться с оверинжинирингом? 
+
+Оверинжиниринг - это избыточная сложность в коде. Абстракции, фабрики, ООП, и вот это всё. У всех, конечно, свои условия, но это чаще всего не нужно. 
+
+AI чаще всего по дефолту старается писать именно такой код. И если давать задачу написать что-нибудь с нуля, и у него в контексте не будет примеров вашего кода то AI скорее всего, будет стараться писать over engineering код.
+
+В чем проблема такого кода? 
+
+Его сложно поддерживать, добавлять фичи, фиксить баги. 
+
+Как решить такую проблему?
+
+В моей компании мы, в основном, пишем приложения для стартапов. Я попрос…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 3,970</span>
+            <span class="stat-badge">❤️ 46</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/148" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-09-11</span>
+        </div>
+
+        <div class="post-text">Как же тяжело управлять AI агентами
+
+Они то и дело ленятся, выполняют только часть задач и врут. При этом, чем модель умнее смекалистее и смышлённее (Sonnet 4), тем она больше будет выкручиваться и лениться выполнять задачи. В моих кодинговых пайплайнах приходится перезапускать таску по-нескольку раз и только после этого задача выполняется. Похоже на сдвгшника, которому нужно отдохнуть и получить дофаминчика, чтобы выполнить свою работу полностью.
+
+А при обновлении моих инструкций и пайплайнов ещё сложнее: агенты то и дело норовят добавить свои три копейки &#34;эта штука заменяет X, которая была у…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 3,540</span>
+            <span class="stat-badge">❤️ 43</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/147" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-09-09</span>
+        </div>
+
+        <div class="post-text">Я тут решил покопаться в кишках Claude Code, посмотреть, какие промпты оно использует и как работает с моим контекстом.
+
+Сначала я читал локальные сессии (~/.claude/.../session_id.jsonl) — это нестабильно и неудобно (я был в режиме вайб кодинга, а отуплённый sonnet запутался во всём этом без правил и доков))). Попробовал MITM-прокси (mitmproxy): подменяю Anthropic Base URL на localhost:8000, пропускаю все запросы через этот прокси и показываю вижу то, что CC отправляет к себе на сервер. В итоге форкнул этот инструмент и допилил режим отображения request/response в человекочитаемом виде.
+
+Демка…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 3,310</span>
+            <span class="stat-badge">❤️ 56</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/146" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-09-04</span>
+        </div>
+
+        <div class="post-text">Сегодня я смерджил эпик, который от А до Я написал AI-агент
+
+Это была не игрушечная задача, а вполне себе боевая миграция.
+
+🎯 Задача: Перевезти бэкенд в сложном монорепозитории со связки MongoDB + Prisma на Postgres + Drizzle ORM. Данные мигрировать не требовалось, но нужно было аккуратно переписать десятки файлов, учитывая все нюансы проекта.
+
+В последнее время мне понравился код &#34;слоями&#34;
+
+1. Сначала — глубокий research. Агент изучил всю кодовую базу, создал файлик с репортом и задал мне уточняющие вопросы, чтобы понять все зависимости. Я ответил на них прямо в файле.
+2. Затем — детальный Imp…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 3,510</span>
+            <span class="stat-badge">❤️ 48</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/145" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-09-04</span>
+        </div>
+
+        <div class="post-text">Три инсайта об обучении в мире AI-кодинга
+
+◾️ Изучать новое с AI — это суперсила
+ Вы можете осваивать незнакомые языки и фреймворки с невероятной скоростью. AI станет вашим терпеливым наставником, который объяснит любую концепцию без осуждения, в отличие от Stack Overflow. (Подробнее тут и здесь).
+
+◾️ Умение кодить ≠ умение кодить с AI
+ Это отдельный навык со своей кривой обучения. Не ждите, что вы &#34;сядете и поедете&#34;. Нужно потратить время, чтобы поменять свои привычки, научиться декомпозировать задачи и правильно формулировать мысли для машины. (Подробнее тут).
+
+◾️ Каждая ошибка агента — это …</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 2,850</span>
+            <span class="stat-badge">❤️ 28</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/144" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-09-03</span>
+        </div>
+
+        <div class="post-text">Выключайте mcp сервера
+
+Ещё на прошедшем стриме мы разгоняли про mcp сервера и я обнаружил, что инструкции mcp тулам занимают охренеть как много токенов!
+
+Тогда я сетовал на browsermcp, инструкции которого занимают 5к токенов!
+
+Сегодня мне понадобилось порисерчить один github repository и я решил поручить это дело Claude Code.
+
+Я установил официальный github mcp, запустил claude, отправил команду /context и увидел, что только этот mcp занимает 46к токенов, Карл!
+
+46к токенов на пустой сессии.
+
+46к токенов это 25% контекстного окна Claude Sonnet 4.
+
+46к токенов это примерно половина контекстног…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,080</span>
+            <span class="stat-badge">❤️ 40</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/143" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-09-03</span>
+        </div>
+
+        <div class="post-text">Ваш AI-агент — герой фильма «Помни»? Как создать для него память
+
+Представьте, что вы даете AI-агенту задачу, он ее выполняет, а на следующий день открываете новый чат для новой задачи и агент уже не так хорошо выполняет её. Знакомо? Приходится заново объяснять весь контекст, прикреплять те же файлы и повторять то, что вы обсуждали только вчера.
+
+Это напоминает фильм «Помни» (Memento), где главный герой страдает от амнезии и не может формировать новые воспоминания. Чтобы выжить, он создает для себя внешнюю систему памяти: делает татуировки с ключевыми фактами, фотографирует людей и оставляет с…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 2,700</span>
+            <span class="stat-badge">❤️ 62</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/142" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-09-02</span>
+        </div>
+
+        <div class="post-text">Интересно, что будет дальше?</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 2,120</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/140" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-09-02</span>
+        </div>
+
+        <div class="post-text">⚡️ Anthropic регистрирует товарные знаки в России
+
+Американский Anthropic, разработчик ИИ Claude и продуктов на его основе (Claude Code, Claude Chrome итд), начала процесс регистрации товарных знаков в России.
+
+!!️Заявитель: Энсропик, ПБС, 548 Маркет Ст, ПМБ 90375, Сан-Франциско, Калифорния 94104, Соединённые Штаты Америки (US). Регистрируют Claude, Anthropic, загружаемый и незагружаемый софт: раз, два, три, четыре. 
+
+Это шаг, который может означать как планы компании по выходу на российский рынок, ну или как минимум, закрепление своих прав на бренд. 
+
+Как мы не помним, ранее CEO Anthropic Дар…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 2,220</span>
+            <span class="stat-badge">❤️ 35</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/141" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-09-02</span>
+        </div>
+
+        <div class="post-text">Смотреть, как разработчик пытается исправить результат AI через &#34;follow-up&#34; сообщения — это как смотреть, как кто-то кричит на сломанный принтер.
+
+&#34;Нет, переделай&#34;, &#34;я же просил не так&#34;, &#34;добавь вот это&#34;.
+
+Если AI с первого раза выдал чушь, проблема не в нем, а в вашем ТЗ. Откатитесь. Перепишите промпт. Хватит вести с машиной бессмысленные препирательства.
+
+#ai_coding@the_ai_architect
+
+✔️ The AI Architect Blog, подписывайтесь!</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 2,420</span>
+            <span class="stat-badge">❤️ 57</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/139" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-08-29</span>
+        </div>
+
+        <div class="post-text">AI Coding Tools Landscape: от простого автокомплита до автономных агентов
+
+Пост, который давно все так ждали. Обязательно попробуйте эти инструменты на выходных, если ещё не
+
+Рынок AI-инструментов для разработки растет как на дрожжах. Cursor, Claude Code, Gemini CLI, Jules... Легко запутаться, что для чего нужно и с чего начать. Сегодня я разложу все по полочкам и нарисую карту этого нового мира, чтобы вы могли выбрать правильный инструмент для своей задачи и уровня подготовки.
+
+Все инструменты можно условно разделить на несколько уровней, от самых простых до самых продвинутых.
+
+Уровень 1: Пом…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 2,910</span>
+            <span class="stat-badge">❤️ 71</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/138" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-08-28</span>
+        </div>
+
+        <div class="post-text">upd: Эфир прошёл, ссылку на запись можно получить в боте 
+
+Через 30 минут мы начинаем эфир про AI Coding
+
+Участников зарегистрировалось так много, что мы решили запустить трансляцию на YouTube.
+
+Ссылку на трансляцию можно получить сделав простые действия:
+1) Подписаться на всех авторов эфира:
+• @oestick
+• @gleb_pro_ai
+• @the_ai_architect
+• @ai_driven
+• @kdoronin_blog
+
+2) Перейти в бот и запустить его
+
+если всё сделано правильно, бот должен будет прислать ссылку на эфир как только он начнется.
+
+ссылку на запись после эфира можно будет получить так же в боте.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 2,290</span>
+            <span class="stat-badge">❤️ 34</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/137" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-08-27</span>
+        </div>
+
+        <div class="post-text">Три инсайта о том, как AI-кодинг может выстрелить вам в ногу
+
+◾️ О безопасности
+ Ни один AI-агент по умолчанию не будет проверять, не закоммитили ли вы .env файл или private.key в публичный репозиторий. Безопасность — это всё ещё на 100% ваша ответственность. (Подробнее тут).
+
+◾️ Подписочные модели режут качество
+ Инструменты с фиксированной ежемесячной платой (вроде Cursor) со временем могут начать экономить на вас, урезая контекст и снижая качество ответов, чтобы оставаться в прибыли. Не привязывайтесь к одному инструменту. ( Подробнее тут).
+
+◾️ Интеллект агента ограничен вашим контекстом
+ A…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 2,210</span>
+            <span class="stat-badge">❤️ 21</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/136" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>OpenClaw Telegram Digest</span>
+      <span>2026-04-01 14:51 UTC</span>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

@@ -1,11 +1,2740 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Telegram Digest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Digest — Telegram каналы за неделю</title>
+  <meta name="description" content="Дайджест лучших постов из Telegram-каналов об AI и разработке">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://neurotechwizards.github.io/telegram-digest-pages/static/styles.css">
 </head>
 <body>
-  <h1>It works 🚀</h1>
-  <p>Telegram digest will be here</p>
+<div class="app">
+  <!-- Шапка -->
+  <header class="hero">
+    <div class="container">
+      <h1 class="hero-title">📡 AI Digest</h1>
+      <p class="hero-subtitle">
+        Дайджест Telegram-каналов об AI за неделю · 85 постов
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Фильтры по каналу -->
+    <div class="filters" id="channel-filters">
+      <button class="filter-pill active" data-channel="all">Все (85)</button>
+      <button class="filter-pill" data-channel="NGI_ru">@NGI_ru (2)</button>
+      <button class="filter-pill" data-channel="aostrikov_ai_agents">@aostrikov_ai_agents (3)</button>
+      <button class="filter-pill" data-channel="countwithsasha">@countwithsasha (6)</button>
+      <button class="filter-pill" data-channel="dealerAI">@dealerAI (10)</button>
+      <button class="filter-pill" data-channel="evilfreelancer">@evilfreelancer (15)</button>
+      <button class="filter-pill" data-channel="gleb_pro_ai">@gleb_pro_ai (10)</button>
+      <button class="filter-pill" data-channel="kdoronin_blog">@kdoronin_blog (9)</button>
+      <button class="filter-pill" data-channel="max_about_ai">@max_about_ai (2)</button>
+      <button class="filter-pill" data-channel="neuraldeep">@neuraldeep (13)</button>
+      <button class="filter-pill" data-channel="nobilix">@nobilix (3)</button>
+      <button class="filter-pill" data-channel="oestick">@oestick (2)</button>
+      <button class="filter-pill" data-channel="the_ai_architect">@the_ai_architect (2)</button>
+      <button class="filter-pill" data-channel="tips_ai">@tips_ai (8)</button>
+    </div>
+
+    <!-- Лента карточек -->
+    <div class="feed" id="feed">
+      <article class="card" data-channel="tips_ai">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #10b981">
+            T
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/tips_ai" target="_blank" rel="noopener" class="card-channel">@tips_ai</a>
+            <span class="card-time">7ч</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Скачал cmux просто потому что видел много хороших отзывов.
+
+По сути терминал на базе Ghostty с вертикальными табами, уведомлениями от агентов и встроенным браузером. 
+
+Когда агент ждёт ответа, то таб подсвечивается. Браузер рядом с терминалом.
+
+Тут я понял — это же просто Cursor 🎨🎨, работает с любым CLI агентом: Claude Code, Codex, OpenCode.
+
+Для других OC есть похожие проекты:
+&gt; Limux
+&gt; cmux-windows
+
+@tips_ai #tools
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 2.670</span>
+            <span class="stat">❤️ 26</span>
+          </div>
+          <a href="https://t.me/tips_ai/4643" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="countwithsasha">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #10b981">
+            C
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/countwithsasha" target="_blank" rel="noopener" class="card-channel">@countwithsasha</a>
+            <span class="card-time">1ч</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          В Claude Code завезли тамагочи
+
+Anthropic выкатила /buddy — при вводе команды пользователю генерируют компаньона. Привет скрепке из MS Word.
+
+18 видов × 6 стилей глаз × 8 шляп × 5 редкостей × не пойми что shiny (1%) = 7 128 возможных компаньонов. Рандом сид — хеш userId, привязывается к аккуанту.
+
+😀 Кажется скоро на Авито аккаунты с легендарными питомцами будут в N раз дороже обычных.
+
+Сейчас 1–7 апреля типа тизер, а полный запуск MMO Coding Rpg нас ждем в мае.
+
+Фичу нашли в утечке исходников Claude Code вчера. Помимо Buddy там обнаружили KAIROS (фоновый агент), Coordinator Mode (параллельные агенты) и Undercover Mode (скрытие AI-атрибуции в коммитах сотрудников Anthropic).
+
+🤔 Чувствую, скоро уберут бессмысленную /stickers (открывает магазин наклеек) и сделают маркетплейс апгрейда аватаро…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 724</span>
+            <span class="stat">❤️ 5</span>
+          </div>
+          <a href="https://t.me/countwithsasha/565" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="dealerAI">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #a855f7">
+            D
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/dealerAI" target="_blank" rel="noopener" class="card-channel">@dealerAI</a>
+            <span class="card-time">23ч</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Теперь и код Claude Code утек. 👍 
+
+Говорят его слили... Ошибка в map пакете и можно разобрать на косточки.
+
+Что случилось?
+
+31 марта 2026 года в npm‐пакете Claude Code случайно опубликовали source map (файл для отладки). Через него любой желающий восстановил исходный код - около 1900 файлов, больше 500 тысяч строк TypeScript. Взлома не было, это ошибка сборки.
+
+Какие секреты нашли?
+
+В коде обнаружили несколько невыпущенных функций:
+
+Kairos - режим фонового агента, который работает постоянно и сам управляет памятью.
+
+Buddy System - целая игра «тамагочи» внутри Claude Code: 18 видов питомцев, редкость, блестящие варианты.
+
+Undercover mode - для сотрудников Anthropic: автоматически скрывает следы ИИ в коммитах, когда работаешь с публичными репозиториями.
+
+Coordinator mode - режим, где Claude…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 5.720</span>
+            <span class="stat">❤️ 46</span>
+          </div>
+          <a href="https://t.me/dealerAI/1750" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="tips_ai">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #10b981">
+            T
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/tips_ai" target="_blank" rel="noopener" class="card-channel">@tips_ai</a>
+            <span class="card-time">4ч</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Чтобы создать продукт раньше, нужен был разработчик и целая команда. Сейчас — нейросети и понимание, как с ними работать.
+
+И дело даже не в промптах — они уже прошлый век. Сейчас люди собирают полноценные системы: настраивают скиллы, прописывают правила работы и работают с контекстом. В итоге нейросеть из поверхностной всезнайки превращается в узкого специалиста, который автономно решает задачи.
+
+Вот, что это дает на практике:
+
+— Проджекты за пару часов могут собирать ботов для своих команд
+
+— Маркетологи могут быстрее проводить исследования и собирать отчеты
+
+— Кто угодно может упрощать себе жизнь и автоматизировать что угодно
+
+И для этого не нужно уметь кодить и делать что-то сложное — достаточно научиться правильно ставить задачи нейросетям и использовать инструменты вроде Cursor, Clau…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 2.009</span>
+            <span class="stat">❤️ 28</span>
+          </div>
+          <a href="https://t.me/tips_ai/4644" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="the_ai_architect">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #6d28d9">
+            T
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/the_ai_architect" target="_blank" rel="noopener" class="card-channel">@the_ai_architect</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Claude Code стал лучше. Опять. Его случайно опенсорснули
+
+Как и год назад, кто то из команды Anthropic случайно включил сорс-мапы в релиз и благодаря этому красавчику мы теперь имеем возможность изучить Claude Code получше.
+
+Вот что из интересного удалось нарыть:
+
+- Buddy — тамагочи AI компаньон прямо в Claude Code. Судя по всему, это прекол для 1 апреля
+- Kairos — persistent assistant. Насколько я понял, это альтернатива openClaw. Ну не смогли Анты игнорить спрос на такой продукт
+- Ultraplan — режим планирования, в котором предлагается дать CC 10-30 минут времени для того чтобы передать подготовку плана в web и там Opus 4.6 подготовил план и вернул обратно. Зачем передавать в веб? Не понятно
+- Undercover — режим &#34;маскировки&#34;, насколько я понял, нужен для тех случаев, когда сотрудники Ant…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 3.410</span>
+            <span class="stat">❤️ 59</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/273" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="the_ai_architect">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #6d28d9">
+            T
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/the_ai_architect" target="_blank" rel="noopener" class="card-channel">@the_ai_architect</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Claude Code стал лучше. В него добавили Codex plugin
+
+Не шутка! Ребята из Codex выпустили плагин для Claude Code.
+
+Состоит из нескольких команд:
+
+/codex:review — запускает read-only Codex review.
+/codex:adversarial-review — запускает управляемый code review с возможностью задать вопросы по имплементации.
+/codex:rescue — передает задачи в Codex
+
+Менеджить джобы в бэкграунде можно с помощью /codex:status, /codex:result, и /codex:cancel
+
+Установить:
+
+/plugin marketplace add openai/codex-plugin-cc
+/plugin install codex@openai-codex
+/codex:setup
+
+Инструкция тут
+
+Примечательно, что codex exec запускается не просто из bash, а через .mjs скрипт на 1k строк 🙂 
+
+#aicoding@the_ai_architect
+
+Лайк, репост,
+✔️ Тимур Хахалев про AI Coding, подписывайтесь!
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 4.200</span>
+            <span class="stat">❤️ 90</span>
+          </div>
+          <a href="https://t.me/the_ai_architect/272" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="neuraldeep">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #e11d48">
+            N
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/neuraldeep" target="_blank" rel="noopener" class="card-channel">@neuraldeep</a>
+            <span class="card-time">6д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Не курс. Не тул. Флоу.
+
+Валера где твой курс по AI кодингу?
+Или: Валера почему мы до сих пор не увидели крутой AI coding инструмент от тебя? (с 1 млн звезд на гите =)
+Отвечаю
+
+Я в первую очередь DevOps/Hardware инженер
+Во вторую руководитель R&amp;D команд
+Так начиналась моя карьера и дальше я оброс разными инструментами которые вы так же используете сейчас
+Но у меня есть плотная основа, я выдели только небольшую часть моих хард скиллов которые я качал до эры AI
+
+Базы данных
+Linux
+Docker
+Kubernetes
+Транспорт: TCP/IP.
+Сети, шлюзы, протоколы, маршрутизаторы. 
+Кодинг с 0 с учителем, ООП и всё что с ним связано. 
+Считаю что умею задавать вопросы, критически мыслить и быстро анализировать и запоминать поступающую информацию
+
+Так вот
+
+Я не хочу и не буду продавать вам тут курсы где вы поменяете ден…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 6.640</span>
+            <span class="stat">❤️ 238</span>
+          </div>
+          <a href="https://t.me/neuraldeep/2009" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="max_about_ai">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #0ea5e9">
+            M
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/max_about_ai" target="_blank" rel="noopener" class="card-channel">@max_about_ai</a>
+            <span class="card-time">8ч</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Банально, но факт - сейчас открыто окно беспрецедентных возможностей. Как долго оно будет открыто и что наступит после - я не знаю, но точно знаю, что если делать что-то свое, то сейчас отличное время пробовать.
+
+Поэтому моя жена решила открыть свой мини-стартап на международный рынок. Хочет бутсрапить небольшие SaaS приложения.
+
+С вайб-кодингом это стало сильно проще, тем более, что у нее айтишный бэкграунд и образование.
+
+Осталось только научиться продавать. Я предлагал с ChatGPT разобраться, но как-то не пошло - слишком много непубличных лайфхаков в маркетинге, которые никто не хочет шарить публично. На Coursera тоже ничего толкого не нашли. Так что с середины апреля она пойдет на платные курсы по маркетингу. Слышал положительные отзывы от друзей о других курсах Глеба Кудрявцева, надею…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 2.520</span>
+            <span class="stat">❤️ 92</span>
+          </div>
+          <a href="https://t.me/max_about_ai/103" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="evilfreelancer">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #a855f7">
+            E
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/evilfreelancer" target="_blank" rel="noopener" class="card-channel">@evilfreelancer</a>
+            <span class="card-time">2ч</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Zloibit, pimp my LLM
+
+Запостил на Boosty небольшой тизер публикации на Хабр про увеличение контекст у модели ruGPT3XL с 2k до 8k токенов, моделька уже есть лежит на HF вот тут:
+
+https://huggingface.co/evilfreelancer/ruGPT3XL-8k
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 477</span>
+            <span class="stat">❤️ 10</span>
+          </div>
+          <a href="https://t.me/evilfreelancer/1621" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="countwithsasha">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #10b981">
+            C
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/countwithsasha" target="_blank" rel="noopener" class="card-channel">@countwithsasha</a>
+            <span class="card-time">3д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Телеграм-дайджест для агента или читаем любимые каналы в метро: два скилла для Claude
+
+Не знаю, что нас ждёт после 1 апреля, но Claude без телеграма точно не оставит.
+
+Делал себе скилл для мониторинга AI-каналов — чтобы агент собирал новости за день, пока я работаю и выдавал интересное для экспериментов. И в процессе понял: если я и так собираю посты, то почему бы не упаковать их в нормальный веб-интерфейс? Хотел сделать скилл для агентов, а получился ридер для метро. Спасибо @oestick за то что показал пагинацию.
+
+🔧 Что под капотом
+
+Первый скилл — парсер публичных телеграм-каналов. Работает через веб-превью t.me/s/, никаких API-ключей и MTProto. Ноль зависимостей, работает из коробки.
+
+Что умеет:
+
+🔸 Парсить посты с просмотрами, реакциями, датами и медиа
+🔸 Полнотекстовый поиск по постам из…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 7.120</span>
+            <span class="stat">❤️ 37</span>
+          </div>
+          <a href="https://t.me/countwithsasha/559" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="evilfreelancer">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #a855f7">
+            E
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/evilfreelancer" target="_blank" rel="noopener" class="card-channel">@evilfreelancer</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          ACPBox - что обновилось за последние коммиты
+
+Пока ковырялся в агентных интеграциях, довел ACPBox до состояния когда его реально удобно поднимать как универсальный OpenAI-совместимый шлюз поверх ACP агентов.
+- Добавил вдобавок к OpenCode и Cursor поддержку Claude и Codex в контейнере
+- Установка агентов перенесена в runtime, раньше я думал что логичнее будет ставить их на этапе сборки, это норм когда агент один, но когда их четыре... при помощи переменной AGENTS в environment можно перечислить через запятую список нужных агентов, чтобы лишнее не ставить, по дефолту ставится OpenCode
+- Единый префикс ACPBOX_ в env для настроек приложения
+- Добавил GitHub Actions для публикации Docker образа по тегам, улучшил публикацию в PyPI и связал tagging workflow с публикациями
+
+Минимальная конфигурац…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 871</span>
+            <span class="stat">❤️ 13</span>
+          </div>
+          <a href="https://t.me/evilfreelancer/1619" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="kdoronin_blog">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #f59e0b">
+            K
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/kdoronin_blog" target="_blank" rel="noopener" class="card-channel">@kdoronin_blog</a>
+            <span class="card-time">4ч</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Что ж. Дракон по имени Murmur. 
+
+Любители ММО говорят, что теперь надо новый аккаунт заводить в попытке выбить легендарку...🤔
+
+Чтобы посмотреть своего &#34;Тамагочи&#34;, обновитесь до версии 2.1.89 и введите команду /buddy.
+
+Делитесь своими питомцами из Claude Code в комментариях! 😊
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 811</span>
+            <span class="stat">❤️ 23</span>
+          </div>
+          <a href="https://t.me/kdoronin_blog/1239" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="tips_ai">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #10b981">
+            T
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/tips_ai" target="_blank" rel="noopener" class="card-channel">@tips_ai</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Не хватало конечно такой фичи: Claude Code умеет пользоваться не файлами, а самим пк.
+
+Открывать приложения, печатать, делать скриншоты. Всё через CLI, без переключения на десктоп.
+
+То есть клод написал код, скомпилировал, запустил приложение, прокликал, нашёл баг, починил, проверил фикс. 
+
+Пока только на Мак, и нужен Pro или Max подписка ✋
+
+Включается через /mcp &gt; computer-use. 
+
+Надеюсь, что в скором времени линукс и винду добавят. 
+
+[Документация]
+
+@tips_ai #news
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 3.980</span>
+            <span class="stat">❤️ 51</span>
+          </div>
+          <a href="https://t.me/tips_ai/4642" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="neuraldeep">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #e11d48">
+            N
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/neuraldeep" target="_blank" rel="noopener" class="card-channel">@neuraldeep</a>
+            <span class="card-time">2д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Телеграм-дайджест для агента или читаем любимые каналы в метро: два скилла для Claude
+
+Не знаю, что нас ждёт после 1 апреля, но Claude без телеграма точно не оставит.
+
+Делал себе скилл для мониторинга AI-каналов — чтобы агент собирал новости за день, пока я работаю и выдавал интересное для экспериментов. И в процессе понял: если я и так собираю посты, то почему бы не упаковать их в нормальный веб-интерфейс? Хотел сделать скилл для агентов, а получился ридер для метро. Спасибо @oestick за то что показал пагинацию.
+
+🔧 Что под капотом
+
+Первый скилл — парсер публичных телеграм-каналов. Работает через веб-превью t.me/s/, никаких API-ключей и MTProto. Ноль зависимостей, работает из коробки.
+
+Что умеет:
+
+🔸 Парсить посты с просмотрами, реакциями, датами и медиа
+🔸 Полнотекстовый поиск по постам из…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 3.250</span>
+            <span class="stat">❤️ 73</span>
+          </div>
+          <a href="https://t.me/neuraldeep/2020" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="tips_ai">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #10b981">
+            T
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/tips_ai" target="_blank" rel="noopener" class="card-channel">@tips_ai</a>
+            <span class="card-time">1ч</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          /buddy кому что выпало, поделитесь ☕️
+
+Стоит ли потратить деньги и попробовать еще раз?
+
+@tips_ai
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 1.440</span>
+            <span class="stat">❤️ 17</span>
+          </div>
+          <a href="https://t.me/tips_ai/4645" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="neuraldeep">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #e11d48">
+            N
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/neuraldeep" target="_blank" rel="noopener" class="card-channel">@neuraldeep</a>
+            <span class="card-time">2д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Пока готовлю свой бенч Harness Hardware Long Benchmark (HHLB) мысль пришла в голову 
+
+Агент = VM, а не процесс и даже не docker
+
+Почему? 90% задач из повседневной жизни по автоматизации становятся почти ничем на измеримом уровне, теперь агенты требуют больше железа, и доступов а значит им нужна инфраструктура и докером тут не обойтись уже
+
+Я вижу будущее general code agents в облаках и инфре крупных компаниях именно так
+
+KVM-виртуалка с одним бинарником general code agent (Claude Code, Codex CLI, OpenCode) вызывается headless из любого места по API (тут что хотите хоть вебсокеты)
+Минимальное железо: 1 CPU, 1 GB RAM, 20 GB SSD.
+
+Машине выданы все доступы — сеть, модели, инфраструктура, базы знаний, 
+При инициализации загружается AGENTS.md/CLAUDE.md с целеполаганием и задачами
+Дальше агент …
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 4.160</span>
+            <span class="stat">❤️ 58</span>
+          </div>
+          <a href="https://t.me/neuraldeep/2023" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="gleb_pro_ai">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #6d28d9">
+            G
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/gleb_pro_ai" target="_blank" rel="noopener" class="card-channel">@gleb_pro_ai</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Скандальчик очередной с атакой на цепочку поставок. На сей раз под ударом все кто имеют в цепочке зависимостей библиотку axios в npm (очень популярная библиотека для сетевых запросов).
+
+Более пяти часов она ставила зашифрованный малварь на машины жертв. Объемы инсталляций библиотеки— 100 млн в месяц, так что заражены могут быть миллионы машин.
+
+Проверяйте себя 
+
+https://x.com/feross/status/2038807290422370479?s=46&amp;t=X0WelBfVXZJ6DwiINUU8mA
+
+Если вы запускали npm install в последние сутки, выполните эти действия:
+
+# blackhole C2 Domain
+echo &#39;127.0.0.1 sfrclak.com&#39; | sudo tee -a /etc/hosts
+
+# flush DNS cache for good measure
+sudo dscacheutil -flushcache
+
+# check for IoC - if this file exists you are pwned
+# shut down your machine immediately
+ls /Library/Caches/com.apple.act.mond
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 7.080</span>
+            <span class="stat">❤️ 24</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/500" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="gleb_pro_ai">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #6d28d9">
+            G
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/gleb_pro_ai" target="_blank" rel="noopener" class="card-channel">@gleb_pro_ai</a>
+            <span class="card-time">только что</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Писал уже тут — занимаюсь осмечиванием строительной документации. 
+
+Очень интересная область, уже есть заказчики. Софт понятное дело тоже уже сделал, и он работает.
+Но чисто с точки зрения имплементации, история очень сложная. Вы бы видели все эти базы которые нужно учесть и так далее. Я конечно собираю пайплайны, но моих мозгов хватает на пределе. 
+
+Так вот, хочу, чтобы мне помогли докрутить качество попадания в нормативные позиции. Условно говоря, сейчас 80%, нужно добиваться 95%
+
+Подумал вот что. Любой, кто принимал участие в Enterprise RAG Challenge и занял там не последнее место — мне подходит, по крайней мере он уже базово понимает с чем придется столкнуться. 
+
+Так что оффер такой. Напишите мне пожалуйста, если вы занимаетесь промышленными рагами, строите пайплайны, умеете в eval и …
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 877</span>
+            <span class="stat">❤️ 5</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/501" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="tips_ai">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #10b981">
+            T
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/tips_ai" target="_blank" rel="noopener" class="card-channel">@tips_ai</a>
+            <span class="card-time">4д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Ещё нашёл интересный скилл для Claude Code
+
+AI Website Cloner — соберет клон сайта командой /clone-website
+
+Дальше СС через Chrome MCP наделает скриншоты, вытащит дизайн, типографику, цвета, скачивает ассеты. 
+
+Сгенерирует спецификации для каждого компонента с CSS значениями.
+
+Ну и запустит параллельных агентов, где каждый соберёт свою часть. Потом сравнит с оригиналом.
+
+Не тестил, но скилл и видос заинтересовал, чтобы вдохновляться🙂
+
+@tips_ai #tools
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 6.000</span>
+            <span class="stat">❤️ 71</span>
+          </div>
+          <a href="https://t.me/tips_ai/4641" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="dealerAI">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #a855f7">
+            D
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/dealerAI" target="_blank" rel="noopener" class="card-channel">@dealerAI</a>
+            <span class="card-time">5ч</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Dealer.AI pinned «Дай человеку MCP для заказа и он перевернёт мир покупок. Сегодня уже виден тренд на AI native трансформацию бизнеса: найм, обучение, инфра и adoption инструментов. Но кругом, мы видим, пока, AI inspired отдельных людей, чем компаний. Т.е. эффективнее стали...»
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+          </div>
+          <a href="https://t.me/dealerAI/1753" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="NGI_ru">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #f97316">
+            N
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/NGI_ru" target="_blank" rel="noopener" class="card-channel">@NGI_ru</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Я ошибался насчёт Comet - переосмысление спустя несколько месяцев
+
+Пару месяцев назад я уже писал про Comet. Мои претензии тогда: медленно, нет кроссплатформенности, и вообще - Google скоро всех закопает. С тех пор браузер обновили и появились версии на Android и iOS. Я решил попробовать Comet как основной браузер, чтобы понять, на что он способен.
+
+Кроссплатформенность - закрыто
+Главный стоп-фактор исчез. Android появился первым, iOS - в марте 2026-го. При этом IOS-версия - самая кастрированная из всех. Нет виджетов и нет ряда функций, которые есть на Mac. Лучшая версия - все еще macOS. Также завезли синхронизацию, правда я не понял, нафига делать ручную привязку каждого устройства через QR-код, а не через аккаунт.
+
+Неправильные юзкейсы
+Я пытался использовать Comet для задач типа “найди …
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 961</span>
+            <span class="stat">❤️ 20</span>
+          </div>
+          <a href="https://t.me/NGI_ru/602" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="countwithsasha">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #10b981">
+            C
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/countwithsasha" target="_blank" rel="noopener" class="card-channel">@countwithsasha</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Сохраняемые посты марта: топ-3 поста по сохранениям
+
+Традиционный дайджест интересных постов за месяц в этом канале.
+Измеряю контент процентом пересылок от просмотров. В марте 27 постов, 53 600 просмотров, 3 095 пересылок. Для сравнения: в феврале было 2 400 пересылок на 58 000 просмотров. Просмотры чуть упали, а пересылки выросли. И это на фоне ограничений телеграм.
+
+🥉 Третье место: как выиграть в AI безумии обычным людям
+
+Репост из канала Леши Острикова без единой строчки кода — тренируем отчуждение знаний и опыт работы с агентными системами. В будущем мы будем тем лучшими сотрудниками, чем лучше сможем тренировать и организовывать свой рой из агентов.
+
+158 пересылок на 1 679 просмотров — 9,4%
+
+🥈 Второе место: телеграм-дайджест для агента
+
+Делал скилл для мониторинга AI-каналов, а получ…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 910</span>
+            <span class="stat">❤️ 10</span>
+          </div>
+          <a href="https://t.me/countwithsasha/564" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="oestick">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #8b5cf6">
+            O
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/oestick" target="_blank" rel="noopener" class="card-channel">@oestick</a>
+            <span class="card-time">3д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Телеграм-дайджест для агента или читаем любимые каналы в метро: два скилла для Claude
+
+Не знаю, что нас ждёт после 1 апреля, но Claude без телеграма точно не оставит.
+
+Делал себе скилл для мониторинга AI-каналов — чтобы агент собирал новости за день, пока я работаю и выдавал интересное для экспериментов. И в процессе понял: если я и так собираю посты, то почему бы не упаковать их в нормальный веб-интерфейс? Хотел сделать скилл для агентов, а получился ридер для метро. Спасибо @oestick за то что показал пагинацию.
+
+🔧 Что под капотом
+
+Первый скилл — парсер публичных телеграм-каналов. Работает через веб-превью t.me/s/, никаких API-ключей и MTProto. Ноль зависимостей, работает из коробки.
+
+Что умеет:
+
+🔸 Парсить посты с просмотрами, реакциями, датами и медиа
+🔸 Полнотекстовый поиск по постам из…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 2.660</span>
+            <span class="stat">❤️ 46</span>
+          </div>
+          <a href="https://t.me/oestick/475" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="kdoronin_blog">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #f59e0b">
+            K
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/kdoronin_blog" target="_blank" rel="noopener" class="card-channel">@kdoronin_blog</a>
+            <span class="card-time">18ч</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Небольшой хак по использованию моделей от Kling.
+
+Я уже не один раз писал в этом канале, что эта модель очень плохо держит текст. Особенно текст в движении. И особенно, если это кириллица.
+
+Со временем изменилось немногое. Но есть способ минимизировать эту проблему.
+
+Чтобы текст меньше плыл, можно подсунуть в Kling изображение максимально-возможного качества. Что в Omni, что в базовую тройку, если подать 4К-изображение для генерации FullHD видео, то качество текста на видео будет лучше, чем если туда же отправить изображение в FullHD.
+
+p.s.: когда-нибудь Seedance 2.0 почтит своим присутствием fal.ai...
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 1.200</span>
+            <span class="stat">❤️ 17</span>
+          </div>
+          <a href="https://t.me/kdoronin_blog/1238" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="max_about_ai">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #0ea5e9">
+            M
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/max_about_ai" target="_blank" rel="noopener" class="card-channel">@max_about_ai</a>
+            <span class="card-time">5д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Про универсальных AI агентов
+
+Последний месяц эксперементирую с Claude Cowork, OpenClaw и Manus. Мои краткие выводы:
+
+0️⃣ Если у вас FOMO, что все вокруг в 10 раз эффективнее благодаря OpenClaw и другим AI агентам, то можете перестать нервничать - технологии все еще далеки от совершенства. Пока хайпа все еще больше чем пользы. Значит ли это, что не надо их пробовать или использовать? Нет! Потому что уже сейчас можно делегировать отдельные задачи, а в какой-то момент рост станет эскпоненциальным и на нем можно будет хорошо вырастить свою карьеру или бизнес.
+
+1⃣ Самый зрелый из протестировнных продуктов - Claude Cowork. Он может управлять Chrome и десктопом. А запускать его на десктопе можно с мобилки при помощи функции Dispatch. У него есть библиотека скиллов, коннекторов и плагинов. Работ…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 4.800</span>
+            <span class="stat">❤️ 59</span>
+          </div>
+          <a href="https://t.me/max_about_ai/102" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="aostrikov_ai_agents">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #f59e0b">
+            A
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/aostrikov_ai_agents" target="_blank" rel="noopener" class="card-channel">@aostrikov_ai_agents</a>
+            <span class="card-time">4д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Так, командировка позади, возвращаемся в привычный ритм.
+
+Таки дожал от корки до корки https://github.com/shareAI-lab/learn-claude-code, лучшее руководство на сегодняшний день как строить claude code like ассистентов.
+
+Особый кайф было почитать код и увидеть, что даже сложные со стороны вещи - субагенты, планирование задач, компактизация контекста - делаются через 10-20 строчек кода.
+
+Репо с большим упором на кодинг, пристегивайтесь. Кратенько рассказываю, как идеологически все это пишется.
+
+1. The Agent Loop - сердце любого агента. Реализация простая - мы отдаем в LLM system prompt, прошлую историю переписки, tool, их историю использования и ждем результат ответа. Если в ответе LLM захочет дернуть tool - фреймворк вызовет его сам и принесет результаты снова в модель, пока stop_reason != …
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 1.690</span>
+            <span class="stat">❤️ 101</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/60" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="countwithsasha">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #10b981">
+            C
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/countwithsasha" target="_blank" rel="noopener" class="card-channel">@countwithsasha</a>
+            <span class="card-time">2д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          NeuralDeep Skills: локальная база агентных навыков под ру-сервисы
+
+Всем, кто пользуется агентами, 100% известна такая вещь, как skills.sh. Это огромная база скиллов агентов под любые сервисы. Ставишь – и агент уже умеет с ними работать из коробки.
+
+Так вот, в российском сообществе давно напрашивался аналог под локальный стек. И его сделал наш друг и коллега по тг – Валерий @neuraldeep. Он в целом регулярно делает разные практичные штуки для разработчиков, и это как раз одна из них.
+
+Итак, встречайте: neuraldeep.ru/
+
+Это база, в которой будут собраны скиллы для работы с самими разными ру-сервисами. Туда уже залили интеграции под инструменты Яндекс, Битрикс24, 1С и другое, чем многие пользуются каждый день. 
+
+– Установка все так же происходит одной командой, все привычно и понятно 
+– Проект…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 586</span>
+            <span class="stat">❤️ 18</span>
+          </div>
+          <a href="https://t.me/countwithsasha/563" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="neuraldeep">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #e11d48">
+            N
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/neuraldeep" target="_blank" rel="noopener" class="card-channel">@neuraldeep</a>
+            <span class="card-time">3д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          NeuralDeep Skills: локальная база агентных навыков под ру-сервисы
+
+Всем, кто пользуется агентами, 100% известна такая вещь, как skills.sh. Это огромная база скиллов агентов под любые сервисы. Ставишь – и агент уже умеет с ними работать из коробки.
+
+Так вот, в российском сообществе давно напрашивался аналог под локальный стек. И его сделал наш друг и коллега по тг – Валерий @neuraldeep. Он в целом регулярно делает разные практичные штуки для разработчиков, и это как раз одна из них.
+
+Итак, встречайте: neuraldeep.ru/
+
+Это база, в которой будут собраны скиллы для работы с самими разными ру-сервисами. Туда уже залили интеграции под инструменты Яндекс, Битрикс24, 1С и другое, чем многие пользуются каждый день. 
+
+– Установка все так же происходит одной командой, все привычно и понятно 
+– Проект…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 3.230</span>
+            <span class="stat">❤️ 90</span>
+          </div>
+          <a href="https://t.me/neuraldeep/2018" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="nobilix">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #84cc16">
+            N
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/nobilix" target="_blank" rel="noopener" class="card-channel">@nobilix</a>
+            <span class="card-time">3д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          #ReDigest
+
+Продолжаем субботнюю рубрику, тут я кратко рассказываю про новости из мира технологий и AI, которые привлекли мое внимание.
+
+Дайджест недели:
+
+- OpenAI закрывает Sora как продукт - приложение, сайт и даже API. Disney параллельно отменила партнерство и $1B инвестицию в OpenAI.
+
+- Гонка следующего поколения моделей: у Anthropic утекли данные о Claude Mythos (Capybara) - сильно и мощнее Опуса, особенно в кодинге и кибербезопасности. Тем временем OpenAI по слухам завершила претрейн новой мощной модели Spud.
+
+- Anthropic выиграла суд против Пентагона - судья назвала попытку забанить компанию &#34;классической местью&#34;.
+
+- Неделя open-source аудио-моделей: Mistral выпустила Voxtral TTS - превосходит ElevenLabs по оценкам людей. Cohere выпустила Transcribe - ASR-модель, #1 на HuggingFace O…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 2.580</span>
+            <span class="stat">❤️ 59</span>
+          </div>
+          <a href="https://t.me/nobilix/240" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="aostrikov_ai_agents">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #f59e0b">
+            A
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/aostrikov_ai_agents" target="_blank" rel="noopener" class="card-channel">@aostrikov_ai_agents</a>
+            <span class="card-time">2д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Делаем второй комьюнити стрим
+
+Итак, в эту субботу в 14.00 по МСК будет наш второй zoom-созвон, отвечаем на любые ваши вопросы. Первый был вот тут, прошло отлично.
+
+На этот раз в жюри шоу Голос:
+- ваш покорный слуга
+- Валера @neuraldeep
+- Рефат @nobilix
+- секретный гость - Мистер X
+
+Правила все те же - это просто zoom звонок, вы на него залетаете, поднимаете руку, включаете камеру (если одеты) и спрашиваете что душе угодно:
+
+- сколько первых мест возьмут openclaw агенты в bitgn 11 апреля? (все, но не твой крабик на кими)
+
+- какой лучший курс купить по ИИ в 2026 году? (но ответ уже есть)
+
+- будут ли n8n инженеры получать 600к к концу 2026 года? (да, можно и про n8n в этот раз)
+
+- ...и что-то посерьезнее, плиииз!
+
+Ссылка на Google Calendar:
+https://calendar.app.google/C6CTc7uRF2GVL1fp8
+
+SEE…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 5.710</span>
+            <span class="stat">❤️ 37</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/62" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="neuraldeep">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #e11d48">
+            N
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/neuraldeep" target="_blank" rel="noopener" class="card-channel">@neuraldeep</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Скандальчик очередной с атакой на цепочку поставок. На сей раз под ударом все кто имеют в цепочке зависимостей библиотку axios в npm (очень популярная библиотека для сетевых запросов).
+
+Более пяти часов она ставила зашифрованный малварь на машины жертв. Объемы инсталляций библиотеки— 100 млн в месяц, так что заражены могут быть миллионы машин.
+
+Проверяйте себя 
+
+https://x.com/feross/status/2038807290422370479?s=46&amp;t=X0WelBfVXZJ6DwiINUU8mA
+
+Если вы запускали npm install в последние сутки: Проверка, попали ли вы под атаку:
+
+# blackhole C2 Domain
+echo &#39;127.0.0.1 sfrclak.com&#39; | sudo tee -a /etc/hosts
+
+# flush DNS cache for good measure
+sudo dscacheutil -flushcache
+
+# check for IoC - if this file exists you are pwned
+# shut down your machine immediately
+ls /Library/Caches/com.apple.act.mond
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 2.960</span>
+            <span class="stat">❤️ 37</span>
+          </div>
+          <a href="https://t.me/neuraldeep/2026" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="evilfreelancer">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #a855f7">
+            E
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/evilfreelancer" target="_blank" rel="noopener" class="card-channel">@evilfreelancer</a>
+            <span class="card-time">6ч</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Всех с праздником!
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 795</span>
+            <span class="stat">❤️ 25</span>
+          </div>
+          <a href="https://t.me/evilfreelancer/1620" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="dealerAI">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #a855f7">
+            D
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/dealerAI" target="_blank" rel="noopener" class="card-channel">@dealerAI</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Чёт все озаботились, что закроют доступы к мировым LLM. Конечно, по аналогии, с текущей движухой вокруг ТГ вероятность растёт. Но в самом законопроекте (даже сегодня снова скачал) этого нет. Далее, как же сами создатели суверенных и национальных нейросетей...
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 4.090</span>
+            <span class="stat">❤️ 55</span>
+          </div>
+          <a href="https://t.me/dealerAI/1749" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="tips_ai">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #10b981">
+            T
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/tips_ai" target="_blank" rel="noopener" class="card-channel">@tips_ai</a>
+            <span class="card-time">7д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Figma похоже начали догадываться что людям нужно больше. 
+
+Они открыли свой канвас для AI агентов.
+
+Новый use_figma — агент создаёт и редактирует компоненты прямо на канвасе через вашу дизайн-систему. Переменные, компоненты, auto layout.
+
+Claude Code, Codex, Cursor и другие MCP-клиенты теперь могут работать с Figma напрямую.
+
+Появились skills которые объясняют агенту как работать в Figma. 
+
+Из основных:
+• figma-implement-design: читает дизайн из Figma и генерирует рабочий код
+• figma-generate-library: строит дизайн-систему в Figma из вашей кодовой базы
+• figma-generate-design: собирает экраны из реальных компонентов и переменных
+• figma-create-design-system-rules: сохраняет стандарты команды, агент их запоминает и применяет
+
+Для команд где дизайнеры живут в Figma, то что нужно.
+
+Сейчас бе…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 5.520</span>
+            <span class="stat">❤️ 38</span>
+          </div>
+          <a href="https://t.me/tips_ai/4637" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="dealerAI">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #a855f7">
+            D
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/dealerAI" target="_blank" rel="noopener" class="card-channel">@dealerAI</a>
+            <span class="card-time">7д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Дай человеку MCP для заказа и он перевернёт мир покупок. 
+
+Сегодня уже виден тренд на AI native трансформацию бизнеса: найм, обучение, инфра и adoption инструментов. Но кругом, мы видим, пока, AI inspired отдельных людей, чем компаний. Т.е. эффективнее стали единицы, а не общность. Но всеравно приятно, как эти энтузиасты осваивают наши решения и идут дальше. Вот пример, как MCP от ВкусВилл стал отправной точкой для создания такого решения заказов в Додо.
+
+А почитать про наше решение, можно тут. Ещё примеры агентиков/ботиков с нашим MCP тут и тут. Хабр тут.
+
+Присоединяйтесь и Вы. 👍
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 9.830</span>
+            <span class="stat">❤️ 48</span>
+          </div>
+          <a href="https://t.me/dealerAI/1741" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="tips_ai">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #10b981">
+            T
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/tips_ai" target="_blank" rel="noopener" class="card-channel">@tips_ai</a>
+            <span class="card-time">5д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          В последнее время очень много тулов для оркестрации агентов
+
+Вот ещё один: Cline сделали Kanban для управления агентами
+
+Каждая карточка задачи получает свой терминал и worktree, всё создаётся автоматически.
+
+Включаешь автокоммит и связываешь карточки, получаешь цепочки зависимостей, которые выполняют работу автономно.
+
+Изменения смотришь прямо в интерфейсе, комментарии к строкам, git встроен.
+
+Работает с любым CLI-агентом: Claude Code, Codex, Cline, остальные добавят позже.
+
+Kanban docs | GitHub
+
+@tips_ai #tools
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 5.820</span>
+            <span class="stat">❤️ 41</span>
+          </div>
+          <a href="https://t.me/tips_ai/4640" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="evilfreelancer">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #a855f7">
+            E
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/evilfreelancer" target="_blank" rel="noopener" class="card-channel">@evilfreelancer</a>
+            <span class="card-time">3д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Конвертация Chroma Context-1 в MXFP4 для домашней 4090
+
+Позавчера Chroma выкатила техрепорт по своей модельке chromadb/context-1, прочёл я его сегодня и был крайне впечатлен.
+
+Это 20B параметров, MoE-архитектура на базе openai/gpt-oss-20b, модель натренирована на агентный поиск, делает декомпозицию сложных запросов на подзапросы, выполнняет итеративный поиск по корпусу документов, и самое интересное - self-editing context, когда модель сама решает какие из найденных документов оставить, а какие выкинуть чтобы не засорять контекстное окно. На бенчмарках показывает результаты сопоставимые с топовыми LLM при скорости как у gpt-oss-20b.
+
+Естественно, захотелось потрогать руками, но... модель выложена в BF16, а это 39 ГБ только веса, ну а моя 4090 хоть и прокачана до 48 ГБ VRAM, но 39 ГБ чисты…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 1.370</span>
+            <span class="stat">❤️ 43</span>
+          </div>
+          <a href="https://t.me/evilfreelancer/1612" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="gleb_pro_ai">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #6d28d9">
+            G
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/gleb_pro_ai" target="_blank" rel="noopener" class="card-channel">@gleb_pro_ai</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Перетаскиваю процесс C4 скана репозитория из шотгана в скилл Кодекса. 
+
+Наблюдения по ходу: раб агент может не только экзекьютить задачу. но и сформулировать по ходу, в чем проблема, и сразу же исправить свой промпт. Бесценно для отладки муторных процессов. Не то, чтобы это было открытием, просто раньше как-то мало пользовался.
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 3.290</span>
+            <span class="stat">❤️ 30</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/499" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="NGI_ru">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #f97316">
+            N
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/NGI_ru" target="_blank" rel="noopener" class="card-channel">@NGI_ru</a>
+            <span class="card-time">15ч</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          #оффтоп 
+
+Наверное, самый большой цинизм, который я наблюдаю в США за 2 года жизни здесь, связан с фейковой заботой об экологии.
+
+Казалось бы, здесь есть переработка мусора, компании заявляют о том, что их цель - сократить свой углеродный след до нуля. Здесь отлично развит рынок pre-owned вещей, и прямо в магазинах можно купить технику б/у или Open Box по очень приятной цене. Звучит круто, вот только на практике львиная доля этой заботы об окружающей среде оказывается банальным лицемерием.
+
+Начнем с доставки. Заказывая что-то с Amazon, ты получаешь свой товар в его родной коробке, которая упакована в еще одну коробку, которая в 2 раза больше его родной. Зачем? Непонятно. И это в той же стране, где Apple убрала зарядки из комплекта iPhone, оправдывая это тем, что так в логистических целях …
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 637</span>
+            <span class="stat">❤️ 23</span>
+          </div>
+          <a href="https://t.me/NGI_ru/603" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="neuraldeep">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #e11d48">
+            N
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/neuraldeep" target="_blank" rel="noopener" class="card-channel">@neuraldeep</a>
+            <span class="card-time">2д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Делаем второй комьюнити стрим
+
+Итак, в эту субботу в 14.00 по МСК будет наш второй zoom-созвон, отвечаем на любые ваши вопросы.
+
+На этот раз в жюри шоу Голос:
+- Валера @neuraldeep
+- Рефат @nobilix
+- секретный гость - Мистер X
+
+Правила все те же - это просто zoom звонок, вы на него залетаете, поднимаете руку, включаете камеру (если одеты) и спрашиваете что душе угодно:
+
+- сколько первых мест возьмут openclaw агенты в bitgn 11 апреля? (все, но не твой крабик на кими)
+
+- какой лучший курс купить по ИИ в 2026 году? (но ответ уже есть)
+
+- будут ли n8n инженеры получать 600к к концу 2026 года? (да, можно и про n8n в этот раз)
+
+- ...и что-то посерьезнее, плиииз!
+
+Ссылка на Google Calendar:
+https://calendar.app.google/C6CTc7uRF2GVL1fp8
+
+SEE YOU THERE 👊🏻
+
+Кидайте заранее вопросы в комменты, остане…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 3.370</span>
+            <span class="stat">❤️ 47</span>
+          </div>
+          <a href="https://t.me/neuraldeep/2024" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="countwithsasha">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #10b981">
+            C
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/countwithsasha" target="_blank" rel="noopener" class="card-channel">@countwithsasha</a>
+            <span class="card-time">5д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Яндекс DataLens стал платным — я навайбкодил свой за вечер
+
+С 1 марта Яндекс DataLens требует 990 ₽/мес за каждого пользователя. Одно бесплатное место, остальные — за деньги. У меня есть дашборды расшарены на 10 внешних сотрудников. + 10 000 ₽ в месяц за то, что раньше было бесплатным — перебор.
+
+Поэтому я сел и написал свой дашборд. За вечер.
+
+🛠️ Что получилось
+
+Красивый UI на Реакте, авторизация через Keycloak с логином через Telegram (потому что было готово, не спрашивайте), пока откопировал запросы дашбордов DataLens через инспектор для одного проекта. Число пользователей не ограничено.
+
+74 файла, 12 000 строк кода, один PR на гитхабе.
+
+🧪 Как именно вайбкодил
+
+Заодно затестил обновлённый init в Claude Code. Сейчас он в research preview за флагом:
+
+CLAUDE_CODE_NEW_INIT=1 claude
+
+Старый…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 1.850</span>
+            <span class="stat">❤️ 57</span>
+          </div>
+          <a href="https://t.me/countwithsasha/556" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="kdoronin_blog">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #f59e0b">
+            K
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/kdoronin_blog" target="_blank" rel="noopener" class="card-channel">@kdoronin_blog</a>
+            <span class="card-time">3д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Вредные советы от LLM или &#34;у вас vibe-coding прохудился&#34;.
+
+В моём скромном проекте для анализа видео с помощью мультимодальных моделей есть отдельный модуль, позволяющий получить список актуальных моделей из API перед тем, как их отображать в интерфейсе. Это решение позволяет мне не обновлять проект каждый раз, когда Google или Openrouter выпускает/обновляет/переименовывает модели. 
+
+Сегодня был удивлён, когда в одном из проектов на 16 тысяч github-звёзд с 30+ интеграциями с разными LLM-провайдерами обнаружил список доступных моделей, захардкоженный в виде массива строк. И у значительной части этих провайдеров в конфиге висели outdated-модели, уже просто не доступные по API.
+
+Вообще, AI-coding-агенты очень любят привносить в программы хрупкость, добавляя туда:
+
+1. Массивы заранее захардко…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 1.630</span>
+            <span class="stat">❤️ 29</span>
+          </div>
+          <a href="https://t.me/kdoronin_blog/1234" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="dealerAI">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #a855f7">
+            D
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/dealerAI" target="_blank" rel="noopener" class="card-channel">@dealerAI</a>
+            <span class="card-time">17ч</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 2.580</span>
+            <span class="stat">❤️ 22</span>
+          </div>
+          <a href="https://t.me/dealerAI/1752" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="kdoronin_blog">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #f59e0b">
+            K
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/kdoronin_blog" target="_blank" rel="noopener" class="card-channel">@kdoronin_blog</a>
+            <span class="card-time">4д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Cognee – движок знаний для AI-агентов. На замену Mem0.
+
+Во первых строках моего письма, спешу вам сообщить, что их заявление про &#34;Knowledge Engine for AI Agent Memory in 6 lines of code&#34; – наглая ложь.
+
+Первичная настройка и запуск в рамках моего привычного тестового стенда заняла больше времени, чем обычно (с другими Knoledge Engine). Возможно, я делал что-то не так, но с первичной настройкой Cognee пришлось повозиться.
+
+Первое впечатление фреймворк производит достаточно приятное. Есть понятно организованный пайплайн по хранению данных, который можно &#34;углублять&#34; (кастомизировать) на каждом из этапов.
+
+Сам готовит любой загруженный документ (более 30 типов поддерживает) к загрузке в векторную БД. Потом из каждого чанка извлекает сущности, из которых строит граф связей. 
+
+Причём граф не &#34;д…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 1.810</span>
+            <span class="stat">❤️ 64</span>
+          </div>
+          <a href="https://t.me/kdoronin_blog/1233" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="dealerAI">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #a855f7">
+            D
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/dealerAI" target="_blank" rel="noopener" class="card-channel">@dealerAI</a>
+            <span class="card-time">17ч</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 2.630</span>
+            <span class="stat">❤️ 1</span>
+          </div>
+          <a href="https://t.me/dealerAI/1751" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="evilfreelancer">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #a855f7">
+            E
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/evilfreelancer" target="_blank" rel="noopener" class="card-channel">@evilfreelancer</a>
+            <span class="card-time">2д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Sparse Attention Is All I Need
+
+Вчера в соседнем чатике мне задали резонный вопрос о том какие метрики использовались для оценки качества работы конвертированной ruGPT3XL модели? И это очень правильный вопрос, я честно не знал, что ответить, так как гонял тесты MERA в отрыве от её оригинальной версии, потому что оригинальную так и не смог запустить (слишком старое железо требуется для древнего мегатрона, пайчарма, апекса, куды и так далее).
+
+Ну и в общем свербила меня эта мысль, думаю ладно, надо что-то сделать, проблема только в том какую метрику считать? Решил взять perplexity (PPL), так как она указана в карточках всех моделей, но тут возникла другая проблема, эта PPL должна быть на датасете на котором оригинальные модельки тестировались, а у меня его по понятным причинам нет, да и не …
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 1.150</span>
+            <span class="stat">❤️ 12</span>
+          </div>
+          <a href="https://t.me/evilfreelancer/1613" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="neuraldeep">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #e11d48">
+            N
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/neuraldeep" target="_blank" rel="noopener" class="card-channel">@neuraldeep</a>
+            <span class="card-time">5д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Я же не отъехавший?)
+
+UPDATE: Фотку починили спасибо @andrewkiryushkin
+
+Оригинал: https://t.me/neuraldeepchat/48897
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 5.820</span>
+            <span class="stat">❤️ 194</span>
+          </div>
+          <a href="https://t.me/neuraldeep/2012" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="dealerAI">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #a855f7">
+            D
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/dealerAI" target="_blank" rel="noopener" class="card-channel">@dealerAI</a>
+            <span class="card-time">5д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Лол, у вас тут мифически протекло...
+
+TL;DR
+
+Что случилось?
+
+Anthropic по ошибке сделала публичными около 3000 внутренних документов. Из утечки стало известно о существовании новой сверхмощной ИИ‐модели Claude Mythos (внутреннее кодовое имя — Capybara). 👍
+
+Что такое Mythos?
+
+Это новый флагман, который по заявлению компании превосходит предыдущего лидера Claude Opus 4.6 по программированию, академическим рассуждениям и кибербезопасности. Модель настолько сильна в кибербезопасности, что разработчики боятся её использования злоумышленниками и планировали сначала дать доступ только специалистам по защите.
+
+Юмор дня. 🤣
+
+Утечка произошла из‐за человеческой ошибки при настройках системы управления контентом (CMS). Это выглядит иронично на фоне того, что сама компания заявляет о передовых подхода…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 5.810</span>
+            <span class="stat">❤️ 52</span>
+          </div>
+          <a href="https://t.me/dealerAI/1745" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="nobilix">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #84cc16">
+            N
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/nobilix" target="_blank" rel="noopener" class="card-channel">@nobilix</a>
+            <span class="card-time">6д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Самое продуктивное, что я сделал за последний год не имеет отношения к AI. И почему понимание не стоит делегировать.
+
+За последнее время у меня было много ситуаций, когда 3-4 часа действительно сосредоточенной работы заменяли недели &#34;дефолтной&#34; работы (моей или чьей-то, не важно). Не потому что я работал быстрее, а потому что я нашел ресурс как следует вникнуть. Речь не только про AI-слоп, а про людей, команды, целые проекты. Вникание всегда работало, но с засильем AI стало каким-то волшебным зельем (которое все сложнее добывать).
+
+Если говорить про нашу с вами работу головой - узкое горлышко не в скорости. А внимание и осознанность. Понимание того, что ты делаешь и зачем.
+
+И именно это сейчас под ударом с двух сторон благодаря AI. Первая - внутренняя: думать энергозатратно, и мы механиче…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 4.570</span>
+            <span class="stat">❤️ 182</span>
+          </div>
+          <a href="https://t.me/nobilix/239" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="nobilix">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #84cc16">
+            N
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/nobilix" target="_blank" rel="noopener" class="card-channel">@nobilix</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Делаем второй комьюнити стрим
+
+Итак, в эту субботу в 14.00 по МСК будет наш второй zoom-созвон, отвечаем на любые ваши вопросы.
+
+На этот раз в жюри шоу Голос:
+- Валера @neuraldeep
+- Рефат @nobilix
+- секретный гость - Мистер X
+
+Правила все те же - это просто zoom звонок, вы на него залетаете, поднимаете руку, включаете камеру (если одеты) и спрашиваете что душе угодно:
+
+- сколько первых мест возьмут openclaw агенты в bitgn 11 апреля? (все, но не твой крабик на кими)
+
+- какой лучший курс купить по ИИ в 2026 году? (но ответ уже есть)
+
+- будут ли n8n инженеры получать 600к к концу 2026 года? (да, можно и про n8n в этот раз)
+
+- ...и что-то посерьезнее, плиииз!
+
+Ссылка на Google Calendar:
+https://calendar.app.google/C6CTc7uRF2GVL1fp8
+
+SEE YOU THERE 👊🏻
+
+Кидайте заранее вопросы в комменты, остане…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 1.270</span>
+            <span class="stat">❤️ 34</span>
+          </div>
+          <a href="https://t.me/nobilix/241" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="evilfreelancer">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #a855f7">
+            E
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/evilfreelancer" target="_blank" rel="noopener" class="card-channel">@evilfreelancer</a>
+            <span class="card-time">4д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Встречайте мой новый пост &#34;Реставрация ruGPT-3 XL или как я вернул к жизни забытую русскую языковую модель&#34; на Хабр, в нём я подробно рассказал о том как была реализована конвертация, как проводилось её тестирование, как запустить локально, как конвертировать в GGUF.
+
+А вот ссылочки:
+- evilfreelancer/ruGPT3XL - сконвертированная модель в формате HuggingFace (safetensors)
+- evilfreelancer/ruGPT3XL-GGUF - квантизированные GGUF-веса для llama.cpp и Ollama
+- evilfreelancer/rugpt3 - GGUF загруженные на Ollama
+- EvilFreelancer/rugpt3xl-convert - исходники скриптов конвертации
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 6.340</span>
+            <span class="stat">❤️ 36</span>
+          </div>
+          <a href="https://t.me/evilfreelancer/1608" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="gleb_pro_ai">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #6d28d9">
+            G
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/gleb_pro_ai" target="_blank" rel="noopener" class="card-channel">@gleb_pro_ai</a>
+            <span class="card-time">6д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Очередной перевод про применение Карпатовского авторесерча для улучшения промптов
+
+https://vibeportal.ru/forum/topic/kak-prokachat-rabotu-s-claude-v-10-raz-ispol-zuia-metod-autoresearch-andreia-kar
+
+Вообще, Х мне регулярно подкидывает топовые статьи, пишите, стоит ли их переводить и публиковать, а то я хз - на портале лайков и каментов к ним мало, может и не нужно никому.
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 5.490</span>
+            <span class="stat">❤️ 135</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/494" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="evilfreelancer">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #a855f7">
+            E
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/evilfreelancer" target="_blank" rel="noopener" class="card-channel">@evilfreelancer</a>
+            <span class="card-time">3д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          NeuralDeep Skills: локальная база агентных навыков под ру-сервисы
+
+Всем, кто пользуется агентами, 100% известна такая вещь, как skills.sh. Это огромная база скиллов агентов под любые сервисы. Ставишь – и агент уже умеет с ними работать из коробки.
+
+Так вот, в российском сообществе давно напрашивался аналог под локальный стек. И его сделал наш друг и коллега по тг – Валерий @neuraldeep. Он в целом регулярно делает разные практичные штуки для разработчиков, и это как раз одна из них.
+
+Итак, встречайте: neuraldeep.ru/
+
+Это база, в которой будут собраны скиллы для работы с самими разными ру-сервисами. Туда уже залили интеграции под инструменты Яндекс, Битрикс24, 1С и другое, чем многие пользуются каждый день. 
+
+– Установка все так же происходит одной командой, все привычно и понятно 
+– Проект…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 837</span>
+            <span class="stat">❤️ 19</span>
+          </div>
+          <a href="https://t.me/evilfreelancer/1609" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="gleb_pro_ai">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #6d28d9">
+            G
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/gleb_pro_ai" target="_blank" rel="noopener" class="card-channel">@gleb_pro_ai</a>
+            <span class="card-time">4д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Распробовал прошку от ChatGPT
+
+Походу единственная не-лоботомизированная модель на сегодня. С ней работает старая добрая тактика шотгана. можно в нее кинуть 100500 файлов и она начинает долго-долго мутить и что-то делать, а потом возвращается с хорошим крепким ответом. 
+
+В общем, теперь обязательная стадия для сложных ТЗ-шек. И более понятно, за что еще платить 200 баксов кроме кодекса.
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 4.420</span>
+            <span class="stat">❤️ 61</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/497" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="neuraldeep">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #e11d48">
+            N
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/neuraldeep" target="_blank" rel="noopener" class="card-channel">@neuraldeep</a>
+            <span class="card-time">7д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          NeuralDeep 
+
+База знаний для AI разработчиков
+
++ Случился ребрендинг 
+
+Буду стаскивать сюда все проверенные и рабочие вещи 
+Скиллы 
+МСП
+CLI 
+
+Наши проекты с Пашей (open source) весь 
+Фокус на РУ сегменте 
+
+https://neuraldeep.ru/
+
+И кстати проект open source все тоже самое можно повторить у себя в компании!
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 6.190</span>
+            <span class="stat">❤️ 77</span>
+          </div>
+          <a href="https://t.me/neuraldeep/2008" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="kdoronin_blog">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #f59e0b">
+            K
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/kdoronin_blog" target="_blank" rel="noopener" class="card-channel">@kdoronin_blog</a>
+            <span class="card-time">5д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Изучаем документацию фреймворка во время прогулки. Очередной мини-кейс использования NotebookLM. 
+
+1. Отправляем ссылку на главную страницу документации в ChatGPT и просим выгрузить списком все страницы документации, сортируя их по степени важности (самые важные в начале).
+
+2. Берём список ссылок и отправляем их в качестве источников в NotebookLM. Если страниц больше 50, отсекаем нижние, так как они менее важны.
+
+3. Заказываем подкаст с указанием, какие конкретно аспекты из документации интересуют больше всего.
+
+Такой подход позволяет получить в режиме &#34;на ходу&#34; общее понимание о принципах работы фреймворка. А потом прояснять конкретные нюансы через диалог с LLM и чтение документации. 
+
+Ещё пара материалов, связанных с NotebookLM:
+1. Большой архив с исследованиями про AI-агентов.
+2. Испол…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 2.009</span>
+            <span class="stat">❤️ 51</span>
+          </div>
+          <a href="https://t.me/kdoronin_blog/1232" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="gleb_pro_ai">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #6d28d9">
+            G
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/gleb_pro_ai" target="_blank" rel="noopener" class="card-channel">@gleb_pro_ai</a>
+            <span class="card-time">2д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Что нужно знать про SDD (specification driven development)
+
+Вы наверняка это слышали. Дескать, сначала сделай план, потом пиши код. Ну, все очевидно 🙂 Но дальше начинают искать фреймворки, а их 100500 штук, и уже сложно разобраться, а что вообще нужно брать, что нет, и в чем там правда. 
+
+Поэтому накину базы. 
+
+По SDD принципиально есть всего два конкурирующих подхода.
+
+1) Спецификации как источник правды. 
+
+Сюда относятся все подходы и стартапы, которые делают вики-системы или генерят код по спекам. 
+
+Типа, главное написать спеку, а код мы нашарашим. Спецификации храним и тщательно охраняем.
+
+2) Код как источник правды. Тут тоже есть спецификации, но как одноразовые документы. Написал -&gt; сделал код -&gt; выкинул.
+
+А источником истины является код, и если тебе нужно сделать задачу, то ты быс…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 4.019</span>
+            <span class="stat">❤️ 62</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/498" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="evilfreelancer">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #a855f7">
+            E
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/evilfreelancer" target="_blank" rel="noopener" class="card-channel">@evilfreelancer</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Sparse Attention Is All I Need Вчера в соседнем чатике мне задали резонный вопрос о том какие метрики использовались для оценки качества работы конвертированной ruGPT3XL модели? И это очень правильный вопрос, я честно не знал, что ответить, так как гонял...
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 1.010</span>
+            <span class="stat">❤️ 18</span>
+          </div>
+          <a href="https://t.me/evilfreelancer/1618" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="kdoronin_blog">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #f59e0b">
+            K
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/kdoronin_blog" target="_blank" rel="noopener" class="card-channel">@kdoronin_blog</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Для всех &#34;любителей&#34; встроенной визуализации Neo4j, Cognee, про который писал ранее, предлагает кастомный инструмент для визуализации графа.
+
+Позволяет переключать разные слои, искать в графе информацию, подсвечивать группы, которые сформированы в графе. 
+
+Для того, чтобы включить такую визуализацию для своей cognee-памяти, достаточно двух строк на Python:
+
+from cognee.api.v1.visualize.visualize import visualize_graph
+
+await visualize_graph()
+
+Команда для визуализации формирует готовый к отображению HTML-код. 
+
+Работать с таким графом куда приятнее, чем админкой от Neo4j.
+
+p.s.: продолжительность гифки в посте – 90 секунд. Enjoy! 😊
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 1.440</span>
+            <span class="stat">❤️ 19</span>
+          </div>
+          <a href="https://t.me/kdoronin_blog/1237" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="countwithsasha">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #10b981">
+            C
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/countwithsasha" target="_blank" rel="noopener" class="card-channel">@countwithsasha</a>
+            <span class="card-time">2д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Валера тут выложил отечественный маркетплейс скиллов для LLM и даже прикрутил к нему робота помощника на OSS-120B. 
+
+Кстати там очень много скиллов вашего покорного слуги. Радуюсь таким проектам, которые ускоряют отечественный ИИ адопшен.
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 986</span>
+            <span class="stat">❤️ 8</span>
+          </div>
+          <a href="https://t.me/countwithsasha/562" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="aostrikov_ai_agents">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #f59e0b">
+            A
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/aostrikov_ai_agents" target="_blank" rel="noopener" class="card-channel">@aostrikov_ai_agents</a>
+            <span class="card-time">3д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          (...продолжаем)
+
+8. Фоновые задачи. Учимся не блокироваться на параллельных долгих командах и выполнять их в соседних потоках. Тут реализация будет сильно зависеть от языка программирования, но базово так: каждую новую команду запускаем в отдельном треде и запоминаем её ID. Плюс заводим отдельную очередь, в которую будут попадать все результаты (просто stdout + stderr) выполнившихся тасочек. В итоге команды выполняются асинхронно и не блокируют основного агента. Вторую очередь вычитываем на каждой итерации агентского цикла, и кладем результат в messages - единый лог всей истории общения с агентом. На этом шаге появились две новые тулы - background_run и check_background, для запуска и проверки деталей фоновых задач.
+
+Минус тут один - в такой реализации внутрь реального запущенного процесс…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 1.350</span>
+            <span class="stat">❤️ 42</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/61" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="dealerAI">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #a855f7">
+            D
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/dealerAI" target="_blank" rel="noopener" class="card-channel">@dealerAI</a>
+            <span class="card-time">4д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Встречайте мой новый пост &#34;Реставрация ruGPT-3 XL или как я вернул к жизни забытую русскую языковую модель&#34; на Хабр, в нём я подробно рассказал о том как была реализована конвертация, как проводилось её тестирование, как запустить локально, как конвертировать в GGUF.
+
+А вот ссылочки:
+- evilfreelancer/ruGPT3XL - сконвертированная модель в формате HuggingFace (safetensors)
+- evilfreelancer/ruGPT3XL-GGUF - квантизированные GGUF-веса для llama.cpp и Ollama
+- evilfreelancer/rugpt3 - GGUF загруженные на Ollama
+- EvilFreelancer/rugpt3xl-convert - исходники скриптов конвертации
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 4.490</span>
+            <span class="stat">❤️ 18</span>
+          </div>
+          <a href="https://t.me/dealerAI/1746" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="kdoronin_blog">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #f59e0b">
+            K
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/kdoronin_blog" target="_blank" rel="noopener" class="card-channel">@kdoronin_blog</a>
+            <span class="card-time">7д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          И вот, когда уже написано десятки тысяч строк кода, появляется запрос:
+
+Окей, ChatGPT, сделай мне документацию по этому репозиторию
+
+Вот что бывает, когда не занимаешься документацией на протяжении всей жизни проекта.
+
+Понятно, что промпт утрирован и для получения &#34;очень качественной документации&#34; будет описан с десяток критериев, которым документация должна соответствовать.
+
+В итоге получим прекрасный документ в стиле &#34;Что вижу – то пою&#34;.
+
+Только это не совсем документация к проекту. Там не будет ответа на ключевой вопрос:
+
+А зачем мы это всё создавали?
+
+Потому что код на этот вопрос может ответить далеко не всегда. Ибо является проекцией реального мира на логику, выраженную через язык программирования.
+
+Более того, хороший код – это компактная и универсальная абстракция. А действительно…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 2.060</span>
+            <span class="stat">❤️ 35</span>
+          </div>
+          <a href="https://t.me/kdoronin_blog/1231" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="kdoronin_blog">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #f59e0b">
+            K
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/kdoronin_blog" target="_blank" rel="noopener" class="card-channel">@kdoronin_blog</a>
+            <span class="card-time">2д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Ищу бета-тестеров для open-source проекта
+https://github.com/Disentinel/grafema
+
+Что тестировать: MCP сервер, CLI и VS Code extension для обогащения и упрощения навигации по коду (ближайшие соседи по нише GitNexus и CodeGraphContext).
+
+Кто подойдёт: 
+- разработчик с приличной (500-15000 файлов) кодовой базой на JS/TS, (Python и Rust тоже подойдут), монорепо или мультирепо, желательно дремучее легаси
+- у вас проблемы с неявными зависимостями, много coupling
+- вы испытываете боль когда отслеживаете значение переменной через несколько файлов или по нескольким микросервисам и хотите облегчить этот процесс
+- вы используете ИИ-помощника который умеет в MCP (и он не решает для вас эту задачу достаточно хорошо)
+
+Какая выгода для тестеров:
+- приоритетная поддержка сейчас и в будущем
+- искренняя пу…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 1.570</span>
+            <span class="stat">❤️ 25</span>
+          </div>
+          <a href="https://t.me/kdoronin_blog/1236" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="tips_ai">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #10b981">
+            T
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/tips_ai" target="_blank" rel="noopener" class="card-channel">@tips_ai</a>
+            <span class="card-time">6д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Вышел ARC-AGI-3 — третья версия одного из интересных бенчмарков. 
+
+AI натренированы на всём интернете и легко решают то, что уже видели, но дай задачу которой не было в обучении, то всё. 
+
+ARC-AGI это и проверяет: может ли AI разобраться в том, чего никогда не видел.
+
+Первые две версии были статичные головоломки с паттернами.
+
+ARC-AGI-1 продержался 5 лет, пока reasoning модели его не прошли. ARC-AGI-2 меньше года.
+
+ARC-AGI-3 совсем другой формат. 135+ мини-игр, без правил и инструкций. 
+
+Никто не объясняет что делать. ИИ сам тыкает интерфейс, двигает предметы, жмёт кнопки, пробует, ошибается, пробует снова.
+
+Меряют не правильный ответ, а как быстро учится: сколько действий потратил, как запоминает, как меняет стратегию когда что-то не работает.
+
+Все задачи решаемы людьми. 
+
+Можно попробов…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 5.620</span>
+            <span class="stat">❤️ 42</span>
+          </div>
+          <a href="https://t.me/tips_ai/4639" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="neuraldeep">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #e11d48">
+            N
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/neuraldeep" target="_blank" rel="noopener" class="card-channel">@neuraldeep</a>
+            <span class="card-time">4д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          UPDATE: В след раз будем решать задачки, и разыграем пару новых 5070, следите за апдейтами, лучше включить уведомления (там уже будет задача по интереснее)
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 4.930</span>
+            <span class="stat">❤️ 124</span>
+          </div>
+          <a href="https://t.me/neuraldeep/2017" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="neuraldeep">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #e11d48">
+            N
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/neuraldeep" target="_blank" rel="noopener" class="card-channel">@neuraldeep</a>
+            <span class="card-time">3д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Кто угадает что за карта приехала(надо полные спеки угадать), тому в подарок отправлю 2080ti (11gb, по РФ) А так теперь у нас в контуре с Пашей пополнение =) Победитель найден это была 4090 (48гб) UPDATE: В след раз будем решать задачки, и разыграем пару...
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 4.640</span>
+            <span class="stat">❤️ 52</span>
+          </div>
+          <a href="https://t.me/neuraldeep/2019" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="evilfreelancer">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #a855f7">
+            E
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/evilfreelancer" target="_blank" rel="noopener" class="card-channel">@evilfreelancer</a>
+            <span class="card-time">2д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Sparse Attention Is All I Need Вчера в соседнем чатике мне задали резонный вопрос о том какие метрики использовались для оценки качества работы конвертированной ruGPT3XL модели? И это очень правильный вопрос, я честно не знал, что ответить, так как гонял...
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 1.130</span>
+            <span class="stat">❤️ 34</span>
+          </div>
+          <a href="https://t.me/evilfreelancer/1617" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="neuraldeep">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #e11d48">
+            N
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/neuraldeep" target="_blank" rel="noopener" class="card-channel">@neuraldeep</a>
+            <span class="card-time">4д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Кто угадает что за карта приехала(надо полные спеки угадать), тому в подарок отправлю 2080ti (11gb, по РФ)
+
+А так теперь у нас в контуре с Пашей пополнение =)
+
+Победитель найден это была 4090 (48гб)
+
+UPDATE: В след раз будем решать задачки, и разыграем пару новых 5070, следите за апдейтами, лучше включить уведомления (там уже будет задача по интереснее)
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 4.970</span>
+            <span class="stat">❤️ 59</span>
+          </div>
+          <a href="https://t.me/neuraldeep/2015" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="evilfreelancer">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #a855f7">
+            E
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/evilfreelancer" target="_blank" rel="noopener" class="card-channel">@evilfreelancer</a>
+            <span class="card-time">3д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Выгрузить модель на HuggingFace не так-то просто
+
+Конвертировал тут новинку chromadb/context-1 в mxfp4 формат и пытаюсь загрузить веса на HuggingFace, но по какой-то причине huggingface-cli перестал подхватывать переменные прокси, в результате чего из моего контура запросы не уходят, пришлось лезть в исходники и оказалось, что авторы HF добавили в свой тул хранилища типа Xet включенные по умолчанию, а эта штука не использует httpx и как следствие игнорирует настройки прокси.
+
+Короче чтобы решить эту проблему и из рабочего контура подключиться к проксику надо вырубить Xet переменной HF_HUB_DISABLE_XET, а дальше передать проксики и команду:
+HF_HUB_DISABLE_XET=1 \
+ALL_PROXY=socks5://192.168.1.21:1080 \
+HTTPS_PROXY=socks5://192.168.1.21:1080 \
+HTTP_PROXY=socks5://192.168.1.21:1080 \
+huggingfa…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 1.090</span>
+            <span class="stat">❤️ 17</span>
+          </div>
+          <a href="https://t.me/evilfreelancer/1610" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="oestick">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #8b5cf6">
+            O
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/oestick" target="_blank" rel="noopener" class="card-channel">@oestick</a>
+            <span class="card-time">5д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Приходит ко мне Вова – владелец компании, которая выстраивает бизнесу отделы продаж. Там и построение скриптов, и обучение, и контроль качества.
+
+Говорит, нужно упаковать нашу экспертизу по контролю качества в отдельный продукт и продавать его. В 5-10 раз дешевле, чем наш ручной, зато не теряем клиентов, на которых не хватает рук.
+
+И это не первая ситуация, где приходят компании, которые работают на фрагментированном (к этому еще вернемся) рынке услуг, и хотят стать продуктовой компанией.
+
+Я почти всех отговариваю. Примерно с такой аргументацией:
+
+1. Вы банально не умеете делать продукт, а на пути переключения бизнеса из сервисного в продуктовый – куча граблей. Вы сервисная компания и вы хороши в этом, продолжайте заниматься тем, что умеете. 
+
+2. Ваша ЦА тоже привыкла к покупке услуги, а …
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 4.260</span>
+            <span class="stat">❤️ 73</span>
+          </div>
+          <a href="https://t.me/oestick/474" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="evilfreelancer">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #a855f7">
+            E
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/evilfreelancer" target="_blank" rel="noopener" class="card-channel">@evilfreelancer</a>
+            <span class="card-time">6д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Loading model from ruGPT3XL ...
+Device: cpu, dtype: float32
+Loading weights: 100%|██████████| 389/389 [00:01&lt;00:00, 213.86it/s]
+Model loaded. Parameters: 1,418,678,272
+
+Prompt: В далеком космосе
+Generated: В далеком космосе, в одной из звездных систем галактики Млечный путь на орбите искусственного спутника Земли вращается небольшое космическое тело — искусственный спутник «К-2», по своим размерам и массе не уступающий самой планете. На борту этого космического тела находится база для исследовательских работ землян под названием Земля-3126/1А.
+
+На Земле же все спокойно: ученые проводят исследования атмосферы планеты
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 1.510</span>
+            <span class="stat">❤️ 5</span>
+          </div>
+          <a href="https://t.me/evilfreelancer/1605" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="gleb_pro_ai">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #6d28d9">
+            G
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/gleb_pro_ai" target="_blank" rel="noopener" class="card-channel">@gleb_pro_ai</a>
+            <span class="card-time">6д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Я сейчас делаю курс по маркетингу для инди-хакеров, и решил пригласить туда крутых гостевых спикеров. Встречайте, Илья Чернецкий, автор приложения CoinKeeper (более 10 миллионов установок, сотни тысяч активных пользователей) и сервиса AI-аналитики HeyMetrics....
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 5.140</span>
+            <span class="stat">❤️ 6</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/495" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="gleb_pro_ai">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #6d28d9">
+            G
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/gleb_pro_ai" target="_blank" rel="noopener" class="card-channel">@gleb_pro_ai</a>
+            <span class="card-time">5д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Невероятно шикарное видео про аппаратные особенности работы нейросетей и запуска их на локальном железе. Как происходят вычисления, что и как влияет - память, процессор, видеокарта, все это в разных комбинациях и архитектурах. Это где-то для задротов на 8/10, но я кайфанул, рекомендую.
+
+https://www.youtube.com/watch?v=L9sI7sUKLIM
+
+PS Если кто-то знает телеграм автора, чирканите плз в личку
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 5.990</span>
+            <span class="stat">❤️ 35</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/496" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="evilfreelancer">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #a855f7">
+            E
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/evilfreelancer" target="_blank" rel="noopener" class="card-channel">@evilfreelancer</a>
+            <span class="card-time">5д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Ловите мой новый пост на Бусти, в нём я рассказываю про модельку ruGPT3XL на 1.3B, которую мне удалось отреставрировать и заставить работать на современном железе. upd. Пост на бусти так как ещё не всё готово, но всех кому интересно приглашаю принять участие...
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 1.450</span>
+            <span class="stat">❤️ 22</span>
+          </div>
+          <a href="https://t.me/evilfreelancer/1607" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="gleb_pro_ai">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #6d28d9">
+            G
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/gleb_pro_ai" target="_blank" rel="noopener" class="card-channel">@gleb_pro_ai</a>
+            <span class="card-time">7д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Есть две штуки, которые никогда не стоит оставлять на потом, даже если вам просто быстренько что-то сделать, и вообще, сразу не нужно. 
+
+— Пользовательские аккаунты с изоляцией сущностей. Для саас — сразу с организациями. 
+— Мультиязычность.
+
+Обе подсистемы очень быстро поднимаются на старте, и представляют невероятную боль, если впиливать потом.
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 4.850</span>
+            <span class="stat">❤️ 90</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/492" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="dealerAI">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #a855f7">
+            D
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/dealerAI" target="_blank" rel="noopener" class="card-channel">@dealerAI</a>
+            <span class="card-time">5д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          нас стало 7000 - и по этому поводу проводим трансляцию 😎 Недавно писала про то, как AI меняет профессии и рутину. Тот же маркетинг сейчас становится все более инженерным - и мне хочется обсудить это глубже. Поэтому позвала крутых ребят, которых я сама читаю:...
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 4.150</span>
+            <span class="stat">❤️ 15</span>
+          </div>
+          <a href="https://t.me/dealerAI/1744" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="evilfreelancer">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #a855f7">
+            E
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/evilfreelancer" target="_blank" rel="noopener" class="card-channel">@evilfreelancer</a>
+            <span class="card-time">6д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Ловите мой новый пост на Бусти, в нём я рассказываю про модельку ruGPT3XL на 1.3B, которую мне удалось отреставрировать и заставить работать на современном железе.
+
+upd. Пост на бусти так как ещё не всё готово, но всех кому интересно приглашаю принять участие в тестировании.
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 1.600</span>
+            <span class="stat">❤️ 8</span>
+          </div>
+          <a href="https://t.me/evilfreelancer/1606" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="evilfreelancer">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #a855f7">
+            E
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/evilfreelancer" target="_blank" rel="noopener" class="card-channel">@evilfreelancer</a>
+            <span class="card-time">3д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Проблема долговременной памяти чатов Хоть я и считаю себя сторонником памяти агентных систем, даже большой пост на эту тему писал, но работая с чатами в которых есть память истории всех сообщений периодически ловлю себя на мысли, что надо напилить какой-нибудь...
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 1.070</span>
+            <span class="stat">❤️ 5</span>
+          </div>
+          <a href="https://t.me/evilfreelancer/1611" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="evilfreelancer">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #a855f7">
+            E
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/evilfreelancer" target="_blank" rel="noopener" class="card-channel">@evilfreelancer</a>
+            <span class="card-time">7д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Проблема долговременной памяти чатов
+
+Хоть я и считаю себя сторонником памяти агентных систем, даже большой пост на эту тему писал, но работая с чатами в которых есть память истории всех сообщений периодически ловлю себя на мысли, что надо напилить какой-нибудь пост на тему того, что память эта частенько работает плохо, вносит искажения в ответы модели и единственный годный режим её работы это &#34;off&#34;, то есть отключена.
+
+Пока ещё не придумал как сделать долговременную память хорошо, самое удачное решение на данный момент это кажется концепция которую я условно назвал &#34;долговременная доменная память&#34; (LDM), постараюсь кратко её описать, представим что мы создали Project в ChatGPT, это такая группа чатов, в которую мы закидываем файлы, промты, там же все чаты находятся, вот память в таком ко…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 1.590</span>
+            <span class="stat">❤️ 18</span>
+          </div>
+          <a href="https://t.me/evilfreelancer/1604" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="kdoronin_blog">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #f59e0b">
+            K
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/kdoronin_blog" target="_blank" rel="noopener" class="card-channel">@kdoronin_blog</a>
+            <span class="card-time">2д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Говорят, что если помочь Вадиму с тестом его Grafema, то он добавит в следующий релиз крутые графовые визуализации, которыми делился в комментариях :)
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 1.510</span>
+            <span class="stat">❤️ 12</span>
+          </div>
+          <a href="https://t.me/kdoronin_blog/1235" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="neuraldeep">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #e11d48">
+            N
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/neuraldeep" target="_blank" rel="noopener" class="card-channel">@neuraldeep</a>
+            <span class="card-time">5д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Валера Ковальский pinned «Не курс. Не тул. Флоу. Валера где твой курс по AI кодингу? Или: Валера почему мы до сих пор не увидели крутой AI coding инструмент от тебя? (с 1 млн звезд на гите =) Отвечаю Я в первую очередь DevOps/Hardware инженер Во вторую руководитель R&amp;D команд Так...»
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+          </div>
+          <a href="https://t.me/neuraldeep/2011" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="gleb_pro_ai">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #6d28d9">
+            G
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/gleb_pro_ai" target="_blank" rel="noopener" class="card-channel">@gleb_pro_ai</a>
+            <span class="card-time">7д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Кодекс после последнего обновления невероятно бесит требованиям апрува. У меня уже и йоло мод стоит и все. Как вы это обходите?
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 4.930</span>
+            <span class="stat">❤️ 12</span>
+          </div>
+          <a href="https://t.me/gleb_pro_ai/493" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="neuraldeep">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #e11d48">
+            N
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/neuraldeep" target="_blank" rel="noopener" class="card-channel">@neuraldeep</a>
+            <span class="card-time">5д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Channel name was changed to «Валейро Ковальский»
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+          </div>
+          <a href="https://t.me/neuraldeep/2013" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="dealerAI">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #a855f7">
+            D
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/dealerAI" target="_blank" rel="noopener" class="card-channel">@dealerAI</a>
+            <span class="card-time">7д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Dealer.AI pinned «нас стало 7000 - и по этому поводу проводим трансляцию 😎 Недавно писала про то, как AI меняет профессии и рутину. Тот же маркетинг сейчас становится все более инженерным - и мне хочется обсудить это глубже. Поэтому позвала крутых ребят, которых я сама читаю:...»
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+          </div>
+          <a href="https://t.me/dealerAI/1742" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>OpenClaw Telegram Digest</span>
+      <span>2026-04-01 14:51 UTC</span>
+    </div>
+  </footer>
+</div>
+<script>
+(function() {
+  const pills = document.querySelectorAll('.filter-pill');
+  const cards = document.querySelectorAll('.card');
+
+  pills.forEach(function(pill) {
+    pill.addEventListener('click', function() {
+      pills.forEach(function(p) { p.classList.remove('active'); });
+      pill.classList.add('active');
+
+      var ch = pill.getAttribute('data-channel');
+      cards.forEach(function(card) {
+        if (ch === 'all' || card.getAttribute('data-channel') === ch) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+})();
+</script>
 </body>
 </html>

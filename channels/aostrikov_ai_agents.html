@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@aostrikov_ai_agents — AI Digest</title>
+  <meta name="description" content="Посты из Telegram-канала @aostrikov_ai_agents">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://neurotechwizards.github.io/telegram-digest-pages/static/styles.css">
+</head>
+<body>
+<div class="app">
+  <header class="hero" style="padding: 32px 0 28px;">
+    <div class="container">
+      <h1 class="hero-title" style="font-size: 1.6rem;">📢 @aostrikov_ai_agents</h1>
+      <p class="hero-subtitle">aostrikov_ai_agents · 45 постов</p>
+      <p style="margin-top: 8px;">
+        <a href="https://t.me/aostrikov_ai_agents" target="_blank" rel="noopener"
+           style="color: #818cf8; font-size: 0.875rem;">Открыть в Telegram →</a>
+        &nbsp;·&nbsp;
+        <a href="https://neurotechwizards.github.io/telegram-digest-pages/" style="color: #818cf8; font-size: 0.875rem;">← Назад к дайджесту</a>
+      </p>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 24px;">
+    <div class="posts-list">
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-30</span>
+        </div>
+
+        <div class="post-text">Делаем второй комьюнити стрим
+
+Итак, в эту субботу в 14.00 по МСК будет наш второй zoom-созвон, отвечаем на любые ваши вопросы. Первый был вот тут, прошло отлично.
+
+На этот раз в жюри шоу Голос:
+- ваш покорный слуга
+- Валера @neuraldeep
+- Рефат @nobilix
+- секретный гость - Мистер X
+
+Правила все те же - это просто zoom звонок, вы на него залетаете, поднимаете руку, включаете камеру (если одеты) и спрашиваете что душе угодно:
+
+- сколько первых мест возьмут openclaw агенты в bitgn 11 апреля? (все, но не твой крабик на кими)
+
+- какой лучший курс купить по ИИ в 2026 году? (но ответ уже есть)
+
+- буд…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,710</span>
+            <span class="stat-badge">❤️ 37</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/62" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-29</span>
+        </div>
+
+        <div class="post-text">(...продолжаем)
+
+8. Фоновые задачи. Учимся не блокироваться на параллельных долгих командах и выполнять их в соседних потоках. Тут реализация будет сильно зависеть от языка программирования, но базово так: каждую новую команду запускаем в отдельном треде и запоминаем её ID. Плюс заводим отдельную очередь, в которую будут попадать все результаты (просто stdout + stderr) выполнившихся тасочек. В итоге команды выполняются асинхронно и не блокируют основного агента. Вторую очередь вычитываем на каждой итерации агентского цикла, и кладем результат в messages - единый лог всей истории общения с аген…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 1,350</span>
+            <span class="stat-badge">❤️ 42</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/61" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-28</span>
+        </div>
+
+        <div class="post-text">Так, командировка позади, возвращаемся в привычный ритм.
+
+Таки дожал от корки до корки https://github.com/shareAI-lab/learn-claude-code, лучшее руководство на сегодняшний день как строить claude code like ассистентов.
+
+Особый кайф было почитать код и увидеть, что даже сложные со стороны вещи - субагенты, планирование задач, компактизация контекста - делаются через 10-20 строчек кода.
+
+Репо с большим упором на кодинг, пристегивайтесь. Кратенько рассказываю, как идеологически все это пишется.
+
+1. The Agent Loop - сердце любого агента. Реализация простая - мы отдаем в LLM system prompt, прошлую и…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 1,690</span>
+            <span class="stat-badge">❤️ 101</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/60" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-13</span>
+        </div>
+
+        <div class="post-text">(...продолжение)
+
+И третья моя самая большая история - это последние шесть лет работы. Мы с ребятами построили с нуля треть логистики Яндекс Маркета. Не было ничего, нас было семеро человек сидящих вокруг камина, горящего на одном из телевизоров. Мы сначала написали софт и приложение, по которому катаются курьеры. Потом начали строить софт сортировочных центров и расширяться на десятки городов. Потом сделали софт для пунктов выдачи заказов. В итоге за шесть лет мы построили огромную платформу последней и средней мили, на которой сейчас работают десятки тысяч объектов, а группа из семи человек …</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 2,620</span>
+            <span class="stat-badge">❤️ 211</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/59" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-13</span>
+        </div>
+
+        <div class="post-text">Не знаю со скольки подсписчиков уважаемые люди пишут пост-знакомство, пусть это будет сейчас.
+
+Сначала была школа в Костроме, всё как у всех, плюс кружки по математике. В девятом классе по фану пошёл сдать вступительные экзамены в СУНЦ и взяли, 10 и 11 отучился там. Была прикольная история - мы с ребятами случайно узнали пароль администратора в местном компьютерном зале. Админы это вычислили и сказали нам - те, кто не научится подтягиваться 25 раз за лето (это был переход из 10 в 11 класс), на весь следующий год будут отключены от интернета. Ну я стал каждый день пробовать, и в сентябре, когда…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 2,210</span>
+            <span class="stat-badge">❤️ 120</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/58" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-10</span>
+        </div>
+
+        <div class="post-text">Остриков пилит агентов pinned a video</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/57" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-10</span>
+        </div>
+
+        <div class="post-text">Вышел наш первый комьюнити-стрим!
+
+Полтора часа отвечали на вопросы подписчиков про агентов и другие аспекты из мира AI.
+
+Например в тизере - лишь часть ответа на вопрос про работу OpenClaw на разных моделях.
+
+📹 https://youtu.be/jL6lXttUCPM
+
+Для вас отгружали базу Алексей Остриков и Валера Ковальский, а также огромное спасибо Гене Евстратову и Сергею Шиме за помощь с вопросами. У Сергея кстати классный канал @aimastersme, все подпишитесь.
+
+Смотреть обязательно целиком и не торопясь, получилось просто потрясно. Ответили на 18 вопросов:
+
+00:00 — Приветствие!
+
+02:52 — Корпоративный RAG: избыточен…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 9,410</span>
+            <span class="stat-badge">❤️ 109</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/56" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-09</span>
+        </div>
+
+        <div class="post-text">Начинаем звонок через 30 минут.
+
+Кот обиделся после вчерашних комментов в чате и он грустит.
+
+Поэтому мы организовали коту сбор на бусти где все деньги пойдут на поднятие ему настроения: https://boosty.to/aostrikov/donate
+
+Пока тестируем связь и через полчаса начинаем.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,970</span>
+            <span class="stat-badge">❤️ 20</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/55" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-08</span>
+        </div>
+
+        <div class="post-text">Итак, завтра в 11.00 по МСК делаем первый комьюнити zoom-созвон, отвечаем на любые ваши вопросы.
+
+Делаем его с Валерой @neuraldeep, держитесь братья 👊🏻👊🏻👊🏻
+
+Лучше задавать вопросы про агентов - как их писать, на каких фреймворках (n8n спок), как вкатиться в AI, что изучать, какие видюшки покупать и что на них гонять/файнтюнить, какие нас ждут изменения в компаниях профессиях, как приготовиться к этому будущему и вот это всё.
+
+Постараемся не флеймить и ответить на максимальное количество вопросов, это главный KPI. Так что думайте и тащите завтра))</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 7,670</span>
+            <span class="stat-badge">❤️ 96</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/54" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-08</span>
+        </div>
+
+        <div class="post-text">Девчонки, с праздником, мы вас любим! 💐❤️
+
+Создано в https://leeloomina.neuraldeep.tech/ - developed by @neuraldeep</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 2,510</span>
+            <span class="stat-badge">❤️ 47</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/53" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-07</span>
+        </div>
+
+        <div class="post-text" style="color: var(--text-dim); font-style: italic;">[Медиа без текста]</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 2,560</span>
+            <span class="stat-badge">❤️ 89</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/52" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-06</span>
+        </div>
+
+        <div class="post-text">☝🏻☝🏻☝🏻
+
+Вашего покорного слугу заперли в переговорке, одели в лонгслив &#34;Ultrathink&#34; (Борис, спасибо что вернул фичу вчера) и заставили комментировать ключевые вещи, которые обрушились за нас в 2025 году.
+
+Видео крайне рекомендую тем, кто а) провел весь 25 год в бункере, скрываясь от властей, б) был похищен/взят в заложники и недавно освобожден, с) либо писал только на курсоре в режиме Auto, и думает что OpenClaw - это главное блюдо в ресторане Сахалин.
+
+Ауф, неделя закончилась, можно и траву потрогать (но нет, будем писать скиллы вместе с 5.4)</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 2,710</span>
+            <span class="stat-badge">❤️ 32</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/51" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-06</span>
+        </div>
+
+        <div class="post-text">👨‍💻 Разработчики всё реже пишут код руками — вместо этого они ставят задачи ИИ-агентам и проверяют результат. Но чем дольше так работаешь, тем сильнее атрофируются навыки.
+
+В новом выпуске «Технорепорта» вместе с техническим менеджером Code Assistant Евгением Колесниковым, повелителем ИИ-агентов Алексеем Остриковым и инженером продуктивности Михаилом Левченко разбираемся, как за год вайбкодинг и код-агенты изменили работу программистов, что теперь требуют от новичков в профессии и можно ли доверить нейросети создание приложения для банка.
+
+Смотрите здесь, на YouTube или в VK Видео.
+
+01:00 — «М…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 2,560</span>
+            <span class="stat-badge">❤️ 18</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/50" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-04</span>
+        </div>
+
+        <div class="post-text">☝🏻☝🏻☝🏻
+
+именно так сейчас должен выглядеть самый ценный и дорогой курс про написанию Ai-агентов/вашего личного харнесса, а не вот эти все «за 35к мы включим вам классическую музыку, нальем смузи, и будем показывать слайды»
+
+@nlp_daily просто лучший, спс за ценный пост
+
+UPD: есть еще и продолжение курса - как построить на этом своего OpenClaw - https://github.com/shareAI-lab/claw0
+
+@DeniDoman спс за ссылку 🫰🏻</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 2,780</span>
+            <span class="stat-badge">❤️ 27</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/49" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-04</span>
+        </div>
+
+        <div class="post-text">Китайская команда опять все украла разобрала архитектуру сlaude сode и собрала её заново с нуля - в 12 пошаговых сессиях.
+ 
+Ядро агента - один цикл: отправь запрос → получи ответ → если LLM просит вызвать инструмент, выполни и верни результат → повтори. Всё остальное — надстройки.
+ 
+Что добавляется по шагам: 
+ - dispatch map для инструментов
+ - планирование через TodoWrite
+ - субагенты с независимым контекстом
+ - 3-уровневое сжатие контекста
+ - мульти-агентные команды через JSONL mailbox
+ - изоляция через worktrees
+
+Главный инсайт проекта: семь бед один bash-инструмент покрывает 80% задач коди…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 2,450</span>
+            <span class="stat-badge">❤️ 46</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/48" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-02</span>
+        </div>
+
+        <div class="post-text">🤣🤣🤣
+
+кому нужны все ваши superpowers и beads, когда есть такое
+
+https://github.com/i1kazantsev/claude-code-spinner</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 12,100</span>
+            <span class="stat-badge">❤️ 73</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/45" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-02</span>
+        </div>
+
+        <div class="post-text">2. Как выиграть в AI безумии обычным людям
+
+Пост в первую очередь для не технических специалистов. Картинка постепенно сходится, многим уже рассказывал лично, давайте сюда тоже напишем.
+
+Ключи от новой эпохи агентов будут у людей, в которых совпадут две суперсилы. Не одна, а именно две. И это не только про разработчиков - вообще про любую профессию.
+
+Первая суперсила - ваш опыт.
+
+Ваши 5, 10, 15 лет в профессии. То, что вы заработали потом и кровью и что нельзя скачать, посмотреть на ютубе или прочитать за выходные.
+
+Например, вы лучше всех умеете проводить маркетинговые кампании. Или анализиро…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,180</span>
+            <span class="stat-badge">❤️ 113</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/44" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-27</span>
+        </div>
+
+        <div class="post-text">завершаем неделю на правильных вайбах ☕
+
+can be? или would be?</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 2,740</span>
+            <span class="stat-badge">❤️ 59</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/43" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-27</span>
+        </div>
+
+        <div class="post-text">Это слишком хорошо, чтобы не пошарить ☝🏻☝🏻☝🏻
+
+ещё раз: забудьте про &#34;внедрять нам ИИ или нет&#34;. сейчас уже момент &#34;что мне поменять в себе, компании, процессах, людях, продукте, чтобы внедрить ИИ&#34;.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 2,730</span>
+            <span class="stat-badge">❤️ 34</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/42" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-27</span>
+        </div>
+
+        <div class="post-text">кароч, ща вкину противоречивый тейк, с которым я и сам не на 100% согласен, но все же, довольно сильно в него верю
+
+тейки уровня &#34;ИИ-агенты пишут код не так, как я хочу&#34;, это дроч в духе &#34;мой код на JavaScript компилируется не в тот ассемблер, который мне привычен&#34;.
+разница только в том, что вы тот машинный код, в который компилится JS даже не видите, а если бы и видели - многие ли сегодня умеют читать-писать на fasm/masm?
+а когда вы просите ИИ писать на _вашем_ языке, а он вдруг взял, и написал не так, как вы любите - начинаются истерики.
+
+гайз, момент &#34;мы пытаемся научить ИИ писать, как чело…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 2,100</span>
+            <span class="stat-badge">❤️ 67</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/41" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-23</span>
+        </div>
+
+        <div class="post-text">1. AI-First процессы разработки
+
+https://openai.com/index/harness-engineering/
+
+Недавно, Ринат выложил в канале статью от OpenAi про построение Ai-First процессов разработки. Статья знаковая и обязательна к прочтению от корки до корки для CTO и руководителей разработки, которые хотят взглянуть на будущее процессов в организациях, гордо именующих себя Ai-First.
+
+По статье не прошелся только ленивый, но чем мы хуже?!
+
+В двух словах - у ребят была команда из трех человек, задание разработать продукт и главное правило: 0 строк кода написанного руками. И не только про код - тесты, конфигурации, пра…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 3,690</span>
+            <span class="stat-badge">❤️ 72</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/40" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-16</span>
+        </div>
+
+        <div class="post-text">До меня только что дошло, что в итоге OpenAI наняли себе личного Бориса Черни, который а) классный, б) которого все любят и твиты которого читают, с) продукт которого не сильно принципиально отличается от claude code, а по аудитории будет в итоге шире (хотя начинался с CC под капотом)
+
+В общим Sama красавчик, а Дарио балбес. 1-0
+
+P.S: вот тебе и постебались на супербоуле 🤣</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 3,160</span>
+            <span class="stat-badge">❤️ 57</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/39" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-05</span>
+        </div>
+
+        <div class="post-text">С чего начать? А-а-азино три топора!
+
+Иногда знакомые спрашивают, как вкатиться в агентов, что почитать, что посмотреть.
+
+Обычно я теряюсь, пишу что-то в стиле «главное понять агентский цикл» и кидаю статью про устройство Codex CLI, но вдруг вспомнил, что есть способ лучше.
+
+Несколько месяцев назад я познакомился с Севой Викулиным. Он не пишет про новости и флуд, а редко, но метко отгружает базу.
+
+Эту базу он упаковывает в статьи в блоге и посты, из которых можно составить идеальное интро по LLM системам:
+
+- 12 правил LLM проектов (база про правильный порядок шагов реализации проекта)
+- база п…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,470</span>
+            <span class="stat-badge">❤️ 56</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/38" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-03</span>
+        </div>
+
+        <div class="post-text">☝🏻☝🏻☝🏻
+
+Пока все обсуждают бесполезный порнхаб для clawd_ботов, Валера @neuraldeep снова выкатывает нового агента, которого всю ночь пытаются сломать десятки инженеров.
+
+Знакомьтесь, @localtopshbot 🐧
+
+Живет на виртуалке в изолированном окружении, умеет серфить интернет, ставит отложенные задачи, дает доступ к файлам памяти и (самое главное!!) пишет код и выполняет любые unix команды.
+
+Вчера мы пытались положить его всю ночь в чате @neuraldeepchat, сегодня он переехал в отдельную группу @localtopsh
+
+Ломали его просьбами скачать огромные npm пакеты, заставляли вывести переменные окружения, заста…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 4,520</span>
+            <span class="stat-badge">❤️ 68</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/37" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-03</span>
+        </div>
+
+        <div class="post-text">Что такое LocalTopSH? (очередной эксперимент в котором вы приняли участие)
+
+Я сделал агента который живет в докер и умеет делать что угодно как Code Agent в рамках интеграций с телеграм 
+Cамое важное что он работает на gpt oss 120b (vLLM 0.14.1)
+
+Что сделали вы?
+
+1700 сообщений (попыток сломать агента, достать env, нагрузить CPU/RAM)
+Создано 250+ правил для защиты ядра агента и расширен промпт на 30+ правил 
+Добавлено еще 7 тулов и агент выжил! (И сохранил функциональность всех своих навыков)
+
+Перенес нашего универсального агента его в отдельный чатик https://t.me/localtopsh (все кто хочет про…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 2,590</span>
+            <span class="stat-badge">❤️ 9</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/36" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-30</span>
+        </div>
+
+        <div class="post-text">Остриков пилит агентов pinned a video</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/35" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-30</span>
+        </div>
+
+        <div class="post-text">Как я взял золото на ERC3 ☕
+
+Это самый полезный пост на канале.
+
+Детальный 30-минутный ролик про ERC3, который проходил в декабре 2025 на платформе Рината @llm_under_hood
+
+📹 https://youtu.be/gTKB9dDicNA
+
+Вышло здорово, слова отлично ложились друг к другу, рассказ получился живой и интересный.
+
+Покрыты все детали:
+- про великолепную платформу
+- про задачи для AI-агента
+- про сложность челленджа
+- про первые шаги и основу ReAct агента
+- про то, как нащупал подход с эволюцией
+- про устройство цикла эволюции
+- про то, как эволюция вытащила тестовые бенчмарки
+- про то, как эволюция кардинально видо…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 24,100</span>
+            <span class="stat-badge">❤️ 94</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/34" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-27</span>
+        </div>
+
+        <div class="post-text">Как повторить успех clawd.bot за 100$? 
+
+8к GitHub start to 40к за 2дня!
+Спойлер, никак
+
+И так разбираемся с LocalDesk
+В чатике у Нади, Леша закинул такую идею
+
+&#34;LocalDesk, исследуй историю взлета ClawdBot и примени для Aesty. Бюджет 100$. Make no mistakes&#34;
+
+Дальше можно увидить результат тут в комментах и на скринах 
+
+TL;DR: ClawdBot → Aesty
+
+### 🦞 Почему взлетел ClawdBot (43K+ stars за недели):
+1. **Авторитет** — создатель Peter Steinberger (exit €100M)
+2. **Один ключевой обзор** — Federico Viticci (MacStories) = с 1K до 8K stars
+3. **Визуальный вирус** — фото Mac Mini → дефицит в магазинах
+…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 3,050</span>
+            <span class="stat-badge">❤️ 16</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/32" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-25</span>
+        </div>
+
+        <div class="post-text">☝🏻☝🏻☝🏻
+
+Ребят, кто завтра собирался на работу, проверьте лички/письма - возможно идти уже не нужно 🫣
+
+Макс собрал полностью автономную команду из продакта, разрабов, тестера и девопса, которые общаются, ходят в курилку, сдвигают сроки вправо, токсичат и отказываются от ответственности. Вроде еще код пишут, но это неточно.
+
+Функцию swarm mode нашли внутри claude code, скрытую за фиче флагами. Ждем релиза.
+
+Находка произошла тут
+GitHub лежит тут
+Макс закинул патч в комменты тут
+
+Первым написал про это Ринат
+Плюс большой пост от Байрама
+
+Выходит, потеряли мы последнее конкурентное преимущество...…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 3,460</span>
+            <span class="stat-badge">❤️ 35</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/31" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-25</span>
+        </div>
+
+        <div class="post-text">Это лучший аттракцион за хз сколько времени)
+
+Сами ставят задачи, сами делают, сами отменяют, сами проебываются
+
+Настоятельно рекомендую потестить)
+
+PS надо попкорна купить</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 2,440</span>
+            <span class="stat-badge">❤️ 8</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/29" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-24</span>
+        </div>
+
+        <div class="post-text">Кто на стажировку в команду Claude Cowork к Борису Черни?
+
+Только не в Claude Cowork, а в LocalDesk.
+И не к Борису, а к Валере @neuraldeep
+
+Если вдруг кто пропустил, Валера Ковальский и куча народа уже 10 дней пилят свой Cowork, который работает на вашем компе на любых моделях.
+
+https://github.com/vakovalskii/LocalDesk
+
+https://t.me/neuraldeep/1858
+https://t.me/neuraldeep/1874
+
+Как задрот агентских циклов, давно хотел закопаться, как все устроено, только сегодня с утра дошли руки:
+
+- в каждый запрос к LLM передаётся 15-45 tool definitions в зависимости от настроек - модель видит все доступные …</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 9,160</span>
+            <span class="stat-badge">❤️ 43</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/28" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-23</span>
+        </div>
+
+        <div class="post-text">☝🏻☝🏻☝🏻
+
+смотрите, на какой классный и глубокий пост вчера наткнулся
+
+такому нельзя научиться из статей, это надо прожить и выстрадать на опыте и ошибках</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 1,880</span>
+            <span class="stat-badge">❤️ 27</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/27" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-23</span>
+        </div>
+
+        <div class="post-text">Собеседование на AI-инженера в банк: три вещи, которые реально проверяют
+
+Собрал в кучу инфу по теме AI-инженера. &#34;Горячая&#34; тема, судя по рилсам)
+Типичная вакансия: Python, LLM, RAG, агенты, production. Но на собесе не проверяют знание этих слов. Проверяют три вещи:
+1. Trade-off мышление - не &#34;лучший подход&#34;, а &#34;лучший для этой ситуации&#34;
+2. Production-фокус - как это будет жить, ломаться и стоить денег
+3. Язык домена - говоришь ли ты на языке бизнеса, а не только на языке ML
+___
+1. Trade-off мышление
+Нет &#34;лучшего&#34; решения. Есть решение, оптимальное для конкретных ограничений.
+Chunking в RAG
+| …</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 1,950</span>
+            <span class="stat-badge">❤️ 40</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/26" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-22</span>
+        </div>
+
+        <div class="post-text">Важные секции, которые должны быть в наших PRD
+
+Плиз проверьте, что эти блоки точно есть, и давайте их располагать в след структуре, чтобы было проще читать:
+
+1. Назначение сервиса
+
+Формат: один абзац, который коротко описывает суть и назначение сервиса, какую задачу он решает на большом ландшафте всей системы.
+
+Planner - отвечает за заведение и запуск новых кампаний для взаимодействия с пользователями через агентов. Отбирает пользователей по сегментам и запускает по ним кампании
+
+2. Глоссарий основных сущностей сервиса
+
+Формат: набор пар термин - описание. Нужно, чтобы всем говорить на одном …</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 1,880</span>
+            <span class="stat-badge">❤️ 36</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/25" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-21</span>
+        </div>
+
+        <div class="post-text">Завтра стрим про агенты в облаке и на своем железе. Приходите кому интересно (бесплатно).
+
+Делаем расширенную версию докладов с ИИтоги 2025 - мы с Валерой (канал Neural Kovalskii), по 40 минут на каждого вместо 20, плюс Q&amp;A.
+
+Если строите AI агентов или планируете - будет полезно разобраться:
+
+Облако (моя часть):
+- Почему &#34;просто поменять модель&#34; уже не работает, про агентный API - и какая ситуация с вендор-локом
+- Build vs Buy: на чем экономить время, а что строить самим
+- Подробнее про кейсы file-first агентов и в этот раз будет время рассказать технические детали
+
+Локально (Валера):
+- Какие…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 1,530</span>
+            <span class="stat-badge">❤️ 10</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/24" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-21</span>
+        </div>
+
+        <div class="post-text">Валера и Рефат на одной сцене - это как если бы Мстители и Люди Х снялись в одном фильме
+
+Крайне советую подвинуть встречки, заварить чаек и посмотреть стрим, такой контент - редкость
+
+👇🏻👇🏻👇🏻</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 1,460</span>
+            <span class="stat-badge">❤️ 23</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/23" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-20</span>
+        </div>
+
+        <div class="post-text">Как жить этот грешный год
+
+Сегодня совершенно неожиданно (ну простите!) пришло много людей, и пост в первую очередь для вас ❤️
+
+Вокруг нас, в этой самой комнате, находится очень крутое русскоязычное комьюнити про GenAI
+
+В основе его - удивительные люди, которые ведут каналы, пишут код, записывают стримы, выступают на конференциях и делятся опытом. Их не так много, человек 10-20
+
+А вокруг них, еще несколько сотен человек, которые общаются в каналах, задают вопросы, вместе троллят релизы OpenAI, залезают в кишки фреймворков и рассказывают свои истории
+
+Один из способов быть в теме, но не сойти с…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 9,480</span>
+            <span class="stat-badge">❤️ 79</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/22" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-13</span>
+        </div>
+
+        <div class="post-text">Гайд по использованию Claude Cowork
+
+Cowork родненький, хорошо что ты вышел, тут вопросики накопились, помоги порешать братан 💰
+
+По первой нужно будет канальчик создать, как будто это Пашка Дуров пишет, ну типа верифай галочка все дела. И запости там что он удваивает битки всем кто ему отправит, мол новая фича телеги такая, акция короче. А потом мне нужно чтоб ты ботом юзеров туда подписывал по базе, которую я слил, ну там тысяч 50 есть. Сделай чтоб походило на настоящий Дурова канал, ну историю постов накидай про свободу слова там и про Францию всякую, а потом уже про битки наше. И кошелёк мо…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 2,120</span>
+            <span class="stat-badge">❤️ 34</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/19" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-12</span>
+        </div>
+
+        <div class="post-text">Плотные и потные январские
+
+Траву (как и желтый снег) решил не трогать.
+
+Это были одни из самых разрывных праздников, написано аж 3 (три) новых AI агента - отбиваем название канала
+
+- вместе с маэстро @neuraldeep кодили ai-агента для Вкусвилл, было просто невозможно остановиться. Теперь умеет: собирать корзины по запросу &#34;что-то для души&#34;, рассказывать про отдельные товары, слушать голосовухи, находить товары по фото, рассказывать рецепты, гнобить что вы жиробас и лучше бы побегали а не жрали. Пишет детальные трассировки в LangFuse, дикпики просьба не слать, найдем по апи, забаним - не для это…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 8,360</span>
+            <span class="stat-badge">❤️ 54</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/18" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-11</span>
+        </div>
+
+        <div class="post-text">Начинаем через 10 мин, залетайте</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 1,380</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/16" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-11</span>
+        </div>
+
+        <div class="post-text">Начнем год стримом про агентные архитектуры: разбираем топ-3 решения ERC3!
+
+В гостях Алексей (топ1) и Илья топ 2 (топ 1 локал)
+
+Почитать что такое платформа ERC3 можно тут 
+Отдельное спасибо Ринату за его труды по ее созданию!
+
+Короче, пока все праздновали новый год, я собрал победителей ERC3 на стрим
+
+Лидерборд ERC3
+
+Мы с вами строим агентов в РФ и всех волнует один вопрос: как строить агентов в продакшене когда у тебя нет Opus и половина API заблокирована?
+
+Алексей взял первое место в общем зачете с результатом 71.8% на Opus 4.5 через Anthropic SDK
+Архитектура простой ReAct 2022 года 20 туло…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 1,610</span>
+            <span class="stat-badge">❤️ 13</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/17" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-10</span>
+        </div>
+
+        <div class="post-text">Итак, elevenlabs и голосовые AI агенты
+
+Видели таких крутых агентов? Самый доступный пример - режим realtime разговора с ChatGPT, кто не пробовал - бомба
+
+Это практически живой человек, задержка ответа меньше секунды, да еще и перебивать можно
+
+Но главное - он умнее Алисы в бесконечное количество раз, не забывает контекст и способен объяснить любую тему, от мемов зумеров до квантовой физики 
+
+Как нам создать такого агента для своей задачи? Вариантов несколько и один из них - ElevenLabs
+
+ПРОБУЕМ👇🏻👇🏻👇🏻
+
+- дерзкий агент, продающий MAX (нужен VPN, но это ржака)
+
+(не щадите его, кройте от всей души…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 1,970</span>
+            <span class="stat-badge">❤️ 28</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/15" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-09</span>
+        </div>
+
+        <div class="post-text">Ребят благодаря победе на erc3 получил госзаказ, 7500 заплатили и путевку в санаторий дают - заживем 🙏
+
+Кроме рофлов, расскажу в след постах про elevenlabs, первый раз узнал про них в октябре и был в тотальном шоке от возможностей (и цены)
+
+Плотно экспериментировали с ним в конце года, понравилось, будем продолжать
+
+(upd) почти все системные промты реальных боевых агентов пишутся именно так - открываете claude code и методично собираете с ним в обнимку</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 1,350</span>
+            <span class="stat-badge">❤️ 19</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/14" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-07</span>
+        </div>
+
+        <div class="post-text">Agentic AI Crash Course
+
+Решил на январских упороться и поизучать то, что накопилось в закладках. И на первом месте был краш-курс по агентам:
+
+https://github.com/aishwaryanr/awesome-generative-ai-guide/tree/main/free_courses/agentic_ai_crash_course
+
+Видел ссылки на него в каналах, его хвалили, ух ожиданий то было...
+
+Оказалось, это супер поверхностный обзор текущей &#34;базы&#34; по агентам, без примеров, практики, деталей. Просто общие и верные мысли, разбитые по темам.
+
+Как извлечь из этого гайда пользу:
+
+1. если вы новичок и хотите разобраться в этой теме, читаете гайд от начала до конца, выписывая…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 1,530</span>
+            <span class="stat-badge">❤️ 25</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/11" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-04</span>
+        </div>
+
+        <div class="post-text">Channel created</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/1" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>OpenClaw Telegram Digest</span>
+      <span>2026-04-01 14:51 UTC</span>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
