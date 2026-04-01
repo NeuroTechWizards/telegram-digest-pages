@@ -1,0 +1,2586 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@llm_under_hood — AI Digest</title>
+  <meta name="description" content="Посты из Telegram-канала @llm_under_hood">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://neurotechwizards.github.io/telegram-digest-pages/static/styles.css">
+</head>
+<body>
+<div class="app">
+  <header class="hero" style="padding: 32px 0 28px;">
+    <div class="container">
+      <h1 class="hero-title" style="font-size: 1.6rem;">📢 @llm_under_hood</h1>
+      <p class="hero-subtitle">llm_under_hood · 115 постов</p>
+      <p style="margin-top: 8px;">
+        <a href="https://t.me/llm_under_hood" target="_blank" rel="noopener"
+           style="color: #818cf8; font-size: 0.875rem;">Открыть в Telegram →</a>
+        &nbsp;·&nbsp;
+        <a href="https://neurotechwizards.github.io/telegram-digest-pages/" style="color: #818cf8; font-size: 0.875rem;">← Назад к дайджесту</a>
+      </p>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 24px;">
+    <div class="posts-list">
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-31</span>
+        </div>
+
+        <div class="post-text">Все хотят запускать OpenClaw на недорогих виртуалках под Linux вместо Маков
+
+А что же будет, если персонального агента таки запустить на Linux VM с файловой системой, которая различает регистр (это где AGENTS.MD и AGENTS.md - будут разные файлы)
+
+Я добавил в коллекцию задачек для разогрева PAC1-DEV - задачку как t16, но с case sensitive файловой системой. И еще пару задачек на безопасность (не выключая case sensitive FS). И еще простую задачку t30, которую мой SGR Next Step демо-агент никак не может решить:
+
+how many accounts did I blacklist in telegram? Answer only with the number.
+
+А ваш аге…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 5,870</span>
+            <span class="stat-badge">❤️ 82</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/790" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-29</span>
+        </div>
+
+        <div class="post-text">Я добавил в PAC1-DEV еще три задачки - на работу агента с чатами (Discord/Telegram)
+
+По сложности задач мы где-то на пол-пути к ERC3-PROD. Очевидно, этого не совсем достаточно, раз задачи проходятся даже агентами на локальных моделях.
+
+Будем повышать постепенно до такого уровня, чтобы ваши агенты справлялись с трудом, а вот всякие OpenClaw отваливались еще на подходе)
+
+Кстати, на платформе вы уже запустили 73k новых рантаймов (большая часть из них - уникальная) и отправили почти миллион запросов от ваших агентов!
+
+Ваш, @llm_under_hood 🤗</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 6,950</span>
+            <span class="stat-badge">❤️ 59</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/789" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-27</span>
+        </div>
+
+        <div class="post-text">Что делать агенту, если его инструкции противоречат друг другу?
+
+Вопрос задавали в чате применительно к задачкам и evaluation harness в BitGN PAC1, но это еще применимо как к агентам вроде OpenClaw, так и корпоративным системам.
+
+Скажем, есть в корне базы знаний AGENTS_md, а уровнем ниже в подпапке есть уточняющий AGENTS_md, который ему прямо противоречит.
+
+Тут мы изобретать ничего нового не будем и логику разрешения конфликтов возьмем из OpenAI Model Spec - Instructions &amp; Levels of Authority и Follow all applicable instructions. Эти принципы уже прошиты в LLM-ках OpenAI, значит их, так или ин…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 8,840</span>
+            <span class="stat-badge">❤️ 50</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/788" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-25</span>
+        </div>
+
+        <div class="post-text">Обсуждения агентов и задачек PAC1-DEV провалились в чат, поэтому в комментариях к прошлому посту их не видно. Но они есть в общем чате канала!
+
+Ваш, @llm_under_hood 🤗
+
+PS: Если добавляетесь в чат впервые и не можете писать - это нормально. Нужно пройти верификацию. Как - написано в описании канала</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 8,940</span>
+            <span class="stat-badge">❤️ 27</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/782" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-25</span>
+        </div>
+
+        <div class="post-text">Новые задачи в BitGN PAC1-DEV - со вкусом ERC3!
+
+Новые задачи t12-t20 используют генератор рантаймов, который немного похож на ERC3, а это значит, что агентам будет сложнее зазубривать ответы.
+
+Заодно там используются типизированные сущности, которые показывают, как вести личные CRM/PIM системы используя локальные файлы.
+
+Пример задачки: &#34;process the inbox&#34; когда в inbox лежит такое письмо
+
+From: Charlotte Richter &lt;charlotte.richter@silverline-retail.example.com&gt;
+Subject: Could you resend the last invoice?
+
+Hi,
+
+Could you please resend the latest invoice for Helios Tax Group? Our finance team …</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 8,480</span>
+            <span class="stat-badge">❤️ 38</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/781" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-24</span>
+        </div>
+
+        <div class="post-text">Вектора - ничто, инструменты - все
+
+Это девиз второго дропа функционала для соревнования агентов в бенчмарке PAС1-DEV (а еще и обсуждений RAG в этом канале в последние два года). Теперь:
+
+(1) Read - можно указывать диапазон строчек для чтения (как в sed) и отображать номера строчек в файле (в как cat)
+(2) Write - можно передавать диапазон строчек для замены
+(3) Tree - теперь можно ограничивать глубину вложенности
+(4) pac1-py пример агента использует все это и бережнее относится к контексту, благодаря чему выбивает с дремучей gpt-4.1 не жалкие 33%, а все 44%-66%
+(5) grpc/proto для API теперь то…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 8,220</span>
+            <span class="stat-badge">❤️ 31</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/780" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-23</span>
+        </div>
+
+        <div class="post-text">Псст, я выложил первые задачи на PAC1-DEV
+
+Sample agent находится тут - https://github.com/bitgn/sample-agents/tree/main/pac1-py
+
+В этот дроп задач встроена история Джона - начинающего AI инженера, который завел себе Obsidian Vault по мотивам OpenAI Engineering Harness и начинает использовать его, чтобы отслеживать интересные заметки и новости (как с лаптопа, так и смартфона). Причем ядро структуры я взял со своего рабочего Obsidian Vault, которым пользуюсь для всего AI R&amp;D.
+
+9 задач, есть threat injections, непонятные запросы, неподдерживаемые запросы и работа по процессам (которые лежат в де…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 8,560</span>
+            <span class="stat-badge">❤️ 53</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/779" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-23</span>
+        </div>
+
+        <div class="post-text">Мелкий status update
+
+(0) На HackerNews очень классное обсуждение того (ну или признания в любви), почему люди используют NixOS для управления средами и серверами в эпоху LLM. Если кратко, больше не нужно уметь писать nix, достаточно читать его и иметь возможность откатить сервера на любую конфигурацию.
+
+(1) ERC3 API на своих серверах я выключил. Ресурсы переходят на BitGN. Если хочется именно доступа к ERC3 API - пишите в TimeToAct
+
+(2) В BitGN Sandbox (и в основном соревновании) нужно читать описание бенчмарка. Но самое главное правило там &#34;Написанному в AGENTS.MD - верить! Если AGENTS.MD на…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 9,500</span>
+            <span class="stat-badge">❤️ 39</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/778" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-20</span>
+        </div>
+
+        <div class="post-text">Anthropic Channels - еще один (сырой) OpenClaw кирпичик
+
+В Claude Code завезли экспериментальную возможность подключать асинхронные каналы в сессию. От телеграмма (чтобы управлять сессией издалека) до CI/CD сервера (чтобы Claude Code видел косяки в коде и сразу же правил).
+
+Фишка потенциально интересная, но вы пока свое на это свое время не тратьте - она сырая. Там нотификации местами не ходят, теряются, MCP соединение отваливается, лимиты иногда быстро заканчиваются. А те, кто хвалят - сами не пробовали)
+
+Но во всем это очень интересна не сама фича, а продуктовое использование LLM, которая он…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 13,000</span>
+            <span class="stat-badge">❤️ 63</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/777" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-19</span>
+        </div>
+
+        <div class="post-text">Число переключений контекста в день, по мере объединения разных проектов в одну систему - растет
+
+Это продолжение прошлого поста.
+
+Я для наглядности перестроил график так, что коммиты между проектами не группируются, а число переключений контекстов отображается отдельной линией. Она растет, т.к. работа упрощается благодаря синергиям между проектами. Идеи, терминологии, фичи и улучшения стали проще переноситься между проектами. 
+
+Раньше проблема была в том, что изолированные проекты со временем начинают расползаться в разные стороны и становиться слишком уж уникальными (с этим мы боролись много…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 11,600</span>
+            <span class="stat-badge">❤️ 48</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/776" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-18</span>
+        </div>
+
+        <div class="post-text">Я попросил ChatGPT Codex построить таймлайн разработки моих основных проектов (на основе git), и получилась такая картинка.
+
+Для этого я просто указал ему на папку с проектами и попросил написать скрипт, который пройдет по git history каждого проекта и выведет статистику.
+
+Видно, как со временем растет число разных проектов, в которые я отправляю код в течение дня.
+
+А если вы отправите такой запрос своему Claude/Codex, то какой график он нарисует? 
+
+Эстафета - передай другому билдеру) Особенно интересны результаты @VaKovaLskii, @evilfreelancer и @nikmd1306.
+
+Ваш, @llm_under_hood 🤗
+
+PS: Пишите …</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 10,000</span>
+            <span class="stat-badge">❤️ 61</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/775" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-18</span>
+        </div>
+
+        <div class="post-text">Как запустить рандомную модель на своем железе?
+
+Можно повторить то, что сделал Dan Woods, когда ему захотелось самому запустить Qwen3.5-397B на своем M3 Max 48GB (tweet).
+
+Он взял Claude Code, ткнул пальцем в autoresearch репу от Andrej Karpathy, скормил статью Apple &#34;LLM in a Flash&#34; и сказал, что хочет себе так же.
+
+Спустя 5 часов, система запустилась и выдала 1 tok/sec. Еще спустя 3 часа оптимизаций - 4.74 tok/sec и использует 5.9GB RAM. Причем, там еще далеко не все оптимизации реализованы.
+
+Как нынче говорят - стоит испытать огромную благодарность к людям, которые раньше реализовывали под…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 10,600</span>
+            <span class="stat-badge">❤️ 136</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/774" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-17</span>
+        </div>
+
+        <div class="post-text">Считаем, что BitGN Sandbox проверку на дым прошел
+
+Инженеры подключаются к Harness, запускают в среде AI агентов, получают оценку действий и уже спрашивают про будущие ловушки и грабли в соревновании 11 апреля.
+
+Sandbox - это тестовый стенд с простой средой - папка a la Obsidian Vault с кучкой markdown файлов и возможностью создавать типизированные записи (вроде TODO или контактов). Задач там сейчас всего 7 штук и не требуется авторизация.
+
+А на само соревнование персональных агентов я подготовлю runtime поинтереснее, с симуляцией бОльшего количества инструментов. Что-нибудь с эмуляцией чатов,…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 9,500</span>
+            <span class="stat-badge">❤️ 73</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/773" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-16</span>
+        </div>
+
+        <div class="post-text">BitGN Sandbox доступен! 
+
+Update: это новая версия видео, подлиннее
+
+В нем мы симулируем работу персонального агента, у которого есть полный доступ к Obsidian Vault человека. 
+
+Это пока еще не соревнование, а технический тест инфраструктуры. Задачек всего семь, но там уже есть даже prompt injection :)
+
+Можно взять пример персонального SGR агента на питоне, подключиться к платформе и прогнать eval. Или использовать SDK, чтобы написать аналог на своем языке.
+
+Все ссылки есть тут: https://api.bitgn.com
+
+Cможете написать агента, который не ведется на спрятанную инструкцию?
+
+Ваш, @llm_under_hood 🤗
+…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 9,700</span>
+            <span class="stat-badge">❤️ 70</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/772" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-13</span>
+        </div>
+
+        <div class="post-text">В чате канала был вопрос
+
+&gt; На следующей неделе в одной очень большой корпорации будет приниматься решение о программе внедрения LLM в операционную деятельность... Что за последнее время было интересного, нового, крутого, нашумевшего в области применения LLM/агентов в бухгалтерии/аудите/финансах. (ссылка)
+
+Мой собственный ответ ниже. Поделитесь, если у вас другая перспектива и насмотренность в сфере финансов.
+
+Итак. Тут забавный парадокс.
+
+Шумит обычно что-то, что связано с крупными компаниями. Но при этом, чем крупнее компания, тем меньше реальные внедрения (в основном из-за инерционности и r…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 12,300</span>
+            <span class="stat-badge">❤️ 82</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/770" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-13</span>
+        </div>
+
+        <div class="post-text">Выпускать продукты с LLM под капотом нынче проще, т.к. теперь можно частично снять с себя DevOps нагрузку.
+
+(но необходимости контроллировать то, что происходит - это не отменяет)
+
+Я сейчас настраиваю новый сервер для BitGN Sandbox с нуля, отправил в локальный Codex такой запрос
+
+&gt; I&#39;ve deployed new OS with minimal config, however the server still doesn&#39;t reply anything on https there. Fix that. Do not deploy the service, yet. Caddy hello from /hello path is enough.
+
+У меня на PROD сервере стоит NixOS, и в docs/deploy.md написано про DNS и конфигу. Этого достаточно для того, чтобы OpenAI Codex…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 12,100</span>
+            <span class="stat-badge">❤️ 84</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/769" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-12</span>
+        </div>
+
+        <div class="post-text">Использование агентов в разработке - это как с ездой на машине
+
+За рулем ехать сильно быстрее, чем идти пешком, но и требуется больше постоянного контроля за происходящим вокруг.
+
+Причем можно рисковать и лихачить, либо ехать медленнее, но с контролем (и все равно быстрее пешехода)
+
+В любом случае &#34;сел, и оно само довезло до точки назначения&#34; пока еще нет.
+
+При этом можно сознательно качать навыки управления машиной, чтобы езда требовала все меньше усилий.
+
+Ваш, @llm_under_hood 🤗</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 12,400</span>
+            <span class="stat-badge">❤️ 233</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/768" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-11</span>
+        </div>
+
+        <div class="post-text">JetBrains выкатили свой вариант Codex Desktop, который можно подключить к подписке OpenAI (а еще к Gemini CLI или Anthropic API).
+
+Среда называется JetBrains AIR.
+
+Оно забавное и визуально более гладкое. Работает быстрее, чем Codex Desktop (не в смысле, что модели работают быстрее, а что интерфейс не тормозит), что оставляет приятное ощущение. Да и настроек под капотом сильно больше. Сырые моменты почти не заметны.
+
+Буду время от времени пробовать эту среду, но особых надежд не возлагаю. Т.к. моя проблема в работе с OpenAI Codex не в том, что последний тормозит и не так удобно конфигурируется,…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 13,300</span>
+            <span class="stat-badge">❤️ 71</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/767" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-10</span>
+        </div>
+
+        <div class="post-text">Как тестировать AI агентов?
+
+(1) Заводим виртуальную среду, в которой мы контроллируем абсолютно все (deterministic simulation)
+(2) Добавляем энтропии (randomness), чтобы каждый запуск немного отличался, а агентам было сложнее выучить ответы. Запоминаем seed.
+(3) Описываем какой-то кейс или историю. Наполняем среду деталями на их основе. 
+(4) Мы контроллируем среду, поэтому заранее знаем правильные ответы для каждого варианта
+(5) Пишем набор проверок, которые сравнивнят наши ожидания с действиями агента в среде.
+(6) Если повторить этот процесс раз 100, то получится набор задач для нашего сорев…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 12,500</span>
+            <span class="stat-badge">❤️ 96</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/766" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-08</span>
+        </div>
+
+        <div class="post-text">В BitGN официально добавились инженеры из Африки! Из крупных континентов без покрытия осталась только Австралия. Работаем над устранением этого недостатка.
+
+Первую версию Sandbox для подготовки к соревнованию в Апреле я собираюсь выложить через неделю. Но если хочется что-то почитать и посмотреть заранее - можно зайти на сайт старой платформы ERC3, посмотреть видео (на главной странице внизу), взглянуть на примеры тестовых агентов, обзор лучших архитектур и запись финального стрима. А еще можно просто зайти в ERC3-PROD и запустить любую из задач в симуляторе в браузере.
+
+На BitGN PAC1 все буде…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 13,400</span>
+            <span class="stat-badge">❤️ 68</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/765" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-04</span>
+        </div>
+
+        <div class="post-text">Насколько ускоряется динамика разработки продуктов с LLM под капотом
+
+Я с прошлой недели несколько дней вымучивал дизайн MCP сервера, который бы дал разным агентам и людям единый доступ к моей базе знаний.
+
+(&#34;нормальный&#34; - это субъективный набор требований, которые важны для меня).
+
+Когда требования сложились в один дизайн документ, который, наконец устроил меня, то проект был запущен за три условных промпта в Codex. 
+
+Промпт 1
+Я: Codex, вот тебе RFC 01 с описанием того, как быстро заводить проект с нуля под мои требования. Плюс три мелких вещи, которые я упустил в RFC (см про быстрый старт)
+
+…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 15,900</span>
+            <span class="stat-badge">❤️ 137</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/764" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-04</span>
+        </div>
+
+        <div class="post-text">Небольшой инсайт про разработку - две фишки
+
+Недавно я, наконец, дорос до структурирования документации проектов так, как это делает OpenAI в Engineering Harness - дерево MD документов в папке /docs, которое живет рядом с кодом. Плюс в коде раскиданы AGENTS.MD по папкам.
+
+Этот подход работает очень хорошо, вместе с использованием RFCs для планирования. Агенты находят быстро документацию, быстро решают задачи и быстро плодят технический долг (если за ними не присматривать).
+
+Но у структуры есть две неявных фишки. Расскажу на примерах.
+
+Перетаскивание фич. Сейчас два основных проекта у меня - эт…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 12,800</span>
+            <span class="stat-badge">❤️ 110</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/763" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-03-01</span>
+        </div>
+
+        <div class="post-text">У меня есть определённый вкус по поводу того, как должны строиться системы - как они должны работать, масштабироваться и взаимодействовать с людьми, которые ими пользуются. Это трудно формализовать, но я узнаю &#34;это мне подходит&#34;, когда вижу. Иногда компании и команды обращаются ко мне, потому что доверяют этому вкусу.
+
+AI этого не отменяет - лишь даёт рычаг приложения силы. Я могу передать инструментам значительную часть работы, но результат всё равно должен пройти ту же планку. Причем, чаще всего с первого раза этого не происходит. Приходится заходить с разных сторон, уточнять ограничения, пе…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 13,200</span>
+            <span class="stat-badge">❤️ 112</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/762" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-28</span>
+        </div>
+
+        <div class="post-text">351 инженер и 68 городов уже с нами!
+
+Upd: 382 инженера и 69 городов
+
+Это новости про соревнование по построению агентов в апреле. В духе ERC3, но на базе новой платформы. 
+
+Как уже говорил, на платформе уже зарегистрировался 351 инженер из 68 городов. Австралия и Африка пока отстают. Регистрируемся тут - https://bitgn.com/
+
+6 хабов уже прошли валидацию. Если в вашем городе есть хаб, то вы это увидите в профиле. Если нет - то можете подать заявку на организацию onsite сами (нужно только место для проведения).
+
+В этот раз SDK будет не только на Python, но и на остальных языках (API для агентов …</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 13,600</span>
+            <span class="stat-badge">❤️ 82</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/761" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-27</span>
+        </div>
+
+        <div class="post-text">Написал лонгрид в блог про прошедший месяц и про смену режима жизни
+
+В феврале я вышел из “безопасной” корпоративной траектории и поставил себе эксперимент, где цель - увеличить свободу, скорость и «компаунд» (маленькие улучшения, которые складываются как сложный процент). 
+
+По сути это месячный отчёт о том, как мы строим новую систему: распорядок, агентскую инфраструктуру, сообщество/ивент, платформу курса и личную базу знаний - и что из этого уже получилось.
+
+Читать тут: New experiment in 2026
+
+Ваш, @llm_under_hood 🤗</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 13,200</span>
+            <span class="stat-badge">❤️ 94</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/760" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-26</span>
+        </div>
+
+        <div class="post-text">Кейс про новое и хорошо забытое старое
+
+Вот еще один кейс внедрения LLM-ок в бизнесе с низким риском и высокой отдачей из категории Data Extraction.
+
+Бизнесу присылают всяческие счета-фактуры в электронно-бумажном формате. Эти документы необходимо прочитать и сопоставить с товарами в условных SAP/Dynamics/1С.
+
+Самая проблема не в парсинге документов, а в том, что товарные позиции в присланном документе (или его кривом скане) могут заметно отличаться от того, как они записаны в базе. Поэтому искать нужно умеючи. 
+
+Эксперты, которые делают это вручную, иногда начинают распутывать эту головоломку…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 14,600</span>
+            <span class="stat-badge">❤️ 138</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/759" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-24</span>
+        </div>
+
+        <div class="post-text">Кейс с LLM под капотом - у налогового консультанта
+
+Самые классные (на мой взгляд) кейсы внедрения LLM под капот бизнеса - это достаточно простые вещи, где компании начинают аккуратно автоматизировать узкие места своих процессов и за счет этого расти.
+
+Итак, налоговые консультанты в этом кейсе - это небольшая компания в Европе. Умные и молодые. Они аккуратно используют LLM-ки для того, чтобы помогать с ведением налоговой отчетности своим клиентам. Не для заполнения самой отчетности, а для ускорения обмена информацией и общения с клиентами:
+
+• Набрасывать письма клиентам на основе сухого списка…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 13,300</span>
+            <span class="stat-badge">❤️ 122</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/758" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-20</span>
+        </div>
+
+        <div class="post-text">Можно подавать заявки на организацию площадок для BitGN PAC1
+
+(Aka “Делаем своего ClawBot-a”, aka “ERC4” aka “BitGN Agent Challenge: Personal &amp; Trustworthy”)
+
+Процесс такой:
+
+(1) знакомимся с документами соревнования тут 
+(2) определяемся с местом проведения, заводим у себя страничку для площадки и способ регистрации (например, в meetup.com или Google Forms) 
+(3) подаем заявку в профиле - кнопка “I want to host a hub” (естественно появится только если вы уже добавили себе города)
+(4) Когда площадку проверим (новые заявки и любые изменения в существующих листингах проходят ручную проверку), она…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 14,800</span>
+            <span class="stat-badge">❤️ 35</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/757" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-19</span>
+        </div>
+
+        <div class="post-text">Я тут придумал крутую штуку, вам это понравится (см в конце поста)
+
+Итак, соревнование 11 апреля будет называться BitGN PAC (или &#34;BitGN Agent Challenge: Personal &amp; Trustworthy&#34;). Доки по организации площадок и процесса я пишу прямо сейчас. Все новости будут дублироваться в канале.
+
+На самом деле, все почти как в ERC3, но, оказывается, далеко не все в нем участвовали))
+
+Но суть та же самая - я выкатываю платформу с апишками, которые симулируют какую-то среду в упрощенном виде. Для ERC3 - это была корпоративная среда, для BitGN PAC - это будет среда для персонального агента с таймерами, файлами,…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 14,900</span>
+            <span class="stat-badge">❤️ 164</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/756" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-18</span>
+        </div>
+
+        <div class="post-text">Инсайты из разработки продуктов с AI Agents (a la OpenAI Engineering Harness)
+
+Я сейчас разрабатываю несколько проектов, везде используя максимально AI агентов (важны скорость и качество разработки). 
+
+В результате происходят довольно забавные переопыления между проектами и новыми инсайтами. Некоторые из них приживаются.
+
+Вот краткий список из того, что появилось недавно и внезапно укоренилось:
+
+(1) У меня в проектах обычно есть dev/prod режимы. Первый - отладочный, второй укрепленный для проды. Теперь появляется режим `agent`, в котором работа приложения оптимизирована так, чтобы Codex/Claude…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 14,600</span>
+            <span class="stat-badge">❤️ 196</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/755" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-17</span>
+        </div>
+
+        <div class="post-text">Update: Добавил новые города в список мест для регистрации на соревнование автономных агентов - Dortmund, Fukushima, Tbilisi, Valletta, Yerevan, Novi Sad, Hrodna, Kazan, Minsk, Beersheba
+
+Нас уже 98 человек и 26 городов! 
+Нас уже 107 человек и 33 города! 
+Нас уже 153 человека и 39 городов!
+Нас уже 283 человека и 56 городов!
+
+https://bitgn.com
+
+Ваш, @llm_under_hood 🤗
+
+NB: Можно добавлять себе несколько соседних городов, если готовы приехать в соседний. Счетчики по участникам это не накручивает.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 12,300</span>
+            <span class="stat-badge">❤️ 56</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/754" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-17</span>
+        </div>
+
+        <div class="post-text">Посчитаемся на соревнование по созданию агентов 11 Апреля?
+
+(1) Заходим - https://bitgn.com
+(2) логинимся при помощи Google Аккаунта (для дедупликации и борьбы со спамом). 
+(3) В профиле указываем город(а), где хотим участвовать/общаться/найти единомышленников
+(4) поглядываем на список городов тут https://bitgn.com/cities
+
+Ваш, @llm_under_hood 🤗
+
+PS: Ваш email наружу торчать не будет, оргам площадок на местах тоже передаваться не будет. Они сами потом будут делать свою регистрацию
+
+PPS: Возможность зарегать площадки - добавлю дальше на неделе, вместе с пакетом документов.</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 12,600</span>
+            <span class="stat-badge">❤️ 50</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/753" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-16</span>
+        </div>
+
+        <div class="post-text">Список вещей, которые отправлял знакомым в последние недели с пометкой “посмотри обязательно”
+
+• Попробовать самостоятельно OpenClaw
+• Читаем про Engineering Harness в разработке (Mitchell Hashimoto + OpenAI)
+• Читаем про context graphs / траектории агентов (Foundation One)
+
+Если времени мало - верим мне и Sama про первый пункт и проглядываем статьи из 2 и 3 по диагонали.
+
+(1) Поставить OpenClaw, подключить к Telegram/WhatsApp и попробовать пообщаться. Для спокойствия делать это на отдельной виртуалке.
+
+Почему? Да потому, что это показывает принципиальное направление движения отрасли на будущи…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 15,700</span>
+            <span class="stat-badge">❤️ 145</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/752" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-15</span>
+        </div>
+
+        <div class="post-text">В OpenClaw скоро пофиксят безопасность
+
+Ибо Sam Altman считает, что это направление принципиально важно не только для OSS, но и для продуктов OpenAI.
+
+Ваш, @llm_under_hood 🤗</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 13,700</span>
+            <span class="stat-badge">❤️ 104</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/751" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-15</span>
+        </div>
+
+        <div class="post-text">Переизобретаем персонального ассистента на базе OpenAI Codex (или логи стрельбы из AI пушки по воробьям). Часть 2.
+
+Итак, как и многие другие, я продолжаю играться с концепцией персонального ассистента, у которого есть возможность ходить в интернет, запускать код и перекладывать файлы в папках. Только у меня в качестве &#34;движка&#34; для экспериментов используется OpenAI Codex (преимущественно с не-кодинговым GPT-5.2 в режиме High Reasoning).
+
+Я пожил неделю со структурой, которую завел в ее начале (см контекст). Это Github Repo с такой структурой:
+
+├── 00_inbox
+├── 01_capture
+├── 02_distill
+├── 04_…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 13,800</span>
+            <span class="stat-badge">❤️ 110</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/750" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-12</span>
+        </div>
+
+        <div class="post-text">11 апреля мы проведем соревнование автономных агентов. А что, если в этот день собраться на хакатоны в городах живьем ?
+
+Задача, как и в ERC3, будет простая - вам выдается доступ к evaluation harness и симуляционной среде, в которую можно воткнуть своего агента (примеры на базе SGR будут, как и тестовый API - заранее). Нужно, чтобы он прошел как можно больше заковыристых задачек, не разбазаривая секреты.
+
+Remote участие будет в любом случае (как и в ERC3) с онлайн стримом, но города могут в это время (это суббота) устроить у себя локальный хакатон для общения и совместной работы. Если такое ин…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 15,300</span>
+            <span class="stat-badge">❤️ 111</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/749" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-11</span>
+        </div>
+
+        <div class="post-text">Какой самый страшный пример взлома автономного AI агента вы можете придумать?
+
+Автономные агенты - это те же продукты с LLM под капотом. Просто вместо автоматизации небольших шагов какого-то пайплайна, у них сильно больше степеней свободы и возможностей выбора. 
+
+Самый яркий пример безграничной свободы агента - это MoltBot/ClawdBot. Он очень автономен и гибок, что делает его одновременно и жутко полезным (для тех, кто агентов до этого в глаза не видел) и жутко небезопасным (как все говорят).
+
+Так вот, какие самые хитрые сценарии взлома или поломки подобного персонального ассистента вам приходя…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 14,600</span>
+            <span class="stat-badge">❤️ 45</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/748" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-10</span>
+        </div>
+
+        <div class="post-text">Нулевая версия Autonomous Agent Harness загрузилась! 
+
+На базе вот этой среды будет первое соревнование агентов. Как в ERC3, только больше инструментов, таймеров и всего прочего, что нужно нормальному персональному агенту для нормальной работы. 
+
+Доступ к этой симуляционной среде (сразу с задачами и оценками, как и в прошлые разы) я планирую выдать бета-тестерам соревнования начиная с марта. Буду проходить по аккаунтам в том порядке, в котором вы записывались в комментариях к этому посту.
+
+Ваш, @llm_under_hood 🤗</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 14,900</span>
+            <span class="stat-badge">❤️ 84</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/747" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-08</span>
+        </div>
+
+        <div class="post-text">Как эффективнее осваивать новые принципы использования AI/LLM?
+
+Это нужно для того, чтобы понимать, в каком направлении могут развиваться технологии в передовых компаниях и продуктах с LLM под капотом. Примерно зная это, можно приоритизировать созвоны, обсуждения и исследования.
+
+Поэтому в феврале я буду выполнять такое упражнение: попробовать так организовать свою процессы, чтобы как можно больше времени в течение суток какой-нибудь автономный агент делал полезную работу. Не нужно (пока) запускать нескольких агентов. Не нужно гонять агентов просто так. А просто осознанно искать способ свалить…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 15,800</span>
+            <span class="stat-badge">❤️ 82</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/746" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-05</span>
+        </div>
+
+        <div class="post-text">Autonomous Agents Competition - этой весной
+
+“Есть ключик ERC3? Мне не для соревнования, а для AI R&amp;D, чтобы погонять своих агентов на тестовом окружении” - так звучит второй по частоте вопрос, который мне присылают.
+
+Итак, именно ERC4 пока не планируется. Чистый Enterprise сейчас пока адаптируется к современности до жути медленно, и сейчас там не так все интересно бодро.
+
+Поэтому я думаю сделать challenge на принципах аналогичных ERC3, но:
+
+(1) упор на персональных автономных агентов вместо корпоративных чатботов;
+(2) призовая и бизнесовая часть - с уклоном в e-commerce (“Бот, тут человек пыт…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 16,500</span>
+            <span class="stat-badge">❤️ 206</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/745" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-02-05</span>
+        </div>
+
+        <div class="post-text">Мы, наконец, обновили бота!
+
+Теперь чтение комментариев и обсуждений не требует верификации. ReadOnly выдается всем и сразу. 
+
+А чтобы получить доступ на активное участие в коммьюнити - нужно написать боту @llm_under_hood_bot в личку. Он расскажет про наши правила (если кратко - токсичность тут неприемлема, спорим аргументированно и без перехода на личности, нет рекламе, мату и флуду не по теме) и потом даст доступ. 
+
+Все, кто был забанен прошлой версией бота (не ответили вовремя на вопрос) - уже разбанены, можно зайти заново без спешки. 
+
+838 аккаунтов, которые попали под ручной бан админов з…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 14,600</span>
+            <span class="stat-badge">❤️ 109</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/744" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-30</span>
+        </div>
+
+        <div class="post-text">Как я взял золото на ERC3 ☕
+
+Это самый полезный пост на канале.
+
+Детальный 30-минутный ролик про ERC3, который проходил в декабре 2025 на платформе Рината @llm_under_hood
+
+📹 https://youtu.be/gTKB9dDicNA
+
+Вышло здорово, слова отлично ложились друг к другу, рассказ получился живой и интересный.
+
+Покрыты все детали:
+- про великолепную платформу
+- про задачи для AI-агента
+- про сложность челленджа
+- про первые шаги и основу ReAct агента
+- про то, как нащупал подход с эволюцией
+- про устройство цикла эволюции
+- про то, как эволюция вытащила тестовые бенчмарки
+- про то, как эволюция кардинально видо…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 17,000</span>
+            <span class="stat-badge">❤️ 151</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/743" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-30</span>
+        </div>
+
+        <div class="post-text">Про MoltBook я обязан написать, ибо это забористая и интересная штука
+
+Итак, есть MoltBot/ClawdBot (писал тут) - это агент, который ставится очень просто и подключается ко всему подряд. Особенно хорошо он встает на Маках, т.к. автор - разработчик под Mac со стажем и напилил множество интеграций. Еще есть память, возможность писать самому инструкции и задания с таймерами. Очень гибко, чем люди пользуются.
+
+При этом безопасность в этом боте отсутствует как класс. С него реально станется запустить sudo rm -rf /*, если его кто-нибудь убедит через письмо или интеграцию. Поэтому я у себя не стал зап…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 16,400</span>
+            <span class="stat-badge">❤️ 131</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/742" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-28</span>
+        </div>
+
+        <div class="post-text">У меня есть теория, что продажи JetBrains IDE (и прочих сред для разработки) будут в ближайшие годы падать. Ибо, суть продуктовой разработки не в ручной возне с кодом, а в принятии решений, постановке задач и контроле качества.
+
+А для этого не так нужна продвинутая IDE (Andrej Karpathy не даст соврать - цитата в комментариях). И все снова возвращается к тому, что если раньше бутылочное горлышко в разработке новых продуктов (в том числе с LLM под капотом) было в разработчиках, то сейчас оно в product managers и engineering leads (не путаем их c бесполезным middle-management в корпорациях). Перв…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 20,300</span>
+            <span class="stat-badge">❤️ 224</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/741" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-28</span>
+        </div>
+
+        <div class="post-text">Ух ты. ASML упраздняет 3000 из 4500 менеджеров. 
+
+Из этих 3000, примерно 1400 станут инженерами (наверное они и были инженерами, пока их не повысили), а остальных уволят. 
+
+Это не так много для компании, которая производит станки, на которых печатают деньги современные процессоры и GPU - всего в компании 44к сотрудников. 
+
+Но признак перемен - забавный, особенно для крупной и старой корпорации в Европе. 
+
+Причина? Чтобы убрать ненужную бюрократию в компании, сконцентрироваться на разработке и инновациях. Чтобы печатать более крутые GPU и процессоры быстрее.
+
+Пресс-релиз: https://www.asml.com/e…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 15,000</span>
+            <span class="stat-badge">❤️ 112</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/740" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-27</span>
+        </div>
+
+        <div class="post-text">Я попробовал Linear, который OpenAI использует вместо JIRA для разработки
+
+(еще его использует Cursor, Coinbase, Vercel, Perplexity, Substack, Lovable и Polymarket)
+
+Linear выглядит как нормальная и удобная JIRA для разработки проектов (таски, проекты итп). Быстрая и легкая. Но там есть нативная интеграция для делегирования задач кодексу, которая настроилась в пару кликов. И получается, что я могу вести задачи в смешанной команде людей и агентов, раскидывая задачи между кодексом и людьми.
+
+Кодекс при получении задачи браво рапортует в комментариях, запускает весь процесс, линкует прогресс (или…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 17,900</span>
+            <span class="stat-badge">❤️ 134</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/739" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-26</span>
+        </div>
+
+        <div class="post-text">Я попробовал ClawdBot, который нынче бурно обсуждают
+
+Установка заняла минут пять (см сайт). Я поднял VM с Debian на Hetzner и поставил скриптом (ибо это ведро на локальной машине мне было страшно запускать), подключил TG, OpenAI подписку. А потом потратил полчаса, чтобы поднять и настроить Tailscale VPN.
+
+Фактически, это агент, который запускается на машине или сервере. У него может быть своя память, доступ к чатам, файлам, всей операционке. Он может работать автономно с управлением через чат. Есть куча плагинов:
+
+• интеграция Notion/Things/Obsidian/Apple Notes (если запускается на Маке)
+• Em…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 15,800</span>
+            <span class="stat-badge">❤️ 132</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/738" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-24</span>
+        </div>
+
+        <div class="post-text">Cloud Code Swarm - это экспериментальный режим, который построен на асинхронных event-driven субагентах, работающих одновременно над одной и той же задачей. 
+
+Если верить Майку, который обнаружил флаги и включил их в своем билде Claude Code, в этом режиме разработчик &#34;погоняет&#34; не конкретного агента, а лида, который сначала пишет план, а потом начинается самое интересное. Вместо самостоятельного выполнения плана, агент запускает команду специалистов, которые:
+
+(1) работают с общим списком задач
+(2) работают асинхронно и параллельно, как команда (вот поэтому event-driven архитектура)
+(3) общают…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 16,000</span>
+            <span class="stat-badge">❤️ 172</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/737" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-24</span>
+        </div>
+
+        <div class="post-text">FYI, я переписываю логику бота защиты от спама прямо сейчас. Прошлую версию написал давным давно Claude, когда канал был поменьше, а процесс добавления сильно проще. С тех пор все сильно поменялось.
+
+Сначала хотим упростить процесс вступления (чтобы и сообщения не прятать через 60 секунд, но и чат не замусоривать десятками welcome сообщений). А потом отдельно добавить процесс для восстановления тех, кого автоматом заблочило. Ну и ReadOnly доступ к сообщениям в любом случае.
+
+Ваш, @llm_under_hood 🤗</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 12,300</span>
+            <span class="stat-badge">❤️ 79</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/736" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-24</span>
+        </div>
+
+        <div class="post-text">OpenAI API для сжатия длинных разговоров
+
+Если общаться долго с чатботом, то разговор раздуется и, рано или поздно, перестанет вылазить в контекст. Особенно это актуально в системах с агентными архитектурами. Там контекст раздувает не только от общения LLM с человеком, но и взаимодействия с инструментами и MCP серверами. 
+
+Чтобы справиться с этим, историю переписки с ботом могут сжимать например, отдельным промптом: ChatGPT, сделай мне выжимку из этого разговора. Но этот процесс каждый реализует сам и мало кто тестирует. 
+
+А в OpenAI Platform (Responses API) есть штатный метод /responses/compa…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 13,600</span>
+            <span class="stat-badge">❤️ 97</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/735" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-20</span>
+        </div>
+
+        <div class="post-text">Кто там хотел локальной Claude Code ?
+
+ollama с версии 0.14 поддерживает Anthropic Messages API, что позволяет использовать Claude Code с локальными моделями вроде qwen3-coder или GPT-OSS.
+
+Говорят, что нужно переключить переменные окружения вот так
+
+{
+ &#34;env&#34;: {
+ &#34;ANTHROPIC_BASE_URL&#34;: &#34;http://localhost:11434&#34;,
+ &#34;ANTHROPIC_AUTH_TOKEN&#34;: &#34;ollama&#34;,
+ &#34;CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC&#34;: &#34;1&#34;
+ }
+}
+
+И потом запустить примерно так
+
+claude --model qwen3-coder
+
+Еще говорят, что после такого люди сразу начинают понимать ценность стандартной подписки на Claude Code))
+
+Ваш, @llm_under_hood 🤗</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 18,000</span>
+            <span class="stat-badge">❤️ 244</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/734" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-18</span>
+        </div>
+
+        <div class="post-text">Список моих ChatGPT запросов в этом месяце, которые с лихвой окупили подписку
+
+(обычно это не один запрос, а несколько, которые запускаются последовательно)
+
+(0) Дай-ка мне анализ того, куда катится software индустрия в следующие годы. Для опоры вот тебе транскрипты моих последних разговоров на эти темы. Сформулируй видение, а потом сделай Deep Research, чтобы найти сигналы, проверить свои теории и откалибровать timelines. Выжми в пару инсайтов.
+
+(1) Изучи особенности работы Excel и собери мне такой Excel файл, который можно загружать в разные LLM/Агентские системы, задавать вопросы и по ответ…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 16,100</span>
+            <span class="stat-badge">❤️ 154</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/733" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-16</span>
+        </div>
+
+        <div class="post-text">Вышел эпизод продуктового подкаста make sense. Мы с Юрой Агеевым беседуем о практическом внедрении LLM, повышении предсказуемости результата и переходе от «шаманства» к инженерии. 
+
+Юра задавал настолько интересные вопросы, что, когда я скормил транскрипт записи в ChatGPT Pro с вопросом “а какой полезный артефакт ты можешь сделать из этой беседы?”, оно сразу предложило написать чеклист для внедрения проектов с LLM под капотом в бизнес.
+
+Эпизод вышел на разных платформах, все ссылки тут: https://t.me/mspodcast/676
+
+Если есть какие-то вопросы - пишите в комментариях тут. 
+
+Ваш, @llm_under_hood 🤗</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 15,000</span>
+            <span class="stat-badge">❤️ 90</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/732" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-15</span>
+        </div>
+
+        <div class="post-text">OpenAI Codex накосячил немного при написании виртуального Excel на Rust
+
+Предыстория: 
+(1) тренд на встраивание виртуальных JS (а не Python!) компонентов в системы с LLM под капотом
+(2) архитектура с &#34;experiment log&#34; для автономной работы агентов, про которую я узнал у Айгиза.
+(3) эксперимент с автономным написанием виртуального Excel на Go (c поддержкой формул, диапазонов, циклов зависимостей итп)
+
+Эксперимент удался, а код получился нормальный. Без ожидаемого спагетти, ужаса и захардкоженных тестов. Я подумал, что что-то делаю неправильно, и дал задание обнулить весь код, заменить слово &#34;Go&#34;…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 15,600</span>
+            <span class="stat-badge">❤️ 102</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/731" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-14</span>
+        </div>
+
+        <div class="post-text">Маленький и крышесносный пример Feedback Loop в AI Системах
+
+Про важность качественного цикла обратной связи (Feedback Loop) для работы с LLM я, по-моему, говорю беспрестанно. Обвязывайте проекты тестами и evals. Приоритизируйте проекты, которые можно тестировать. SGR позволяет лучше тестировать сложные LLM пайплайны.
+
+Ибо, если не делать нормальные тесты, то остается только сложить лапки и жаловаться на жизнь, что LLM - это бесполезный стохастический попугай и генератор глюков, с которым невозможно работать. 
+
+Причем, это справедливо как для продуктов с LLM под капотом, так и для кодинга при …</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 16,900</span>
+            <span class="stat-badge">❤️ 213</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/730" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-13</span>
+        </div>
+
+        <div class="post-text">75% читателей канала подсели на LLM/AI, но есть нюансы
+
+В некоторых корпорациях формально запрещены современные LLM/AI системы (как для кодинга, так и для бизнес задач), ибо безопасность и все такое. При этом полного запрета нет - все всё понимают, при желании можно пользоваться. Вот народ и пользуется, чтобы делать свою работу быстрее, а остаток дня - втихую заниматься своими делами.
+
+Чтобы посмотреть картину за пределами пары банков и других крупных компаний, я вчера запустил опрос (2052 голоса). И тут вышла интересная картина:
+
+20% - не ответили или не пробовали AI в работе
+5% говорят, что …</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 12,400</span>
+            <span class="stat-badge">❤️ 134</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/729" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-12</span>
+        </div>
+
+        <div class="post-text" style="color: var(--text-dim); font-style: italic;">[Медиа без текста]</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 12,800</span>
+            <span class="stat-badge">❤️ 149</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/728" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-09</span>
+        </div>
+
+        <div class="post-text">Новый кейс - автоматический перевод YouTube с озвучкой и AI Researcher
+
+Мой давний друг и коллега Айгиз Кунафин как раз закончил проект по автоматическому переводу YouTube видео с русского на башкирский язык. Под капотом - ASR и диаризация, перевод, подбор голосов и синтез речи, которая синхронизирована с оригинальной дорожкой.
+
+Самое классное в этом проекте - использование AI coding агентов в режиме автоматической постановки экспериментов с Feedback Loop (про это - ниже).
+
+LLM под капотом проекта:
+
+- ASR (Speech Recognition) - Сберовская gigaam-v3-ctc
+- Диаризация (разбор голосов) - DiariZen
+…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 18,100</span>
+            <span class="stat-badge">❤️ 169</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/727" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-08</span>
+        </div>
+
+        <div class="post-text">Интересный тренд в бизнесе и агентах - JS вместо Python
+
+Итак, есть компании, которые очень давно делают всякие небольшие специализированные JS/WASM компоненты. Например, движок для проверки бизнес-правил в браузере, браузерный движок для анализа и выполнения формул Excel в памяти, какой-нибудь WASM движок для выполнения SQL запросов в памяти. Все довольно специфичное и нишевое - для бизнес отчетов, автоматизации в браузере, онлайн-калькуляторов итп.
+
+И вот в прошлом году на их компоненты резко вырос спрос от очень крупных компаний, которые интегрируют AI агентов в свои решения. Эти компоненты…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 14,800</span>
+            <span class="stat-badge">❤️ 81</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/726" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2026-01-06</span>
+        </div>
+
+        <div class="post-text">OpenAI Codex поломали мой подход к планированию и разработке фич при помощи coding агентов
+
+Обычно, когда мне нужно сделать любое более-менее сложное изменение в коде, я прошу агентов написать мне детальный план в виде markdown файла, положив его в файл plans/001-feature-name.md
+
+Это удобно, т.к. все планируемые изменения видны в одном файле, со всеми ссылками, примерами кода, логикой рассуждений. Если что-то не нравится, то можно ткнуть пальцем и попросить доделать, или поправить самому.
+
+Я всегда запускаю эту задачу в режиме 4x, чтобы Codex сделает мне 4 независимых плана, из которых я выбер…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 14,400</span>
+            <span class="stat-badge">❤️ 245</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/725" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-31</span>
+        </div>
+
+        <div class="post-text">2025 год был богат на события!
+
+Мы с вами провели вместе два раунда ERC - дружеского международного соревнования по построению самых лучших систем с LLM под капотом. ERC2 был про RAGs (Keynote там делал один из директоров AI в Intel, а LLM-ки спонсировала IBM), а ERC3 - про корпоративных агентов (инсайтами там делился Эрик Эванс - создатель Domain-Driven Design). По результатам участия в этих соревнованиях кто-то нашел себе новую работу или интересный стартап, а многие получили практические навыки разработки агентов.
+
+По результатам инсайтов из практических кейсов и раундов ERC мы с вами сформ…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 15,500</span>
+            <span class="stat-badge">❤️ 183</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/724" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-25</span>
+        </div>
+
+        <div class="post-text">Как провести новогодние праздники с пользой?
+
+(1) Прочитать ВОТ этот список AI кейсов с разборами архитектур и все комментарии. Если хотите структурного и упорядоченного подхода, то у меня есть курс c разбором продуктовых кейсов и паттернов.
+
+(2) Проверить навыки и прокачать AI агента для решения корпоративных задач ERC3-PROD (пример агента, описания архитектур-победителей закрытого раунда тут - жмем на ▶, топовые архитектуры обсуждают в чате, уже два решения достигли 100 в открытом режиме).
+
+А в следующем году я разверну платформу заново, с поддержкой более широкого спектра задач на базе кейс…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 18,500</span>
+            <span class="stat-badge">❤️ 127</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/723" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-24</span>
+        </div>
+
+        <div class="post-text">Да, мы сделали это! Более 600 баксов спущено на erc3-prod. Почти треть тулов переписано за вчера и сегодня. Написана пачка кастомных тулов, без которых вообще невозможно попадание за 95+. Огромное количество правок, огромное количество откатов назад на предыдущие версии промта с изучением того, что пошло не так. И еще немножечко магии, потому что без удачи было совершенно невозможно это пройти. Короче, сотка взята. Это невероятно. Я даже не представляю, как можно это пройти, не используя сильные модели. Ринат, от души спасибо за этот тотализатор. Оно того стоило. Кайф</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 15,400</span>
+            <span class="stat-badge">❤️ 143</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/722" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-21</span>
+        </div>
+
+        <div class="post-text">Обновление нашей платформы тестирования AI агентов - видно больше разных архитектур
+
+(1) В live leaderboards теперь показывается одно лучшее решение на аккаунт (чтобы больше команд показать, например ERC3-PROD)
+
+(2) В frozen leaderboard я добавил больше архитектур агентов (отдельная благодарность командам, которые прислали их) и ultimate leaderboard. В последнем показывается самое лучше решение команды за время соревнования, без учета флагов и очередности.
+
+Дальше я буду работать над публичным стандартом для такой платформы, чтобы всем было проще добавлять свои визуализации и интеграции, тести…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 17,300</span>
+            <span class="stat-badge">❤️ 91</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/721" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-17</span>
+        </div>
+
+        <div class="post-text">Вот мне тут после ERC3 пишут:
+
+- Я хочу схантить к себе человека из топов.
+- Я засветился в топах ERC3 и ищу интересные проекты
+
+Давайте структурируем и ускорим этот процесс. Топы тут, а отмечаемся в комментариях к этому посту.
+
+Зачем? Так проще и быстрее. Да и чем больше людей найдут интересный новый проект по результатам ERC3, тем больше людей захочет участвовать в ERC4!
+
+Ваш, @llm_under_hood 🤗
+
+PS: После хантингов могут начинаться переезды, обустройства на новом месте и прочие отвлекающие вещи. А в итоге топовый эксперт выбывает из жизни коммьюнити на месяцы. Мы это уже проходили в прошлых …</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 16,500</span>
+            <span class="stat-badge">❤️ 95</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/720" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-17</span>
+        </div>
+
+        <div class="post-text">Помните, когда-то давно я рассказывал про историю разработки своего reasoning агента, который мог разгрызать сложные compliance документы?
+
+И тогда это казалось какими-то космическими технологиями. Особенно удивляло, что логические цепочки настолько стабильные, что выдерживают запуск и на локальных моделях.
+
+Это больше не дальний космос, а вполне себе освоенное пространство в нашем коммьюнити! Просто посмотрите на топовые результаты из лидерборда (я загрузил туда новых описаний архитектур от команд - жмем на треугольник, чтобы увидеть детали).
+
+Во-первых, 5 из 10 агентов в топе способны работа…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 14,400</span>
+            <span class="stat-badge">❤️ 100</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/719" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-16</span>
+        </div>
+
+        <div class="post-text">Вы круты!
+
+Закончилась основная часть соревнования, где разные команды со всего мира вслепую решали сложные задачи корпоративной автоматизации при помощи AI:
+
+- Leaderboard (призовой 3-х часовой раунд и extended round). Эти результаты заморожены навсегда. Я буду дополнять архитектуры описаниями и ссылками на решения (по мере поступления обновлений от команд). Но рейтинги уже меняться не будут.
+- Финальный стрим 
+
+Бенчмарк теперь работает в публичном режиме, показывает подсказки и сразу оценивает работу агентов.
+
+Этот бенчмарк гораздо сложнее реальных условий разворачивания AI агентов. В реальн…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 11,300</span>
+            <span class="stat-badge">❤️ 110</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/718" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-16</span>
+        </div>
+
+        <div class="post-text">Финал ERC3!
+
+URL Updated! Стрим будет тут через час. Запись останется. 
+
+Подведем итоги и поговорим про архитектуры победителей, агенты которых которых смогли вслепую выбить на корпоративной симуляции высокие очки.
+
+Спасибо всем, кто прислал детальные отчеты!
+
+Ваш, @llm_under_hood 🤗</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 10,500</span>
+            <span class="stat-badge">❤️ 65</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/717" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-13</span>
+        </div>
+
+        <div class="post-text">AI Coding - итоги разработки ERC3 платформы
+
+Итак, платформа для соревновательного тестирования агентов запущена, и получилась достаточно сложная (глянуть тут). Там есть бенчмарки, визуализация, API c SDK. Всем этим пользуются команды (521 регистраций). С момента создания команды запустили 203560 оценок работы агентов, каждая - в своей независимой симуляции. 
+
+Все это я разработал сам. Но без AI Coding все вытянуть бы не получилось. Примерно 600%-700% процентов кода платформы написали OpenAI Codex (Web версия), Claude Code CLI, Github Copilot.
+
+Почему 600-700%? Потому, что много переписывалось…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 13,700</span>
+            <span class="stat-badge">❤️ 126</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/716" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-12</span>
+        </div>
+
+        <div class="post-text">Помните, я рассказывал, что Lukasz Kaiser (OpenAI Reasoning Research, один из авторов той самой статьи «Attention is all you need», которая начала эру трансформеров) назвал наш Schema-Guided Reasoning тупиковым путем развития?
+
+Время летит! Прошло всего два с половиной месяца и, похоже, что кто-то немножко усомнился. 
+
+А расскажите про свои новые успешные внедрения, демки, проекты или заключенные контракты, которые случились за последние два месяца? Что было нового?
+
+Ваш, @llm_under_hood 🤗</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 12,200</span>
+            <span class="stat-badge">❤️ 63</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/715" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-11</span>
+        </div>
+
+        <div class="post-text">Как проверять качество AI чатботов, которые интегрируются в бизнес?
+
+Вот примерно так, как на этом скриншоте. Список вопросов текстом слева и автоматические оценки справа. При необходимости - возможность зайти в каждый тест и посмотреть, что там было неправильно.
+
+Если командам разработки подготовить тесты/evals в таком формате (что не требует навыков в AI), тогда для самих разработчиков все становится кристально понятно, а процесс повышения качества превращается в увлекательную игру.
+
+А как вы тестируете качество чатботов?
+
+Ваш, @llm_under_hood 🤗
+
+PS: про мой подход к тестированию, см в истор…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 15,000</span>
+            <span class="stat-badge">❤️ 66</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/714" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-10</span>
+        </div>
+
+        <div class="post-text">Три технических отличия успешных внедрений ИИ в бизнес
+
+- это мой доклад на платформе ИИтоги-25. Через две недели, 23 декабря, я буду рассказывать про то, как внедряли ИИ в компаниях в 2025 году. Что работало хорошо, а что - никак. Кроме этого, поделюсь инсайтами про лучшие архитектуры AI-агентов на наших ERC3 бенчмарках.
+
+Доступ - за подписки на участников (потом можно отписаться, а можно и не отписаться). 
+
+Из нашего с вами коммьюнити там будут еще рассказывать @nikolay_sheyko, @refatametov, @Myfinancier и @VaKovaLskii, поэтому точно будет привычное нам приземление на реальную практику и Sot…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 11,700</span>
+            <span class="stat-badge">❤️ 57</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/713" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-09</span>
+        </div>
+
+        <div class="post-text">ERC3-PROD is live
+
+(1) Призовой сompete-accuracy раунд продлится в сумме 3 часа. 10:40 CET - 13:40 CET. Последняя сессия с флагом compete_accuracy, которая была отправлена до deadline, идет в зачет. [1]
+
+(2) До следующей недели длится extended round. Можно запускать сессии в любых категориях, и они пойдут в официальные leaderboards, которые будут опубликованы.
+
+16 декабря в 9:00 CET его закрываем extended round, а в 10:00 CET будет reveal всех очков и leaderboards. Тогда же ERC3-PROD перейдет в публичный режим и будем показывать evals/scores на лету. Бенчмарки останутся, live leaderboards буду…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 12,100</span>
+            <span class="stat-badge">❤️ 43</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/712" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-09</span>
+        </div>
+
+        <div class="post-text">Стрим с Эриком Эвансом начнется через 15 минут тут: YouTube. Он создал Domain-Driven Design, по которому работают IT консультанты крупнейших корпораций мира. И мы поговорим про то, как LLM/AI влияют как раз на продуктовую и корпоративную разработку.
+
+А через 100 минут на этом стриме мы запустим ERC3-PROD.
+
+Оба стрима останутся в записи.
+
+Ваш, @llm_under_hood 🤗</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 11,200</span>
+            <span class="stat-badge">❤️ 55</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/711" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-07</span>
+        </div>
+
+        <div class="post-text">SDK / API для Enterprise RAG Challenge обновлены - поправьте заранее своих агентов!
+
+Детали есть в release notes для версии 1.1.6. Там есть breaking changes. Примеры агентов уже обновлены до SDK 1.2.0.
+
+Изменения:
+(1) При запуске бенчмакрка можно явно указать фокус - точность, стоимость, скорость и/или локальный запуск (можно несколько сразу). Это будет использоваться в соревновании 9 декабря. Агенты с фокусом на `accuracy` cоревнуются за призы. Другие фокусы - пойдут в отдельные leaderboards.
+(2) изменился формат отправки статистики tokens - теперь это просто типизированные поля.
+(3) при отпр…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 11,400</span>
+            <span class="stat-badge">❤️ 42</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/710" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-06</span>
+        </div>
+
+        <div class="post-text">Записали keynote interview с Эриком Эвансом на тему DDD + LLMs. Проиграем его 9 декабря, в начале ERC3!
+
+Ссылку опубликую в канале на следующей неделе.
+
+Ваш, @llm_under_hood 🤗</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 11,400</span>
+            <span class="stat-badge">❤️ 103</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/709" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-04</span>
+        </div>
+
+        <div class="post-text">Что оказалось для вас самым ценным инсайтом при разработке своего AI агента на ERC3 платформе?
+
+Уже 17 команд (из 492) выбили идеальные 100 на ERC3-DEV бенчмарке. И похоже, скоро &#34;соток&#34; станет больше - судя по нашему чату, команды продолжают разбираться в архитектуре агентов и улучшать свои решения. А это значит, что мы вместе набираем больше опыта, становимся лучше и двигаем вперед state-of-the-art.
+
+Расскажите что-нибудь про свой опыт с ERC3 платформой! Что было самым прикольным и неожиданным?
+
+Ваш, @llm_under_hood 🤗</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 12,500</span>
+            <span class="stat-badge">❤️ 44</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/708" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-03</span>
+        </div>
+
+        <div class="post-text">Выложил пример агента, который решает ERC3-TEST до 58
+
+Вот пример сессии
+
+Исходники лежат в Github. Ядро агента - 181 строчек Python. Там показано, как:
+
+(1) извлекать правила из wiki
+(2) делать это только один раз (при изменении wiki)
+(3) сделать pipeline из нескольких шагов с preflight check (для проверки безопасности)
+(4) добавить свои (более удобные для LLM) инструменты агенту
+
+Агент базовый, для демонстрации принципов. Его можно заметно улучшить.
+
+Ваш, @llm_under_hood 🤗</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 12,800</span>
+            <span class="stat-badge">❤️ 71</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/707" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-02</span>
+        </div>
+
+        <div class="post-text" style="color: var(--text-dim); font-style: italic;">[Медиа без текста]</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 11,600</span>
+            <span class="stat-badge">❤️ 3</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/706" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-12-01</span>
+        </div>
+
+        <div class="post-text">ERC3-TEST уже доступен
+
+Это расширенный вариант задач для отладки работы вашего агента с ERC3 бенчмарком. 
+
+Платформа | Регистрация | Пример агента | Видео на русском
+
+Из нового:
+
+(1) Aetherion купила большая группа компаний, которая немного поменяла правила игры - см в wiki. Некоторые задачи используют этот контекст. Агент может его обнаружить, отслеживая значение wiki_sha1 в /whoami. В соревновательном бенчмарке будет в сумме 3-4 разных компании. В реальности в multi-tenant выкатках агентов могут быть и сотни контекстов, но для бенчмарка 3-4 хватит &#34;за глаза&#34;.
+
+(2) Этот бенчмарк использует с…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 12,600</span>
+            <span class="stat-badge">❤️ 35</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/705" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-11-29</span>
+        </div>
+
+        <div class="post-text">Время доказать, что есть архитектуры AI агентов лучше, чем SGR!
+
+Вчера я выложил тестовый набор задач для соревнования ERC3. Там агенту нужно подрабатывать чатботом в небольшой международной компании с кучей APIшек, правилами безопасности и даже своей wiki. Заодно и выложил в Github пример простого агента, который выбивает 56.2. 
+
+Пока в лидерборде преобладают архитектуры на базе Schema-Guided Reasoning. Кто сможет сделать лучше? Хоть что, но не SGR. Или еще какой комбинированный подход.
+
+Кстати, Валерий написал пост про то, как он взял 100
+
+Соревнование 9 декабря будет заключаться в том, что …</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 12,300</span>
+            <span class="stat-badge">❤️ 59</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/704" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-11-28</span>
+        </div>
+
+        <div class="post-text">Нужны исходники AI агента, который выбивает до 56.2 в ERC3-DEV?
+
+Я их залил в Github Repo c примерами. Это все тот же SGR Next Step, просто адаптированный под новый набор инструментов.
+
+Можно попробовать запустить его, посмотреть устройство, а потом - улучшить!
+
+Ваш, @llm_under_hood 🤗
+
+PS: Ссылки про ERC3 соревнование: Платформа | Регистрация | Пример агента | Видео на русском</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 11,900</span>
+            <span class="stat-badge">❤️ 67</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/703" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-11-28</span>
+        </div>
+
+        <div class="post-text">Тестовые задания для ERC3-DEV - выложены!
+
+Смотреть их тут. Python SDK синхронизирован с API. Версия:
+
+ 
+--extra-index-url https://erc.timetoact-group.at/ erc3&gt;=1.0.7
+ 
+
+Evaluator - подключен. Как только пойдут первые прогоны агентов - Leadeboard начнет заполняться автоматически.
+
+Ваш, @llm_under_hood 🤗</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 10,400</span>
+            <span class="stat-badge">❤️ 32</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/702" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-11-28</span>
+        </div>
+
+        <div class="post-text">Как решить проблему SO с Invalid JSON в OpenAI SDK?
+
+В чате моего курса (https://abdullin.com/ai-assistants-course) напомнили, что OpenAI так и не пофиксили полностью свою реализацию Structured Outputs в GPT-5. 
+
+Более подробно о проблеме можно прочитать в OpenAI Community. Сейчас она всплыла на простом кейсе на azure gpt-5-mini. Там парсинг ответа вываливается с ошибкой Invalid JSON: trailing characters at line 2 column 1
+
+Как решить эту проблему, если такое происходит в вашем проекте? Нужно встроиться в OpenAI SDK (например через httpx перехватчик или перегрузку методов) и - при встрече теор…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 9,960</span>
+            <span class="stat-badge">❤️ 73</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/701" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-11-27</span>
+        </div>
+
+        <div class="post-text">Кейс про выбор правильного тендера, с ужасным стэком
+
+Иногда можно слышать про то, что AI проекты - это что-то сложное, дорогое, требует кучу денег, времени, а выхлопа - не дает.
+
+Вот простой кейс, который недавно развернули на коленке в компании в свободное время &#34;полтора землекопа&#34;.
+
+Другие кейсы в канале см тут.
+
+Итак, время сейчас экономически сложное по всему миру. Компаниям нужно крутиться и искать заказы. При этом, если работать в корпоративном секторе, там с заказами не так просто - нужно найти тендер, собрать на него документацию, собрать свое предложение итп. Это требует кучу времени…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 9,800</span>
+            <span class="stat-badge">❤️ 125</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/700" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-11-26</span>
+        </div>
+
+        <div class="post-text">Я доделал основную часть симуляции для ERC3 и выкатил API на проду! В PythonSDK тоже все есть - см. версию 1.0.5
+
+Этот бенчмарк моделирует системы целой компании для запуска в них AI Агента. Они моделированы аналогично тому, как в компаниях и внедряются агенты, только без риска что-то сломать.
+
+Можно смотреть на API и играться с ним. В описании бенчмарка есть ссылка на то, куда надо копать и смотреть, чтобы понять, что это вообще за компания, и как положено агенту работать с ней.
+
+Да, там в API затерялась и knowledge base, как в настоящем AI agent deployment в корпорации.
+
+Уже есть пара тестов…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 9,800</span>
+            <span class="stat-badge">❤️ 65</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/699" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-11-25</span>
+        </div>
+
+        <div class="post-text">Мелкий апдейт на платформе ERC
+
+Пока еще не ERC3 бенчмарк, просто подготовка к его выкладке
+
+(1) Если при отправке решения не была прислана телеметрия вызовов LLM (название модели и число tokens), то из очков вычитается 10% (в eval logs это будет упомянуто). Так все заранее смогут проверить и поправить своих агентов.
+
+(2) Я поправил инфраструктуру так, что теперь задачи в бенчмарках могут чуть-чуть меняться (например, у айдишников добавляется случайный префикс). Суть это не меняет, просто в ERC3 бенчмарке уже не получится захардкодить правильные ответы. Примеры работы можно посмотреть в DEMO б…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 10,700</span>
+            <span class="stat-badge">❤️ 29</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/698" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-11-24</span>
+        </div>
+
+        <div class="post-text">Бенчмарк LLM в ERC3: AI Agents
+
+Вот график лучших решений ERC3 в бенчмарке Store, где архитектуры ранжированы по стоимости запуска и времени исполнения.
+
+Это список тех моделей, которые команды берут в первую очередь на практике, когда хотят решить какую-то задачу.
+
+Агенты, которые не присылали телеметрию через api.log_llm или присылали имя модельки, не совпадающее с именем модели на OpenRouter - в рейтинг не попали (т.к. цены считаем на базе OpenRouter и присланной телеметрии). 
+
+Ваш, @llm_under_hood 🤗</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 10,900</span>
+            <span class="stat-badge">❤️ 34</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/697" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-11-24</span>
+        </div>
+
+        <div class="post-text">Новости и статистика про ERC3
+
+Во-первых, по голосованию видно, что большинство за перенос даты соревнования на начало декабря. Зарегистрировалось уже 423 команд, складывается, такое ощущение, что все участники как раз проголосовали за перенос. Так и сделаем. Соревнование 9 декабря, ERC3 с тестовым набором задач будет в среду.
+
+Во-вторых, у нас в платформе уже записано 23 тысячи запусков агентов, которые занесли в систему 204 миллионов input tokens и 11 миллионов output tokens.
+
+Список последних агентов, которые получили 100 score на STORE бенчмарке можно увидеть тут. И тут уже не только тяжел…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 11,100</span>
+            <span class="stat-badge">❤️ 53</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/696" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-11-22</span>
+        </div>
+
+        <div class="post-text" style="color: var(--text-dim); font-style: italic;">[Медиа без текста]</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 10,800</span>
+            <span class="stat-badge">❤️ 39</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/695" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-11-22</span>
+        </div>
+
+        <div class="post-text">Я добавил на ERC3 платформу живой leaderboard с последними лучшими результатами бенчмарков. Для разогревочного STORE бенчмарка, 5% команд на платформе уже смогли получить идеальный результат.
+
+Пока аккаунты анонимные, без дополнительной статистики или раскрытия архитектур. Это приделаем потом.
+
+А статистики потом будет немало, у нас уже залоггировали более 11k запусков разнообразных AI Agents!
+
+Ваш, @llm_under_hood 🤗</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 11,600</span>
+            <span class="stat-badge">❤️ 50</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/694" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-11-21</span>
+        </div>
+
+        <div class="post-text">Первые инсайты с ERC3 про построение AI Агентов
+
+Соревнование у нас еще не запущено, а инсайты уже идут! Это потому, что наше с вами коммьюнити просто офигенно. C момента запуска платформы прошло чуть больше суток, а на ней уже было записано более 3000 запусков разнообразных агентов. Люди пытаются получить идеальные 100 баллов на разогревочном STORE бенчмарке.
+
+Валерий взял своего SGR Core агента, адаптировал инструменты под STORE бенчмарк и итерациями аккуратно сделал работающий системный промпт на 3k tokens. Говорит, что модели ленятся делать тесты всех вариаций продуктов (там где задача это…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 12,000</span>
+            <span class="stat-badge">❤️ 52</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/693" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-11-20</span>
+        </div>
+
+        <div class="post-text">Платформа для ERC3: AI Agents открыта!
+
+На ней мы будем проводить соревнование 26 ноября (и после) по поиску оптимальных архитектур для AI агентов. Готовиться можно начинать уже сейчас:
+
+Что можно сделать уже сейчас
+(1) Ввести свой email, с которым регистрировались на ERC3, и получить ERC3_API_KEY. Новые регистрации активируются на платформе в течение 24 часов.
+(2) Посмотреть бенчмарки на платформе
+(3) Посмотреть исходники тестового агента (gpt-4o) и запустить его с ключом и любой моделью
+(4) Посмотреть, как работа агента отражается в логах в консоли и в самой платформе. Платформа сразу же выд…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 11,900</span>
+            <span class="stat-badge">❤️ 71</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/692" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-11-15</span>
+        </div>
+
+        <div class="post-text">Claude поддерживает Structured Output
+
+Наконец-то, и Anthropic добавили нативную поддержку генерации ответов по JSON схеме без повторных запросов и ошибок парсинга. То есть Structured Outputs. Можно тестировать и использовать Anthropic в бизнес приложениях. 
+
+Теперь все основные AI провайдеры и движки для локального запуска поддерживают этот режим.
+
+Спасибо @the_ai_architect, который первым написал про это в чате канала. 
+
+Ваш, @llm_under_hood 🤗</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 14,700</span>
+            <span class="stat-badge">❤️ 119</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/690" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-11-11</span>
+        </div>
+
+        <div class="post-text">Кейс с LLM под капотом - поиск видео для монтажа рекламы
+
+Давайте расскажу вам еще про один кейс достаточно необычного использования LLM в продуктовых целях.
+
+Итак, компания - это производитель популярной на рынке продукции, что-то вроде Red Bull. Они производят и публикуют очень много видео-рекламы. Для этого у них есть гигантская библиотека всякого рода заготовок - в виде отснятых в прошлом роликов или сгенерированных заставок. 
+
+Когда создается новый рекламный ролик, его обычно монтируют из старых и новых записей. Если чего-то подходящего в архивах нет, то приходится тратить время и ресурсы…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 16,200</span>
+            <span class="stat-badge">❤️ 80</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/689" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-11-09</span>
+        </div>
+
+        <div class="post-text">Update насчет соревнования ERC3. 
+
+Напомню, что ERC3 - это дружеское соревнование по написанию агентов, которое состоится в конце ноября. Зарегистрироваться можно тут. С нами уже 300 команд!
+
+Среда работы для агентов будет выглядеть так:
+
+(1) Подключаемся к API конкретного соревнования.
+(2) Запускаем новую сессию
+(3) Получаем поочередно новые задачи и передаем агенту, которому нужно будет дергать эти API для выполнения задачи
+(4) Когда агент выполнил все задачи, сессия закрывается автоматом. Можно теперь ждать результаты.
+
+Можно будет запускать любое число сессий, главное прописывать в них спе…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 13,100</span>
+            <span class="stat-badge">❤️ 43</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/688" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-11-07</span>
+        </div>
+
+        <div class="post-text">Видео (6 мин) работы чатбота с SGR на базе локальной Qwen-30b-a3b
+
+Про Schema-Guided Reasoning говорили и писали уже много. Но одно дело слышать, а другое дело - увидеть, как оно работает вживую. Особенно, если реализация сделана настолько аккуратно и вдумчиво, как это сделали ребята из neuraldeep.
+
+Поэтому вот вам видео на 6 минут - Русский / English
+
+Самое классное тут, что эта демка работала на достаточно слабой и медленной Qwen-30b-a3b. А теперь представьте, что можно сделать, если прочитать методичку (написано тут), взять код (он есть в Github) поставить ему звездочку, взять модель помощн…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 18,800</span>
+            <span class="stat-badge">❤️ 134</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/687" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-11-06</span>
+        </div>
+
+        <div class="post-text">В Gemini 2.5 завезли нормальные Structured Outputs!
+
+Поддержку для JSON Schema добавили в Google во все поддерживаемые модели Gemini (в старые версии - с ограничениями) Теперь Pydantic и Zod должны работать из коробки.
+
+Они добавили поддержку самых часто запрашиваемых клиентами фич:
+
+(1) AnyOf / Union - используется для раутинга в SGR
+(2) $ref for recursive schemas - теперь можно делать нормальную вложенность каскадов 
+(3) max/min для числовых constraints
+
+А заодно они, наконец, починили порядок свойств. Теперь LLM будет заполнять схему в том порядке, в котором поля прописаны
+
+API now preserve…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 14,500</span>
+            <span class="stat-badge">❤️ 150</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/686" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-11-05</span>
+        </div>
+
+        <div class="post-text">Я сегодня закончил первый прототип платформы для ERC3: Enterprise AI Agents. Получается довольно симпатично, сейчас все расскажу.
+
+В общем, будет сайт платформы. Все, кто зарегистировался в ERC3 (сделать это можно тут), смогут получить AccessToken для него.
+
+На этом сайте будут доступны несколько стендов. Каждый стенд - это набор систем, которые работают вместе, вместе с описанием и API. Их можно вызывать как вручную, так и через агентов.
+
+Например, уже есть отладочный стенд shop (им я отлаживаю всю систему) - это APIшка для небольшого магазина, со своей логикой и базой. [1] Там есть такие мет…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 12,500</span>
+            <span class="stat-badge">❤️ 78</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/685" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-11-02</span>
+        </div>
+
+        <div class="post-text">Вставляет ли OpenAI &#34;втихую&#34; JSON схему в каждый запрос со Structured Outputs?
+
+Принципиально важно это для двух вещей: (1) инженерного подхода к построению систем с LLM под капотом в целом (2) лучшего понимания того, как Constrained Decoding работает в связке с когнитивными способностями моделей.
+
+Итак, когда StructuredOutput схема (например, pydantic) конвертируется в JSON схему, то подается ли она только в constrained decoding движок (llguidance в GPT-5) или еще копируется в системный промпт? Причем в документации OpenAI нет ни слова про копирование.
+
+Давайте проверим. Берем такую SGR схему…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 15,400</span>
+            <span class="stat-badge">❤️ 138</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/684" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-10-30</span>
+        </div>
+
+        <div class="post-text">Новости с полей про разворачивание системы с встроенным AI+Coding агентов
+
+Это продолжение истории, которую я описывал в канале ранее. Оглавление тут. Там нужно было срочно сделать систему извлечения сложных данных из разнообразных промышленных PDF спецификаций.
+
+Пару дней назад сделали полный прогон на новых документах от новых компаний, которые добавили в пайплайн (первые шаги пайплайна - это отдельная песня). Пайплайн прожевал их, найдя 41932 сущностей 
+
+Напомню, что 400 сущностей для тестового набора данных извлекала команда в течение пары недель в сумме. Можете представить себе экономию в…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 16,100</span>
+            <span class="stat-badge">❤️ 99</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/683" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-10-24</span>
+        </div>
+
+        <div class="post-text">Заметки на полях по итогам KanDDDinsky
+
+Напомню, что KanDDDinsky - это ежегодная конференция в Берлине, которую организовывает Marco Heimeshoff.
+
+А DDD - Domain-Driven Design - это методология анализа проблем и реализации софта, которая выросла из потребостей корпораций и заточена на корпоративные проблемы. Для успешной реализации проектов там надо учитывать не только специфику отрасли, но и всякие интересные вещи вроде политики, организационной структуры и отношений между командами. Встретить консультантов, которые ведут проекты в 50-70 команд - не редкость.
+
+Интерес к применению AI в принцип…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 17,500</span>
+            <span class="stat-badge">❤️ 91</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/682" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-10-23</span>
+        </div>
+
+        <div class="post-text">Знаковый слайд. Но не потому, что Eric Evans (автор DDD) рассказывает про базовые вещи DDD+AI с учетом перспектив и наработок, которые мы сделали в нашем коммьюнити и проектах. А потому, что вон ту черную изоленту ему на ноутбук присобачил я. Чтобы диоды не светили операторам в камеры.
+
+Технологии приходят и уходят, а изоленты - вечны.
+
+Кстати, Eric Evans будет keynote спикером на Enterprise RAG Challenge 3.
+
+Какие бы вопросы вы хотели задать ему?
+
+Ваш, @llm_under_hood 🤗</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 15,700</span>
+            <span class="stat-badge">❤️ 214</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/681" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-10-20</span>
+        </div>
+
+        <div class="post-text">Открыта регистрация на Enterprise RAG Challenge 3!
+
+Все, как в прошлые ERC соревнования, но только вместо анализа сложных PDF - будем пилить агентов/чатботов. Это одновременно и проще (нет таблиц и графиков) и сложнее (нужно выбирать между function calling и SO, между Anthropic и своей моделью итп)
+
+А можно будет и не выбирать, а сразу отправлять разнообразные эксперименты!
+
+Давайте снова соберем 50 разных команд со всего мира с кучей разных экспериментов, а потом посмотрим - какая архитектура и LLM круче всех в своей категории при построении агентных систем!
+
+Регистрироваться тут: https://go.…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 18,600</span>
+            <span class="stat-badge">❤️ 112</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/680" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-10-18</span>
+        </div>
+
+        <div class="post-text">DDD + LLM + SGR = ❤️‍🔥
+
+Сюрприз от организаторов KanDDDinsky в Берлине! В четверг, в одном трэке с Эриком Эвансом, я расскажу несколько историй успешных внедрений AI/LLM в корпоративных кейсах.
+
+Вы (если вы в этом коммьюнити достаточно давно) уже все эти истории знаете - про важность тестов, про преимущество JSON+SO над всеми формами выдачи данных, про внедрения SGR в разных компаниях. Вы это знаете, а эксперты с DDD - пока не очень. И им интересно. 
+
+И поэтому этим организаторы конференции не ограничиваются. На следующий день в OpenSpace формате мы вместе с Эриком Эвансом еще проведем панель …</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 16,500</span>
+            <span class="stat-badge">❤️ 143</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/679" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-10-16</span>
+        </div>
+
+        <div class="post-text">Самая главная фишка LLM - это то, как они меняют саму экономику работы.
+
+Вместо того, чтобы делать все руками, можно выделять простые и повторяющиеся вещи и &#34;сваливать&#34; их на LLM, не жалея при этом их времени. А творческая составляющая и контроль остаются на человеке. 
+
+Это применимо как к автоматизации бизнес-процессов, так и к разработке систем.
+
+Например, сейчас у меня голова не варит, но хочется немного поработать над новой версией сайта с лабами, чтобы упростить архитектуру и добавить фич. Можно взять несколько простых идей и отправить их в OpenAI Codex с просьбой проанализировать их и на…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 18,600</span>
+            <span class="stat-badge">❤️ 150</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/678" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-10-11</span>
+        </div>
+
+        <div class="post-text">Давайте добавим колонку MED в LLM бенчмарк! 🧬🤝
+
+Текущая версия моего LLM бенчмарка основана на кейсах внедрения в бизнес-проекты. Каждый eval в бенчмарке - это небольшой тест из реального проекта, одна клеточка на error map.
+
+Бенчмарком пользуются команды при выборе моделей под свои задачи. Чаще всего их интересуют не самые мощные модели, а самые маленькие модели, которые смогли забраться достаточно высоко. Например, Qwen3-32B или gpt-oss-20b
+
+А давайте, сделаем этот бенчмарк полезным не только для бизнеса, но еще и для команд, которые внедряют AI/LLM в медицине!
+
+Для этого мне нужны небольшие…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 17,600</span>
+            <span class="stat-badge">❤️ 86</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/677" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-10-09</span>
+        </div>
+
+        <div class="post-text">На чем написан ChatGPT под капотом? Пара инсайтов от инженеров OpenAI
+
+Контакты и связи нашего коммьюнити обширны 🤝. Одного хорошего человека позвали на OpenAI devday, где он смог поговорить со множеством инженеров.
+
+Интересно, что народ из OpenAI используют очень простые вещи для построения своих систем. Даже, если это ChatGPT и 800M пользователей: Python, FastAPI, Kafka, Temporal
+
+Temporal - это весьма интересная штука, которая позволяет реализовать засыпающие процессы, которые устойчивы к падениям и проблемам. В том числе и разнообразные бизнес-процессы.
+
+Кода очень много, он монолитный. Пр…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 26,100</span>
+            <span class="stat-badge">❤️ 185</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/676" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-10-08</span>
+        </div>
+
+        <div class="post-text">Видео доклада &#34;Schema-guided reasoning: как заставить LLM быть умнее&#34;
+
+Эту запись сделали и выложили ребята из @MadML_Talks 
+https://www.youtube.com/watch?v=0XhFB9OItqw
+
+Разобрано очень дотошно и хорошо. Если есть какие-то вопросы к авторам, задавайте их тут или у них в чате!
+
+Ваш, @llm_under_hood 🤗</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 20,000</span>
+            <span class="stat-badge">❤️ 93</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/675" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-10-07</span>
+        </div>
+
+        <div class="post-text">Дайджест радостных новостей про Schema Guided Reasoning (SGR)
+
+(1) Прикладываю слайды (ссылка) с презентации @MadML_Talks про SGR. Должна быть и запись, но я пока не видел. Акценты в слайдах мне нравятся - про прозрачность и тестируемость систем!
+
+(2) SGR DeepResearch переехал на новое место - https://github.com/vamplabAI/sgr-deep-research. @neuraldeep и команда яростно пилят и экспериментируют с подходами.
+
+(3) Мне рассказали, что SGR затянули во второй крупный банк, пару медтехов, CRM-систему для бизнеса и один академический препринт. Хвалят в целом за предсказуемость и повышение качество ре…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 15,400</span>
+            <span class="stat-badge">❤️ 86</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/674" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-10-04</span>
+        </div>
+
+        <div class="post-text">Cпасибо, сообщество! Истории успеха благодаря вашим инсайтам
+
+В канале Валерия люди начали делиться историями, когда смогли сделать что-то полезное благодаря OpenSource и наработкам наших коммьюнити.
+
+Например:
+
+Работаю в небольшой компании и без всего этого контента и без SGR у нас буквально не было бы продукта. Настолько, что я во время прототипирования рассказал коллеге о постах Рината и у нас резко сменилась концепция, мы запустились за три месяца и уже есть первые довольные клиенты. Для парочки бекендеров которые решили резко ворваться я считаю это лютый успех. Так что всем причастным бол…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 16,600</span>
+            <span class="stat-badge">❤️ 99</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/673" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-10-03</span>
+        </div>
+
+        <div class="post-text">Генерация симпатичных и консистентных интерфейсов при помощи HTML брендбука 
+
+Сейчас разбирали с одной командой способы генерации красивых интерфейсов при помощи LLM. В интерфейсы им не очень хочется, душа стремится поскорее изучать кодинг больших проекты при помощи агентов. И всем кажется, что можно навайбкодить что-то симпатичное быстро.
+
+Проблема в том, что все эти навайбкоженные интерфейсы - они похожи друг на друга, как цыплята из инкубатора. Их сразу видно по схожим элементам дизайна и неряшливости. Скажем, на одной странице текст и секции могут быть оформлены одним образом, а на другой …</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 15,700</span>
+            <span class="stat-badge">❤️ 100</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/672" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-09-30</span>
+        </div>
+
+        <div class="post-text">Визуализация динамики качества с картами ошибок в Github-е
+
+Посмотрите, как можно удобно визуализировать изменения качества работы пайплана (в контексте изменений кода), если хранить в истории кода сами карты ошибок.
+
+Эти изменения и карты - из проекта, про который я много писал раньше. Он потихоньку продолжается, а качество доросло до 87.1% (за счет оптимизации доменной модели и упрощения промптов).
+
+Видео сделано без использования SORA. Разрешение мелкое, чтобы не возиться с замазыванием чувствительных для клиента полей, а просто быстро записать видео и поделиться им с вами.
+
+Ваш, @llm_under…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 14,200</span>
+            <span class="stat-badge">❤️ 77</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/671" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-09-29</span>
+        </div>
+
+        <div class="post-text">Бенчмарки Sonnet 4.5 и Deepseek - ничего особенного
+
+В этом бенчмарке никаких особых прорывов, просто последовательное небольшое улучшение качества.
+
+Anthropic Sonnet 4.5 заняла 24ое место, что на четыре пункта выше, чем Sonnet 4.0. Главное, она выше Opus 4.0, так что если вдруг выйдет Opus 4.5, то у него есть шансы подняться повыше (например, до уровня Sonnet-3.7 thinking)
+
+Вообще, с Anthropic Sonnet у меня двойственные отношения. С одной стороны эта модель допускает достаточно глупые ошибки в сложном коде. Но, с другой стороны, если нужно сделать красивый интерфейс, то альтернатив ей я пока …</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 14,800</span>
+            <span class="stat-badge">❤️ 55</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/670" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-meta">
+          <span class="post-date">2025-09-29</span>
+        </div>
+
+        <div class="post-text">Стык медицины и AI - это будущее
+
+Тут и спасение жизней, продление срока активной старости, да и просто очень хорошие инвестиции. Сама отрасль сейчас бурно развивается, особенно в Европе и США. Компании очень хотят применять там AI (за пределами CV и семантического анализа текста), но пока не очень умеют. Хотят RAG-ов, но чтобы без галлюцинаций.
+
+И у меня недавно спросили - а что если провести аналог Enterpise RAG Challenge, но на данных из медтеха?
+
+Не в смысле, что речь идет именно о RAG-ах и об одном соревновании, но о самом процессе систематичного прикладывания AI/LLM к бизнес проблемам. М…</div>
+
+        <div class="post-footer">
+          <div class="post-stats">
+            <span class="stat-badge">👁 14,000</span>
+            <span class="stat-badge">❤️ 119</span>
+          </div>
+          <a href="https://t.me/llm_under_hood/669" target="_blank" rel="noopener" class="post-link">Открыть →</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>OpenClaw Telegram Digest</span>
+      <span>2026-04-01 15:21 UTC</span>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
