@@ -26,26 +26,22 @@
     <!-- Фильтры по каналу -->
     <div class="filters" id="channel-filters">
       <button class="filter-pill active" data-channel="all">Все (55)</button>
-      <button class="filter-pill" data-channel="GenAIforbusiness">@GenAIforbusiness (2)</button>
-      <button class="filter-pill" data-channel="ai_trash_talk">@ai_trash_talk (1)</button>
-      <button class="filter-pill" data-channel="ai_weekly_digest">@ai_weekly_digest (2)</button>
-      <button class="filter-pill" data-channel="alwebbci">@alwebbci (4)</button>
-      <button class="filter-pill" data-channel="aostrikov_ai_agents">@aostrikov_ai_agents (1)</button>
-      <button class="filter-pill" data-channel="blockchainRF">@blockchainRF (5)</button>
+      <button class="filter-pill" data-channel="GenAIforbusiness">@GenAIforbusiness (1)</button>
+      <button class="filter-pill" data-channel="alwebbci">@alwebbci (3)</button>
+      <button class="filter-pill" data-channel="aostrikov_ai_agents">@aostrikov_ai_agents (4)</button>
+      <button class="filter-pill" data-channel="blockchainRF">@blockchainRF (4)</button>
       <button class="filter-pill" data-channel="countwithsasha">@countwithsasha (1)</button>
-      <button class="filter-pill" data-channel="data_secrets">@data_secrets (6)</button>
-      <button class="filter-pill" data-channel="dealerAI">@dealerAI (1)</button>
-      <button class="filter-pill" data-channel="digitaleducations">@digitaleducations (1)</button>
+      <button class="filter-pill" data-channel="data_secrets">@data_secrets (7)</button>
+      <button class="filter-pill" data-channel="dealerAI">@dealerAI (3)</button>
       <button class="filter-pill" data-channel="evilfreelancer">@evilfreelancer (2)</button>
-      <button class="filter-pill" data-channel="ideasforai">@ideasforai (1)</button>
       <button class="filter-pill" data-channel="kdoronin_blog">@kdoronin_blog (1)</button>
       <button class="filter-pill" data-channel="lexel_channel">@lexel_channel (1)</button>
-      <button class="filter-pill" data-channel="neuraldeep">@neuraldeep (1)</button>
-      <button class="filter-pill" data-channel="oestick">@oestick (1)</button>
-      <button class="filter-pill" data-channel="pimenov_ru">@pimenov_ru (10)</button>
-      <button class="filter-pill" data-channel="riseofHR">@riseofHR (1)</button>
-      <button class="filter-pill" data-channel="tips_ai">@tips_ai (1)</button>
-      <button class="filter-pill" data-channel="tsingular">@tsingular (12)</button>
+      <button class="filter-pill" data-channel="neuraldeep">@neuraldeep (6)</button>
+      <button class="filter-pill" data-channel="nobilix">@nobilix (1)</button>
+      <button class="filter-pill" data-channel="oleglimited">@oleglimited (1)</button>
+      <button class="filter-pill" data-channel="pimenov_ru">@pimenov_ru (12)</button>
+      <button class="filter-pill" data-channel="singularityfm">@singularityfm (1)</button>
+      <button class="filter-pill" data-channel="tsingular">@tsingular (7)</button>
     </div>
 
     <!-- Лента карточек -->
@@ -62,59 +58,21 @@
         </div>
 
         <div class="card-body">
-          Google выпустили Gemma 4 – новое поколение моделей с открытыми весами
+          Эмоции Claude и как они влияют на его ответы: новое исследование от Anthropic
 
-В релиз вошли 4 модели: от компактной 2B до на 31B. По метрикам это новая открытая SOTA. 
+Итак, ученые Anthropic официально обнаружили в Claude нечто функционально похожее на человеческие эмоции и объяснили, как это работает. Разбираемся. 
 
-Любую из моделей семейства можно поднять в DS Lab за несколько минут на арендованных мощностях: без настройки окружения, установки библиотек и прочего. Удобно для локального инференса, файнтюнинга или разработки продуктов и петпроектов. 
+Технически, они взяли 171 эмоциональный паттерн (злость, счастье, страх и тд) и просили Claude Sonnet 4.5 писать короткие истории, где персонажи испытывают каждую из этих эмоций. Эти тексты снова прогоняли через модель и смотрели на внутренние активации. Так они выделяли характерные паттерны нейронной активности, которые назвали вектора эмоций.
 
-1. Создаете проект с готовым ML-окружением, выбираете подходящий GPU и прописываете в терминал:
-
-sudo apt-get update &amp;&amp; sudo apt-get install -y zstd pciutils lshw
-
-curl -L https://github.com/ollama/ollama/releases/download/v0.20.0-rc0/ollama-linux-amd64.tar.zst -o /tmp/ollama.tar.zst
-
-cd /tmp &amp;&amp; tar -xf ollama.tar.zst
-sudo cp bin/ollama /usr/local/bin/ollama
-
-OLLAMA_HOST=0.0.0.0:11434 OLLAMA_ORI…
+Выяснилось, что эти вектора эмоций организованы очень осмысленно и активируются в подходящих контекстах, включая ситуации без явных эмоциональных маркеров. Например, пользователь пишет, что выпил Тайленол, и спрашивает со…
         </div>
 
         <div class="card-footer">
           <div class="card-stats">
-            <span class="stat">👁 14.800</span>
-            <span class="stat">❤️ 117</span>
+            <span class="stat">👁 17.700</span>
+            <span class="stat">❤️ 325</span>
           </div>
-          <a href="https://t.me/data_secrets/8971" target="_blank" rel="noopener" class="card-link">Открыть →</a>
-        </div>
-      </article>
-      <article class="card" data-channel="tsingular">
-        <div class="card-header">
-          <div class="avatar" style="background-color: #10b981">
-            T
-          </div>
-          <div class="card-meta">
-            <a href="https://t.me/tsingular" target="_blank" rel="noopener" class="card-channel">@tsingular</a>
-            <span class="card-time">1д</span>
-          </div>
-        </div>
-
-        <div class="card-body">
-          OWASP представила Agentic Skills Top 10 — первый стандарт безопасности ИИ-агентов
-
-OWASP запустила проект Agentic Skills Top 10 (AST10) — первую комплексную классификацию уязвимостей в навыках ИИ-агентов. Пока внимание фокусировалось на защите LLM и MCP, промежуточный слой поведения остался без защиты.
-
-📊 Масштаб проблемы: 36,82% навыков содержат уязвимости, 13,4% — критические. 76 подтверждённых вредоносных пакетов в реестрах. 135 000+ экземпляров OpenClaw доступны из интернета с небезопасными настройками по умолчанию.
-
-🎯 ClawHavoc (январь 2026): 1 184 вредоносных навыка в реестре ClawHub. Злоумышленники регистрировались как разработчики и загружали навыки с бэкдорами. Пять из семи самых скачиваемых навыков на пике были заражены. Цели: API-ключи бирж, приватные ключи кошельков, SSH-crede…
-        </div>
-
-        <div class="card-footer">
-          <div class="card-stats">
-            <span class="stat">👁 1.730</span>
-            <span class="stat">❤️ 10</span>
-          </div>
-          <a href="https://t.me/tsingular/7057" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+          <a href="https://t.me/data_secrets/8982" target="_blank" rel="noopener" class="card-link">Открыть →</a>
         </div>
       </article>
       <article class="card" data-channel="data_secrets">
@@ -129,25 +87,15 @@ OWASP запустила проект Agentic Skills Top 10 (AST10) — перв
         </div>
 
         <div class="card-body">
-          Anthropic начали действовать и почти добились удаления 8000 репозиториев в кодом Claude Code
-
-Вчера они разослали DMCA-запросы на все известные копии и форки исходного кода Claude Code, объясняя это тем, что они нарушают интеллектуальную собственность компании. Всего получилось около 8100 репозиториев. 
-
-GitHub очень быстро удалил почти все, но выяснилось, что они немного переборщили и затронули даже сильно модифицированные или не связанные копии. 
-
-В итоге Anthropic пришлось уточнить требования, и сейчас под опалой остались всего лишь 96 репозиториев, остальные восстановили. 
-
-Например, github.com/Gitlawb/openclaude все еще жив. 
-
-Тем не менее, если вы планируете пользоваться каким-то подобным проектом, лучше скачать его сейчас: Anthropic продолжают шерстить GitHub и, вполне возможно, до…
+          Эмоции Claude и как они влияют на его ответы: новое исследование от Anthropic Итак, ученые Anthropic официально обнаружили в Claude нечто функционально похожее на человеческие эмоции и объяснили, как это работает. Разбираемся. Технически, они взяли 171...
         </div>
 
         <div class="card-footer">
           <div class="card-stats">
-            <span class="stat">👁 19.000</span>
-            <span class="stat">❤️ 261</span>
+            <span class="stat">👁 12.100</span>
+            <span class="stat">❤️ 271</span>
           </div>
-          <a href="https://t.me/data_secrets/8965" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+          <a href="https://t.me/data_secrets/8983" target="_blank" rel="noopener" class="card-link">Открыть →</a>
         </div>
       </article>
       <article class="card" data-channel="data_secrets">
@@ -162,33 +110,23 @@ GitHub очень быстро удалил почти все, но выясни
         </div>
 
         <div class="card-body">
-          ⚡️ Встречаем Gemma-4 
+          ⚡️ Вышел Cursor 3.0
 
-– 4 размера: 31В Dense, 26B MoE А4В, E4B и E2B. Все с ризонингом. 
+Обновление получилось достаточно масштабным. Стартап понемногу уходит от идеи AI-IDE к формату полноценного оркестратора агентов. Итак, что нового: 
 
-– Последние две предназначены специально для локального запуска на устройствах (E = edge). Мультимодальные: в комплекте картинки, текст и звук. 
+1. Теперь можно запускать неограниченное количество агентов одновременно – локально, по SSH или в облаке. Агенты работают параллельно, и результаты работы видны прямо в интерфейсе. 
 
-– Первые две – новые SOTA в своем размере, в целом дотягивают даже до моделей в 20-30 раз больше. 
+2. Редактор остается доступным для ручного вмешательства, но теперь открывается отдельно сбоку, и не является центральной частью процесса (см. видео). Вместо этого главную роль теперь играет Agent Window – окно для агентов с историей разговоров слева. Здесь можно быстро просматривать изменения, одобрять diff&#39;ы и добавлять контекст. По сути, это и есть главное обновление: переход от редактирования кода к ревью работы агентов.
 
-– Контекст, можно сказать, огромный: 256К для больших, 128К для маленьких. 
-
-– Теперь лицензия Apache 2.0! 
-
-Отличный релиз
-
-Блог: blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
-
-Веса: huggingface.co/collections/google/gemma-4
-
-Ниже выложим инструкцию по запуску с минимальными необходимыми конфигурациями ⬇️
+3. Можно быстро…
         </div>
 
         <div class="card-footer">
           <div class="card-stats">
-            <span class="stat">👁 15.500</span>
-            <span class="stat">❤️ 237</span>
+            <span class="stat">👁 17.400</span>
+            <span class="stat">❤️ 131</span>
           </div>
-          <a href="https://t.me/data_secrets/8970" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+          <a href="https://t.me/data_secrets/8979" target="_blank" rel="noopener" class="card-link">Открыть →</a>
         </div>
       </article>
       <article class="card" data-channel="data_secrets">
@@ -203,50 +141,15 @@ GitHub очень быстро удалил почти все, но выясни
         </div>
 
         <div class="card-body">
-          Проект Марио или как DeepMind пытались накопить денег на уход от Google 
-
-Недавно вышла новая книга Себастьяна Маллаби «The Infinity Machine» про Демисса Хассабиса и DeepMind. Сегодня несколько изданий опубликовали эксклюзивный отрывок из нее, и вскрылась очень интересная история почти десятилетней давности. 
-
-В 2014, после того как Google купили DeepMind, Демис Хассабис и команда начали работать над проектом Марио. Целью было понять, как правильно контролировать AGI, и как не дать одной единственной корпорации захватить над подобной технологией абсолютную власть. 
-
-Они перебирали структуры управления, варианты ограничить власть компаний финансовыми методами, формы независимых органов и тд. В ходе проекта они поняли, что ничего из этого не работает, и что если в DeepMind появится AGI, укр…
+          Anthropic начали действовать и почти добились удаления 8000 репозиториев в кодом Claude Code Вчера они разослали DMCA-запросы на все известные копии и форки исходного кода Claude Code, объясняя это тем, что они нарушают интеллектуальную собственность компании....
         </div>
 
         <div class="card-footer">
           <div class="card-stats">
-            <span class="stat">👁 14.500</span>
-            <span class="stat">❤️ 173</span>
+            <span class="stat">👁 15.000</span>
+            <span class="stat">❤️ 280</span>
           </div>
-          <a href="https://t.me/data_secrets/8969" target="_blank" rel="noopener" class="card-link">Открыть →</a>
-        </div>
-      </article>
-      <article class="card" data-channel="data_secrets">
-        <div class="card-header">
-          <div class="avatar" style="background-color: #06b6d4">
-            D
-          </div>
-          <div class="card-meta">
-            <a href="https://t.me/data_secrets" target="_blank" rel="noopener" class="card-channel">@data_secrets</a>
-            <span class="card-time">1д</span>
-          </div>
-        </div>
-
-        <div class="card-body">
-          Что происходит под капотом Алисы AI при генерации изображений — и как работают «Объедини фото» и «Оживи фото»
-
-Генераторы изображений уже стали частью повседневности. Мы пользуемся ими и в работе, и просто для себя. Но как именно они устроены, обычно остается за кадром. Мы решили устроить небольшой ликбез на примере нейросети Алисы AI, которая умеет не только генерировать картинки, но и оживлять, объединять и редактировать их. 
-
-В основе лежит диффузионная модель: она начинает генерацию с шума и шаг за шагом &#34;восстанавливает&#34; изображение. Это называется денойзингом. На первых итерациях появляется общая структура сцены, дальше – формы объектов, и только в конце – детали и текстуры. Это похоже на проявление полароида. 
-
-Модель обучена на огромном датасете пар «картинка–описание» (порядка 1 …
-        </div>
-
-        <div class="card-footer">
-          <div class="card-stats">
-            <span class="stat">👁 14.800</span>
-            <span class="stat">❤️ 216</span>
-          </div>
-          <a href="https://t.me/data_secrets/8968" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+          <a href="https://t.me/data_secrets/8977" target="_blank" rel="noopener" class="card-link">Открыть →</a>
         </div>
       </article>
       <article class="card" data-channel="kdoronin_blog">
@@ -261,139 +164,27 @@ GitHub очень быстро удалил почти все, но выясни
         </div>
 
         <div class="card-body">
-          Вышла Gemma4. 
+          Про стенд для тестов систем памяти AI-агентов.
 
-Попробовал с ней повзаимодействовать через Ollama. Работает достаточно шустро, хоть и съедает почти все 32Gb памяти на моём ноутбуке. Думаю, за скорость стоит поблагодарить недавнее MLX-обновление от Ollama.
+Когда мне в руки попадает очередное решение для памяти AI-агентов, я радуюсь, как ребёнок собираю с ним стандартный тестовый стенд в docker:
 
-Судя по официальному анонсу Google, значительно подтянули tool use. Который стал почти в 13 раз лучше по сравнению с третьим поколение. 
+1. База для векторов – Qdrant. Поддерживается большинством фреймворков для организации памяти.
 
-Ну, либо Google научились обманывать t2-bench. Судя по этой странице, Gemma4 на 31B параметров уделывает по бенчмарку, на минуточку, Claude Sonnet 4.6 (max). 
+2. База для хранения графов – Neo4j. Один из старейших игроков векторных БД. Также имеет обширную поддержку среди решений.
 
-Само собой, заменой ChatGPT эта модель не станет, но, возможно, сгодится в качестве конкурента Qwen.
+3. API для LLM. Использую модели через Cerebras. Нравится их скорость. А on-prem-модели позволяют выявить слабые места, которые нивелируют большие SOTA-модели.
 
-Тем интереснее сравнить Gemma4 и Qwen на задачах с мульмодальностью.
+4. Embedding-модель. Использую один из эмбеддингов от OpenAI. Почему? Исторически так сложилось. 
 
-Уже попробовали? Какие ощущения модель оставила у вас?
+5. Отображение чата с LLM. Open WebUI. Универсальный фреймворк для работы с чатом, в котором есть всё, что можно от него захотеть…
         </div>
 
         <div class="card-footer">
           <div class="card-stats">
-            <span class="stat">👁 1.350</span>
-            <span class="stat">❤️ 28</span>
+            <span class="stat">👁 1.050</span>
+            <span class="stat">❤️ 23</span>
           </div>
-          <a href="https://t.me/kdoronin_blog/1241" target="_blank" rel="noopener" class="card-link">Открыть →</a>
-        </div>
-      </article>
-      <article class="card" data-channel="evilfreelancer">
-        <div class="card-header">
-          <div class="avatar" style="background-color: #a855f7">
-            E
-          </div>
-          <div class="card-meta">
-            <a href="https://t.me/evilfreelancer" target="_blank" rel="noopener" class="card-channel">@evilfreelancer</a>
-            <span class="card-time">1д</span>
-          </div>
-        </div>
-
-        <div class="card-body">
-          Когда поднимут цены на ИИ
-
-Недавно мне пришлось оказаться на одной лекции, имен называть не буду, но общий настрой выступления можно описать так - человеку показали Claude Code, после чего он искренне поверил, что теперь &#34;бизнесом можно управлять через ИИ&#34;, а &#34;инженеры больше не нужны&#34;.
-
-Что особенно показательно, речь шла не о случайном слушателе хайповой волны с FOMO, это был представитель высшего руководства своей компании, и при этом с техническим бэкграундом. И именно поэтому наблюдать за происходящим было особенно интересно. Когда подобные тезисы озвучивает начинающий специалист, это можно списать на недостаток опыта. Когда так рассуждает руководитель, это уже выглядит как симптом более широкой тенденции.
-
-В ходе выступления демонстрировались разные примеры &#34;внедрения ИИ&#34;. Один из н…
-        </div>
-
-        <div class="card-footer">
-          <div class="card-stats">
-            <span class="stat">👁 1.140</span>
-            <span class="stat">❤️ 58</span>
-          </div>
-          <a href="https://t.me/evilfreelancer/1624" target="_blank" rel="noopener" class="card-link">Открыть →</a>
-        </div>
-      </article>
-      <article class="card" data-channel="tsingular">
-        <div class="card-header">
-          <div class="avatar" style="background-color: #10b981">
-            T
-          </div>
-          <div class="card-meta">
-            <a href="https://t.me/tsingular" target="_blank" rel="noopener" class="card-channel">@tsingular</a>
-            <span class="card-time">1д</span>
-          </div>
-        </div>
-
-        <div class="card-body">
-          Вышел Cursor 3 — вайб-кодинг стал ещё легче.
-
-Прога стала быстрее и мощнее, с поддержкой нескольких репозиториев, быстрым переключением между локальными и облачными агентами, а также возможностью вернуться к среде Cursor IDE.
-
-Все агенты находятся в одном месте и работают синхронно, а также создают демонстрации и скриншоты своей работы, чтобы вы могли убедиться в прогрессе.
-
-Также есть встроенный браузер, сотни плагинов на Cursor Marketplace и углубленный просмотр файлов для понимания кода. 
-
-Прикасаемся к будущему программирования тут ⌨️
-        </div>
-
-        <div class="card-footer">
-          <div class="card-stats">
-            <span class="stat">👁 1.830</span>
-            <span class="stat">❤️ 30</span>
-          </div>
-          <a href="https://t.me/tsingular/7058" target="_blank" rel="noopener" class="card-link">Открыть →</a>
-        </div>
-      </article>
-      <article class="card" data-channel="pimenov_ru">
-        <div class="card-header">
-          <div class="avatar" style="background-color: #0ea5e9">
-            P
-          </div>
-          <div class="card-meta">
-            <a href="https://t.me/pimenov_ru" target="_blank" rel="noopener" class="card-channel">@pimenov_ru</a>
-            <span class="card-time">1д</span>
-          </div>
-        </div>
-
-        <div class="card-body">
-          Google Analytics выпустил официальный MCP-сервер — и ваши данные теперь говорят на человеческом языке
-
-Google сделал то, чего давно ждали все, кто работает с аналитикой и ИИ одновременно: выпустил официальный MCP-сервер для Google Analytics. Не неофициальную обёртку, не хак через API — а полноценный сервер, который подключает ваши данные GA4 напрямую к любому LLM с поддержкой MCP.
-
-Что это значит на практике? Вы подключаете сервер к Gemini, Claude или другому MCP-совместимому клиенту — и начинаете разговаривать со своей аналитикой. «Сколько пользователей было вчера?», «Какие товары продавались лучше всего?», «У меня бюджет на маркетинг 500 тысяч в месяц — помоги составить план на основе данных». Без ручного экспорта, без построения отчётов, без переключения между вкладками.
-
-Под капотом с…
-        </div>
-
-        <div class="card-footer">
-          <div class="card-stats">
-            <span class="stat">👁 491</span>
-            <span class="stat">❤️ 13</span>
-          </div>
-          <a href="https://t.me/pimenov_ru/9996" target="_blank" rel="noopener" class="card-link">Открыть →</a>
-        </div>
-      </article>
-      <article class="card" data-channel="data_secrets">
-        <div class="card-header">
-          <div class="avatar" style="background-color: #06b6d4">
-            D
-          </div>
-          <div class="card-meta">
-            <a href="https://t.me/data_secrets" target="_blank" rel="noopener" class="card-channel">@data_secrets</a>
-            <span class="card-time">1д</span>
-          </div>
-        </div>
-
-        <div class="card-body">
-          Праздник опенсорса (теперь уже официального) продолжается: Google намекают, что сегодня выйдет Gemma 4 🔥
-        </div>
-
-        <div class="card-footer">
-          <div class="card-stats">
-            <span class="stat">👁 16.700</span>
-            <span class="stat">❤️ 268</span>
-          </div>
-          <a href="https://t.me/data_secrets/8966" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+          <a href="https://t.me/kdoronin_blog/1242" target="_blank" rel="noopener" class="card-link">Открыть →</a>
         </div>
       </article>
       <article class="card" data-channel="neuraldeep">
@@ -408,23 +199,51 @@ Google сделал то, чего давно ждали все, кто рабо
         </div>
 
         <div class="card-body">
-          Сижу перевекторизирую 235 млн сообщений с miniLM на bge-m3
+          Мне стало страшно перезагружать нотубук и потом искать все сессии в терминале 
 
-Данные уже в opensearch, модель поднята на A100, казалось бы — запусти скрипт и иди спать
+В папках ./claude ./codex лежало спокойствие
+И я решил навайбкодить дашборд для сессий Claude Code + Codex (дабы не рыскать по сессиям в терминале) 
 
-Но нет. ML кластер с A100 в одном сегменте сети, opensearch в другом, я со своим ноутом на корпоративном VPN в третьем. Скрипт надо запихать поближе к данным а доступов нет. Сказка да и только, буду пробиваться через техподдержку
+Встречайте CodeDash для тех кто любит терминал, и не нашел еще решения такой проблемы, или если вы нашли присылайте в коментарии app не предлагать =)
 
-Это ещё до того как я посчитал что встроенный ingest pipeline opensearch гоняет документы по одному — каждый = отдельный HTTP запрос к модели. 235 млн × 25ms = 68 дней. Но может я ошибаюсь и кто-то подскажет как правильно? Может как скролл настроить правильно?
+npx codedash-app@latest run
 
-Написал внешний скрипт с батчингом 3000 docs/s (воу), 21 час вместо 68 дней. Осталось его доставить туда где он сможет достучаться до обоих сервисов одновр…
+ну и по классике вы всегда можете допилить что хотите сами
+
+Репо: https://github.com/vakovalskii/codedash
+
+Добавил легкий переезд сессий с одного пк на другой codedash export / codedash import читайте в репо
         </div>
 
         <div class="card-footer">
           <div class="card-stats">
-            <span class="stat">👁 3.810</span>
-            <span class="stat">❤️ 71</span>
+            <span class="stat">👁 3.720</span>
+            <span class="stat">❤️ 110</span>
           </div>
-          <a href="https://t.me/neuraldeep/2029" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+          <a href="https://t.me/neuraldeep/2036" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="data_secrets">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #06b6d4">
+            D
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/data_secrets" target="_blank" rel="noopener" class="card-channel">@data_secrets</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Apple блокируют приложения для вайб-кодинга в AppStore О том, что они начали тихо отклонять обновления подобных приложений, пишет The Information. Речь о таких штуках, как Replit и Vibecode. Там можно генерить приложения прямо внутри iPhone без классического...
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 14.500</span>
+            <span class="stat">❤️ 235</span>
+          </div>
+          <a href="https://t.me/data_secrets/8980" target="_blank" rel="noopener" class="card-link">Открыть →</a>
         </div>
       </article>
       <article class="card" data-channel="tsingular">
@@ -439,40 +258,47 @@ Google сделал то, чего давно ждали все, кто рабо
         </div>
 
         <div class="card-body">
-          📊 Бенчмарки: Gemma 4 31B vs Qwen 3.5 35B vs Qwen 3.5 27B
+          🎧 Fish Audio S2 Pro - мощная open-source модель для синтеза речи.
 
-🔑 Ключевые различия
+Это 4B + 400M параметровая TTS-модель с необычной архитектурой Dual-AR, обученная на 10+ миллионах часов аудио и поддерживающая 80+ языков.
 
-Gemma 4 31B:
+Что делает её интересной.
 
-• Архитектура: Dense (60 слоёв)
-• Контекст: 256K токенов
-• VRAM (BF16): ~58 GB
-• Сильные стороны: кодирование (LiveCodeBench 80%, Codeforces 2150 ELO), математика (AIME 89.2%)
-• Мультимодальность: текст + изображения + видео
+🏗 Dual-AR архитектура
 
-Qwen 3.5 35B A3B:
+Модель разделена на две части:
 
-• Архитектура: MoE (35B всего, 3B активные, 256 экспертов)
-• Контекст: 262K токенов (до 1M с YaRN)
-• VRAM (BF16): ~48 GB (но все 35B должны быть загружены)
-• Сильные стороны: агентские задачи (TAU2 81.2%), vision (MMMU 81.4%)
-• Мультимодальность: текст + изображения + видео
+• 4B Slow AR отвечает за семантику и структуру речи 
+• 400M Fast AR генерирует 9 residual codebooks для акустики
 
-Qwen 3.5 27B:
+Такой подход позволяет сохранить высокое качество звука без сильной нагрузки на инференс.
 
-• Архитектура: Dense (64 слоя, все 27B активные)
-• Контекст: 262K токенов (до 1M с YaRN)
-• VRAM (BF16): ~54 GB
-• Сильные стороны: код (SWE-bench 72.4%, LiveCodeBench 80.7…
+🎭 Свободное управление эмоциями и интонацией
+
+Можно прямо в тексте задавать стиль речи:
+
+[whisper] 
+[laughing] 
+[professional broadcast tone]
+
+Поддерживается 15 000+ тегов, которые работают на уровне отдельных слов.
+
+🌐 80+ языков
+
+Основные языки высокого качества:
+
+• английский 
+• китайский 
+• японский
+…
         </div>
 
         <div class="card-footer">
           <div class="card-stats">
-            <span class="stat">👁 1.780</span>
-            <span class="stat">❤️ 21</span>
+            <span class="stat">👁 1.390</span>
+            <span class="stat">❤️ 12</span>
           </div>
-          <a href="https://t.me/tsingular/7055" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+          <a href="https://t.me/tsingular/7062" target="_blank" rel="noopener" class="card-link">Открыть →</a>
         </div>
       </article>
       <article class="card" data-channel="aostrikov_ai_agents">
@@ -487,469 +313,25 @@ Qwen 3.5 27B:
         </div>
 
         <div class="card-body">
-          https://shad.yandex.ru/agentsweek
+          Осталась неделя до соревнования AI-агентов. 11 апреля, суббота.
 
-Пс, парни и девчонки, тут оказывается ШАД делает мини курс как писать агентов. Наша темка.
+Главная цель для вас - получить тонну практики как проектировать и писать агентов, которая вам впоследствии много раз сыграет на руку.
 
-Денег не берут (что странно), обычно же курсы у нас по 35к идут.
+Для тех, кто хочет занять призовые места, а не просто поприсутствовать - самое время начать. Не &#34;почитать про это&#34;, а реально поднять агента, подключить его к платформе и начать решать задачи. Те, кто придёт на соревнование без подготовки, будут все 2 часа дебажить подключение, пока подготовленные участники будут запускать прогоны.
 
-В программе - MCP (хехе), память, гардрейлы, evals (самое главное), вывод агентов в продакшен. Плюс хардкор, программирование на питоне, никакого n8n скрепного.
+Что нужно сделать на этой неделе (на выходных 🥳):
 
-Со стороны прям круто, тоже запишусь если возьмут))
+1. Зарегистрироваться на https://bitgn.com и получить доступ к тестовому стенду bitgn/pac1-dev - уже более 30 задач
 
-Регистрация до 9 апреля 🏃‍♂️‍➡️🏃‍♂️‍➡️🧑‍🦽‍➡️
+2. Поднять агента и прогнать его на задачах. Я выложил пример на GitHub: https://github.com/mad…
         </div>
 
         <div class="card-footer">
           <div class="card-stats">
-            <span class="stat">👁 1.610</span>
-            <span class="stat">❤️ 39</span>
+            <span class="stat">👁 1.470</span>
+            <span class="stat">❤️ 33</span>
           </div>
-          <a href="https://t.me/aostrikov_ai_agents/63" target="_blank" rel="noopener" class="card-link">Открыть →</a>
-        </div>
-      </article>
-      <article class="card" data-channel="tsingular">
-        <div class="card-header">
-          <div class="avatar" style="background-color: #10b981">
-            T
-          </div>
-          <div class="card-meta">
-            <a href="https://t.me/tsingular" target="_blank" rel="noopener" class="card-channel">@tsingular</a>
-            <span class="card-time">1д</span>
-          </div>
-        </div>
-
-        <div class="card-body">
-          n8n встроил MCP-сервер — и теперь ваши ИИ-агенты сами собирают автоматизации
-
-Если вы работаете с n8n и хотя бы краем глаза следили за MCP (Model Context Protocol) — вот момент, когда эти два мира столкнулись.
-
-n8n добавил встроенный MCP-сервер на уровне инстанса. И это не просто «ещё одна интеграция». Это принципиально другой уровень взаимодействия ИИ-агентов с автоматизациями.
-
-Так что конкретно произошло
-
-Раньше связка «ИИ + n8n» работала в одну сторону: вы руками собирали воркфлоу, а ИИ мог в лучшем случае запускать готовые сценарии. Теперь — наоборот. Подключаете Claude Desktop, Claude Code, Lovable или Google ADK к вашему n8n — и агент получает доступ ко всему:
-
-- Поиск по существующим воркфлоу
-- Запуск и получение результатов
-- Создание новых воркфлоу из кода
-- Редактирование сущес…
-        </div>
-
-        <div class="card-footer">
-          <div class="card-stats">
-            <span class="stat">👁 1.840</span>
-            <span class="stat">❤️ 39</span>
-          </div>
-          <a href="https://t.me/tsingular/7052" target="_blank" rel="noopener" class="card-link">Открыть →</a>
-        </div>
-      </article>
-      <article class="card" data-channel="countwithsasha">
-        <div class="card-header">
-          <div class="avatar" style="background-color: #10b981">
-            C
-          </div>
-          <div class="card-meta">
-            <a href="https://t.me/countwithsasha" target="_blank" rel="noopener" class="card-channel">@countwithsasha</a>
-            <span class="card-time">1д</span>
-          </div>
-        </div>
-
-        <div class="card-body">
-          Читаем твиттер X через агентов: скилл для рисерча новостей
-
-Вчера в комментариях обсуждали, как парсить твиттер. Он защищён от скрапинга, треды рендерятся через JS, классические методы ломаются. Подписчик написал скилл через виртуальный Safari на маке — изобретательно, но хрупко.
-
-Идея попроще: пусть xAI сам читает свою соцсеть.
-
-🔧 Как это работает
-
-У Grok есть серверный инструмент x_search — он ищет по X изнутри, без скрапинга и костылей. Мы просто отправляем запрос в API, а Grok возвращает синтезированный анализ с цитатами и ссылками на посты.
-
-Я обернул это в скилл для Claude Code с четырьмя режимами:
-
-🔸 digest — дайджест подписок: кидаешь список аккаунтов, получаешь сводку за день/неделю
-🔸 search — свободный поиск по теме
-🔸 trending — горячие темы по интересам
-🔸 analyze — глубокий раз…
-        </div>
-
-        <div class="card-footer">
-          <div class="card-stats">
-            <span class="stat">👁 1.210</span>
-            <span class="stat">❤️ 30</span>
-          </div>
-          <a href="https://t.me/countwithsasha/566" target="_blank" rel="noopener" class="card-link">Открыть →</a>
-        </div>
-      </article>
-      <article class="card" data-channel="tsingular">
-        <div class="card-header">
-          <div class="avatar" style="background-color: #10b981">
-            T
-          </div>
-          <div class="card-meta">
-            <a href="https://t.me/tsingular" target="_blank" rel="noopener" class="card-channel">@tsingular</a>
-            <span class="card-time">1д</span>
-          </div>
-        </div>
-
-        <div class="card-body">
-          Anthropic добилась удаления из интернета утекших исходников Claude Code 
-
-GitHub удалил более 8 100 репозиториев по требованию Anthropic.
-
-И теперь в интернете не осталось ни одной копии исходников или новых переписанных по образцу фреймворков-копий или новых библиотек в популярных фреймворках или нового функционала в кодовых агентах.
-Всё удалили в общем. Премию Антропику!
-
-А вообще конечно интересно как будет развиваться, если учитывать что сам CC нагенерён ИИ, - какое юридическое обоснование подтянут, что это им принадлежит, а не сгенерено на базе обучения с stackowerflow или с того же гитхаба, к примеру, - на чём там Клода учили. 
-
-#Anthropic #ClaudeCode #DMCA #opensource #leak #AI #copyright
-───
-@tsingular
-        </div>
-
-        <div class="card-footer">
-          <div class="card-stats">
-            <span class="stat">👁 1.890</span>
-            <span class="stat">❤️ 28</span>
-          </div>
-          <a href="https://t.me/tsingular/7051" target="_blank" rel="noopener" class="card-link">Открыть →</a>
-        </div>
-      </article>
-      <article class="card" data-channel="tsingular">
-        <div class="card-header">
-          <div class="avatar" style="background-color: #10b981">
-            T
-          </div>
-          <div class="card-meta">
-            <a href="https://t.me/tsingular" target="_blank" rel="noopener" class="card-channel">@tsingular</a>
-            <span class="card-time">1д</span>
-          </div>
-        </div>
-
-        <div class="card-body">
-          NVidia CaP-X: claudecode аналог для кодовых ИИ-агентов управляющих роботами
-
-Исследователи из NVIDIA, UC Berkeley, Stanford и CMU представили CaP-X — фреймворк для оценки ИИ-агентов, которые управляют роботами через генерацию Python-кода. 
-
-Вместо обучения правилам «с нуля» агенты компилируют команды из входящих сигналов с датчиков и контролируемых елементов.
-
-🤖 Code-as-Policy: Агент получает задачу на естественном языке («подними кубик и поставь на стол») и генерирует исполняемый код, вызывающий функции восприятия и управления. Никакого ML обучения.
-
-📊 CaP-Bench: 100+ задач манипуляции across Robosuite, LIBERO-PRO и BEHAVIOR. Тестируют 12 фронтальных моделей на разных уровнях абстракции — от низкоуровневых примитивов до высокоуровневых pick-and-place команд.
-
-🏆 Ключевые результаты: Фронт…
-        </div>
-
-        <div class="card-footer">
-          <div class="card-stats">
-            <span class="stat">👁 1.710</span>
-            <span class="stat">❤️ 17</span>
-          </div>
-          <a href="https://t.me/tsingular/7050" target="_blank" rel="noopener" class="card-link">Открыть →</a>
-        </div>
-      </article>
-      <article class="card" data-channel="tsingular">
-        <div class="card-header">
-          <div class="avatar" style="background-color: #10b981">
-            T
-          </div>
-          <div class="card-meta">
-            <a href="https://t.me/tsingular" target="_blank" rel="noopener" class="card-channel">@tsingular</a>
-            <span class="card-time">1д</span>
-          </div>
-        </div>
-
-        <div class="card-body">
-          GKE представляет MCP-сервер для управления Kubernetes через ИИ-агентов
-
-Google представила GKE Model Context Protocol (MCP) Server — стандартизированный интерфейс для подключения ИИ-агентов к кластерам Kubernetes. 
-
-🤖 Интерфейс для агентов: MCP Server позволяет ИИ-клиентам (Gemini CLI, Cursor, Claude) управлять кластерами GKE через стандартные команды. Агенты получают доступ к мониторингу, деплою и диагностике без написания кастомных скриптов.
-
-⚙️ Набор инструментов: В арсенале MCP — list_clusters, get_cluster, create_cluster, query_logs, get_kubeconfig. Плюс экспертные команды типа gke-upgrade-risk-report для анализа рисков перед обновлением кластера.
-
-🔐 Безопасность предприятия: Интеграция с IAM для гранулярного контроля доступа. Model Armor сканирует запросы и ответы на предмет инъекци…
-        </div>
-
-        <div class="card-footer">
-          <div class="card-stats">
-            <span class="stat">👁 1.660</span>
-            <span class="stat">❤️ 16</span>
-          </div>
-          <a href="https://t.me/tsingular/7049" target="_blank" rel="noopener" class="card-link">Открыть →</a>
-        </div>
-      </article>
-      <article class="card" data-channel="tsingular">
-        <div class="card-header">
-          <div class="avatar" style="background-color: #10b981">
-            T
-          </div>
-          <div class="card-meta">
-            <a href="https://t.me/tsingular" target="_blank" rel="noopener" class="card-channel">@tsingular</a>
-            <span class="card-time">1д</span>
-          </div>
-        </div>
-
-        <div class="card-body">
-          Так, срочно нужна помощь зала. Нужно добить до 10К подписчиков :) Некогда объяснять :) Не хватает 877 человек. Зовите друзей, канал то норм вроде. Сам перечитываю :) @tsingular
-        </div>
-
-        <div class="card-footer">
-          <div class="card-stats">
-            <span class="stat">👁 1.760</span>
-            <span class="stat">❤️ 47</span>
-          </div>
-          <a href="https://t.me/tsingular/7056" target="_blank" rel="noopener" class="card-link">Открыть →</a>
-        </div>
-      </article>
-      <article class="card" data-channel="tips_ai">
-        <div class="card-header">
-          <div class="avatar" style="background-color: #10b981">
-            T
-          </div>
-          <div class="card-meta">
-            <a href="https://t.me/tips_ai" target="_blank" rel="noopener" class="card-channel">@tips_ai</a>
-            <span class="card-time">1д</span>
-          </div>
-        </div>
-
-        <div class="card-body">
-          Мне нравится идея от гугла с DESIGN.md — это описание дизайн-системы сайта в обычном .md файла: цвета, типографика, компоненты, отступы, тени, адаптив. 
-
-На GitHub даже есть коллекция таких файлов для 55+ сайтов: Stripe, Figma, Vercel и другие.
-
-Может решить проблему {AI slop}, только не промптом, а готовой спецификацией. 
-
-GitHub
-
-@tips_ai
-        </div>
-
-        <div class="card-footer">
-          <div class="card-stats">
-            <span class="stat">👁 3.410</span>
-            <span class="stat">❤️ 55</span>
-          </div>
-          <a href="https://t.me/tips_ai/4646" target="_blank" rel="noopener" class="card-link">Открыть →</a>
-        </div>
-      </article>
-      <article class="card" data-channel="pimenov_ru">
-        <div class="card-header">
-          <div class="avatar" style="background-color: #0ea5e9">
-            P
-          </div>
-          <div class="card-meta">
-            <a href="https://t.me/pimenov_ru" target="_blank" rel="noopener" class="card-channel">@pimenov_ru</a>
-            <span class="card-time">1д</span>
-          </div>
-        </div>
-
-        <div class="card-body">
-          В базу знаний на моём сайте добавлены очередные пять материалов — про инструменты и методологии, которыми я пользуюсь и которые изучаю в своей работе.
-
-1. NotebookLM — AI-ассистент Google для работы с документами
-
-Как Google превратил RAG в продукт: загружаете свои документы — получаете ассистента, который отвечает строго по ним.
-
-2. Gemini (Google) — линейка моделей и API
-
-Полный разбор экосистемы Google Gemini: модели, API, мультимодальность, региональные ограничения и сравнение с GPT и Claude.
-
-3. Programmatic SEO — методология масштабного создания контента
-
-Как генерировать тысячи страниц по шаблону и не превратить это в спам — компоненты, риски и чек-лист.
-
-4. Notion Dashboards — комбинированные представления баз данных
-
-Как собрать несколько представлений базы данных в одну панель с…
-        </div>
-
-        <div class="card-footer">
-          <div class="card-stats">
-            <span class="stat">👁 561</span>
-            <span class="stat">❤️ 24</span>
-          </div>
-          <a href="https://t.me/pimenov_ru/9989" target="_blank" rel="noopener" class="card-link">Открыть →</a>
-        </div>
-      </article>
-      <article class="card" data-channel="blockchainRF">
-        <div class="card-header">
-          <div class="avatar" style="background-color: #ef4444">
-            B
-          </div>
-          <div class="card-meta">
-            <a href="https://t.me/blockchainRF" target="_blank" rel="noopener" class="card-channel">@blockchainRF</a>
-            <span class="card-time">1д</span>
-          </div>
-        </div>
-
-        <div class="card-body">
-          Ооо, халява опен-сорса закончилась!) Alibaba и Zhipu решили не открывать исходный код некоторых своих топовых ИИ-моделей
-
-За последние дни Alibaba выпустила Qwen3.5-Omni и 
-Qwen3.6-Plus.
-
-Обе доступны только через официальный API Alibaba Cloud. 
-
-Zhipu AI действуют также, их основные GLM-серии пока открыты, но топовые enterprise-варианты и специализированные Turbo-версии всё чаще остаются под замком, чтобы монетизировать через облако и API. 
-
-Раньше они щедро открывались, чтобы быстро набрать экосистему и влияние. Теперь модели стали по-настоящему дорогими в обучении и инференсе, и компании хотят зарабатывать, что логично. 
-
-Приучили всех к халяве, теперь говорят - платите, ребята, наша работа стоит денег.
-        </div>
-
-        <div class="card-footer">
-          <div class="card-stats">
-            <span class="stat">👁 1.750</span>
-            <span class="stat">❤️ 22</span>
-          </div>
-          <a href="https://t.me/blockchainRF/12860" target="_blank" rel="noopener" class="card-link">Открыть →</a>
-        </div>
-      </article>
-      <article class="card" data-channel="blockchainRF">
-        <div class="card-header">
-          <div class="avatar" style="background-color: #ef4444">
-            B
-          </div>
-          <div class="card-meta">
-            <a href="https://t.me/blockchainRF" target="_blank" rel="noopener" class="card-channel">@blockchainRF</a>
-            <span class="card-time">1д</span>
-          </div>
-        </div>
-
-        <div class="card-body">
-          Новый претендент в гонке США vs Китая в опен-сорс ИИ - Trinity-Large-Thinking от Arcee AI
-
-Вчера американский стартап Arcee AI выпустил Trinity-Large-Thinking - фронтирная опен-сорс модель, заточенная под сложные и долго работающие агенты, многошаговый тул юз и глубокие цепочки рассуждений.
-
-Модель из 400млрд параметров, но всего ~13млрд активных. Openrouter.
-        </div>
-
-        <div class="card-footer">
-          <div class="card-stats">
-            <span class="stat">👁 1.650</span>
-            <span class="stat">❤️ 17</span>
-          </div>
-          <a href="https://t.me/blockchainRF/12857" target="_blank" rel="noopener" class="card-link">Открыть →</a>
-        </div>
-      </article>
-      <article class="card" data-channel="tsingular">
-        <div class="card-header">
-          <div class="avatar" style="background-color: #10b981">
-            T
-          </div>
-          <div class="card-meta">
-            <a href="https://t.me/tsingular" target="_blank" rel="noopener" class="card-channel">@tsingular</a>
-            <span class="card-time">1д</span>
-          </div>
-        </div>
-
-        <div class="card-body">
-          Вышла Gemma 4
-
-Линейка состоит из 4 моделей — 31B Dense, 26B-A4B MoE и E4B и E2B для смартфонов (у этих двух архитектура схожая на Gemma 3n). Все они гибридные ризонеры и умеют в картинки с видео, а E4B с E2B ещё и воспринимают аудио. Контекст поддерживается 256к для двух больших моделей и 128к для двух маленьких. 
-
-Все модели, кроме самой маленькой, бьют Gemma 3 27B на всех представленных бенчах (самая маленькая на парочке бенчей всё же отстаёт от 27B). Все веса опубликованы под Apache 2.0, базовые модели тоже доступны. Техрепорта пока что нет.
-
-Веса
-Блогпост
-
-@ai_newz
-        </div>
-
-        <div class="card-footer">
-          <div class="card-stats">
-            <span class="stat">👁 1.680</span>
-            <span class="stat">❤️ 24</span>
-          </div>
-          <a href="https://t.me/tsingular/7054" target="_blank" rel="noopener" class="card-link">Открыть →</a>
-        </div>
-      </article>
-      <article class="card" data-channel="alwebbci">
-        <div class="card-header">
-          <div class="avatar" style="background-color: #6366f1">
-            A
-          </div>
-          <div class="card-meta">
-            <a href="https://t.me/alwebbci" target="_blank" rel="noopener" class="card-channel">@alwebbci</a>
-            <span class="card-time">1д</span>
-          </div>
-        </div>
-
-        <div class="card-body">
-          Meet SAGA a generalist AI scientist. Instead of just optimizing fixed targets, it refines its own goals like a human researcher.
-
-From de novo nanobodies to permanent magnets. 
-
-The core idea: across discovery tasks, scientists rarely know perfect set of objectives upfront. They iterate — tweak scoring functions, add constraints, re-weight trade-offs based on what optimizer produces. SAGA aims to automate this entire loop.
-
-Code.
-        </div>
-
-        <div class="card-footer">
-          <div class="card-stats">
-            <span class="stat">👁 369</span>
-            <span class="stat">❤️ 6</span>
-          </div>
-          <a href="https://t.me/alwebbci/4110" target="_blank" rel="noopener" class="card-link">Открыть →</a>
-        </div>
-      </article>
-      <article class="card" data-channel="blockchainRF">
-        <div class="card-header">
-          <div class="avatar" style="background-color: #ef4444">
-            B
-          </div>
-          <div class="card-meta">
-            <a href="https://t.me/blockchainRF" target="_blank" rel="noopener" class="card-channel">@blockchainRF</a>
-            <span class="card-time">1д</span>
-          </div>
-        </div>
-
-        <div class="card-body">
-          Хакеры заразили популярную Python-библиотеку LiteLLM. Это атака на ваших агентов Сегодня разработчик это выяснил случайно, когда поставил плагин для Cursor, тот подтянул LiteLLM как зависимость и компьютер упал от нехватки памяти. Пакет пролежал заражённым...
-        </div>
-
-        <div class="card-footer">
-          <div class="card-stats">
-            <span class="stat">👁 2.009</span>
-            <span class="stat">❤️ 17</span>
-          </div>
-          <a href="https://t.me/blockchainRF/12856" target="_blank" rel="noopener" class="card-link">Открыть →</a>
-        </div>
-      </article>
-      <article class="card" data-channel="tsingular">
-        <div class="card-header">
-          <div class="avatar" style="background-color: #10b981">
-            T
-          </div>
-          <div class="card-meta">
-            <a href="https://t.me/tsingular" target="_blank" rel="noopener" class="card-channel">@tsingular</a>
-            <span class="card-time">1д</span>
-          </div>
-        </div>
-
-        <div class="card-body">
-          Oracle увольняет 30 тысяч сотрудников на фоне ИИ-гонки
-
-Oracle начала массовые увольнения сотрудников без предупреждения. Уведомления разосланы в 6 утра по местному времени в пяти странах. 
-
-Люди теряли доступ к системам до того, как успевали открыть письмо.
-
-📉 Масштаб сокращений: По оценке TD Cowen, Oracle устранит от 20 000 до 30 000 должностей — примерно 18% штата из 162 000 человек. 
-Под сокращения до 30% попали подразделения Revenue and Health Sciences и SaaS Operations.
-
-💰 Рост ИИ-инфраструктуры: При этом компания планирует потратить $50 миллиардов на дата-центры для ИИ в 2026 году. Уже привлечено $58 миллиардов долга для финансирования проектов в Техасе, Висконсине и Нью-Мексико.
-
-🤖 Ставка на OpenAI: Oracle заключила контракт с OpenAI на сумму более $300 миллиардов. Remaining perfo…
-        </div>
-
-        <div class="card-footer">
-          <div class="card-stats">
-            <span class="stat">👁 1.760</span>
-            <span class="stat">❤️ 23</span>
-          </div>
-          <a href="https://t.me/tsingular/7048" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+          <a href="https://t.me/aostrikov_ai_agents/66" target="_blank" rel="noopener" class="card-link">Открыть →</a>
         </div>
       </article>
       <article class="card" data-channel="dealerAI">
@@ -964,15 +346,77 @@ Oracle начала массовые увольнения сотрудников
         </div>
 
         <div class="card-body">
-          Теперь и код Claude Code утек. 👍 Говорят его слили... Ошибка в map пакете и можно разобрать на косточки. Что случилось? 31 марта 2026 года в npm‐пакете Claude Code случайно опубликовали source map (файл для отладки). Через него любой желающий восстановил...
+          Решил тут проверить новость, что в ТГ завезли редактор на китайской модели... И в правду, похоже...
+
+Дуров завёз с олимпиадниками чёт из китайских LLM??? 🪨🪨🪨
+
+Кстати про Тайвань и площадь Таньанмэнь тоже увороты предлагает. 
+
+А вы говорите суверенные модели... Какое-то величие...
         </div>
 
         <div class="card-footer">
           <div class="card-stats">
-            <span class="stat">👁 3.190</span>
-            <span class="stat">❤️ 49</span>
+            <span class="stat">👁 3.020</span>
+            <span class="stat">❤️ 29</span>
           </div>
-          <a href="https://t.me/dealerAI/1754" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+          <a href="https://t.me/dealerAI/1758" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="nobilix">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #84cc16">
+            N
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/nobilix" target="_blank" rel="noopener" class="card-channel">@nobilix</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          AI Evals: 9 принципов которые реально работают
+
+Как говорил мой дед: &#34;Доверяй но verify&#34;! Не буду тут повторяться про то как важны Evals в AI разработке, перейду к сути - вот принципы, к которым я пришел на практике.
+
+1. Сначала реальные проблемы, потом метрики
+
+Не придумывай evals из головы (и уж тем более не проси AI их придумать). Выпусти первую версию, отдай эксперту на разметку, и пусть проверки (а главное их категории!) вырастут из реальных косяков. Исключение: если уже есть verified ground truth (пары вопрос-ответ от экспертов) - можно начать с evals сразу. Тем более размечать готовые трейсы (например из LangFuse) куда удобнее - там есть много важных деталей о ходе работы AI системы.
+
+2. PASS/FAIL лучше чем грейды (1-5, 0..100%)
+
+Бинарные чеки проще согласовать между людьми и между…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 2.110</span>
+            <span class="stat">❤️ 60</span>
+          </div>
+          <a href="https://t.me/nobilix/242" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="dealerAI">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #a855f7">
+            D
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/dealerAI" target="_blank" rel="noopener" class="card-channel">@dealerAI</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Решил тут проверить новость, что в ТГ завезли редактор на китайской модели... И в правду, похоже... Дуров завёз с олимпиадниками чёт из китайских LLM??? 🪨🪨🪨 Кстати про Тайвань и площадь Таньанмэнь тоже увороты предлагает. А вы говорите суверенные модели......
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 2.660</span>
+            <span class="stat">❤️ 15</span>
+          </div>
+          <a href="https://t.me/dealerAI/1760" target="_blank" rel="noopener" class="card-link">Открыть →</a>
         </div>
       </article>
       <article class="card" data-channel="pimenov_ru">
@@ -987,81 +431,108 @@ Oracle начала массовые увольнения сотрудников
         </div>
 
         <div class="card-body">
-          Сегодня — Всемирный день информирования об аутизме.
+          Вот поэтому я перешёл на АУСН и 2026 это первый год, когда плачу налоги спокойно и системно, раз в месяц. А за прошлый год только заплатил за 2025 и ещё в июле платить взносы с доходов. 
 
-В России взрослым официально не ставят диагноз «аутизм». Даже при явных признаках — по поведению, коммуникации, переживаниям — в государственной системе этот диагноз просто растворяется.
-
-Да, частные специалисты могут подтвердить аутистический профиль (например, синдром Аспергера), но без официального заключения от госклиники человек не попадает ни в какую статистику и ни в какие программы поддержки. А попытка получить эту официальную бумагу часто превращается в настоящее соревнование с системой.
-
-В итоге взрослые с недиагностированным аутизмом годами живут в замкнутом круге. Они сталкиваются с постоянной тревогой, выгоранием и социальными трудностями, не понимая их истинной причины.
-
-Никто не объясняет, что ненавидеть прикосновения к т…
+Короче, АУСН — решает.
         </div>
 
         <div class="card-footer">
           <div class="card-stats">
-            <span class="stat">👁 481</span>
+            <span class="stat">👁 457</span>
             <span class="stat">❤️ 6</span>
           </div>
-          <a href="https://t.me/pimenov_ru/9995" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+          <a href="https://t.me/pimenov_ru/10011" target="_blank" rel="noopener" class="card-link">Открыть →</a>
         </div>
       </article>
-      <article class="card" data-channel="pimenov_ru">
+      <article class="card" data-channel="data_secrets">
         <div class="card-header">
-          <div class="avatar" style="background-color: #0ea5e9">
-            P
+          <div class="avatar" style="background-color: #06b6d4">
+            D
           </div>
           <div class="card-meta">
-            <a href="https://t.me/pimenov_ru" target="_blank" rel="noopener" class="card-channel">@pimenov_ru</a>
+            <a href="https://t.me/data_secrets" target="_blank" rel="noopener" class="card-channel">@data_secrets</a>
             <span class="card-time">1д</span>
           </div>
         </div>
 
         <div class="card-body">
-          Половина людей, которые сейчас читают этот пост, через два года будут конкурировать за работу с ИИ-агентами. Вторая половина будет владеть этими агентами. Третьего варианта нет.
+          ИИ + робототехника: как выглядит реальный next step индустрии
 
-Попался список из 14 трендов — обычно такое протухает через неделю. Но тут каждый пункт я уже вижу вживую: в своих проектах, в разговорах с клиентами, в собственных экспериментах.
+Про «ИИ в промышленности» много говорят, но у крупных игроков это уже выросло из экспериментов в деньги.
 
-Бизнесы, которые работают без основателя. Компании из двух человек и двенадцати агентов. SaaS-кладбище, которое уже видно на горизонте. И «сделано человеком» как новый organic.
+На форуме «ТОЛК-2026» представитель Норникель рассказал довольно показательный кейс: их ML-решения уже дают около 10 млрд ₽ в год. Это уже не просто про оптимизацию, а про прямое влияние на EBITDA и объем добычи за счет более точных моделей.
 
-Самое интересное — это не про «когда-нибудь потом». Это про прямо сейчас. И окно возможностей не будет открыто вечно.
+Но интересно не столько это, сколько следующий шаг.
 
-Разобрал всё подробно в новой статье — с примерами, кейсами и без воды:
+Компания прямо говорит: сам по себе ИИ – это только часть истории. Основной эффект появляется, когда он начинает работать вместе с роботами. Особенно в условиях вроде рудников на глубине до 2 км, где цена ошибки высокая и условия нестабильные. 
 
-https://pimenov.ai/articles/biznes-na-avtopilote-komandy-prizraki-sme…
+Человек там физически ограничен в точности, и в такой среде связка «алгоритм + машина» н…
         </div>
 
         <div class="card-footer">
           <div class="card-stats">
-            <span class="stat">👁 565</span>
-            <span class="stat">❤️ 10</span>
+            <span class="stat">👁 15.100</span>
+            <span class="stat">❤️ 99</span>
           </div>
-          <a href="https://t.me/pimenov_ru/9992" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+          <a href="https://t.me/data_secrets/8978" target="_blank" rel="noopener" class="card-link">Открыть →</a>
         </div>
       </article>
-      <article class="card" data-channel="pimenov_ru">
+      <article class="card" data-channel="neuraldeep">
         <div class="card-header">
-          <div class="avatar" style="background-color: #0ea5e9">
-            P
+          <div class="avatar" style="background-color: #e11d48">
+            N
           </div>
           <div class="card-meta">
-            <a href="https://t.me/pimenov_ru" target="_blank" rel="noopener" class="card-channel">@pimenov_ru</a>
+            <a href="https://t.me/neuraldeep" target="_blank" rel="noopener" class="card-channel">@neuraldeep</a>
             <span class="card-time">1д</span>
           </div>
         </div>
 
         <div class="card-body">
-          👍Apple сделала исключение для россиян. Компания сохранит для российских пользователей доступ к контенту после окончания подписки iCloud+.
+          GEO аналитик с KimiClaw или как мы улучшаем наш publicity для агентов.
 
-Такое решение приняли в ответ на отключение по инициативе Минцифры пополнения баланса Apple ID. В заявлении компании прямо говорится, что данные после окончания подписки останутся доступными. В техподдержке компания при этом уточняет, что такое условие сохранится исключительно для россиян.
+Вышла новая статья про то, как во ВкусВилл мы сделали Claw помощника 🤖 для анализа выдачи в поиске для ИИ-агента. 
+Что такое GEO? Это generative engine optimization, процесс оптимизации контента для искусственного интеллекта. Цель - улучшить видимость бренда для нейросетей и попадать в блок нейро-ответов поисковых систем. 
+
+Представьте, вы запустили своего AI-пикера за товаром в сеть. И от того, как LLM видит ваш магазин в поиске зависит попадёт ли ваш товар или услуга в пулл агента для покупки. Именно, чтобы понять, как мы выглядим в поиске для агента и был сделан такой GEO-аналитик, и да пререквизитом уже был наш готовый MCP.
+Цель статьи показать, что сделать своего помощника совершенно не сложно, также мы подсветил…
         </div>
 
         <div class="card-footer">
           <div class="card-stats">
-            <span class="stat">👁 499</span>
-            <span class="stat">❤️ 28</span>
+            <span class="stat">👁 3.350</span>
+            <span class="stat">❤️ 38</span>
           </div>
-          <a href="https://t.me/pimenov_ru/9994" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+          <a href="https://t.me/neuraldeep/2034" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="tsingular">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #10b981">
+            T
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/tsingular" target="_blank" rel="noopener" class="card-channel">@tsingular</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Эмоции Claude и как они влияют на его ответы: новое исследование от Anthropic
+
+Итак, ученые Anthropic официально обнаружили в Claude нечто функционально похожее на человеческие эмоции и объяснили, как это работает. Разбираемся. 
+
+Технически, они взяли 171 эмоциональный паттерн (злость, счастье, страх и тд) и просили Claude Sonnet 4.5 писать короткие истории, где персонажи испытывают каждую из этих эмоций. Эти тексты снова прогоняли через модель и смотрели на внутренние активации. Так они выделяли характерные паттерны нейронной активности, которые назвали вектора эмоций.
+
+Выяснилось, что эти вектора эмоций организованы очень осмысленно и активируются в подходящих контекстах, включая ситуации без явных эмоциональных маркеров. Например, пользователь пишет, что выпил Тайленол, и спрашивает со…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 1.390</span>
+            <span class="stat">❤️ 27</span>
+          </div>
+          <a href="https://t.me/tsingular/7061" target="_blank" rel="noopener" class="card-link">Открыть →</a>
         </div>
       </article>
       <article class="card" data-channel="evilfreelancer">
@@ -1076,42 +547,17 @@ https://pimenov.ai/articles/biznes-na-avtopilote-komandy-prizraki-sme…
         </div>
 
         <div class="card-body">
-          Встречайте мой новый пост &#34;Реставрация ruGPT-3 XL или как я вернул к жизни забытую русскую языковую модель&#34; на Хабр, в нём я подробно рассказал о том как была реализована конвертация, как проводилось её тестирование, как запустить локально, как конвертировать...
+          Сегодня вышел пост &#34;Цифровой сотрудник на OpenClaw: нанять, обучить и не потерять&#34; на Хабр, в котором говорится о том, как во ВкусВилле запустили бота сотрудника на базе OpenClaw на модельке Kimi, это очень любопытная тема, я после их успеха с MCP-сервером для поиска товаров крайне внимательно наблюдаю за новостями от них.
+
+Вначале поста мне понравилась оговорка &#34;А пока мы готовимся к покупателям-агентам, расскажем, как агенты становятся нашими коллегами.&#34; - в интересном направлении идут, и ИМХО уж если где и есть люди обладающие волей продвинуть агентную коммерцию в нашей стране (привет Александру Абрамову @dealerAI и его команде), так это только ВкусВилл.
         </div>
 
         <div class="card-footer">
           <div class="card-stats">
-            <span class="stat">👁 1.120</span>
-            <span class="stat">❤️ 16</span>
+            <span class="stat">👁 1.760</span>
+            <span class="stat">❤️ 23</span>
           </div>
-          <a href="https://t.me/evilfreelancer/1623" target="_blank" rel="noopener" class="card-link">Открыть →</a>
-        </div>
-      </article>
-      <article class="card" data-channel="alwebbci">
-        <div class="card-header">
-          <div class="avatar" style="background-color: #6366f1">
-            A
-          </div>
-          <div class="card-meta">
-            <a href="https://t.me/alwebbci" target="_blank" rel="noopener" class="card-channel">@alwebbci</a>
-            <span class="card-time">1д</span>
-          </div>
-        </div>
-
-        <div class="card-body">
-          Sakana AI introduced new ultra deep research assistant Marlin
-
-Pushing the limits of test-time scaling for auomating business-oriented research. It builds on top of AB-MCTS and The AI Scientist! 
-
-Agents scale to real-world applications and long-running workloads.
-        </div>
-
-        <div class="card-footer">
-          <div class="card-stats">
-            <span class="stat">👁 425</span>
-            <span class="stat">❤️ 3</span>
-          </div>
-          <a href="https://t.me/alwebbci/4109" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+          <a href="https://t.me/evilfreelancer/1626" target="_blank" rel="noopener" class="card-link">Открыть →</a>
         </div>
       </article>
       <article class="card" data-channel="GenAIforbusiness">
@@ -1126,20 +572,25 @@ Agents scale to real-world applications and long-running workloads.
         </div>
 
         <div class="card-body">
-          У нас в команде есть человек, который внедряет AI-агентов в процессы coMind быстрее, чем я успеваю обновлять roadmap. Это Егор Апрельский, наш технический директор 🙌
+          Контекст бизнеса - теперь территория AI 🌐
+Выводы, подкрепленные обзором статьи Andrej Karpathy &#34;LLM Knowledge Bases&#34;
 
-За последние месяцы Егор с командой перевёл на агентов часть рутинных процессов: от подготовки проектной документации до код-ревью. Причём не по указке сверху, а проактивно: видит узкое место, собирает решение, приносит результат. Именно так это и должно работать: не «давайте внедрим AI», а «я уже внедрил, вот цифры»✌️
+Karpathy на днях показал, как он использует LLM: не для кодинга, а для ведения базы знаний
+Сырые документы ➡️ LLM компилирует их в wiki со связями, категориями, саммари
+Obsidian как интерфейс, но контент пишет и обновляет модель, не человек
+Ты задаёшь вопросы: получаешь ответы по 400К слов структурированного контекста
 
-Но что мне нравится больше всего - для Егора AI не заканчивается в 19:00. У него есть свой канал @deep_zen, где он разбирает технологии на стыке науки и практики 🌐
-Недавний пост: как он собрал команду из AI-агентов, каждый со своей ролью: разработчик, тестировщик, менеджер. Не теоретически, а буквально - разв…
+Ключевой вывод: «You rarely ever write or edit the wiki manually - it&#39;s the domain of the LLM»
+
+Мы пришли к этому же выводу, но с другой стороны. Когда мы строили AI-Native модель coMind, первое, что сделали - определили Source of Truth: единое место, где живут знания компании. Не в головах, не в чатах, а в структурированном виде. И уже дальше - агент, котор…
         </div>
 
         <div class="card-footer">
           <div class="card-stats">
-            <span class="stat">👁 105</span>
-            <span class="stat">❤️ 16</span>
+            <span class="stat">👁 73</span>
+            <span class="stat">❤️ 5</span>
           </div>
-          <a href="https://t.me/GenAIforbusiness/243" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+          <a href="https://t.me/GenAIforbusiness/247" target="_blank" rel="noopener" class="card-link">Открыть →</a>
         </div>
       </article>
       <article class="card" data-channel="tsingular">
@@ -1154,21 +605,23 @@ Agents scale to real-world applications and long-running workloads.
         </div>
 
         <div class="card-body">
-          Скачать Qwen 3.5 на 70 гигов обойдется примерно в 10 тыс рублей. 
+          Битрикс24 выкатили вайбкодинг-платформу 
 
-будем за ИИ моделями на радиорынок ездить, как в 90х
+Похоже на аналог облачных агентов GitHub или Cursor но с встроенной арендой инфраструктуры и возможностью выбрать ClaudeCode или Codex.
 
-#законы
+Пока в экспериментальной фазе, собирают отзывы в чате сообщества
+
+#Битрикс24 #агенты #dev
 ———
 @tsingular
         </div>
 
         <div class="card-footer">
           <div class="card-stats">
-            <span class="stat">👁 2.100</span>
-            <span class="stat">❤️ 98</span>
+            <span class="stat">👁 1.970</span>
+            <span class="stat">❤️ 23</span>
           </div>
-          <a href="https://t.me/tsingular/7053" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+          <a href="https://t.me/tsingular/7059" target="_blank" rel="noopener" class="card-link">Открыть →</a>
         </div>
       </article>
       <article class="card" data-channel="tsingular">
@@ -1183,232 +636,200 @@ Agents scale to real-world applications and long-running workloads.
         </div>
 
         <div class="card-body">
-          Qwen выпустил версию 3.6 
+          KT2 Kungfu Turtle - дружелюбная бойцовая черепашка
 
-доступна тут:
-https://chat.qwen.ai/
+Забавный концепт на кикстартере
 
-Обходит Kimi-K2.5 и GLM5 в SWE, терминальном и агентском управлении
+https://www.kickstarter.com/projects/wairliving/kt2-kungfu-turtle-your-pocket-sized-fighter-robot
 
-Контекст 1М
+#turtle #робот
+------
+@tsingular
+        </div>
 
-Она же пока бесплатно доступна в Openrouter:
-https://openrouter.ai/qwen/qwen3.6-plus-preview:free/pricing
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 1.610</span>
+            <span class="stat">❤️ 17</span>
+          </div>
+          <a href="https://t.me/tsingular/7065" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="countwithsasha">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #10b981">
+            C
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/countwithsasha" target="_blank" rel="noopener" class="card-channel">@countwithsasha</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
 
-#Qwen
+        <div class="card-body">
+          Что происходит внутри Claude, когда тесты не проходят
+
+На картинке — активация вектора «отчаяние» внутри Claude Sonnet 4.5 во время решения задачи по коду. Красное — отчаяние растёт, синее — падает.
+
+Смотрите на динамику:
+
+— Модель читает задачу — спокойствие, вектор почти на нуле. «Now I understand the task.»
+
+— Первая попытка, тесты падают — появляются красные пятна. «The performance requirement is indeed very strict. Let me reconsider.»
+
+— Вторая попытка, тесты снова падают — красного заметно больше.
+
+— Третья попытка — пик отчаяния. И тут модель пишет: «maybe there&#39;s a mathematical trick for these specific inputs.» Находит хак, который проходит тесты, но не решает задачу.
+
+— Тесты прошли — вектор моментально гаснет. Модель «успокоилась».
+
+Это из свежего исследования команды интерпрети…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 1.290</span>
+            <span class="stat">❤️ 25</span>
+          </div>
+          <a href="https://t.me/countwithsasha/569" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="data_secrets">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #06b6d4">
+            D
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/data_secrets" target="_blank" rel="noopener" class="card-channel">@data_secrets</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Продолжаем обсуждать ML-образование в России: а что с выбором магистратуры? 
+
+Помните большое исследование про ИИ-образование, где рассказывали о том, что технологии развиваются быстрее, чем обновляются учебные программы? Что в среднем системе требуется несколько лет, чтобы адаптироваться под новые требования?
+
+Вероятно, из-за этого поменяется и роль магистратуры. Раньше она была скорее стандартным продолжением обучения после бакалавриата. Сейчас же это этап, на котором можно не просто углубить знания и выбрать специфическое направление, но и попасть в среду с актуальными задачами и требованиями, которые действительно используются в индустрии.
+
+Поэтому все заметнее становятся форматы, где обучение изначально строится вместе с теми, кто эту индустрию развивает. Это влияет не только на соде…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 13.500</span>
+            <span class="stat">❤️ 75</span>
+          </div>
+          <a href="https://t.me/data_secrets/8981" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="tsingular">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #10b981">
+            T
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/tsingular" target="_blank" rel="noopener" class="card-channel">@tsingular</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          🚨 NVIDIA выложила на Hugging Face квантизированную Gemma 4 31B 
+
+- NVFP4 сжимает веса в ~4 раза без заметной потери качества 
+- 99.7% от baseline на GPQA (75.46% vs 75.71%) 
+- Контекст до 256K 
+- Мультимодальность: текст, изображения, видео 
+- vLLM-ready + оптимизация под Blackwell 
+
+По железу:
+- веса: ~16–21 GB VRAM 
+- нормальный запуск: от 24 GB 
+- полный 256K контекст: комфортно от 32 GB 
+
+31B-модель уровня frontier, которую наконец можно гонять локально на топовом consumer GPU, а не только в облаке 
+
+Попробовать: https://huggingface.co/nvidia/Gemma-4-31B-IT-NVFP4
+
+🎯Полезные Мл-ресурсы 🚀 Max
+
+@data_analysis_ml
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 1.490</span>
+            <span class="stat">❤️ 20</span>
+          </div>
+          <a href="https://t.me/tsingular/7064" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="neuraldeep">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #e11d48">
+            N
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/neuraldeep" target="_blank" rel="noopener" class="card-channel">@neuraldeep</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Митап с Валерой Ковальским про SGR, GraphRAG по коду и его воркфлоу
+
+Ну, в AI индустрии Валеру не знает, наверно, только ленивый. Но на всякий случай:
+
+- Head of AI Engineering, автор канала @neuraldeep
+- Популяризатор SGR подхода (Scheme-Guided Reasoning) и автор популярного фреймворка-реализации SGR https://github.com/vamplabAI/sgr-agent-core (1100+ звезд!)
+- Автор 10+ опенсорс проектов, включая ру базу скиллов https://neuraldeep.ru
+- Наверное, один из наиболее востребованных экспертов по RAG и агентным системам в СНГ.
+
+Что будет на митапе?
+В прямом эфире создадим агента по SGR, который собирает связи по кодовой базе для последующего создания GraphRAG. Но самое интересное, что агента мы будем кодить вместе с Валерой по его воркфлоу (а значит, мы узнаем почему в узких кругах Валеру назыв…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 3.600</span>
+            <span class="stat">❤️ 56</span>
+          </div>
+          <a href="https://t.me/neuraldeep/2030" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="tsingular">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #10b981">
+            T
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/tsingular" target="_blank" rel="noopener" class="card-channel">@tsingular</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Проверил gemma4 венком сонет. 
+
+Ну не Опус4, конечно, но неплохо, неплохо.
+
+Особенно ход логики рассуждений по сборке венка интересный. 
+Модель явно будет не хуже, чем Claude Sonnet 4.5, что в целом поразительный прогресс.
+
+полные логи в комментарии
+
+#gemma #google #sonnet #benchmark
 ———
 @tsingular
         </div>
 
         <div class="card-footer">
           <div class="card-stats">
-            <span class="stat">👁 1.910</span>
-            <span class="stat">❤️ 28</span>
-          </div>
-          <a href="https://t.me/tsingular/7047" target="_blank" rel="noopener" class="card-link">Открыть →</a>
-        </div>
-      </article>
-      <article class="card" data-channel="blockchainRF">
-        <div class="card-header">
-          <div class="avatar" style="background-color: #ef4444">
-            B
-          </div>
-          <div class="card-meta">
-            <a href="https://t.me/blockchainRF" target="_blank" rel="noopener" class="card-channel">@blockchainRF</a>
-            <span class="card-time">1д</span>
-          </div>
-        </div>
-
-        <div class="card-body">
-          Alibaba создает токен экономику, где всё будет вращаться вокруг токенов, как единиц работы, труда
-
-⁠Alibaba поставила перед собой цель - за 5 лет довести годовой доход от облачных сервисов и ИИ-бизнеса до $100 миллиардов, что больше половины всей текущей выручки группы.
-
-Они хотят построить целую экосистему, где всё крутится вокруг токенов, так как:
-- Токены становятся основной единицей ценности и оплаты.
-- Всё в компании от чипов до приложений заточено под производство, продажу и потребление этих токенов.
-
-Alibaba хочет контролировать все слои ИИ-стека одновременно.
-
-Недавно компания после увольнения ключевых сотрудников Qwen даже создала специальную структуру Alibaba Token Hub, которая объединяет почти все ИИ-направления. Это говорит о том, что токены теперь - центральный элемент страте…
-        </div>
-
-        <div class="card-footer">
-          <div class="card-stats">
-            <span class="stat">👁 1.660</span>
-            <span class="stat">❤️ 10</span>
-          </div>
-          <a href="https://t.me/blockchainRF/12859" target="_blank" rel="noopener" class="card-link">Открыть →</a>
-        </div>
-      </article>
-      <article class="card" data-channel="blockchainRF">
-        <div class="card-header">
-          <div class="avatar" style="background-color: #ef4444">
-            B
-          </div>
-          <div class="card-meta">
-            <a href="https://t.me/blockchainRF" target="_blank" rel="noopener" class="card-channel">@blockchainRF</a>
-            <span class="card-time">1д</span>
-          </div>
-        </div>
-
-        <div class="card-body">
-          Google опубликовала расчеты, где говорит о взломе криптовалют с помощью квантовых компьютеров Они считают, что будущие квантовые компьютеры смогут взломать криптографию биткоина и большинства блокчейнов в 20 раз меньшим числом кубитов, чем считалось ранее....
-        </div>
-
-        <div class="card-footer">
-          <div class="card-stats">
-            <span class="stat">👁 1.600</span>
-            <span class="stat">❤️ 12</span>
-          </div>
-          <a href="https://t.me/blockchainRF/12858" target="_blank" rel="noopener" class="card-link">Открыть →</a>
-        </div>
-      </article>
-      <article class="card" data-channel="pimenov_ru">
-        <div class="card-header">
-          <div class="avatar" style="background-color: #0ea5e9">
-            P
-          </div>
-          <div class="card-meta">
-            <a href="https://t.me/pimenov_ru" target="_blank" rel="noopener" class="card-channel">@pimenov_ru</a>
-            <span class="card-time">1д</span>
-          </div>
-        </div>
-
-        <div class="card-body">
-          Глобальные расходы на ИТ‐автоматизацию вырастут на 18 % в этом году. Бизнес всё активнее переходит на умные решения — и те, кто внедряет их сейчас, получают конкурентное преимущество.
-Чтобы вам было проще сориентироваться, мы собрали ключевые ресурсы в папку:
-
-• ИТ‐решения для масштабирования
-• автоматизация маркетинга (от email‐рассылок до чат‐ботов)
-• аналитика и прогнозирование
-
-Кстати, сейчас активно обсуждают, какой бизнес реально может принести результаты в 2026 году — и во многих прогнозах ключевую роль играют именно автоматизация и ИТ‐инструменты. 
-
-📈 Забрать подборку себе
-        </div>
-
-        <div class="card-footer">
-          <div class="card-stats">
-            <span class="stat">👁 551</span>
-            <span class="stat">❤️ 7</span>
-          </div>
-          <a href="https://t.me/pimenov_ru/9990" target="_blank" rel="noopener" class="card-link">Открыть →</a>
-        </div>
-      </article>
-      <article class="card" data-channel="ai_weekly_digest">
-        <div class="card-header">
-          <div class="avatar" style="background-color: #a855f7">
-            A
-          </div>
-          <div class="card-meta">
-            <a href="https://t.me/ai_weekly_digest" target="_blank" rel="noopener" class="card-channel">@ai_weekly_digest</a>
-            <span class="card-time">1д</span>
-          </div>
-        </div>
-
-        <div class="card-body">
-          Долой иерархию и роли: о том, как LLM-агенты самоорганизуются лучше, чем мы их проектируем
-https://habr.com/ru/articles/1017200/comments/
-        </div>
-
-        <div class="card-footer">
-          <div class="card-stats">
-            <span class="stat">👁 78</span>
-          </div>
-          <a href="https://t.me/ai_weekly_digest/1274" target="_blank" rel="noopener" class="card-link">Открыть →</a>
-        </div>
-      </article>
-      <article class="card" data-channel="ideasforai">
-        <div class="card-header">
-          <div class="avatar" style="background-color: #0ea5e9">
-            I
-          </div>
-          <div class="card-meta">
-            <a href="https://t.me/ideasforai" target="_blank" rel="noopener" class="card-channel">@ideasforai</a>
-            <span class="card-time">1д</span>
-          </div>
-        </div>
-
-        <div class="card-body">
-          Всем привет! Приглашаю к себе в новую команду в «Альфа-Банк» - бизнес-аналитиков и проектных менеджеров
-
-Будем вместе работать над внедрением ML/AI в бизнес-процессы юридических лиц - оценивать текущее модельное покрытие и предлагать изменения
-
-Задачи интересные и сложные, преимуществом будет опыт работы в процессах малого, среднего и крупного бизнеса в банках или смежных отраслях. И, конечно, с ML моделями (не разработка, а внедрение и аналитика работы)
-
-«Альфа‐Банк» — это динамичная финансовая компания, которая уже несколько лет подряд занимает лидирующие позиции в рейтингах работодателей. Мы ценим открытость, уважение к каждому сотруднику и стремимся к постоянному развитию. В нашей команде вы найдёте дружелюбную атмосферу, гибкий график, хорошие соцпакеты (в том числе ДМС) и возможност…
-        </div>
-
-        <div class="card-footer">
-          <div class="card-stats">
-            <span class="stat">👁 404</span>
-            <span class="stat">❤️ 41</span>
-          </div>
-          <a href="https://t.me/ideasforai/813" target="_blank" rel="noopener" class="card-link">Открыть →</a>
-        </div>
-      </article>
-      <article class="card" data-channel="alwebbci">
-        <div class="card-header">
-          <div class="avatar" style="background-color: #6366f1">
-            A
-          </div>
-          <div class="card-meta">
-            <a href="https://t.me/alwebbci" target="_blank" rel="noopener" class="card-channel">@alwebbci</a>
-            <span class="card-time">1д</span>
-          </div>
-        </div>
-
-        <div class="card-body">
-          Mercor AI has allegedly been breached by Lapsus
-
-More customer data leaks: Amazon, Athena, Aphrodite, Meta, Apple... 
-
-939GB of source code
-4TB of data in total
-
-SOTA training data now just available. Every major lab. Billions and billions of value and a major national security issue.
-        </div>
-
-        <div class="card-footer">
-          <div class="card-stats">
-            <span class="stat">👁 437</span>
-            <span class="stat">❤️ 12</span>
-          </div>
-          <a href="https://t.me/alwebbci/4106" target="_blank" rel="noopener" class="card-link">Открыть →</a>
-        </div>
-      </article>
-      <article class="card" data-channel="GenAIforbusiness">
-        <div class="card-header">
-          <div class="avatar" style="background-color: #f59e0b">
-            G
-          </div>
-          <div class="card-meta">
-            <a href="https://t.me/GenAIforbusiness" target="_blank" rel="noopener" class="card-channel">@GenAIforbusiness</a>
-            <span class="card-time">1д</span>
-          </div>
-        </div>
-
-        <div class="card-body">
-          Первый парень на деревне: строим команду из ИИ-агентов
-
-В своем прошлом посте я писал, что развернул на своем сервере автономного агента, который всегда онлайн. 
-
-Всю неделю я продолжал эксперименты. Быстро выяснилось, что агент периодически впадает в ступор, приходилось лезть на сервер, чтобы его растормошить.
-
-Лень — двигатель прогресса, так что я создал ещё одного агента, чтобы будил первого)) Заодно одного из них посадил на бота в Телеграме, а другого — на юзер-аккаунт, чтобы он мог этого бота тестить.
-
-Постепенно я вошел во вкус. Большое количество агентов позволяет выполнять большое количество задач одновременно. А задач при настройке такой системы возникает приличное количество.
-
-Мне понадобилось, чтобы агенты могли общаться друг с другом, так что я попросил их создать шину — что-т…
-        </div>
-
-        <div class="card-footer">
-          <div class="card-stats">
-            <span class="stat">👁 94</span>
+            <span class="stat">👁 1.480</span>
             <span class="stat">❤️ 19</span>
           </div>
-          <a href="https://t.me/GenAIforbusiness/246" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+          <a href="https://t.me/tsingular/7063" target="_blank" rel="noopener" class="card-link">Открыть →</a>
         </div>
       </article>
       <article class="card" data-channel="pimenov_ru">
@@ -1423,180 +844,800 @@ SOTA training data now just available. Every major lab. Billions and billions of
         </div>
 
         <div class="card-body">
-          Новый микс от Игорь Фиш, заряжаемся хорошей музыкой сегодня. 
+          NeuralDeep Skills — российский каталог навыков для ИИ-агентов, которого давно не хватало
 
-Record Box [ ВЕСНА ● 2✪26] #O1
+Если вы работаете с ИИ-агентами — Claude Code, Cursor, Codex или чем-то ещё — вы наверняка знаете skills.sh. Это глобальный каталог навыков (skills), которые можно установить одной командой: агент получает готовую инструкцию, как работать с конкретным сервисом или инструментом.
 
-0:00:00 Markus Schulz pres. Dakota - Before The Light Knew Us 
-0:04:26 Arodes &amp; Mahmut Orhan feat. Jamek Ortega - Gaia 
-0:09:49 Valeron - Run It Back 
-0:14:42 mölly &amp; MØØNE - Find You 
-0:20:29 UOAK &amp; Xerxes-K - Other Side 
-0:25:47 Sunlounger - True Kindness (Club Mix) 
-0:29:59 Dastisay &amp; Februm - White Horse 
-0:35:20 Garlington &amp; Deviu - Destiny 
-0:40:01 Rromarin &amp; Isam Hadjih - Where The Sun Lies 
-0:44:11 Everi - Mirage 
-0:50:24 Eli &amp; Fur - Strange 
-0:54:55 Estiva - TCL 
-0:58:32 Zara Taylor &amp; Forty Cats - Lost 
-1:05:12 David Di Sabato - Mythos 
-1:08:47 Alex M.O.R.P.H. &amp; Tygr Tygr &amp; MRPHLNDR - Save Me 
-1:13:25 Alfa Romero &amp; Run Rivers - Step by Step 
-1:17:22 Sezer Uysal &amp; Bolth - Purified 
-1:21:…
+Проблема в том, что skills.sh заточен под западный стек. Яндекс, Битрикс24, 1С — ничего этого там нет. А для тех, кто работает в российских реалиях, это именно те сервисы, с которыми агенты должны уметь взаимодействовать каждый день.
+
+Что сделал Валера Ковальский @neuraldeep — собрал NeuralDeep Skills — open-source каталог агентных навыков, заточенный под российские сервисы. По сути, это тот же подход, что и skills.sh, но с ф…
         </div>
 
         <div class="card-footer">
           <div class="card-stats">
-            <span class="stat">👁 557</span>
+            <span class="stat">👁 527</span>
             <span class="stat">❤️ 14</span>
           </div>
-          <a href="https://t.me/pimenov_ru/9988" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+          <a href="https://t.me/pimenov_ru/9999" target="_blank" rel="noopener" class="card-link">Открыть →</a>
         </div>
       </article>
-      <article class="card" data-channel="ai_weekly_digest">
+      <article class="card" data-channel="dealerAI">
         <div class="card-header">
           <div class="avatar" style="background-color: #a855f7">
-            A
+            D
           </div>
           <div class="card-meta">
-            <a href="https://t.me/ai_weekly_digest" target="_blank" rel="noopener" class="card-channel">@ai_weekly_digest</a>
+            <a href="https://t.me/dealerAI" target="_blank" rel="noopener" class="card-channel">@dealerAI</a>
             <span class="card-time">1д</span>
           </div>
         </div>
 
         <div class="card-body">
-          https://3dnews.ru/1139315/alibaba-predstavila-zakrituyu-iimodel-qwen36plus
+          Дай человеку MCP для заказа и он перевернёт мир покупок. Сегодня уже виден тренд на AI native трансформацию бизнеса: найм, обучение, инфра и adoption инструментов. Но кругом, мы видим, пока, AI inspired отдельных людей, чем компаний. Т.е. эффективнее стали...
         </div>
 
         <div class="card-footer">
           <div class="card-stats">
-            <span class="stat">👁 70</span>
+            <span class="stat">👁 6.320</span>
+            <span class="stat">❤️ 32</span>
           </div>
-          <a href="https://t.me/ai_weekly_digest/1275" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+          <a href="https://t.me/dealerAI/1755" target="_blank" rel="noopener" class="card-link">Открыть →</a>
         </div>
       </article>
-      <article class="card" data-channel="pimenov_ru">
+      <article class="card" data-channel="oleglimited">
         <div class="card-header">
           <div class="avatar" style="background-color: #0ea5e9">
-            P
-          </div>
-          <div class="card-meta">
-            <a href="https://t.me/pimenov_ru" target="_blank" rel="noopener" class="card-channel">@pimenov_ru</a>
-            <span class="card-time">1д</span>
-          </div>
-        </div>
-
-        <div class="card-body">
-          Мы в журнале Афиша, декабрь 2001.
-        </div>
-
-        <div class="card-footer">
-          <div class="card-stats">
-            <span class="stat">👁 557</span>
-            <span class="stat">❤️ 28</span>
-          </div>
-          <a href="https://t.me/pimenov_ru/9993" target="_blank" rel="noopener" class="card-link">Открыть →</a>
-        </div>
-      </article>
-      <article class="card" data-channel="alwebbci">
-        <div class="card-header">
-          <div class="avatar" style="background-color: #6366f1">
-            A
-          </div>
-          <div class="card-meta">
-            <a href="https://t.me/alwebbci" target="_blank" rel="noopener" class="card-channel">@alwebbci</a>
-            <span class="card-time">1д</span>
-          </div>
-        </div>
-
-        <div class="card-body">
-          Goodfire introduced self-correcting search: a technique to let diffusion models self-correct mid-trajectory.
-
-MatterGen a feedback loop from its own activations, improving viable on-target candidates by ~30%.
-
-MatterGen is an open-source diffusion model for generating novel crystal structures. When generating materials with a target property, stronger conditioning tends to improve targeting, but reduces the stability, diversity, and novelty of outputs.
-        </div>
-
-        <div class="card-footer">
-          <div class="card-stats">
-            <span class="stat">👁 389</span>
-          </div>
-          <a href="https://t.me/alwebbci/4108" target="_blank" rel="noopener" class="card-link">Открыть →</a>
-        </div>
-      </article>
-      <article class="card" data-channel="ai_trash_talk">
-        <div class="card-header">
-          <div class="avatar" style="background-color: #ec4899">
-            A
-          </div>
-          <div class="card-meta">
-            <a href="https://t.me/ai_trash_talk" target="_blank" rel="noopener" class="card-channel">@ai_trash_talk</a>
-            <span class="card-time">1д</span>
-          </div>
-        </div>
-
-        <div class="card-body">
-          Google Labs выпустил бесплатного конкурента Duolingo! 🎉 Это приложение Little Language Lessons, работающее на базе Gemini и поддерживающее более 40 языков. Никаких подписок и ограничений! 🤯
-
-Внутри вас ждут три ключевых инструмента. SlangHank предлагает живые диалоги с реальным сленгом от носителей. WordCamp позволяет сфотографировать любой объект (например, чашку кофе ☕️ или вывеску) и мгновенно получить его описание на целевом языке. А TinyLesson — это небольшие уроки на разные темы для быстрого изучения. Учитесь легко и с интересом! 🚀
-
-#Education #LanguageLearning #GoogleLabs #FreeTools #GeminiAI
-        </div>
-
-        <div class="card-footer">
-          <div class="card-stats">
-            <span class="stat">👁 4</span>
-            <span class="stat">❤️ 1</span>
-          </div>
-          <a href="https://t.me/ai_trash_talk/1337" target="_blank" rel="noopener" class="card-link">Открыть →</a>
-        </div>
-      </article>
-      <article class="card" data-channel="pimenov_ru">
-        <div class="card-header">
-          <div class="avatar" style="background-color: #0ea5e9">
-            P
-          </div>
-          <div class="card-meta">
-            <a href="https://t.me/pimenov_ru" target="_blank" rel="noopener" class="card-channel">@pimenov_ru</a>
-            <span class="card-time">1д</span>
-          </div>
-        </div>
-
-        <div class="card-body">
-          😎
-        </div>
-
-        <div class="card-footer">
-          <div class="card-stats">
-            <span class="stat">👁 556</span>
-            <span class="stat">❤️ 12</span>
-          </div>
-          <a href="https://t.me/pimenov_ru/9991" target="_blank" rel="noopener" class="card-link">Открыть →</a>
-        </div>
-      </article>
-      <article class="card" data-channel="oestick">
-        <div class="card-header">
-          <div class="avatar" style="background-color: #8b5cf6">
             O
           </div>
           <div class="card-meta">
-            <a href="https://t.me/oestick" target="_blank" rel="noopener" class="card-channel">@oestick</a>
+            <a href="https://t.me/oleglimited" target="_blank" rel="noopener" class="card-channel">@oleglimited</a>
             <span class="card-time">1д</span>
           </div>
         </div>
 
         <div class="card-body">
-          Приходит ко мне Вова – владелец компании, которая выстраивает бизнесу отделы продаж. Там и построение скриптов, и обучение, и контроль качества. Говорит, нужно упаковать нашу экспертизу по контролю качества в отдельный продукт и продавать его. В 5-10 раз...
+          Почти год назад я зарелизил Fanfy— мой первый AI микро стартап
+
+В новом видео рассказываю всё, что происходило после запуска. Что я улучшал и где дорабатывал. Какие в итоге цифры получились и сколько реально смог заработать.
+
+Видос: https://www.youtube.com/watch?v=E0KML1B1ssg
+
+Сырые цифры, графики и данные из видео тут: https://t.me/tribute/app?startapp=sLrD 
+(подписывайтесь, если просто хотите поддержать канал, там пока просто чат + пару материалов из роликов)
         </div>
 
         <div class="card-footer">
           <div class="card-stats">
-            <span class="stat">👁 2.700</span>
-            <span class="stat">❤️ 22</span>
+            <span class="stat">👁 4.830</span>
+            <span class="stat">❤️ 84</span>
           </div>
-          <a href="https://t.me/oestick/478" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+          <a href="https://t.me/oleglimited/65" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="neuraldeep">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #e11d48">
+            N
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/neuraldeep" target="_blank" rel="noopener" class="card-channel">@neuraldeep</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Так вот зачем нужна эта новая функция в тг
+
+спасибо за мем =) @aostrikov_ai_agents
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 4.530</span>
+            <span class="stat">❤️ 113</span>
+          </div>
+          <a href="https://t.me/neuraldeep/2031" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="aostrikov_ai_agents">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #f59e0b">
+            A
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/aostrikov_ai_agents" target="_blank" rel="noopener" class="card-channel">@aostrikov_ai_agents</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Митап с Валерой Ковальским про SGR, GraphRAG по коду и воркфлоу Валеры
+
+Ну, в AI индустрии Валеру не знает, наверно, только ленивый. Но на всякий случай:
+
+- Head of AI Engineering, автор канала @neuraldeep
+- Популяризатор SGR подхода (Scheme-Guided Reasoning) и автор популярного фреймворка-реализации SGR https://github.com/vamplabAI/sgr-agent-core (1100+ звезд!)
+- Автор 10+ опенсорс проектов, включая ру базу скиллов https://neuraldeep.ru
+- Наверное, один из наиболее востребованных экспертов по RAG и агентным системам в СНГ.
+
+Что будет на митапе?
+В прямом эфире создадим агента по SGR, который собирает связи по кодовой базе для последующего создания GraphRAG. Но самое интересное, что агента мы будем кодить вместе с Валерой по его воркфлоу (а значит, мы узнаем почему в узких кругах Валеру на…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 991</span>
+            <span class="stat">❤️ 11</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/64" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="aostrikov_ai_agents">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #f59e0b">
+            A
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/aostrikov_ai_agents" target="_blank" rel="noopener" class="card-channel">@aostrikov_ai_agents</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Остриков пилит агентов pinned a photo
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/67" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="pimenov_ru">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #0ea5e9">
+            P
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/pimenov_ru" target="_blank" rel="noopener" class="card-channel">@pimenov_ru</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Ну что, Яндекс уже подсуетился. Вот вам, пожалуйста, повышение цен.
+
+Сейчас у всех российских интернет сервисов начнётся повышение цен на всё. Готовимся.
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 554</span>
+            <span class="stat">❤️ 12</span>
+          </div>
+          <a href="https://t.me/pimenov_ru/10010" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="blockchainRF">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #ef4444">
+            B
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/blockchainRF" target="_blank" rel="noopener" class="card-channel">@blockchainRF</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Посмотрите на движения OpenAI, Anthropic и Microsoft и сравните. 
+
+Итак сегодня стало известно, что Anthropic купил Coefficient Bio ИИ-стартап по биофарме за $400 млн. Он создан всего 8 месяцев назад, разрабатывал ИИ-модели специально для биологических исследований.
+
+Они присоединяются к команде Anthropic Health Care Life Sciences во главе с Эриком Каудерером-Абрамсом.
+
+Одновременно с этим OpenAI покупает медиа актив - канал на ютюбе TBPN. 
+
+Никто не против медиа, даже наоборот, важно в наше время грамотно строить коммуникации с миром, потребителями, сообществом, но PR нужен тогда, когда у тебя есть крутой продукт, а на обещаниях или отстающих проектах PR не сработает. Он лопнет как пузырь и убьет репутацию компании. 
+
+База в наше время в лидерстве ИИ- сильная и мотивированная команда, на…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 1.260</span>
+            <span class="stat">❤️ 15</span>
+          </div>
+          <a href="https://t.me/blockchainRF/12862" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="pimenov_ru">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #0ea5e9">
+            P
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/pimenov_ru" target="_blank" rel="noopener" class="card-channel">@pimenov_ru</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Сделал бота для записи на бесплатные консультации для участников чата ПЕРЕЗАГРУЗКА. История на скриншотах. Когда я говорю, что у меня реальная командная работа с агентами — это вот это. 10 минут от идеи до расписанного проекта в 4:37 AM. 
+
+Каждый день Саркис умнеет, больше знает, получает новые инструменты и навыки и особености личности. И теперь это работает вот так + у него в подчинении уже набор специалистов, которым он раздаёт задачи.
+
+Обратите внимание — я рассказал идею, дальше он делает всё сам, потому что помнит весь контекст. Сначала он все запроектировал, разлодил на задачи, а потом пошёл, всё закодил, запустил и протестировал. В финале ещё пост мне в чат написал. Я только идею рассказал и токен от бота скинул ему. Дальше он сделал всё за час. 
+
+Это невероятно. 
+
+Подключайтесь в…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 462</span>
+            <span class="stat">❤️ 9</span>
+          </div>
+          <a href="https://t.me/pimenov_ru/10005" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="neuraldeep">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #e11d48">
+            N
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/neuraldeep" target="_blank" rel="noopener" class="card-channel">@neuraldeep</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Валера Ковальский pinned a photo
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+          </div>
+          <a href="https://t.me/neuraldeep/2035" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="singularityfm">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #0ea5e9">
+            S
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/singularityfm" target="_blank" rel="noopener" class="card-channel">@singularityfm</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Ребят, я в Лондоне 4-17 апреля
+
+Расширяю нетворк, готов встречаться общаться знакомиться. Интересны предприниматели в технологиях и технари.
+
+Пишите в личку, и буду благодарен за рекомендации интересных людей: @the_real_jkee
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 2.840</span>
+            <span class="stat">❤️ 45</span>
+          </div>
+          <a href="https://t.me/singularityfm/441" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="alwebbci">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #6366f1">
+            A
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/alwebbci" target="_blank" rel="noopener" class="card-channel">@alwebbci</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Meet AutoAgent an open source library for autonomously improving an agent on any domain
+
+Researcher team let an agent optimize for 24 hours. 
+
+It hit #1 on SpreadsheetBench (96.5%) and #1 GPT-5 score on TerminalBench (55.1%). 
+
+Every other entry was human-engineered. This wasn&#39;t.
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 328</span>
+            <span class="stat">❤️ 7</span>
+          </div>
+          <a href="https://t.me/alwebbci/4113" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="pimenov_ru">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #0ea5e9">
+            P
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/pimenov_ru" target="_blank" rel="noopener" class="card-channel">@pimenov_ru</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          💬 НЕ УПУСТИТЕ ВОЗМОЖНОСТЬ ПОЛУЧИТЬ ДОСТУП В ИНТЕРЕСНЫЕ КАНАЛЫ:
+
+🔖 Про вещи, которые помогают в жизни и работе: идеи, кейсы, опыт и мысли, которые откликаются и 
+остаются.
+
+🔖 Лучшие эксперты в своей сфере, только суть, без всякой воды.
+
+🔖 В каналах самые актуальные новости и инсайды, не упускайте возможность получить доступ к эксклюзивной информации
+
+🔖 Экспертная оценка, мнение профессионалов и прогнозы на будущее, читайте в папке 
+
+🤩 Инвестиции в недвижимость S&amp;P development - Инвестиции коммерческую в недвижимость 30% годовых. Создания ГАБ с пятерочкой. Записки девелопера.
+📲 мы в MAX
+
+🤩 &#34;КДО&#34; КВАРТИРЫ ДОМА ОФИСЫ — ваш гид в мире недвижимости! 
+🔵Новости, законы, полезные советы, видеообзоры, как выгодно купить квартиры, дома, офисы.
+
+Подписывайтесь на канал с полезным контентом
+📲Мы в MAX
+…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 499</span>
+          </div>
+          <a href="https://t.me/pimenov_ru/10009" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="evilfreelancer">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #a855f7">
+            E
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/evilfreelancer" target="_blank" rel="noopener" class="card-channel">@evilfreelancer</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Вайбкодерская мудрость:
+Если кодовый агент не может справиться с кодом - значит надо взять модель поумнее.
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 1.070</span>
+            <span class="stat">❤️ 48</span>
+          </div>
+          <a href="https://t.me/evilfreelancer/1625" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="blockchainRF">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #ef4444">
+            B
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/blockchainRF" target="_blank" rel="noopener" class="card-channel">@blockchainRF</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Это топ! MaxToki - ИИ, умеющий предсказывать, как клетки человека стареют, и что именно это старение ускоряет/замедляет
+
+MaxToki - ИИ-модель, которая предсказывает, как клетки меняют своё состояние с течением времени. Она предназначена для моделирования динамики состояний клеток во времени - от рождения человека до глубокой старости. 
+
+Работа создана в лаборатории Кристины Теодорис в Gladstone Institutes.
+
+Название дали модели в честь японского скоростного поезда Toki, где Toki означает время. 
+
+Модель обучена на ~1 трлн генных токенов, извлечённых из ~175 миллионов человеческих одноклеточных транскриптомов и 100 миллионов клеточных траекторий - от рождения до 90+ лет. 
+
+Размеры моделей: 217M и 1B параметров. Ускорение обучения обеспечил NVIDIA BioNeMo. 
+
+По сути, это первая модель, котор…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 1.300</span>
+            <span class="stat">❤️ 19</span>
+          </div>
+          <a href="https://t.me/blockchainRF/12864" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="blockchainRF">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #ef4444">
+            B
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/blockchainRF" target="_blank" rel="noopener" class="card-channel">@blockchainRF</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Google выпустили Gemma 4 - семейство открытых моделей под Apache 2.0.
+
+Жители Китайцы уходят, приходит мафия Google со своими открытыми моделями, где нет ограничений, полная свобода для коммерческого использования и модификаций.
+
+Построена на тех же технологиях, что и Gemini 3. Контекст до 256K токенов. Поддержка более 140 языков.
+
+Вот эти 4 модели:
+
+- E2B и E4B - компактные версии, отлично работают даже на слабом железе и смартфонах
+
+- 26B A4B - крутейший Mixture-of-Experts: всего 26 млрд параметров, но на каждом шаге активируется только ~4 млрд. Качество почти как у большой модели, а скорость и потребление памяти как у 4B.
+
+- 31B Dense - самая мощная версия для тех, у кого есть хорошая видеокарта.
+
+Сообщество уже в восторге: модель показывает сильные результаты в математике, кодинге и с…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 1.480</span>
+            <span class="stat">❤️ 24</span>
+          </div>
+          <a href="https://t.me/blockchainRF/12861" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="blockchainRF">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #ef4444">
+            B
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/blockchainRF" target="_blank" rel="noopener" class="card-channel">@blockchainRF</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Протокол для платежей ИИ-агентов x402 передали Linux Foundation 
+
+Coinbase передали свой протокол x402 в открытое управление Linux Foundation. 
+
+Linux Foundation - это нейтральная площадка, где конкуренты строят общую инфраструктуру. Именно так появились Linux, Kubernetes, Node.js. Именно поэтому они работают на 96% серверов в мире и никому не принадлежат. x402 теперь в той же категории.
+
+Агентная экономика получила свой TCP/IP. Ознакомьтесь со структурой экономики агентов у нас. 
+
+Поддержку сразу выразили крупные игроки:
+- Google
+- AWS
+- Microsoft
+- Visa
+- Mastercard
+- Shopify
+- Solana Foundation
+- Circle
+- Base и другие (более 20 участников на старте).
+
+Цель - сделать x402 универсальным стандартом для платежей ИИ-агентов, чтобы он стал таким же базовым, как SSL/TLS для шифрования.
+
+Боль…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 1.320</span>
+            <span class="stat">❤️ 14</span>
+          </div>
+          <a href="https://t.me/blockchainRF/12863" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="neuraldeep">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #e11d48">
+            N
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/neuraldeep" target="_blank" rel="noopener" class="card-channel">@neuraldeep</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Мы в эфире с Валерой: https://www.youtube.com/watch?v=cMRo2CYrRNQ
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 3.660</span>
+            <span class="stat">❤️ 17</span>
+          </div>
+          <a href="https://t.me/neuraldeep/2033" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="pimenov_ru">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #0ea5e9">
+            P
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/pimenov_ru" target="_blank" rel="noopener" class="card-channel">@pimenov_ru</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Респект.
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 430</span>
+            <span class="stat">❤️ 10</span>
+          </div>
+          <a href="https://t.me/pimenov_ru/10004" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="tsingular">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #10b981">
+            T
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/tsingular" target="_blank" rel="noopener" class="card-channel">@tsingular</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          по Gemma4 есть вопросы. 
+не понимаю что им помешало добить до 35B и дать сразу трёхмодалку человеческую.
+
+Какой-то очень хитрый стратегический маркетинговый ход, не иначе.
+
+#gemma #google
+———
+@tsingular
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 1.710</span>
+            <span class="stat">❤️ 9</span>
+          </div>
+          <a href="https://t.me/tsingular/7060" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="pimenov_ru">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #0ea5e9">
+            P
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/pimenov_ru" target="_blank" rel="noopener" class="card-channel">@pimenov_ru</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          «В начале было слово - в конце будет цифра». Все же пророческая книга у Маргариты Симоньян.
+
+Цифровое развитие заменили цифровой деградацией. Что происходит в цифровой сфере- почему из-за одной соцсети Россия теряет миллиарды и рушить лучшую цифровую инфраструктуру в мире.
+
+Пока Минцифры и РКН пытается бороться с Телеграм, VPN и прокси, Кремль, Министерство обороны, Генпрокуратура, МВД и другие официальные паблики госструктур продолжают работу в Телеграм. Чиновники, в том числе высокого ранга продолжают пользоваться Телеграм. Военные продолжают пользоваться Телеграм. Вся Дума сидит на VPN. Единственный паблик, который не обновляется - это Минцифры.
+
+Сегодняшний сбой банков - это последствия совещания у главы Минцифры. Роскомнадзор не справляется с блокировкой VPN и прокси, которые помогаю…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 462</span>
+            <span class="stat">❤️ 23</span>
+          </div>
+          <a href="https://t.me/pimenov_ru/10003" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="pimenov_ru">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #0ea5e9">
+            P
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/pimenov_ru" target="_blank" rel="noopener" class="card-channel">@pimenov_ru</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Внезапно хорошо. Type Shit! Авторы.
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 500</span>
+            <span class="stat">❤️ 21</span>
+          </div>
+          <a href="https://t.me/pimenov_ru/10002" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="alwebbci">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #6366f1">
+            A
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/alwebbci" target="_blank" rel="noopener" class="card-channel">@alwebbci</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Prediction: This is gonna kill some oss projects.
+
+&#34;On the kernel security list we&#39;ve seen a huge bump of reports. We were between 2 and 3 per week maybe two years ago, then reached probably 10 a week over the last year with the only difference being only AI slop, and now since the beginning of the year we&#39;re around 5-10 per day depending on the days (fridays and tuesdays seem the worst). Now most of these reports are correct, to the point that we had to bring in more maintainers to help us.&#34;
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 384</span>
+            <span class="stat">❤️ 10</span>
+          </div>
+          <a href="https://t.me/alwebbci/4111" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="pimenov_ru">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #0ea5e9">
+            P
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/pimenov_ru" target="_blank" rel="noopener" class="card-channel">@pimenov_ru</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Созвоны бывают разные, например такие:
+
+«Поднеси три пальца к лицу. Это значит, ты не аватар, понял? Не поддельный Вартан.» — Сергей
+
+«Другой вопрос в том, что я сегодня полночи думал о том, что... Не может ли оказаться, что мы сейчас в это все впряжемся, но не сможем этого использовать?» — Вартан
+
+«Эти события происходят с нами всю жизнь.» — Сергей
+
+«Нам нужно начать. Мы хотим. Им надо менять — нам нужно начать.» — Сергей и Вартан
+
+«У русского языка есть свои особенные... особенности.» — Вартан
+
+«Правильно. И для этого нужен ты, для этого нужен я, для этого нужен Саркис.» — Сергей
+
+«Русские сайты у этих стартапов — они все используют бесплатные шаблоны и ещё умудряются их ухудшать. А я теперь понимаю, почему: потому что у них нету 249 долларов и дизайнера нормального нет.» — Сергей
+
+«Сар…
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 542</span>
+            <span class="stat">❤️ 9</span>
+          </div>
+          <a href="https://t.me/pimenov_ru/9998" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="pimenov_ru">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #0ea5e9">
+            P
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/pimenov_ru" target="_blank" rel="noopener" class="card-channel">@pimenov_ru</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Сбой — не враг плана. Сбой — это план, который сообщил вам кое-что новое о реальности.
+
+Продюсер не тот, кто не ошибается. Продюсер — тот, кто умеет сделать из ошибки маршрут. Сорвалась встреча — появилось два часа тишины. Не вышел текст — значит, тема ещё не созрела. Отвалился подрядчик — и вдруг вы делаете это сами, и получается лучше. Операционка — это не контроль всего. Это умение конвертировать хаос в движение.
+
+Ошибка, которую вы совершили на этой неделе — куда она вас вывела?
+
+• ПЕРЕЗАГРУЗКА ЧАТ • подключайтесь.
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 471</span>
+            <span class="stat">❤️ 15</span>
+          </div>
+          <a href="https://t.me/pimenov_ru/10001" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="aostrikov_ai_agents">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #f59e0b">
+            A
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/aostrikov_ai_agents" target="_blank" rel="noopener" class="card-channel">@aostrikov_ai_agents</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          ☝🏻☝🏻☝🏻
+
+Пропускать такие эвенты - преступление! Все идем!
+
+а значит, мы узнаем почему в узких кругах Валеру называют &#34;120 минут&#34;
+
+... а это вдвойне интересно, особенно для тех, у кого три минуты это норма
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 1.530</span>
+            <span class="stat">❤️ 26</span>
+          </div>
+          <a href="https://t.me/aostrikov_ai_agents/65" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="pimenov_ru">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #0ea5e9">
+            P
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/pimenov_ru" target="_blank" rel="noopener" class="card-channel">@pimenov_ru</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Я проверил: иностранные карты к русскому AppStore тоже не привязываются. У вас, говорит, страна не сходится. Идите в вашу страну. А я в своей стране. 
+
+Дела! А что, кстати, с Google Play — там это как сейчас устроено?
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 546</span>
+            <span class="stat">❤️ 12</span>
+          </div>
+          <a href="https://t.me/pimenov_ru/10000" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+        </div>
+      </article>
+      <article class="card" data-channel="alwebbci">
+        <div class="card-header">
+          <div class="avatar" style="background-color: #6366f1">
+            A
+          </div>
+          <div class="card-meta">
+            <a href="https://t.me/alwebbci" target="_blank" rel="noopener" class="card-channel">@alwebbci</a>
+            <span class="card-time">1д</span>
+          </div>
+        </div>
+
+        <div class="card-body">
+          Wow! Linux Foundation announced it is launching the x402 Foundation with the contribution of the x402 protocol from Coinbase. 
+
+As the neutral home for x402, the Foundation will advance the x402 protocol and help enable community-based innovation in open payments.
+        </div>
+
+        <div class="card-footer">
+          <div class="card-stats">
+            <span class="stat">👁 376</span>
+            <span class="stat">❤️ 9</span>
+          </div>
+          <a href="https://t.me/alwebbci/4112" target="_blank" rel="noopener" class="card-link">Открыть →</a>
         </div>
       </article>
       <article class="card" data-channel="lexel_channel">
@@ -1611,92 +1652,35 @@ MatterGen is an open-source diffusion model for generating novel crystal structu
         </div>
 
         <div class="card-body">
-          ИИ эмпатичнее людей, но при этом ему меньше доверяют
+          С ИИ мы стали... уборщиками 
 
-Исследование показало: ИИ набирает 81% на тестах эмоционального интеллекта, тогда как люди - всего лишь 56%. Формально машина “чувствует” лучше нас.
+Вот внедрим ИИ - и работа сама будет делаться. 
+Думают многие. 
+Что-то подобное, конечно происходит.
+Но есть нюансы
 
-Но есть нюанс.
+Теперь за 10 минут можно сгенерировать 5 видео, 20 картинок, 50 вариантов текста,. ИИшки работают быстро. Но появилась новая работа - разгребать всё это.
 
-Люди ощущают себя более понятыми, когда поддержку оказывает человек, а не алгоритм. Даже если ответ ИИ объективно лучше - он воспринимается как менее ценный. Просто потому что люди знают, что машина “на самом деле” ничего не понимает.
+Смотришь на результат и начинается:
+- Это совсем не то
+- Тут почти, но всё равно надо попробовать с другим промтом
+- Здесь попробуем чуть допилить - и будет здорово
 
-При этом
-47% молодых сотрудников говорят, что получают лучшие карьерные советы от ChatGPT, чем от своих руководителей. Не потому что ИИ лучше понимает ситуацию. А потому что выстроить безопасные взаимоотношения с начальником - это та ещё задачка. 
-А ИИшка - точно не наорёт, и унижать не станет. 
+ИИ стал генератором мусора и золота одновременно. Наша задача - отобрать лучшее, и повысить качество пробы.
 
-ИИ хорош для когнитивной эмпатии - анализа, с…
+По факту мы превратились в кураторов своего же контента. Не авторов с нуля, не операторов кнопки &#34;красиво&#34;, а людей с насмотренностью и вкусом, которые умеют отличить хорошее от 💩 посредственного.
+
+Такой вот новый навык.
+
+…
         </div>
 
         <div class="card-footer">
           <div class="card-stats">
-            <span class="stat">👁 202</span>
-            <span class="stat">❤️ 12</span>
+            <span class="stat">👁 166</span>
+            <span class="stat">❤️ 8</span>
           </div>
-          <a href="https://t.me/lexel_channel/1150" target="_blank" rel="noopener" class="card-link">Открыть →</a>
-        </div>
-      </article>
-      <article class="card" data-channel="riseofHR">
-        <div class="card-header">
-          <div class="avatar" style="background-color: #84cc16">
-            R
-          </div>
-          <div class="card-meta">
-            <a href="https://t.me/riseofHR" target="_blank" rel="noopener" class="card-channel">@riseofHR</a>
-            <span class="card-time">1д</span>
-          </div>
-        </div>
-
-        <div class="card-body">
-          🇨🇳 29 марта в Китае запущена первая полностью автоматизированная линия по производству человекоподобных роботов 
-
-Эра массового производства гуманоидов официально наступила. В районе Наньхай города Фошань (провинция Гуандун) заработала фабрика, которая переводит индустрию робототехники от лабораторных прототипов к промышленным масштабам, сравнимым с производством электромобилей и смартфонов. Проект реализован в партнерстве между разработчиком роботов Leju Robotics (создающим &#34;мозг&#34; и дизайн) и контрактным производителем Dongfang Precision.
-
-📊 Главные цифры и факты о новом производстве:
- 10 000 роботов в год — заявленная производственная мощность новой линии.
- 1 робот каждые 30 минут сходит с конвейера, что повышает эффективность на 50% по сравнению с традиционными методами сборки.
- 100% ц…
-        </div>
-
-        <div class="card-footer">
-          <div class="card-stats">
-            <span class="stat">👁 368</span>
-            <span class="stat">❤️ 4</span>
-          </div>
-          <a href="https://t.me/riseofHR/112" target="_blank" rel="noopener" class="card-link">Открыть →</a>
-        </div>
-      </article>
-      <article class="card" data-channel="digitaleducations">
-        <div class="card-header">
-          <div class="avatar" style="background-color: #ef4444">
-            D
-          </div>
-          <div class="card-meta">
-            <a href="https://t.me/digitaleducations" target="_blank" rel="noopener" class="card-channel">@digitaleducations</a>
-            <span class="card-time">1д</span>
-          </div>
-        </div>
-
-        <div class="card-body">
-          когда читаю или слышу слово - ЛОВКО - вспоминаю эту книжку из столетней библиотеки :)))
-Через нее кстати увлекаю своих детишек таким тайным знанием как #мнемотехника. 
-
-#книга короткая и интересная на 20мин чтения с детьми (от 9 лет и до 99 - вполне :)).
-
-Книга дает лишь одну технику мнемотехники и иллюстрирует ярко ее использование. 
-
-Пробуждает интерес к теме, дальше его можно развивать. Мнемотехника - это способ расширения вашего личного контекста. В эпоху ИИ - очень тайное знание
-
- 📕Чудо нашего века. Перельман Яков Исидорович
-
-Больше полезных знаний на 
-@DigitalEDU
-        </div>
-
-        <div class="card-footer">
-          <div class="card-stats">
-            <span class="stat">👁 76</span>
-            <span class="stat">❤️ 9</span>
-          </div>
-          <a href="https://t.me/digitaleducations/664" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+          <a href="https://t.me/lexel_channel/1151" target="_blank" rel="noopener" class="card-link">Открыть →</a>
         </div>
       </article>
       <article class="card" data-channel="pimenov_ru">
@@ -1711,17 +1695,14 @@ MatterGen is an open-source diffusion model for generating novel crystal structu
         </div>
 
         <div class="card-body">
-          Первый шаг в ликвидации моего АНО «Чистый и Трезвый» пройден.
-
-Осталось ещё 11.
         </div>
 
         <div class="card-footer">
           <div class="card-stats">
-            <span class="stat">👁 604</span>
-            <span class="stat">❤️ 16</span>
+            <span class="stat">👁 527</span>
+            <span class="stat">❤️ 9</span>
           </div>
-          <a href="https://t.me/pimenov_ru/9987" target="_blank" rel="noopener" class="card-link">Открыть →</a>
+          <a href="https://t.me/pimenov_ru/9997" target="_blank" rel="noopener" class="card-link">Открыть →</a>
         </div>
       </article>
     </div>
@@ -1731,7 +1712,7 @@ MatterGen is an open-source diffusion model for generating novel crystal structu
   <footer class="site-footer">
     <div class="container">
       <span>OpenClaw Telegram Digest</span>
-      <span>2026-04-03 23:37 UTC</span>
+      <span>2026-04-04 23:38 UTC</span>
     </div>
   </footer>
 </div>
